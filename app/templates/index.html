@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <title>Controlled Substance Database</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">Results</div>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              <h4 class="list-group-item-heading">Patient 1</h4>
+              <p class="list-group-item-text">City, State, Zip</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Patient 2</h4>
+              <p class="list-group-item-text">City, State, Zip</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Patient 3</h4>
+              <p class="list-group-item-text">City, State, Zip</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading"><h4>Patient 1<h4></div>
+          <div class="panel-body">
+            <div class="pull-left">
+              Gender: Female<br>
+              Age: 40<br>
+              Born: January 1, 1970<br>
+              Died: January 1, 2010<br>
+            </div>
+            <address class="pull-right">
+              Address 1<br>
+              Address 2<br>
+              City, State, ZIP
+            </address>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Medication Name</th>
+                <th>First Prescribed</th>
+                <th>Repeats</th>
+                <th>Dosage</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>NDC</td>
+                <td>January 1, 2000</td>
+                <td>0</td>
+                <td>160 mg</td>
+                <td>50 pills</td>
+              </tr>
+              <tr>
+                <td>NDC</td>
+                <td>January 1, 2000</td>
+                <td>0</td>
+                <td>160 mg</td>
+                <td>50 pills</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
