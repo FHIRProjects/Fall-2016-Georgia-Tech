@@ -1,6 +1,6 @@
 <channel version="3.4.2">
   <id>1892f241-d643-4abb-b0af-b20b87e0cf12</id>
-  <nextMetaDataId>8</nextMetaDataId>
+  <nextMetaDataId>9</nextMetaDataId>
   <name>FHIR Listener</name>
   <description>NOTE: This channel depends on the following variables being declared in the configuration map:
 
@@ -13,10 +13,10 @@
 Some of the queries used are specific to PostgreSQL, and will require tweaking for other databases.</description>
   <enabled>true</enabled>
   <lastModified>
-    <time>1478374654791</time>
+    <time>1478972130994</time>
     <timezone>America/New_York</timezone>
   </lastModified>
-  <revision>4</revision>
+  <revision>34</revision>
   <sourceConnector version="3.4.2">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -512,6 +512,7 @@ Some of the queries used are specific to PostgreSQL, and will require tweaking f
           <sequenceNumber>0</sequenceNumber>
           <name>Filter destinations by FHIR interaction</name>
           <script>var interaction = sourceMap.get(&apos;fhirInteraction&apos;);
+var type = sourceMap.get(&apos;fhirType&apos;).toLowerCase();
 
 if (interaction == &apos;operation&apos; || interaction == &apos;validate&apos;) {
 	// Operation destinations will have a name of &quot;$name&quot;.
@@ -520,8 +521,12 @@ if (interaction == &apos;operation&apos; || interaction == &apos;validate&apos;)
 	// This will match history-system, history-type, and history-instance
 	destinationSet.removeAllExcept([&apos;history&apos;]);
 } else if (interaction.startsWith(&apos;search&apos;)) {
-	// This will match search-system and search-type
-	destinationSet.removeAllExcept([&apos;search&apos;]);
+	if (type == &apos;patient&apos;) {
+		destinationSet.removeAllExcept([&apos;search-patient&apos;]);			
+	} else {
+		// This will match search-system and search-type
+		destinationSet.removeAllExcept([&apos;search&apos;]);
+	}
 } else {
 	// All other destinations should have a name equal to the interaction
 	destinationSet.removeAllExcept([interaction]);
@@ -531,6 +536,7 @@ if (interaction == &apos;operation&apos; || interaction == &apos;validate&apos;)
             <entry>
               <string>Script</string>
               <string>var interaction = sourceMap.get(&apos;fhirInteraction&apos;);
+var type = sourceMap.get(&apos;fhirType&apos;).toLowerCase();
 
 if (interaction == &apos;operation&apos; || interaction == &apos;validate&apos;) {
 	// Operation destinations will have a name of &quot;$name&quot;.
@@ -539,8 +545,12 @@ if (interaction == &apos;operation&apos; || interaction == &apos;validate&apos;)
 	// This will match history-system, history-type, and history-instance
 	destinationSet.removeAllExcept([&apos;history&apos;]);
 } else if (interaction.startsWith(&apos;search&apos;)) {
-	// This will match search-system and search-type
-	destinationSet.removeAllExcept([&apos;search&apos;]);
+	if (type == &apos;patient&apos;) {
+		destinationSet.removeAllExcept([&apos;search-patient&apos;]);			
+	} else {
+		// This will match search-system and search-type
+		destinationSet.removeAllExcept([&apos;search&apos;]);
+	}
 } else {
 	// All other destinations should have a name equal to the interaction
 	destinationSet.removeAllExcept([interaction]);
@@ -1723,6 +1733,361 @@ function addXPath(xpath, whereParts, params) {
 	whereParts.push(&quot;XPATH_EXISTS(?, data)&quot;);
 	params.push(xpath);
 }</script>
+      </properties>
+      <transformer version="3.4.2">
+        <steps/>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.4.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.4.2">
+            <stripNamespaces>true</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.4.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.4.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.4.2">
+            <stripNamespaces>true</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.4.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </transformer>
+      <responseTransformer version="3.4.2">
+        <steps/>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.4.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.4.2">
+            <stripNamespaces>true</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.4.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.4.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.4.2">
+            <stripNamespaces>true</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.4.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </responseTransformer>
+      <filter version="3.4.2">
+        <rules/>
+      </filter>
+      <transportName>JavaScript Writer</transportName>
+      <mode>DESTINATION</mode>
+      <enabled>true</enabled>
+      <waitForPrevious>true</waitForPrevious>
+    </connector>
+    <connector version="3.4.2">
+      <metaDataId>8</metaDataId>
+      <name>search-patient</name>
+      <properties class="com.mirth.connect.connectors.js.JavaScriptDispatcherProperties" version="3.4.2">
+        <pluginProperties/>
+        <destinationConnectorProperties version="3.4.2">
+          <queueEnabled>false</queueEnabled>
+          <sendFirst>false</sendFirst>
+          <retryIntervalMillis>10000</retryIntervalMillis>
+          <regenerateTemplate>false</regenerateTemplate>
+          <retryCount>0</retryCount>
+          <rotate>false</rotate>
+          <includeFilterTransformer>false</includeFilterTransformer>
+          <threadCount>1</threadCount>
+          <threadAssignmentVariable></threadAssignmentVariable>
+          <validateResponse>false</validateResponse>
+          <resourceIds class="linked-hash-map">
+            <entry>
+              <string>Default Resource</string>
+              <string>[Default Resource]</string>
+            </entry>
+          </resourceIds>
+          <queueBufferSize>1000</queueBufferSize>
+        </destinationConnectorProperties>
+        <script>try {
+	var type = $(&apos;fhirType&apos;).toLowerCase();
+	var requestURL = $(&apos;url&apos;);
+	if (!requestURL.endsWith(&apos;/&apos;)) {
+		requestURL += &apos;/&apos;;
+	}
+	var requestURL = new java.net.URI(requestURL);
+	var contentType = $(&apos;contentType&apos;);
+	var isFormatXML = !FhirUtil.isMIMETypeJSON($(&apos;parameters&apos;).getParameter(&apos;_format&apos;) || contentType || &apos;xml&apos;);
+
+	// Add more supported parameters as you see fit
+	var supportedParameters = [
+		// General
+		&apos;_format&apos;,
+		// All resources
+		&apos;_id&apos;,
+		&apos;_lastupdated&apos;,
+		// Results
+		&apos;_count&apos;,
+		// Patient parameters
+		&apos;identifier&apos;,
+		&apos;given&apos;,
+		&apos;family&apos;,
+		&apos;birthdate&apos;,		
+	]
+
+
+	// Reject requests with parameters that aren&apos;t supported
+	for each (key in $(&apos;parameters&apos;).getKeys().toArray()) {
+		if (supportedParameters.indexOf(key.toLowerCase()+&apos;&apos;) &lt; 0) {
+			return createOperationOutcome(&apos;error&apos;, &apos;invalid&apos;, &apos;Unknown or unsupported parameter &apos; + key + &apos;.&apos;);
+		}
+	}
+
+	var _id = $(&apos;parameters&apos;).getParameter(&apos;_id&apos;);
+
+	var _lastUpdated = $(&apos;parameters&apos;).getParameter(&apos;_lastUpdated&apos;);
+	if (_lastUpdated) {
+		try {
+			_lastUpdated = DateUtil.formatDate(&apos;yyyy-MM-dd HH:mm:ss.SSSX&apos;, new DateDt(_lastUpdated).getValue());
+		} catch (e) {
+			return createOperationOutcome(&apos;error&apos;, &apos;invalid&apos;, &apos;Parameter _lastUpdated formatted incorrectly: &apos; + _lastUpdated);
+		}
+	}
+
+	var _count = $(&apos;parameters&apos;).getParameter(&apos;_count&apos;);
+	if (_count) {
+		_count = parseInt(_count, 10);
+		if (!_count) {
+			return createOperationOutcome(&apos;error&apos;, &apos;invalid&apos;, &apos;Parameter _count formatted incorrectly: &apos; + $(&apos;parameters&apos;).getParameter(&apos;_count&apos;));
+		}
+	}
+
+	// Build up the WHERE clause and prepared query parameters
+//	var whereParts = [];
+	var params = [];
+//	
+//	if (type) {
+//		// search-type
+//		whereParts.push(&quot; name = ?&quot;);
+//		params.push(type);
+//	}
+//
+//	if (_id) {
+//		whereParts.push(&quot;id = ?&quot;);
+//		params.push(_id);
+//	}
+//
+//	if (_lastUpdated) {
+//		whereParts.push(&quot;DATE_TRUNC(&apos;day&apos;, last_modified) = DATE_TRUNC(&apos;day&apos;, ?::TIMESTAMP WITH TIME ZONE)&quot;);
+//		params.push(_lastUpdated);
+//	}
+//
+//	// Add resource-specific query expressions
+//	if (type == &apos;patient&apos;) {
+//		if ($(&apos;parameters&apos;).contains(&apos;identifier&apos;)) {
+//			addXPath(xpathSearch(&apos;/*/identifier&apos;, [&apos;value/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;identifier&apos;), true, true), whereParts, params);
+//		}
+//		if ($(&apos;parameters&apos;).contains(&apos;name&apos;)) {
+//			addXPath(xpathSearch(&apos;/*/name&apos;, [&apos;family/@value&apos;, &apos;given/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;name&apos;)), whereParts, params);
+//		}
+//		if ($(&apos;parameters&apos;).contains(&apos;family&apos;)) {
+//			addXPath(xpathSearch(&apos;/*/name&apos;, [&apos;family/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;family&apos;)), whereParts, params);
+//		}
+//		if ($(&apos;parameters&apos;).contains(&apos;given&apos;)) {
+//			addXPath(xpathSearch(&apos;/*/name&apos;, [&apos;given/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;given&apos;)), whereParts, params);
+//		}
+//	} else if (type == &apos;schedule&apos;) {
+//		if ($(&apos;parameters&apos;).contains(&apos;identifier&apos;)) {
+//			addXPath(xpathSearch(&apos;/*/identifier&apos;, [&apos;value/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;identifier&apos;), true, true), whereParts, params);
+//		}
+//		if ($(&apos;parameters&apos;).contains(&apos;actor&apos;)) {
+//			addXPath(xpathSearch(&apos;/*/actor&apos;, [&apos;reference/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;actor&apos;)), whereParts, params);
+//		}
+//	} else if (type == &apos;slot&apos;) {
+//		if ($(&apos;parameters&apos;).contains(&apos;identifier&apos;)) {
+//			addXPath(xpathSearch(&apos;/*/identifier&apos;, [&apos;value/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;identifier&apos;), true, true), whereParts, params);
+//		}
+//		if ($(&apos;parameters&apos;).contains(&apos;schedule&apos;)) {
+//			addXPath(xpathSearch(&apos;/*/schedule&apos;, [&apos;reference/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;schedule&apos;)), whereParts, params);
+//		}
+//	}
+
+	// Build up the actual query
+//	var query = &quot;SELECT name, id, version, data::TEXT, mimetype, request_method, request_url FROM resource r1 WHERE version = (SELECT MAX(version) FROM resource r2 WHERE r2.name = r1.name AND r2.id = r1.id) AND (deleted IS NULL OR deleted = FALSE)&quot;;
+	var query = 
+		&quot;select \
+			dbo.csd_persons2transactions2.trans_id as patient_id, \
+			dbo.trans_hist.trans_key, \
+			dbo.trans_hist.lname, \
+			dbo.trans_hist.fname, \
+			dbo.trans_hist.street_address, \
+			dbo.trans_hist.state, \
+			dbo.trans_hist.zip_code, \
+			dbo.trans_hist.sex_code, \
+			dbo.trans_hist.birth_date \
+		from dbo.trans_hist, dbo.csd_persons2transactions2 \
+		where dbo.trans_hist.trans_key = dbo.csd_persons2transactions2.csdid::int;&quot;;
+	
+//	if (whereParts.length &gt; 0) {
+//		query += &quot; AND &quot; + whereParts.join(&quot; AND &quot;);
+//	}
+//	query += &quot; ORDER BY name ASC, id ASC, version DESC&quot;;
+//	if (_count &gt; 0) {
+//		query += &quot; LIMIT &quot; + _count;
+//	}
+	
+	var result = executeCachedQuery(query, params);
+	var bundle = new Packages.ca.uhn.fhir.model.dstu2.resource.Bundle().setType(BundleTypeEnum.SEARCH_RESULTS);
+
+	while (result.next()) {
+		var patient_id = result.getString(&apos;patient_id&apos;);
+		var trans_key = result.getString(&apos;trans_key&apos;);
+		var lname = result.getString(&apos;lname&apos;);
+		var fname = result.getString(&apos;fname&apos;);
+		var street_address = nullToEmptyString(result.getString(&apos;street_address&apos;));
+		var state = result.getString(&apos;state&apos;);
+		var zip_code = nullToEmptyString(result.getString(&apos;zip_code&apos;));
+		var sex_code = result.getString(&apos;sex_code&apos;);
+		var birth_date = result.getString(&apos;birth_date&apos;);
+		logger.debug(sex_code);
+
+		var patient = new Packages.ca.uhn.fhir.model.dstu2.resource.Patient();
+		patient.addIdentifier().setValue(patient_id);
+		patient.addName().addFamily(lname).addGiven(fname);
+		patient.addAddress().setText(street_address).setState(state).setPostalCode(zip_code);
+		if ( sex_code == &quot;1&quot; ) {
+			patient.setGender(AdministrativeGenderEnum.MALE);
+		} else if ( sex_code == &quot;2&quot; ) {
+			patient.setGender(AdministrativeGenderEnum.FEMALE);
+		} else {
+			patient.setGender(AdministrativeGenderEnum.UNKNOWN);
+		}
+		var df = new java.text.SimpleDateFormat(&quot;d-MMM-yy&quot;);
+		var parsed_date = df.parse(birth_date);
+		patient.setBirthDate(new Packages.ca.uhn.fhir.model.primitive.DateDt(parsed_date));
+		        
+		var entry = bundle.addEntry().setResource(patient);
+//		entry.setReource();
+		
+		
+//		var entryType = result.getString(&apos;name&apos;);
+//		var entryId = result.getString(&apos;id&apos;);
+//		var entryVersion = result.getInt(&apos;version&apos;);
+//		var entryData = result.getString(&apos;data&apos;);
+//		var entryContentType = result.getString(&apos;mimetype&apos;);
+//		var entryRequestMethod = result.getString(&apos;request_method&apos;);
+//		var entryRequestURL = result.getString(&apos;request_url&apos;);
+
+//		var resourceType = ResourceTypeEnum.VALUESET_BINDER.fromCodeString(entryType);
+//		if (resourceType != null) {
+//			entryType = resourceType.getCode();
+//		}
+
+//		var request = new Packages.ca.uhn.fhir.model.dstu2.resource.Bundle.EntryRequest().setMethod(HTTPVerbEnum.valueOf(entryRequestMethod)).setUrl(entryRequestURL);
+//		var entry = bundle.addEntry().setRequest(request);
+	
+//		var relativeUrl = &apos;&apos;;
+//		if ($(&apos;url&apos;).contains(&apos;_search&apos;) &amp;&amp; $(&apos;method&apos;) == &apos;POST&apos;) {
+//			relativeUrl = &apos;../&apos;;
+//		}
+//		entry.setFullUrl(requestURL.resolve(relativeUrl + entryId + &apos;/_history/&apos; + entryVersion).toString());
+//		entry.setResource(FhirUtil.fromXML(entryData));
+		
+	}
+
+	bundle.setTotal(bundle.getEntry().size());;
+
+	var message = isFormatXML ? FhirUtil.toXML(bundle) : FhirUtil.toJSON(bundle);
+	contentType = isFormatXML ? FhirUtil.getMIMETypeXML() : FhirUtil.getMIMETypeJSON();
+	responseMap.put(&apos;response&apos;, FhirResponseFactory.getHistoryResponse(message, 200, contentType));
+	return $r(&apos;response&apos;).getMessage();
+} catch (e) {
+	return createOperationOutcome(&apos;error&apos;, &apos;transient&apos;, &apos;Error searching resources.&apos;, 500, e);
+}
+
+/**
+	Creates an XPath search selector within the given base node.
+
+	@param String base - The base path to select within.
+	@param String[] nodes - An array of child nodes to select by (combined with OR operator).
+	@param String value - The value to test.
+	@param Boolean equals - If true, the test will be equality, otherwise it will be a contains.
+	@param Boolean caseSensitive - If true, the contains test will match using case sensitivity.
+	@return The built-up contains selector.
+*/
+function xpathSearch(base, nodes, value, equals, caseSensitive) {
+	var search = base + &quot;[&quot;;
+	value = new java.lang.String(value).replaceAll(&quot;&apos;&quot;, &quot;&apos;&apos;&quot;);
+	if (!caseSensitive) {
+		value = value.toLowerCase();
+	}
+	
+	for (var i = 0; i &lt; nodes.length; i++) {
+		var node = nodes[i];
+		if (!caseSensitive) {
+			node = xpathTranslate(node);
+		}
+		
+		if (equals) {
+			search += node + &quot; = &apos;&quot; + value + &quot;&apos;&quot;;
+		} else {
+			search += &quot;contains(&quot; + node + &quot;, &apos;&quot; + value + &quot;&apos;)&quot;;
+		}
+		
+		if (i &lt; nodes.length - 1) {
+			search += &quot; or &quot;;
+		}
+	}
+	
+	search += &quot;]&quot;;
+	return search;
+}
+
+/**
+	Wraps a value in the XPath translate method for case insensitive selecting.
+
+	@param String value - The value to wrap.
+	@return The translate method string.
+*/
+function xpathTranslate(value) {
+	return &quot;translate(&quot; + value + &quot;, &apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;, &apos;abcdefghijklmnopqrstuvwxyz&apos;)&quot;;
+}
+
+/**
+	Adds an XPath existence test to the query WHERE clause.
+
+	@param String xpath - The XPath selector string.
+	@param String[] whereParts - The array of WHERE clause parts to add to.
+	@param Object[] params - The array of prepared query parameters.
+*/
+function addXPath(xpath, whereParts, params) {
+	whereParts.push(&quot;XPATH_EXISTS(?, data)&quot;);
+	params.push(xpath);
+}
+
+function nullToEmptyString(str) {
+	if (str == null) {
+		return &quot;&quot;;
+	} else {
+		return str;
+	}
+}
+</script>
       </properties>
       <transformer version="3.4.2">
         <steps/>
