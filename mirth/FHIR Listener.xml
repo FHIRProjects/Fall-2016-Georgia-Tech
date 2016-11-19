@@ -13,10 +13,10 @@
 Some of the queries used are specific to PostgreSQL, and will require tweaking for other databases.</description>
   <enabled>true</enabled>
   <lastModified>
-    <time>1478972130994</time>
+    <time>1479577698503</time>
     <timezone>America/New_York</timezone>
   </lastModified>
-  <revision>34</revision>
+  <revision>47</revision>
   <sourceConnector version="3.4.2">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -324,13 +324,13 @@ Some of the queries used are specific to PostgreSQL, and will require tweaking f
 			 &lt;type value=&quot;token&quot;/&gt;
 			 &lt;documentation value=&quot;A patient identifier&quot;/&gt;
 		  &lt;/searchParam&gt;
-            &lt;searchParam&gt;
+            &lt;!--searchParam&gt;
                 &lt;name value=&quot;name&quot;/&gt;
                 &lt;definition value=&quot;http://hl7.org/fhir/SearchParameter/Patient-name&quot;/&gt;
                 &lt;type value=&quot;string&quot;/&gt;
                 &lt;documentation value=&quot;Case insensitive and partial-value searching&quot;/&gt;
                 &lt;modifier value=&quot;contains&quot;/&gt;
-            &lt;/searchParam&gt;
+            &lt;/searchParam--&gt;
             &lt;searchParam&gt;
                 &lt;name value=&quot;family&quot;/&gt;
                 &lt;definition value=&quot;http://hl7.org/fhir/SearchParameter/Patient-family&quot;/&gt;
@@ -344,6 +344,12 @@ Some of the queries used are specific to PostgreSQL, and will require tweaking f
                 &lt;type value=&quot;string&quot;/&gt;
                 &lt;documentation value=&quot;Case insensitive and partial-value searching&quot;/&gt;
                 &lt;modifier value=&quot;contains&quot;/&gt;
+            &lt;/searchParam&gt;
+            &lt;searchParam&gt;
+                &lt;name value=&quot;birthDate&quot;/&gt;
+                &lt;definition value=&quot;http://hl7.org/fhir/SearchParameter/Patient-birthDate&quot;/&gt;
+                &lt;type value=&quot;date&quot;/&gt;
+                &lt;documentation value=&quot;YYYY-MM-DD&quot;/&gt;
             &lt;/searchParam&gt;
         &lt;/resource&gt;
         &lt;resource&gt;
@@ -477,30 +483,1285 @@ Some of the queries used are specific to PostgreSQL, and will require tweaking f
       <resourceProperties>
         <disabledInteractions>
           <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>CONCEPT_MAP</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>SUPPLY_DELIVERY</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>RISK_ASSESSMENT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>COVERAGE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DETECTED_ISSUE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>OBSERVATION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PROVENANCE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>SUPPLY_REQUEST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>BODY_SITE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PROCEDURE_REQUEST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MEDICATION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>SLOT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ELIGIBILITY_RESPONSE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MEDICATION_STATEMENT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>OPERATION_DEFINITION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>APPOINTMENT_RESPONSE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>NUTRITION_ORDER</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>APPOINTMENT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PROCESS_REQUEST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>CONFORMANCE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>SUBSTANCE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ELIGIBILITY_REQUEST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>BASIC</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DEVICE_USE_REQUEST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ALLERGY_INTOLERANCE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>CLAIM</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>OPERATION_OUTCOME</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
             <com.mirth.connect.connectors.fhir.shared.FhirResource>BINARY</com.mirth.connect.connectors.fhir.shared.FhirResource>
             <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
               <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>IMAGING_STUDY</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PERSON</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MEDICATION_DISPENSE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PROCESS_RESPONSE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DOCUMENT_MANIFEST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>HEALTHCARE_SERVICE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>SPECIMEN</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>QUESTIONNAIRE_RESPONSE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DIAGNOSTIC_ORDER</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>GROUP</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MEDICATION_ORDER</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>CONDITION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MESSAGE_HEADER</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>IMMUNIZATION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>QUESTIONNAIRE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MEDIA</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>FLAG</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>CLAIM_RESPONSE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>CARE_PLAN</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ENROLLMENT_REQUEST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ENROLLMENT_RESPONSE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PRACTITIONER</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ENCOUNTER</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PAYMENT_NOTICE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>FAMILY_MEMBER_HISTORY</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>SUBSCRIPTION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DATA_ELEMENT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>CLINICAL_IMPRESSION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ORDER_RESPONSE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DIAGNOSTIC_REPORT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>IMMUNIZATION_RECOMMENDATION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>REFERRAL_REQUEST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PROCEDURE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>SCHEDULE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>COMMUNICATION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>NAMING_SYSTEM</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DOCUMENT_REFERENCE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PAYMENT_RECONCILIATION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>LOCATION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>STRUCTURE_DEFINITION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DEVICE_COMPONENT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
             </set>
           </entry>
           <entry>
             <com.mirth.connect.connectors.fhir.shared.FhirResource>AUDIT_EVENT</com.mirth.connect.connectors.fhir.shared.FhirResource>
             <set>
-              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
               <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>EXPLANATION_OF_BENEFIT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>RELATED_PERSON</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
             </set>
           </entry>
           <entry>
             <com.mirth.connect.connectors.fhir.shared.FhirResource>PARAMETERS</com.mirth.connect.connectors.fhir.shared.FhirResource>
             <set>
-              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
-              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
               <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
               <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
               <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
-              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
-              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
               <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>COMPOSITION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
               <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ORGANIZATION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>IMAGING_OBJECT_SELECTION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>LIST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>TEST_SCRIPT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>VALUE_SET</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DEVICE_USE_STATEMENT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>IMPLEMENTATION_GUIDE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>COMMUNICATION_REQUEST</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>SEARCH_PARAMETER</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ORDER</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>PATIENT</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>BUNDLE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>GOAL</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MEDICATION_ADMINISTRATION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DEVICE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>EPISODE_OF_CARE</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>VISION_PRESCRIPTION</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DEVICE_METRIC</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VREAD</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_CREATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_SEARCH_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_INSTANCE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_READ</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_UPDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_DELETE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>FHIR_VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirRestfulInteraction>
             </set>
           </entry>
         </disabledInteractions>
@@ -1839,10 +3100,10 @@ function addXPath(xpath, whereParts, params) {
 		// General
 		&apos;_format&apos;,
 		// All resources
-		&apos;_id&apos;,
-		&apos;_lastupdated&apos;,
+//		&apos;_id&apos;,
+//		&apos;_lastupdated&apos;,
 		// Results
-		&apos;_count&apos;,
+//		&apos;_count&apos;,
 		// Patient parameters
 		&apos;identifier&apos;,
 		&apos;given&apos;,
@@ -1878,8 +3139,29 @@ function addXPath(xpath, whereParts, params) {
 	}
 
 	// Build up the WHERE clause and prepared query parameters
-//	var whereParts = [];
+	var whereParts = [];
 	var params = [];
+
+	if ($(&apos;parameters&apos;).contains(&apos;identifier&apos;)) {
+		whereParts.push(&quot; LOWER(dbo.csd_persons2transactions2.trans_id) = LOWER(?)&quot;);
+		params.push($(&apos;parameters&apos;).getParameter(&apos;identifier&apos;));
+	}
+	if ($(&apos;parameters&apos;).contains(&apos;family&apos;)) {
+		whereParts.push(&quot; LOWER(dbo.trans_hist.lname) = LOWER(?)&quot;);
+		params.push($(&apos;parameters&apos;).getParameter(&apos;family&apos;));
+	}
+	if ($(&apos;parameters&apos;).contains(&apos;given&apos;)) {
+		whereParts.push(&quot; LOWER(dbo.trans_hist.fname) = LOWER(?)&quot;);
+		params.push($(&apos;parameters&apos;).getParameter(&apos;given&apos;));
+	}
+	if ($(&apos;parameters&apos;).contains(&apos;birthdate&apos;)) {
+		whereParts.push(&quot; LOWER(dbo.trans_hist.birth_date) = LOWER(?)&quot;);
+		// NOTE: This conversion may need to be modified for MSSQL
+		var converted_date = DateUtil.convertDate(&quot;yyyy-MM-dd&quot;, &quot;dd-MMM-yy&quot;, $(&apos;parameters&apos;).getParameter(&apos;birthdate&apos;));
+		params.push(converted_date);
+	}
+
+
 //	
 //	if (type) {
 //		// search-type
@@ -1904,9 +3186,6 @@ function addXPath(xpath, whereParts, params) {
 //		}
 //		if ($(&apos;parameters&apos;).contains(&apos;name&apos;)) {
 //			addXPath(xpathSearch(&apos;/*/name&apos;, [&apos;family/@value&apos;, &apos;given/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;name&apos;)), whereParts, params);
-//		}
-//		if ($(&apos;parameters&apos;).contains(&apos;family&apos;)) {
-//			addXPath(xpathSearch(&apos;/*/name&apos;, [&apos;family/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;family&apos;)), whereParts, params);
 //		}
 //		if ($(&apos;parameters&apos;).contains(&apos;given&apos;)) {
 //			addXPath(xpathSearch(&apos;/*/name&apos;, [&apos;given/@value&apos;], $(&apos;parameters&apos;).getParameter(&apos;given&apos;)), whereParts, params);
@@ -1941,11 +3220,13 @@ function addXPath(xpath, whereParts, params) {
 			dbo.trans_hist.sex_code, \
 			dbo.trans_hist.birth_date \
 		from dbo.trans_hist, dbo.csd_persons2transactions2 \
-		where dbo.trans_hist.trans_key = dbo.csd_persons2transactions2.csdid::int;&quot;;
+		where dbo.trans_hist.trans_key = dbo.csd_persons2transactions2.csdid::int&quot;;
 	
-//	if (whereParts.length &gt; 0) {
-//		query += &quot; AND &quot; + whereParts.join(&quot; AND &quot;);
-//	}
+	if (whereParts.length &gt; 0) {
+		query += &quot; AND &quot; + whereParts.join(&quot; AND &quot;);
+	}
+
+	logger.debug(query);
 //	query += &quot; ORDER BY name ASC, id ASC, version DESC&quot;;
 //	if (_count &gt; 0) {
 //		query += &quot; LIMIT &quot; + _count;
@@ -1977,6 +3258,7 @@ function addXPath(xpath, whereParts, params) {
 		} else {
 			patient.setGender(AdministrativeGenderEnum.UNKNOWN);
 		}
+		// NOTE: This conversion may need to be modified for MSSQL
 		var df = new java.text.SimpleDateFormat(&quot;d-MMM-yy&quot;);
 		var parsed_date = df.parse(birth_date);
 		patient.setBirthDate(new Packages.ca.uhn.fhir.model.primitive.DateDt(parsed_date));
@@ -2276,13 +3558,13 @@ return message;</string>
           <type>FUNCTION</type>
           <contextSet>
             <delegate>
-              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
               <contextType>SOURCE_RECEIVER</contextType>
-              <contextType>CHANNEL_ATTACHMENT</contextType>
-              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
-              <contextType>DESTINATION_DISPATCHER</contextType>
               <contextType>CHANNEL_POSTPROCESSOR</contextType>
               <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+              <contextType>CHANNEL_ATTACHMENT</contextType>
+              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_DISPATCHER</contextType>
             </delegate>
           </contextSet>
           <code>/**
@@ -2358,13 +3640,13 @@ function createOperationOutcome(severity, code, details, httpStatusCode, e, isFo
           <type>FUNCTION</type>
           <contextSet>
             <delegate>
-              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
               <contextType>SOURCE_RECEIVER</contextType>
-              <contextType>CHANNEL_ATTACHMENT</contextType>
-              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
-              <contextType>DESTINATION_DISPATCHER</contextType>
               <contextType>CHANNEL_POSTPROCESSOR</contextType>
               <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+              <contextType>CHANNEL_ATTACHMENT</contextType>
+              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_DISPATCHER</contextType>
             </delegate>
           </contextSet>
           <code>/**
@@ -2389,13 +3671,13 @@ function executeCachedQuery(expression, parameters) {
           <type>FUNCTION</type>
           <contextSet>
             <delegate>
-              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
               <contextType>SOURCE_RECEIVER</contextType>
-              <contextType>CHANNEL_ATTACHMENT</contextType>
-              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
-              <contextType>DESTINATION_DISPATCHER</contextType>
               <contextType>CHANNEL_POSTPROCESSOR</contextType>
               <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+              <contextType>CHANNEL_ATTACHMENT</contextType>
+              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_DISPATCHER</contextType>
             </delegate>
           </contextSet>
           <code>/**
@@ -2421,13 +3703,13 @@ function executeUpdateAndGetGeneratedKeys(expression, parameters) {
           <type>FUNCTION</type>
           <contextSet>
             <delegate>
-              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
               <contextType>SOURCE_RECEIVER</contextType>
-              <contextType>CHANNEL_ATTACHMENT</contextType>
-              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
-              <contextType>DESTINATION_DISPATCHER</contextType>
               <contextType>CHANNEL_POSTPROCESSOR</contextType>
               <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+              <contextType>CHANNEL_ATTACHMENT</contextType>
+              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_DISPATCHER</contextType>
             </delegate>
           </contextSet>
           <code>/**
@@ -2452,13 +3734,13 @@ function executeUpdate(expression, parameters) {
           <type>FUNCTION</type>
           <contextSet>
             <delegate>
-              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
               <contextType>SOURCE_RECEIVER</contextType>
-              <contextType>CHANNEL_ATTACHMENT</contextType>
-              <contextType>DESTINATION_DISPATCHER</contextType>
-              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
               <contextType>CHANNEL_POSTPROCESSOR</contextType>
               <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+              <contextType>CHANNEL_ATTACHMENT</contextType>
+              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_DISPATCHER</contextType>
             </delegate>
           </contextSet>
           <code>/**
@@ -2543,13 +3825,13 @@ function executeOperation(operation, expression, parameters) {
           <type>FUNCTION</type>
           <contextSet>
             <delegate>
-              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
               <contextType>SOURCE_RECEIVER</contextType>
-              <contextType>CHANNEL_ATTACHMENT</contextType>
-              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
-              <contextType>DESTINATION_DISPATCHER</contextType>
               <contextType>CHANNEL_POSTPROCESSOR</contextType>
               <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+              <contextType>CHANNEL_ATTACHMENT</contextType>
+              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_DISPATCHER</contextType>
             </delegate>
           </contextSet>
           <code>/**
@@ -2584,13 +3866,13 @@ function getPreferValue() {
           <type>COMPILED_CODE</type>
           <contextSet>
             <delegate>
-              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
               <contextType>SOURCE_RECEIVER</contextType>
-              <contextType>CHANNEL_ATTACHMENT</contextType>
-              <contextType>DESTINATION_DISPATCHER</contextType>
-              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
               <contextType>CHANNEL_POSTPROCESSOR</contextType>
               <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+              <contextType>CHANNEL_ATTACHMENT</contextType>
+              <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+              <contextType>DESTINATION_DISPATCHER</contextType>
             </delegate>
           </contextSet>
           <code>/**
