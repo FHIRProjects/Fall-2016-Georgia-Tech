@@ -1,5 +1,5 @@
 const FHIR_URL =
-  'http://ec2-54-244-43-45.us-west-2.compute.amazonaws.com:9001/dstu2/patient';
+  'http://ec2-54-244-43-45.us-west-2.compute.amazonaws.com:9001/dstu2';
 
 function getAge(date) {
     const birthDate = date || new Date();
@@ -16,7 +16,7 @@ class Results extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { active: 0, patients: [] };
+    this.state = { active: 0, patients: [], medications: [] };
   }
 
   render() {
@@ -28,11 +28,12 @@ class Results extends React.Component {
       return (
         <a className={className} key={i} onClick={this.handleClick.bind(this, i)}>
           <h4 className="list-group-item-heading">{givenName} {familyName}</h4>
-          <p className="list-group-item-text">{city}, {state}, {postalCode}</p>
+          <p className="list-group-item-text">{this.getAddress(city, state, postalCode)}</p>
         </a>
       );
     });
     const activePatient = this.state.patients[this.state.active] || {};
+    const activeMedications = this.state.medications;
     const { givenName, familyName, gender, birthDate, city, state, postalCode } = activePatient;
 
     return (
@@ -55,7 +56,7 @@ class Results extends React.Component {
                 Born: {(birthDate || new Date()).toLocaleString()}<br/>
               </div>
               <address className="pull-right">
-                {city}, {state}, {postalCode}
+                {this.getAddress(city, state, postalCode)}
               </address>
             </div>
 
@@ -63,27 +64,25 @@ class Results extends React.Component {
               <thead>
                 <tr>
                   <th>Medication Name</th>
-                  <th>First Prescribed</th>
+                  <th>Prescribed</th>
+                  <th>Prescriber</th>
                   <th>Repeats</th>
-                  <th>Dosage</th>
                   <th>Quantity</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>NDC</td>
-                  <td>January 1, 2000</td>
-                  <td>0</td>
-                  <td>160 mg</td>
-                  <td>50 pills</td>
-                </tr>
-                <tr>
-                  <td>NDC</td>
-                  <td>January 1, 2000</td>
-                  <td>0</td>
-                  <td>160 mg</td>
-                  <td>50 pills</td>
-                </tr>
+                {activeMedications.map((medication, i) => {
+                  const { dateWritten, repeats, quantity, name, prescriber } = medication;
+                  return (
+                    <tr key={i}>
+                      <td>{name}</td>
+                      <td>{dateWritten.toLocaleString()}</td>
+                      <td>{prescriber}</td>
+                      <td>{repeats}</td>
+                      <td>{quantity}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -96,25 +95,58 @@ class Results extends React.Component {
     $.ajax({
       type: 'GET',
       contentType: 'application/json',
-      url: FHIR_URL,
+      url: `${FHIR_URL}/patient`,
       dataType: 'json'
     }).done((data) => {
-      this.setState({ patients: _.map(data.entry, 'resource').map((patient) => {
-          const officialName = _.first(patient.name, { use: 'official' });
-          const givenName = (officialName.given || []).join(' ');
-          const familyName = (officialName.family || []).join(' ');
-          const gender = patient.gender;
-          const birthDate = new Date(patient.birthDate);
-          const { city, state, postalCode } = patient.address[0];
+      const patients = _.map(data.entry, 'resource').map((patient) => {
+        const officialName = _.first(patient.name, { use: 'official' });
+        const givenName = (officialName.given || []).join(' ');
+        const familyName = (officialName.family || []).join(' ');
+        const gender = patient.gender;
+        const birthDate = new Date(patient.birthDate);
+        const { city, state, postalCode } = patient.address[0];
+        const identifier = patient.identifier[0].value;
 
-          return { givenName, familyName, gender, birthDate, city, state, postalCode };
-        })
+        return { identifier, givenName, familyName, gender, birthDate, city, state, postalCode };
       });
+
+      this.setState({ patients: patients });
+      this.getMedications(patients[0].identifier);
     });
   }
 
   handleClick = (key) => {
-    this.setState({ active: key });
+    this.setState({ active: key }, () => {
+      this.getMedications(this.state.patients[key].identifier);
+    });
+  }
+
+  getAddress(city, state, postalCode) {
+    if (city) {
+      return `${city}, ${state}, ${postalCode}`;
+    } else {
+      return `${state}, ${postalCode}`;
+    }
+  }
+
+  getMedications = (identifer) => {
+    $.ajax({
+      type: 'GET',
+      contentType: 'application/json',
+      url: `${FHIR_URL}/medicationorder?patient=${identifer}`,
+      dataType: 'json'
+    }).done((data) => {
+      this.setState({
+        medications: _.map(data.entry, 'resource').map((medication) => {
+          const dateWritten = new Date(medication.dateWritten);
+          const repeats = medication.dispenseRequest.numberOfRepeatsAllowed;
+          const quantity = medication.dispenseRequest.quantity.value;
+          const name = medication.medicationReference.display;
+          const prescriber = medication.prescriber.display;
+          return { dateWritten, repeats, quantity, name, prescriber };
+        })
+      });
+    });
   }
 }
 
