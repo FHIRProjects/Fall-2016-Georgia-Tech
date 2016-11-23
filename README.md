@@ -12,11 +12,11 @@ FHIR Interface to Controlled Substance Database
 User Interface for FHIR Controlled Substance Database Search Results
 
 ```
-cd FHIR-Interface-to-Controlled-Substance-Database
+cd FHIR-Interface-to-Controlled-Substance-Database/Final\ Project/Final\ Application/Application
 # Optional virtualenv steps to isolate Python environment
 virtualenv env
 source env/bin/activate # On Posix systems, run env\Scripts\activate in Windows
-pip install -r requirements.txt
+pip install -r app/requirements.txt
 ```
 
 To run the web application, execute the following command. You should
