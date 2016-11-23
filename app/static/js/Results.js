@@ -137,13 +137,15 @@ class Results extends React.Component {
       dataType: 'json'
     }).done((data) => {
       this.setState({
-        medications: _.map(data.entry, 'resource').map((medication) => {
+        medications: _.sortBy(_.map(data.entry, 'resource').map((medication) => {
           const dateWritten = new Date(medication.dateWritten);
           const repeats = medication.dispenseRequest.numberOfRepeatsAllowed;
           const quantity = medication.dispenseRequest.quantity.value;
           const name = medication.medicationReference.display;
           const prescriber = medication.prescriber.display;
           return { dateWritten, repeats, quantity, name, prescriber };
+        }), (medication) => {
+          return medication.dateWritten.getTime();
         })
       });
     });
