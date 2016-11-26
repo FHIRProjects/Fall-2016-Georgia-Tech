@@ -21,7 +21,7 @@ class Results extends React.Component {
 
   render() {
     const results = this.state.patients.map((patient, i) => {
-      const { givenName, familyName, gender, birthDate, city, state, postalCode } = patient;
+      const { givenName, familyName, gender, birth, city, state, postalCode } = patient;
       const active = this.state.active === i ? ' active' : '';
       const className = `list-group-item${active}`;
 
@@ -34,10 +34,24 @@ class Results extends React.Component {
     });
     const activePatient = this.state.patients[this.state.active] || {};
     const activeMedications = this.state.medications;
-    const { givenName, familyName, gender, birthDate, city, state, postalCode } = activePatient;
+    const { givenName, familyName, gender, birth, city, state, postalCode } = activePatient;
+    const { identifier, family, given, birthDate } = this.state.criteria || {};
+
+    const searchCritera = !_.isEmpty(this.state.criteria) ? (
+      <div className="well">
+        <b>Search Criteria: </b>
+        {_.filter([
+          identifier ? `Identifier: ${identifier}` : '',
+          family ? `Family Name: ${family}` : '',
+          given ? `Given Name: ${given}` : '',
+          birthDate ? `Birth Date: ${birthDate}` : ''
+        ]).join(', ')}
+      </div>
+    ) : undefined;
 
     return (
       <div>
+        {searchCritera}
         <div className="col-md-4">
           <div className="panel panel-default">
             <div className="panel-heading">Results ({this.state.patients.length})</div>
@@ -52,8 +66,8 @@ class Results extends React.Component {
             <div className="panel-body">
               <div className="pull-left">
                 Gender: {gender}<br/>
-                Age: {getAge(birthDate)}<br/>
-                Born: {(birthDate || new Date()).toLocaleString()}<br/>
+                Age: {getAge(birth)}<br/>
+                Born: {(birth || new Date()).toLocaleString()}<br/>
               </div>
               <address className="pull-right">
                 {this.getAddress(city, state, postalCode)}
@@ -92,10 +106,17 @@ class Results extends React.Component {
   }
 
   componentDidMount() {
+    const identifier = $('input[name=identifier]').val()
+    const family = $('input[name=family]').val()
+    const given = $('input[name=given]').val()
+    const birthDate = $('input[name=birthDate]').val()
+    const criteria = _.pickBy({ identifier, family, given, birthDate });
+
     $.ajax({
       type: 'GET',
       contentType: 'application/json',
       url: `${FHIR_URL}/patient`,
+      data: criteria,
       dataType: 'json'
     }).done((data) => {
       const patients = _.map(data.entry, 'resource').map((patient) => {
@@ -103,14 +124,14 @@ class Results extends React.Component {
         const givenName = (officialName.given || []).join(' ');
         const familyName = (officialName.family || []).join(' ');
         const gender = patient.gender;
-        const birthDate = new Date(patient.birthDate);
+        const birth = new Date(patient.birthDate);
         const { city, state, postalCode } = patient.address[0];
         const identifier = patient.identifier[0].value;
 
-        return { identifier, givenName, familyName, gender, birthDate, city, state, postalCode };
+        return { identifier, givenName, familyName, gender, birth, city, state, postalCode };
       });
 
-      this.setState({ patients: patients });
+      this.setState({ patients, criteria });
       this.getMedications(patients[0].identifier);
     });
   }
