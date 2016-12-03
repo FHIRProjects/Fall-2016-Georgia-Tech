@@ -35,7 +35,7 @@ class Results extends React.Component {
     const activePatient = this.state.patients[this.state.active] || {};
     const activeMedications = this.state.medications;
     const { givenName, familyName, gender, birth, city, state, postalCode } = activePatient;
-    const { identifier, family, given, birthDate } = this.state.criteria || {};
+    const { identifier, family, given, birthdate } = this.state.criteria || {};
 
     const searchCritera = !_.isEmpty(this.state.criteria) ? (
       <div className="well">
@@ -44,7 +44,7 @@ class Results extends React.Component {
           identifier ? `Identifier: ${identifier}` : '',
           family ? `Family Name: ${family}` : '',
           given ? `Given Name: ${given}` : '',
-          birthDate ? `Birth Date: ${birthDate}` : ''
+          birthdate ? `Birth Date: ${birthdate}` : ''
         ]).join(', ')}
       </div>
     ) : undefined;
@@ -109,8 +109,8 @@ class Results extends React.Component {
     const identifier = $('input[name=identifier]').val()
     const family = $('input[name=family]').val()
     const given = $('input[name=given]').val()
-    const birthDate = $('input[name=birthDate]').val()
-    const criteria = _.pickBy({ identifier, family, given, birthDate });
+    const birthdate = $('input[name=birthdate]').val()
+    const criteria = _.pickBy({ identifier, family, given, birthdate });
 
     $.ajax({
       type: 'GET',
