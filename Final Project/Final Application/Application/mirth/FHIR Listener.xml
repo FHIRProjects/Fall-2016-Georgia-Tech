@@ -13,10 +13,10 @@
 Some of the queries used are specific to PostgreSQL, and will require tweaking for other databases.</description>
   <enabled>true</enabled>
   <lastModified>
-    <time>1480776295962</time>
+    <time>1480791175793</time>
     <timezone>America/New_York</timezone>
   </lastModified>
-  <revision>98</revision>
+  <revision>99</revision>
   <sourceConnector version="3.4.2">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -3118,9 +3118,10 @@ function addXPath(xpath, whereParts, params) {
 
 	// Reject requests with parameters that aren&apos;t supported
 	for each (key in $(&apos;parameters&apos;).getKeys().toArray()) {
-		if (supportedParameters.indexOf(key.toLowerCase()+&apos;&apos;) &lt; 0) {
+		if (supportedParameters.indexOf(key+&apos;&apos;) &lt; 0) {
 			return createOperationOutcome(&apos;error&apos;, &apos;invalid&apos;, &apos;Unknown or unsupported parameter &apos; + key + &apos;.&apos;);
 		}
+		
 	}
 
 	var _id = $(&apos;parameters&apos;).getParameter(&apos;_id&apos;);
@@ -3373,6 +3374,8 @@ function nullToEmptyString(str) {
 		return str;
 	}
 }
+
+
 </script>
       </properties>
       <transformer version="3.4.2">
@@ -3494,7 +3497,7 @@ try {
 
 	// Reject requests with parameters that aren&apos;t supported
 	for each (key in $(&apos;parameters&apos;).getKeys().toArray()) {
-		if (supportedParameters.indexOf(key.toLowerCase()+&apos;&apos;) &lt; 0) {
+		if (supportedParameters.indexOf(key+&apos;&apos;) &lt; 0) {
 			return createOperationOutcome(&apos;error&apos;, &apos;invalid&apos;, &apos;Unknown or unsupported parameter &apos; + key + &apos;.&apos;);
 		}
 	}
