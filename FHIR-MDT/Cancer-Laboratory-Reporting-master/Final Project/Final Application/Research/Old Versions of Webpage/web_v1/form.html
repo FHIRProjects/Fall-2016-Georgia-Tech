@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lung Cancer Form</title>
+	</head>
+
+	<body>
+		<style>
+		#iframe{
+			width:80%;
+			height:450px;
+		}
+
+		#div{
+			width:80%;
+			text-align:right;
+		}
+
+		#button{
+			height:30px;
+			width:150px;
+			font-size:20px;
+			font-family:Times;
+		}
+		</style>
+		
+		<script type="text/javascript">
+			function submit() {
+				alert("The form has been successfully submitted!");
+				window.location.href = "homepage.html";
+			}
+		</script>
+
+		<h2>FHIR Questionnaire for Lung Cancer</h2>
+		<p>Instructions: Please double check your fillings before submit the form to state cancer registry!</p>
+
+		<iframe id="iframe" src="Lung.xml">
+  			<p>Your browser does not support iframes.</p>
+		</iframe>
+		
+		
+		<div id="div">
+			<button id="button" onclick="submit()">Submit</button>
+		</div>
+	</body>
+</html>

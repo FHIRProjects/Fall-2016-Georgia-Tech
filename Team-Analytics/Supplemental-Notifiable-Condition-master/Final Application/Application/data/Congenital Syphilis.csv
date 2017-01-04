@@ -1,0 +1,275 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+RECTYPE,"Record type will determine how the record is handled when it arrives at CDC.  
+",Value for case data:   M=MMWR report
+UPDATE,Currently not implemented. ,(Pad with a 9)
+STATE,"Reporting State FIPS code - (e.g., ""06"", ""13"").",
+YEAR,MMWR Year (2-digits) for which case information reported to CDC.,
+CASEID,Unique Case ID (numeric only) assigned by the state.,
+SITE,Location code used by the state to indicate where report originated and who has responsibility for maintaining the record. (NOTE: STD*MIS software substitutes a '#' for the leading 'S' in codes listed). ,"S01=State epidemiologist
+S02=State STD Program
+S03=State Chronic Disease Program
+S04-S99=Other state offices
+R01-R99=Regional or district offices
+001-999=County health depts (FIPS codes)
+L01-L99=Laboratories within state
+CD1=Historical records (prior to new format)
+CD2=Entered at CDC (based on phone reports)"
+WEEK,"MMWR Week on Surveillance Calendar, i.e., week for which case information reported to CDC.",
+EVENT,Event (disease) code for the disease being reported.,10316=Syphilis (congenital)
+COUNT,"For case records this field will always contain ""00001"".",
+COUNTY,FIPS code for reporting county (999=Unknown) ,
+BIRTHDATE,Date of birth of infant in YYYYMMDD format (99999999=Unknown) ,
+AGE,"Estimated Gestational Age in weeks - (e.g., ""038"", ""042"") (999= Unknown)",
+AGETYPE,Indicates the units (weeks) for the AGE field.,"2=0-52 Weeks
+9=Gestational Age Unknown (AGE field should be 999)
+"
+RACE,Race of Mother.,"1=American Indian/Alaskan Native
+2=Asian or Pacific Islander
+3=Black
+5=White
+8=Other
+9=Unknown
+NOTE: Please use only one of the codes above if a single race was  selected.  If multiple races were selected, enter code 8=Other for Race and also select the appropriate race categories that apply in columns 238-244.
+"
+HISPANIC,Indicator for Mother's Hispanic ethnicity.,"1=Hispanic/Latino
+2=Non-Hispanic/Latino
+9=Unknown
+"
+EVENTDATE,Date of Report to Health Department in YYMMDD format ,
+DATETYPE,A code describing the type of date provided in EVENTDATE.,4=Date of first report to community health system
+CASE STATUS,Recode of Case Classification.,"1=Confirmed, Probable, or Syphilitic stillbirth
+2=Not a case
+9=Unknown
+"
+OUTBREAK,Indicates whether the case was associated with an outbreak.,"1=Yes
+2=No
+9=Unknown
+"
+INFOSRCE,Information Source/Provider Codes (from Interview Record if available).,"01=HIV Counseling and Testing Site
+02=STD clinic
+03=Drug Treatment
+04=Family Planning
+06=Tuberculosis clinic
+07=Other Health Department clinic
+08=Private Physician/HMO
+10=Hospital-Emergency Room; Urgent Care Facility
+11=Correctional Facility
+12=Laboratory
+13=Blood Bank
+14=Labor and Delivery
+15=Prenatal
+16=National Job Training Program
+17=School-based Clinic
+18=Mental Health Provider
+29=Hospital-Other
+66=Indian Health Service
+77=Military
+88=Other
+99=Unknown (if data not available)
+"
+DETECTED,Method of Case Detection (from Interview Record if available).,"20=Screening
+21=Self-referred
+22=Patient referred partner
+23=Health Department referred partner
+24= Cluster related
+88=Other
+99=Unknown
+"
+MZIP,Zip Code for Mother's Residence ,99999=Unknown (if data not available)
+MSTATE,FIPS Code for Mother's State of Residence.  Code 98 for Mexico and 97 for any other non-USA residence. (999=Unknown),
+MCOUNTY,FIPS Code for Mother's County of Residence.  Code 998 for Mexico and 997 for any other non-USA residence. (999=Unknown),
+MBIRTH,Mother's Date of Birth in YYYYMMDD format. (99999999=Unknown),
+MARITAL,Mother's Marital Status.,"1=Single, never married
+2=Married
+3=Separated/Divorced
+4=Widow
+8=Other
+9=Unknown
+"
+LMP,Date of Mother's Last Menstrual Period before delivery in YYYYMMDD format. (99999999=Unknown),
+PRENATAL,Did mother have prenatal care?,"0=No prenatal care 
+9=Unknown
+"
+PNCDATE1,Date of mother's first prenatal visit in YYYYMMDD format. (99999999=Unknown),
+DATEA,Date of mother's most recent non-treponemal test in YYYYMMDD format. (99999999=Unknown),
+RESULTA,Result of mother's most recent non-treponemal test.,"1=Reactive 
+2=Nonreactive 
+9=Unknown
+"
+DATEB,Date of mother's first non-treponemal test in YYYYMMDD format. (99999999=Unknown),
+RESULTB,Result of mother's first non-treponemal test.,"1=Reactive 
+2=Nonreactive 
+9=Unknown
+"
+TITER,Titer of mother's most recent non-treponemal test.   (The titer for date b is in columns 214-217).,"0=weakly reactive
+9999=Unknown
+"
+VITAL,Vital status of infant/child.,"1=Alive
+2=Born alive, then died
+3=Stillborn
+9=Unknown
+"
+DEATHDAT,Date of death of infant/child in YYYYMMDD format.,"(If alive, pad with 99999999)
+(99999999=Unknown)
+"
+BIRTHWT,Birthweight in grams (9999=Unknown),
+REACSTS,Did infant/child have reactive non-treponemal test for syphilis?,"1=Yes 
+2=No 
+3=No test
+9=Unknown
+"
+REACDATE,Date of infant/child's first reactive non-treponemal test for syphilis in YYYYMMDD format. (99999999=Unknown),
+DARKFLD,"Did the infant/child, placenta, or cord have darkfield exam, DFA, or special stains?","1=Yes, positive
+2=Yes, negative
+3=No test
+4=No lesions and no tissue to test
+9=Unknown
+"
+XRAYS,Did infant/child have long bone x-rays?,"1=Yes, changes consistent with CS
+2=Yes, no signs of CS
+3=No x-rays
+9=Unknown
+"
+CSFVDRL,Did infant/child have a CSF-VDRL?,"1= Yes, reactive
+2=Yes, nonreactive
+3=No test
+9=unknown
+"
+TREATED,Was infant/child treated?,"1=Yes, with Aqueous or Procaine Penicillin for 10 days
+3=Yes, with Benzathine penicillin x 1
+4=Yes, with other treatment
+5=No treatment
+9=Unknown
+"
+CLASS,Case Classification.,"1=Not a case
+2=Confirmed Case (laboratory confirmed identification of  T.pallidum, e.g., darkfield or direct fluorescent antibody positive lesions)
+3=Syphilitic stillbirth
+4=Probable case (a case identified by the algorithm, which is not a confirmed case or syphilitic stillbirth)
+"
+ID126,CDC 73.126 form Case ID number   (9999999=Unknown),
+VERSION,CDC 73.126 Form Version.,41306.0
+TITERB,Titer of mother's first non-treponemal test b. ,"0=weakly reactive
+9999=Unknown
+Note: All entries should be left justified (no preceding or trailing zeroes). Example: If titer is 1:64, enter 64; if titer is 1:1024, enter 1024.
+"
+INFTITER,Titer of infant/child's first reactive non-treponemal test for syphilis.,"0=weakly reactive
+9999=Unknown
+Note: All entries should be left justified (no preceding or trailing zeroes). Example: If titer is 1:64, enter 64; if titer is 1:1024, enter 1024.
+"
+AMIND,American Indian/Alaskan Native:,If mother multi-racial: 1 = Yes; 2 = No; Otherwise pad with a 9.
+ASIAN,Asian:,If mother multi-racial: 1 = Yes; 2 = No; Otherwise pad with a 9.
+BLACK,Black:,If mother multi-racial: 1 = Yes; 2 = No; Otherwise pad with a 9.
+WHITE,White:,If mother multi-racial: 1 = Yes; 2 = No; Otherwise pad with a 9.
+NAHAW,Native Hawaiian or Other Pacific Islander:,If mother multi-racial: 1 = Yes; 2 = No; Otherwise pad with a 9.
+RACEOTH,Other Race:,If mother multi-racial: 1 = Yes; 2 = No; Otherwise pad with a 9.
+RACEUNK,Unknown Race:,If mother multi-racial: 1 = Yes; 2 = No; Otherwise pad with a 9.
+MCOUNTRY,Mother's country of residence. (XX=Unknown),
+REACTREP,Did infant/child have reactive treponemal test?,"1 = Yes
+2 = No
+3 = No test
+9 = Unknown
+"
+RTDATE,Date of infant/child's reactive treponemal test in YYYYMMDD format.  (99999999=Unknown),
+STD IMPORT,Was case imported? Was disease acquired elsewhere? Indicates probable location of disease acquisition relative to reporting state values.,"N = Not an imported case
+C = Yes, imported from another country
+S = Yes, imported from another state
+J = Yes, imported from another county/jurisdiction in the state
+D = Yes, imported but not able to determine source state and/or country
+U = Unknown
+"
+GRAVIDA,Number of pregnancies (e.g. 01) (99=Unknown),
+PARA,Number of live births (e.g. 03) (99=Unknown),
+PNCTRI,Trimester of mother's first prenatal visit.," 1 = 1st trimester 
+ 2 = 2nd trimester
+ 3 = 3rd trimester 
+ 9 = Unknown
+"
+TESTVISA,Did mother have non-treponemal or treponemal test at first prenatal visit?,"1 = Yes
+2 = No
+9 = Unknown
+"
+TESTVISB,Did mother have non-treponemal or treponemal test at 28-32 weeks gestation?,"1 = Yes
+2 = No
+9 = Unknown
+"
+TESTVISC,Did mother have non-treponemal or treponemal test at delivery?,"1 = Yes
+2 = No
+9 = Unknown
+"
+TREPDTA,Date of mother's first treponemal test in YYYYMMDD format. (99999999=Unknown),
+TESTTYPA,Test type of mother's first treponemal test.,"1 = EIA or CLIA
+2 = TP-PA
+3 = Other
+9 = Unknown
+"
+TREPRESA,Result of mother's first treponemal test.,"1 = Reactive
+2 = Nonreactive
+9 = Unknown
+"
+TREPDTB,Date of mother's most recent treponemal test in YYYYMMDD format. (99999999=Unknown),
+TESTTYPB,Test type of mother's most recent treponemal test.,"1 = EIA or CLIA
+2 = TP-PA
+3 = Other
+9 = Unknown
+"
+TREPRESB,Result of mother's most recent treponemal test.,"1 = Reactive
+2 = Nonreactive
+9 = Unknown
+"
+HIVSTAT,What was mother's HIV status during pregnancy?,"P = Positive
+E = Equivocal test
+X = Patient not tested
+N = Negative
+U = Unknown
+"
+CLINSTAG,What clinical stage of syphilis did mother have during pregnancy?,"1 =Primary
+2 = Secondary
+3 = Early latent
+4 = Late or late latent
+5 = Previously treated/serofast
+8 = Other
+9 = Unknown
+"
+SURVSTAG,What surveillance stage of syphilis did mother have during pregnancy?,"1 = Primary
+2 = Secondary
+3 = Early latent
+4 = Late or late latent
+8 = Other
+9 = Unknown
+"
+FIRSTDT,Date of mother's first dose of benzathine penicillin in YYYYMMDD format. (99999999=Unknown),
+FIRSTDOS,When did mother receive her first dose of benzathine penicillin?,"1 = Before pregnancy
+2 = 1st trimester
+3 = 2nd trimester
+4 = 3rd trimester
+5 = No Treatment
+9 = Unknown
+"
+MOMTX,What was mother's treatment?,"1 = 2.4 M units benzathine penicillin
+2 = 4.8 M units benzathine penicillin
+3 = 7.2 M units benzathine penicillin
+8 = Other
+9 = Unknown
+"
+RESPAPP2,Did mother have an appropriate serologic response?,"1 = Yes, appropriate response
+2 = No, inappropriate response: evidence of treatment failure or   reinfection
+3 = Response could not be determined from available non-treponemal titer information
+4 = Not enough time for titer to change
+"
+CLINNO,No signs/asymptomatic?,1 = Yes; Otherwise pad with a 9.
+CLINLATA,Condyloma lata?,1 = Yes; Otherwise pad with a 9.
+CLINSNUF,Snuffles?,1 = Yes; Otherwise pad with a 9.
+CLINRASH,Syphilitic skin rash?,1 = Yes; Otherwise pad with a 9.
+CLINHEPA,Hepatosplenomegaly?,1 = Yes; Otherwise pad with a 9.
+CLINJUAN,Jaundice/Hepatitis?,1 = Yes; Otherwise pad with a 9.
+CLINPARA,Pseudo paralysis?,1 = Yes; Otherwise pad with a 9.
+CLINEDEM,Edema?,1 = Yes; Otherwise pad with a 9.
+CLINOTH,Other signs of CS?,1 = Yes; Otherwise pad with a 9.
+CLINUNK,Unknown signs of CS?,1 = Yes; Otherwise pad with a 9.
+CSFWBC,Did the infant/child have a CSF WBC count or CSF protein test?,"1 = Yes, CSF WBC count elevated
+2 = Yes, CSF protein elevated
+3 = Both tests elevated
+4 = Neither test elevated
+5 = No test
+9 = Unknown
+"

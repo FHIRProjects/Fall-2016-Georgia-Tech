@@ -1,0 +1,22 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action),Group,Group Description,Resource
+AnimalID,Unique ID for animal submitted for rabies diagnosis,,Animal Information,Information related to an animal infected with the disease in question,Patient
+Date Collected,Date animal collected for rabies diagnosis,,Animal Information,Information related to an animal infected with the disease in question,Patient
+Species,Species of animal submitted for rabies diagnosis,PHVS_AnimalSpecies_AnimalRabies,Animal Information,Information related to an animal infected with the disease in question,Patient
+Sex,Sex of animal,PHVS_Sex_MFU,Animal Information,Information related to an animal infected with the disease in question,Patient
+Age,Age category of animal,PHVS_AnimalAgeCategory_NND,Animal Information,Information related to an animal infected with the disease in question,Patient
+Vax Status,Rabies vaccination status of animal submitted for rabies diagnosis,PHVS_YesNoUnknown_CDC,Animal Information,Information related to an animal infected with the disease in question,Patient
+Human Exposure,Was there a potential human exposure to the animal submitted,PHVS_YesNoUnknown_CDC,Animal Information,Information related to an animal infected with the disease in question,Patient
+Animal Exposure,Was there a potential domestic animal exposure ot the animal submitted,PHVS_YesNoUnknown_CDC,Animal Information,Information related to an animal infected with the disease in question,Patient
+Latitude,Latitutde of Animal Collection,,Animal Information,Information related to an animal infected with the disease in question,Patient
+Longitude,Longitude of animal collection,,Animal Information,Information related to an animal infected with the disease in question,Patient
+Address,Street Address of animal collection,,Animal Information,Information related to an animal infected with the disease in question,Patient
+City,City of animal collection,PHVS_City_USGS_GNIS,Animal Information,Information related to an animal infected with the disease in question,Patient
+County,County of animal collection,PHVS_County_FIPS_6-4,Animal Information,Information related to an animal infected with the disease in question,Patient
+State,State of animal collection,PHVS_State_FIPS_5-2,Animal Information,Information related to an animal infected with the disease in question,Patient
+ZipCode,Zip Code of animal collection,,Animal Information,Information related to an animal infected with the disease in question,Patient
+DFAResult,Results of direct flourescent antibody test,PHVS_PosNegUnk_CDC,Lab Tests,Results of lab tests,Specimen
+Date DFA,Date tested by DFA,,Lab Tests,Results of lab tests,Specimen
+DRIT Result,Results of direct rapid immunohistochemistry test,PHVS_PosNegUnk_CDC,Lab Tests,Results of lab tests,Specimen
+Date DRIT,Date tested by DRIT,,Lab Tests,Results of lab tests,Specimen
+Variant,Rabies virus variant if typed,PHVS_VirusVariantType_AnimalRabies,Specimen,Information on a specimen,Specimen
+DateTyped,Date rabies virus typed,,Specimen,Information on a specimen,Specimen

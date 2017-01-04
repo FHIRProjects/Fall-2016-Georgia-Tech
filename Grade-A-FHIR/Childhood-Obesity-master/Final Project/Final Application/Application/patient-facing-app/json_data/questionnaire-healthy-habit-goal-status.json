@@ -1,0 +1,222 @@
+{
+    "status": "draft",
+    "publisher": "GT CS8903 HOC Team",
+    "group": {
+        "linkId": "root",
+        "group": [
+            {
+                "linkId": "1",
+                "question": [
+                    {
+                        "option": [
+                            {
+                                "code": "1",
+                                "display": "We have already achieved the goal"
+                            },
+                            {
+                                "code": "2",
+                                "display": "We are working on the goal"
+                            },
+                            {
+                                "code": "3",
+                                "display": "We are not working on the goal"
+                            }
+                        ],
+                        "linkId": "1.1",
+                        "required": true,
+                        "text": "What type of progress has been made towards achieving the goal?",
+                        "repeats": false,
+                        "type": "integer"
+                    }
+                ],
+                "text": "1. "
+            },
+            {
+                "linkId": "2",
+                "question": [
+                    {
+                        "option": [
+                            {
+                                "code": "1",
+                                "display": "Yes"
+                            },
+                            {
+                                "code": "2",
+                                "display": "No"
+                            },
+                            {
+                                "code": "3",
+                                "display": "Not applicable"
+                            }
+                        ],
+                        "linkId": "2.1",
+                        "required": false,
+                        "text": "If the goal has already been achieved, is the healthy behavior being maintained?",
+                        "repeats": false,
+                        "type": "integer"
+                    }
+                ],
+                "text": "2. "
+            },
+            {
+                "linkId": "3",
+                "question": [
+                    {
+                        "option": [
+                            {
+                                "code": true,
+                                "display": "Yes"
+                            },
+                            {
+                                "code": false,
+                                "display": "No"
+                            }
+                        ],
+                        "linkId": "3.1",
+                        "required": true,
+                        "text": "Lack of time",
+                        "repeats": false,
+                        "type": "boolean"
+                    },
+                    {
+                        "option": [
+                            {
+                                "code": true,
+                                "display": "Yes"
+                            },
+                            {
+                                "code": false,
+                                "display": "No"
+                            }
+                        ],
+                        "linkId": "3.2",
+                        "required": true,
+                        "text": "Lack of resources",
+                        "repeats": false,
+                        "type": "boolean"
+                    },
+                    {
+                        "option": [
+                            {
+                                "code": true,
+                                "display": "Yes"
+                            },
+                            {
+                                "code": false,
+                                "display": "No"
+                            }
+                        ],
+                        "linkId": "3.3",
+                        "required": true,
+                        "text": "Lack of support",
+                        "repeats": false,
+                        "type": "boolean"
+                    },
+                    {
+                        "option": [
+                            {
+                                "code": true,
+                                "display": "Yes"
+                            },
+                            {
+                                "code": false,
+                                "display": "No"
+                            }
+                        ],
+                        "linkId": "3.4",
+                        "required": true,
+                        "text": "Low motivation",
+                        "repeats": false,
+                        "type": "boolean"
+                    },
+                    {
+                        "option": [
+                            {
+                                "code": true,
+                                "display": "Yes"
+                            },
+                            {
+                                "code": false,
+                                "display": "No"
+                            }
+                        ],
+                        "linkId": "3.5",
+                        "required": true,
+                        "text": "Injuries or illness",
+                        "repeats": false,
+                        "type": "boolean"
+                    },
+                    {
+                        "option": [
+                            {
+                                "code": true,
+                                "display": "Yes"
+                            },
+                            {
+                                "code": false,
+                                "display": "No"
+                            }
+                        ],
+                        "linkId": "3.6",
+                        "required": true,
+                        "text": "Other",
+                        "repeats": false,
+                        "type": "boolean"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen",
+                                "extension": [
+                                    {
+                                        "url": "question",
+                                        "valueString": "3.6"
+                                    },
+                                    {
+                                        "url": "answered",
+                                        "valueBoolean": true
+                                    },
+                                    {
+                                        "url": "answer",
+                                        "valueBoolean": true
+                                    }
+                                ]
+                            }
+                        ],
+                        "linkId": "3.7",
+                        "required": false,
+                        "text": "If Other, please specify:",
+                        "repeats": false,
+                        "type": "text"
+                    },
+                    {
+                        "option": [
+                            {
+                                "code": true,
+                                "display": "Yes"
+                            },
+                            {
+                                "code": false,
+                                "display": "No"
+                            }
+                        ],
+                        "linkId": "3.8",
+                        "required": false,
+                        "text": "None of the above made it difficult to achieve the goal",
+                        "repeats": false,
+                        "type": "boolean"
+                    }
+                ],
+                "text": "3. Did any of the following make it difficult to achieve the goal? (Check all that apply)"
+            }
+        ],
+        "title": "Healthy Habits Goal Status"
+    },
+    "resourceType": "Questionnaire",
+    "date": "2016-07-31",
+    "identifier": [
+        {
+            "value": "questionnaire-healthy-habit-goal-status"
+        }
+    ]
+}

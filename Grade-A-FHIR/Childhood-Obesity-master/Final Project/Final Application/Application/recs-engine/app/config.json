@@ -1,0 +1,8 @@
+{
+  "fhir_base_url": "http://52.72.172.54:8080/fhir/baseDstu2",
+
+  "google_places": {
+  	"api_base_url": "https://maps.googleapis.com/maps/api/place",
+  	"api_key": "AIzaSyC9HEIhjdO4izAs1aW5WIXjMHJONcAwbeQ"
+  }
+}

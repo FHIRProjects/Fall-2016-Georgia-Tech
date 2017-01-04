@@ -1,0 +1,155 @@
+div class="row">
+<div class="col-md-12 panel panel-default">
+    <div class="row">
+        <div class="panel-heading"><h4>Filters: </h4></div>
+        <div class="col-md-12" data-ng-if="loadDates">
+            <div class="col-md-3">
+                Start Date
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup ng-model="data.StartDate" is-open="popup1.opened"
+                           datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="open1()">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+                    </span>
+                </p>
+            </div>
+            <div class="col-md-3">
+                End Date
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup ng-model="data.EndDate" is-open="popup2.opened"
+                           datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="open2()">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+                    </span>
+                </p>
+            </div>
+            <div class="col-md-3" style="padding-right:0px">
+                Ethnicity
+                <br>
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" data-ng-class="{'activeButton': activeEthnicityButtons.Caucasian}"
+                            data-ng-click="changeEthnicity('Caucasian')" class="btn btn-default special-button">
+                        White
+                    </button>
+                    <button type="button" data-ng-class="{'activeButton': activeEthnicityButtons.Hispanic}"
+                            data-ng-click="changeEthnicity('Hispanic')" class="btn btn-default special-button">
+                        Hispanic
+                    </button>
+                    <button type="button" data-ng-class="{'activeButton': activeEthnicityButtons.Black}"
+                            data-ng-click="changeEthnicity('Black')" class="btn btn-default special-button">
+                        Black
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-2" style="padding-right:0px">
+                Gender
+                <br>
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" data-ng-class="{'activeButton': activeGenderButtons.Male}"
+                            data-ng-click="changeGender('Male')" class="btn btn-default special-button">
+                        Male
+                    </button>
+                    <button type="button" data-ng-class="{'activeButton': activeGenderButtons.Female}"
+                            data-ng-click="changeGender('Female')" class="btn btn-default special-button">
+                        Female
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-3">
+                Counties (comma delimited)
+                <p class="input-group">
+                    <input type="text" class="form-control" ng-model="counties" />
+                </p>
+            </div>
+            <div class="col-md-3">
+                Zip Codes (comma delimited)
+                <p class="input-group">
+                    <input type="text" class="form-control" ng-model="zipCodes" />
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12">
+                Ages
+                <rzslider rz-slider-model="data.StartAge"
+                          rz-slider-high="data.EndAge"
+                          rz-slider-options="sliderAgeFilter.options"></rzslider>
+            </div>
+        </div>
+        <div class="col-md-12" style="padding:15px;">
+            <button type="button" data-ng-click="updateUI()" class="btn btn-default btn-primary">Update</button>
+        </div>
+    </div>
+</div>
+<div class="col-md-12  panel panel-default">
+    <div><h4>Charts: </h4></div>
+    Toggle Different Series: &nbsp; &nbsp;
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" data-ng-class="{'activeButton': activeSeriesButtons.hemoglobin}"
+                data-ng-click="changeButton('hemoglobin')" class="btn btn-default special-button">
+            Hemoglobin
+        </button>
+        <button type="button" data-ng-class="{'activeButton': activeSeriesButtons.bmi}"
+                data-ng-click="changeButton('bmi')" class="btn btn-default special-button">
+            BMI
+        </button>
+        <!-- <button type="button" data-ng-class="{'activeButton': activeSeriesButtons.age}" data-ng-click="changeButton('age')" class="btn btn-default special-button">Age</button> -->
+    </div>
+    <highchart id="chart1" config="optionsRight"></highchart>
+    <div class="col-md-12 contain">
+        <div class="col-md-6" style="margin-top:10px;">
+            Toggle Different Maps: &nbsp; &nbsp;
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" data-ng-class="{'activeButton': activeMapButtons.hemoglobin}"
+                        data-ng-click="changeMapButtons('hemoglobin')" class="btn btn-default special-button">
+                    Hemoglobin
+                </button>
+                <button type="button" data-ng-class="{'activeButton': activeMapButtons.bmi}"
+                        data-ng-click="changeMapButtons('bmi')" class="btn btn-default special-button">
+                    BMI
+                </button>
+                <!-- <button type="button" data-ng-class="{'activeButton': activeSeriesButtons.age}" data-ng-click="changeButton('age')" class="btn btn-default special-button">Age</button> -->
+            </div>
+            <div data-ng-if="showMap">
+                <highchart config="mapConfig"></highchart>
+            </div>
+            <div data-ng-if="!showMap">
+                <div style="width:700px;height:400px;padding-top:20%;padding-left:40%;">
+                    <div style="font-weight:bold">LOADING MAP...</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div data-ng-if="showPie">
+                <highchart config="pieConfig"></highchart>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="col-md-12  panel panel-default">
+    <div>
+        <h4>
+            Raw Data: <span style="color:blue;float:right;margin-left:50px;font-size:13px;" data-ng-if="refreshing">Refreshing Data and Graph... Please Wait</span>
+        </h4>
+    </div>
+    <!--
+    <b>Age Filter:</b>
+    <rzslider
+            rz-slider-model="slider.minValue"
+            rz-slider-high="slider.maxValue"
+            rz-slider-options="slider.options"></rzslider>
+    <br>
+    <br>
+    -->
+    <div ui-grid="gridOptions" class="myGrid"></div>
+    <br>
+</div>
+</div>

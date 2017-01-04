@@ -1,0 +1,24 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+City,Patients City of Residence,PHVS_City_USGS_GNIS
+State,Patients State of Residence,PHVS_State_FIPS_5-2
+Country,Patients Country of Residence,PHVS_Country_ISO_3166-1
+Occupation,Patients Occupation,PHVS_Occupation_CDC
+Gender,Patients Gender,PHVS_Sex_MFU
+Age,Patients Age,
+Race,Patients Race,PHVS_RaceCategory_CDC_Unk
+Ethnicity,Patients Ethnicity,PHVS_EthnicityGroup_CDC_Unk
+Animal Exposure,Did patient have a history of an animal exposure,PHVS_YesNoUnknown_CDC
+Animal Species,What type of animal was involved in the Exposure,PHVS_AnimalSpecies_AnimalRabies
+Animal State,What state did the animal exposure occur in,PHVS_State_FIPS_5-2
+Animal Country,What country did the animal exposure occur in,PHVS_Country_ISO_3166-1
+Type of Exposure,What type of exposure occurred,
+Vaccination status,Was the patient vaccinated for rabies prior to onset of symptoms,PHVS_YesNoUnknown_CDC
+Travel,Did the patient have a recent (prior 12 months) history of travel?,PHVS_YesNoUnknown_CDC
+Travel State,What state did the patient travel to,PHVS_State_FIPS_5-2
+Travel Country,What country did the patient travel to,PHVS_Country_ISO_3166-1
+Travel DateStart,When did the trip begin,
+Travel DateEnd,When did the trip end,
+Onset,Date Symptoms began,
+Hospitalized,Date patient hospitalized,
+Death,Date patient died,
+Variant,What rabies virus variant was responsible for the infection,PHVS_VirusVariantType_AnimalRabies

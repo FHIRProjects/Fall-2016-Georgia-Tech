@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FAFAFA">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E4072"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Questionnaire"
+            android:id="@+id/Questionnaire"
+            android:layout_weight=".5"
+            android:textColor="#E2E2E2"
+            android:gravity="center_vertical|center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrimaryLanguage"
+                android:text="1. Primary langauge"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etPrimaryLanguage"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvEducation"
+                android:text="2. Education completed"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etEducation"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPeopleInHousehold"
+                android:text="3. Number of people in household"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etPeopleInHousehold"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvJobs"
+                android:text="4. Number of jobs"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etJobs"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvImpairment"
+                android:text="5. Visual, hearing, or mobility impairment?"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etImpairment"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProblemsSwallowing"
+                android:text="6. Problems with swallowing?"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etProblemsSwallowing"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNearestPharmacy"
+                android:text="7. Distance to nearest pharmacy"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etNearestPharmacy"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTreatmentInterference"
+                android:text="8. Does treatment interfere with your lifestyle or require significant behavorial change?"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etTreatmentInterference"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProviders"
+                android:text="9. Number of different providers seen in past year"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etProviders"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMedicationCost"
+                android:text="10. Is the cost of medication a concern?"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etMedicationCost"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVehicles"
+                android:text="11. Number of vehicles in the family"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:id="@+id/etVehicles"
+                android:paddingLeft="25dp"
+                tools:inputType="text"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonSubmit"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

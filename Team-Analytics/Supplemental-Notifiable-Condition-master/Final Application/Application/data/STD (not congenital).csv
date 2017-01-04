@@ -1,0 +1,152 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action),Approved by OMB
+Notification ID,The unique identifier for the notification record  ,,
+Receiving Application,CDC's PHIN Common Data Store (CDS) is the Receiving Application for this message.,,
+Message Profile ID,"First instance is the reference to the structural specification used to validate the message.
+
+Second instance is the reference to the PHIN Message Mapping Guide from which the content is derived.",,
+Local Subject ID,The local ID of the subject/entity.,,
+Subject Name Type,"Name is not requested by the program, but the Patient Name field is required to be populated for the HL7 message to be valid.  Have adopted the HL7 convention for processing a field where the name has been removed for de-identification purposes.",PHVS_NameType_HL7_2x,
+Local Record ID,"Sending system-assigned local ID of the case investigation with which the subject is associated.
+
+
+Note: The local record ID should be the unique identifier for the case being reported. ",,
+Subject Type,"Type of subject for the notification.  ""Person,"" ""Place/Location,"" or ""Non-Person Living Subject"" are the appropriate subject types for Notifications to CDC.",PHVS_NotificationSectionHeader_CDC,
+Notification Type,"Type of notification. Notification types are ""Individual Case,""  ""Environmental,"" ""Summary,"" and ""Laboratory Report"".",PHVS_NotificationSectionHeader_CDC,
+Date First Submitted,Date/time the notification was first sent to CDC.  This value does not change after the original notification.  ,,
+Date of Report,"Date/time this version of the notification was sent.  It will be the same value as NOT103 for the original notification.  For updates, this is the update/send date/time.",,
+Notification Result Status,Status of the notification.,PHVS_ResultStatus_NND,
+Immediate National Notifiable Condition,Does this case meet the criteria for immediate (extremely urgent or urgent) notification to CDC? ,PHVS_NationalReportingJurisdiction_NND,
+Reporting State,State reporting the notification. ,PHVS_State_FIPS_5-2,
+Reporting County,County reporting the notification.,PHVS_County_FIPS_6-4,
+National Reporting Jurisdiction,National jurisdiction reporting the notification to CDC.,PHVS_NationalReportingJurisdiction_NND,
+Condition Code,Condition or event that constitutes the reason the notification is being sent,PHVS_NotifiableEvent_Disease_Condition_CDC_NNDSS,
+Birth Date,Date of birth in YYYYMMDD format,,
+Subject's Sex,Subject's current sex,,
+Race Category,Field containing one or more codes that broadly refer to the subject's race(s).,PHVS_RaceCategory_CDC,
+Subject Address County,County of residence of the subject,PHVS_County_FIPS_6-4,
+Subject Address State,State of residence of the subject,PHVS_State_FIPS_5-2,
+Subject Address ZIP Code,ZIP Code of residence of the subject,,
+Ethnic Group Code,Based on the self-identity of the subject as Hispanic or Latino ,PHVS_EthnicityGroup_CDC_Unk,
+Country of Birth ,Country of Birth,PHVS_CountryofBirth_CDC,
+Census tract of case-patient residence,Census tract where the address is located is a unique identifier associated with a small statistical subdivision of a county. Census tract data allows a user to find population and housing statistics about a specific part of an urban area. A single community may be composed of several census tracts.,,
+Country of Usual Residence,"Where does the person usually* live (defined as their residence)
+
+*For the definition of 'usual residence' refer to CSTE position statement # 11-SI-04 titled ""Revised Guidelines for Determining Residency for Disease Reporting""  at http://www.cste.org/ps2011/11-SI-04.pdf .",PHVS_CountryofBirth_CDC,
+Jurisdiction Code,Identifier for the physical site from which the notification is being submitted.,,
+Case Investigation Status Code,Status of the investigation,PHVS_CaseInvestigationStatus_NND,
+Investigation Date Assigned,Date the investigator was assigned to this investigation.,,
+Date of Report/Referral,Date the event or illness was first reported by the reporting source (physician or lab reported to the local/county/state health department).,,
+Reporting Source Type Code,Type of facility or provider associated with the source of information sent to Public Health.,PHVS_ReportingSourceType_NND,
+Reporting Source ZIP Code,ZIP Code of the reporting source for this case.,,
+Earliest Date Reported to County,Earliest date reported to county public health system,,
+Earliest Date Reported to State,Earliest date reported to state public health system,,
+Hospitalized,Was subject hospitalized because of this event?,PHVS_YesNoUnknown_CDC,
+Admission Date,Subject's admission date to the hospital for the condition covered by the investigation.,,
+Discharge Date,Subject's discharge date from the hospital for the condition covered by the investigation.,,
+Duration of hospital stay in days,Subject's duration of stay at the hospital for the condition covered by the investigation.,,
+Diagnosis Date,Date of diagnosis of condition being reported to public health system,,
+Date of Illness Onset,Date of the beginning of the illness.  Reported date of the onset of symptoms of the condition being reported to the public health system,,
+Illness End Date,Time at which the disease or condition ends.,,
+Illness Duration,Length of time this subject had this disease or condition.,,
+Illness Duration Units,Unit of time used to describe the length of the illness or condition.,PHVS_AgeUnit_UCUM,
+Did the subject die from this condition?,Did the subject die from this illness or complications of this illness?,PHVS_YesNoUnknown_CDC,
+Deceased Date,"If the subject died from this illness or complications associated with this illness, indicate the date of death",,
+Case Investigation Start Date,The date the case investigation was initiated.,,
+Case Outbreak indicator,Denotes whether the reported case was associated with an identified outbreak.,PHVS_YesNoUnknown_CDC,
+Case Outbreak Name,A state-assigned name for an indentified outbreak. ,,
+Case Disease Imported Code,Indication of where the disease/condition was likely acquired.,PHVS_DiseaseAcquiredJurisdiction_NETSS,
+Imported Country,"If the disease or condition was imported, indicates the country in which the disease was likely acquired.",PHVS_Country_ISO_3166-1,
+Imported State,"If the disease or condition was imported, indicates the state in which the disease was likely acquired.",PHVS_State_FIPS_5-2,
+Imported City,"If the disease or condition was imported, indicates the city in which the disease was likely acquired.",PHVS_City_USGS_GNIS,
+Imported County,"If the disease or condition was imported, contains the county of origin of the disease or condition.",PHVS_County_FIPS_6-4,
+Transmission Mode,Code for the mechanism by which disease or condition was acquired by the subject of the investigation.,PHVS_CaseTransmissionMode_NND,
+Case Class Status Code,"Status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/ surveillance case definitions.",PHVS_CaseClassStatus_NND,
+MMWR Week,MMWR Week for which case information is to be counted for MMWR publication.,,
+MMWR Year,MMWR Year (YYYY) for which case information is to be counted for MMWR publication.,,
+State Case ID,"States use this field to link NEDSS investigations back to their own state investigations.
+
+Note: This may be any state-assigned ID number for the case; may be different than INV168, which is the system-assigned unique identified for the 'case' of disease being reported.",,
+Date of First Report to CDC,Date the case was first reported to the CDC,,
+Date First Reported PHD,"Earliest date the case was reported to the public health department whether at the local, county, or state public health level. ",,
+Pregnancy status,Indicates whether the subject was pregnant at the time of the event.,PHVS_YesNoUnknown_CDC,
+Person Reporting to CDC - Name,Name of the person who is reporting the case to the CDC ,,
+Person Reporting to CDC - Phone Number,Phone Number of the person who is reporting the case to the CDC,,
+Person Reporting to CDC - Title,Job title / description of the person reporting the case to the CDC,,
+Person Reporting to CDC - Affiliation,Affiliated Facility of the person reporting the case to the CDC,,
+Legacy Case ID,"CDC uses this field to link current case notifications to case notifications submitted by a previous system (NETSS, STD-MIS, etc.)",,
+Age at case investigation,Subject age at time of case investigation,,
+Age units at case investigation,Subject age units at time of case investigation,PHVS_AgeUnit_UCUM_NETSS,
+"Country of Exposure or Country Where Disease was Acquired
+
+Note: use exposure or acquired consistently across variables
+",Indicates the country in which the disease was potentially acquired.,PHVS_CountryofBirth_CDC,
+State or Province of Exposure,"Indicates the state in which the disease was potentially acquired.
+
+Business Rule: If Country of exposure was US, populate with US State. If Country of exposure was Mexico, populate with Mexican State. If country of exposure was Canada, populated with Canadian Province. For all other countries, leave null.",PHVS_State_FIPS_5-2,
+City of Exposure,"Indicates the city in which the disease was potentially acquired.
+
+Business Rule: If country of exposure is US, populate with US city. For all other cities, can be populated but not required. 
+Note: Since value set only includes US cities, would allow states to populate the CWE 9th component with another city.",,
+County of Exposure,"Indicates the county in which the disease was potentially acquired.
+
+Business Rule: If country of exposure is US, populate with US county.  Otherwise, leave null.
+",,
+Binational Reporting Criteria,"For cases meeting the binational criteria, select all the criteria which are met",PHVS_BinationalReportingCriteria_CDC,
+"Date of initial health exam associated with case report ""health event""",Date of earliest healthcare encounter/visit /exam associated with this event/case report.  May equate with date of exam or date of diagnosis.,,
+Neurological involvement?,"If event = some stage of syphilis, does the patient have neurologic involvement based on current case definition?","New Value Set
+PHVS_Neurological_involvement_CDC",
+Treatment Date,Date treatment initiated for the condition that is the subject of this case report.,,
+HIV Status,Documented or self-reported HIV status at the  time of event.,"New Value Set
+PHVS_HIVStatus_CDC",
+Had sex with a male within past 12 months?,Had sex with a male within past 12 months?,"New Value Set
+PHVS_YNRD_CDC",
+Had sex with a female within past 12 months?,Had sex with a female within past 12 months?,"New Value Set
+PHVS_YNRD_CDC",
+Had sex with an anonymous partner within past 12 months?,Had sex with an anonymous partner within past 12 months?,"New Value Set
+PHVS_YNRD_CDC",
+Had sex with a person know to him/her to be an IDU within past 12 months?,Had sex with a person known to him/her to be an IDU within past 12 months?,"New Value Set
+PHVS_YNRD_CDC",
+Had sex while intoxicated and/or high on drugs within past 12 months?,Had sex while intoxicated and/or high on drugs within past 12 months?,"New Value Set
+PHVS_YNRD_CDC",
+Exchanged drugs/money for sex within past 12 months?,Exchanged drugs/money for sex within past 12 months?,"New Value Set
+PHVS_YNRD_CDC",
+Had sex with a person who is know to her to be an MSM within past 12 months?,Had sex with a person who is known to her to be an MSM within past 12 months?  NOTE: For women only.,"New Value Set
+PHVS_YNRD_CDC",
+Engaged in injection drug use within past 12 months?,Engaged in injection drug use within past 12 months?,"New Value Set
+PHVS_YNRD_CDC",
+"During the past 12 months, which of the following injection or non-injection drugs have been used?","During the past 12 months, which of the following injection or non-injection drugs have been used?","New Value Set
+PHVS_DrugsUsed_CDC",
+Previous STD history?,Does the patient have a history of ever having had an STD prior to the condition reported in this case report?,"New Value Set
+PHVS_PreviousSTDhistory_CDC",
+Been incarcerated with past 12 months?,Been incarcerated within past 12 months?,"New Value Set
+PHVS_YNRD_CDC",
+Have you met sex partners through the Internet in the last 12 months?,Did the patient use an online computer site to exchange messages by typing them onscreen to engage in conversation with other visitors to the site for the purpose of having sex?,"New Value Set
+PHVS_YNRD_CDC",
+Total number of sex partners last 12 months?,"Total number of sex partners that the case patient has had in the last 12 months.  Total partners equal the sum of all male, female, and transgender partners during the period.",,
+Clinician-observed lesion(s) indicative of syphilis ,"If condition = any stage of syphilis, report anatomic site(s) of clinician-observed lesion(s) (e.g., chancre, rash, condyloma lata) at time of initial exam or specimen collection.  Mark all that apply.","New Value Set
+PHVS_Clinician-observed lesions_CDC",
+Type of nontreponemal serologic test for syphilis,What type of non-treponemal serologic test for syphilis was performed on specimen collected to support case patient's diagnosis of syphilis?,"New Value Set
+PHVS_nontreponemalserologictest_CDC",
+Quantitative syphilis test result,"If the test performed provides a quantifiable result, provide quantitative result (e.g. if RPR is positive, provide titer, e.g. 1:64)
+Example: If titer is 1:64, enter 64; if titer is 1:1024, enter 1024.",,
+Patient refused to answer questions regarding number of sex partners,Patient refused to answer questions regarding number of sex partners,PHVS_YesNoUnknown_CDC,
+Unknown number of sex partners in last 12 months,Unknown number of sex partners in last 12           months,PHVS_YesNoUnknown_CDC,
+Date of laboratory specimen collection,Date of collection of initial laboratory specimen used for diagnosis of health event reported in this case report. PREFERRED date for assignment of MMWR week.  First date in hierarchy of date types associated with case report/event.,,
+Specimen source,Anatomic site or specimen type from which positive lab specimen was collected.,"New Value Set
+PHVS_SpecimenSource_CDC",
+Date of lab result,Date result sent from Reporting Laboratory.,,
+HIV status documented through eHARS Record Search? ,Was the HIV status of this case investigated through search of eHARS?,PHVS_YesNoUnknown_CDC,
+eHARS Stateno,Stateno from eHARS registry for HIV+ cases.,,
+"Trans_Categ (eHARS, person dataset)",Mode of exposure from eHARS for HIV+ cases.,"New Value Set
+PHVS_TransCateg_CDC",
+Case sampled for enhanced investigation?,Was this case selected by reporting jurisdiction for enhanced investigarion?,PHVS_YesNoUnknown_CDC,
+Method of case detection,How case patient first came to the attention of the health department for this condition,"New Value Set
+PHVS_DetectionMethod_CDC",
+Type of treponemal serologic test for syphilis,What type of treponemal serologic test for syphilis was performed on specimen collected to support case patient's diagnosis of syphilis?,"New Value Set
+PHVS_treponemalserologic_CDC",
+Count,represents # of cases reported in this 'record'; supports aggregate-(when >1) or case-specific (when=1) reporting.,#####  Default=00001 for case-specific records where a single case is represented by data record.,
+Event date,"date of disease in YYMMDD format.  This date depends upon how case dates are assigned in the STD program. i.e., date could be the onset of symptoms date, diagnosis date, laboratory result date, date case first recognized and/or reported to STD program, or date case reported to CDC.",YYMMDD  Unknown=999999,
+Datetype,describes the type of date provided in Event date,1=Onset Date 2=Date of diagnosis 3=Date of laboratory result 4=Date of first report to coummunity health system 5=State/MMWR report date 9=Unknown,
+NETSS version,What version of the NETSS record layout are you providing?,i.e. Version 3 (January 2011)     03=Version 3,
+STD-Associated Lab Tests,STD-Associated Lab Tests,STD-Associated RCMT Lab Tests (OBX-3),
+STD-Associated Lab Results,STD-Associated Lab Results,STD-Associated RCMT Lab Results (OBX-5),

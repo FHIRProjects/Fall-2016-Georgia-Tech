@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="SDCtemplate.xslt" ?>
+<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="119.1000043" baseURI="www.cap.org/eCC/SDC/IHE" xmlns="http://healthIT.gov/sdc">
+  <Header styleClass="left" ID="Header.119.1000043" title="LUNG">
+    <OtherText name="Copyright" type="meta" styleClass="copyright" order="2" val="(c) 2016 College of American Pathologists.  All rights reserved.  License required for use." />
+    <OtherText styleClass="float-right" order="3" val="CAP approved" />
+    <OtherText name="GenericHeaderText" type="meta" styleClass="left" order="4" val="Surgical Pathology Cancer Case Summary (Checklist)" />
+    <OtherText name="OfficialName" type="meta" order="5" val="LUNG: Resection" />
+    <OtherText name="Category" type="meta" order="6" val="Thorax" />
+    <OtherText name="Restrictions" type="meta" order="7" val="Protocol for the examination of specimens from patients with primary non-small cell carcinoma, small cell carcinoma, or carcinoid tumor of the lung." />
+    <OtherText name="Required" type="meta" order="8" val="true" />
+    <OtherText name="CTV_Ckey" type="meta" order="9" val="119.1000043" />
+    <OtherText name="ChecklistCKey" type="meta" order="10" val="50.100004300" />
+    <OtherText name="VersionID" type="meta" order="11" val="2.004.001.1000043" />
+    <OtherText name="CurrentFileName" type="meta" order="12" val="LungResectio_2.004.001" />
+    <OtherText name="ApprovalStatus" type="meta" order="13" val="1" />
+    <OtherText name="EffectiveDate" type="meta dt.dateTime" styleClass="right" order="14" />
+    <OtherText name="WebPostingDate" type="meta dt.dateTime" styleClass="right" order="15" val="1/28/2016 12:00:00 AM" />
+    <OtherText name="AJCC_UICC_Version" type="meta" styleClass="right" order="16" val="7th Edition" />
+    <OtherText name="CS_Version" type="meta" styleClass="right" order="17" val="Version 2" />
+    <OtherText name="FIGO_Version" type="meta" styleClass="right" order="18" />
+  </Header>
+  <Body ID="119.1000043_DefaultBodyGUID:_ee6d47b8-e06d-4a59-b440-b680c229040a">
+    <ChildItems>
+      <Section order="21" ID="15656.100004300" title="SPECIMEN">
+        <ChildItems>
+          <Question order="23" ID="15653.100004300" title="Specimen">
+            <ListField>
+              <List>
+                <ListItem order="26" ID="15677.100004300" title="Lung" />
+                <ListItem order="27" ID="33271.100004300" title="Lobe(s) of lung">
+                  <ChildItems>
+                    <Question order="29" ID="33355.100004300">
+                      <ListField>
+                        <List>
+                          <ListItem order="32" ID="33356.100004300" title="Upper lobe" />
+                          <ListItem order="33" ID="33359.100004300" title="Middle lobe" />
+                          <ListItem order="34" ID="33365.100004300" title="Lower lobe" />
+                          <ListItem order="35" ID="33367.100004300" title="Mainstem bronchus" />
+                          <ListItem order="36" ID="33368.100004300" title="Other(s) (specify)">
+                            <OtherText name="Oth_37" type="reportText" order="37" val="{no text}" />
+                            <ListItemResponseField name="Oth_38" order="38" responseRequired="true">
+                              <Response>
+                                <string name="Oth_40" order="40" maxLength="4000" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                          <ListItem order="41" ID="33369.100004300" title="Not specified" />
+                        </List>
+                      </ListField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+                <ListItem order="42" ID="15679.100004300" title="Bronchus (specify)">
+                  <OtherText name="Bronchus_43" type="reportText" order="43" val="Bronchus" />
+                  <ListItemResponseField name="Bronchus_44" order="44" responseRequired="true">
+                    <Response>
+                      <string name="Bronchus_46" order="46" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="47" ID="15680.100004300" title="Other (specify)">
+                  <OtherText name="Oth_48" type="reportText" order="48" val="{no text}" />
+                  <ListItemResponseField name="Oth_49" order="49" responseRequired="true">
+                    <Response>
+                      <string name="Oth_51" order="51" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="52" ID="15716.100004300" title="Not specified" />
+              </List>
+            </ListField>
+          </Question>
+          <Question order="53" ID="1685.100004300" title="Procedure">
+            <ListField>
+              <List>
+                <ListItem order="56" ID="1686.100004300" title="Major airway resection" />
+                <ListItem order="57" ID="1687.100004300" title="Wedge resection" />
+                <ListItem order="58" ID="1688.100004300" title="Segmentectomy" />
+                <ListItem order="59" ID="1689.100004300" title="Lobectomy" />
+                <ListItem order="60" ID="15717.100004300" title="Bilobectomy" />
+                <ListItem order="61" ID="1690.100004300" title="Pneumonectomy" />
+                <ListItem order="62" ID="1691.100004300" title="Other (specify)">
+                  <OtherText name="Oth_63" type="reportText" order="63" val="{no text}" />
+                  <ListItemResponseField name="Oth_64" order="64" responseRequired="true">
+                    <Response>
+                      <string name="Oth_66" order="66" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="67" ID="1692.100004300" title="Not specified" />
+              </List>
+            </ListField>
+          </Question>
+          <Question order="68" ID="1693.100004300" title="Specimen Laterality">
+            <ListField>
+              <List>
+                <ListItem order="71" ID="1694.100004300" title="Right" />
+                <ListItem order="72" ID="1695.100004300" title="Left" />
+                <ListItem order="73" ID="1696.100004300" title="Not specified" />
+              </List>
+            </ListField>
+          </Question>
+        </ChildItems>
+      </Section>
+      <Section order="74" ID="15657.100004300" title="TUMOR">
+        <ChildItems>
+          <Question order="76" ID="1697.100004300" title="Primary Tumor Site">
+            <ListField>
+              <List>
+                <ListItem order="79" ID="1698.100004300" title="Upper lobe" />
+                <ListItem order="80" ID="1699.100004300" title="Middle lobe" />
+                <ListItem order="81" ID="1700.100004300" title="Lower lobe" />
+                <ListItem order="82" ID="20478.100004300" title="Mainstem bronchus" />
+                <ListItem order="83" ID="1701.100004300" title="Other(s) (specify)">
+                  <OtherText name="Oth_84" type="reportText" order="84" val="{no text}" />
+                  <ListItemResponseField name="Oth_85" order="85" responseRequired="true">
+                    <Response>
+                      <string name="Oth_87" order="87" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="88" ID="1702.100004300" title="Not specified" />
+              </List>
+            </ListField>
+          </Question>
+          <Question order="89" ID="33361.100004300" title="Histologic Type (Note B)">
+            <OtherText type="reportText" order="90" val="Histologic Type" />
+            <ListField>
+              <List>
+                <ListItem order="93" ID="1714.100004300" title="Adenocarcinoma">
+                  <ChildItems>
+                    <Question order="95" ID="33376.100004300" mustImplement="false" minCard="0">
+                      <ListField>
+                        <List>
+                          <ListItem order="98" ID="30020.100004300" title="Lepidic predominant" mustImplement="false" />
+                          <ListItem order="99" ID="30014.100004300" title="Acinar predominant" mustImplement="false" />
+                          <ListItem order="100" ID="30015.100004300" title="Papillary predominant" mustImplement="false" />
+                          <ListItem order="101" ID="30016.100004300" title="Solid predominant" mustImplement="false" />
+                          <ListItem order="102" ID="30017.100004300" title="Micropapillary predominant" mustImplement="false" />
+                        </List>
+                      </ListField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+                <ListItem order="103" ID="34382.100004300" title="Invasive mucinous adenocarcinoma" />
+                <ListItem order="104" ID="33377.100004300" title="Mixed invasive mucinous and non-mucinous adenocarcinoma" />
+                <ListItem order="105" ID="33378.100004300" title="Colloid adenocarcinoma" />
+                <ListItem order="106" ID="15940.100004300" title="Fetal adenocarcinoma" />
+                <ListItem order="107" ID="30022.100004300" title="Enteric adenocarcinoma" />
+                <ListItem order="108" ID="30018.100004300" title="Minimally invasive adenocarcinoma">
+                  <ChildItems>
+                    <Question order="110" ID="33383.100004300" mustImplement="false" minCard="0">
+                      <ListField>
+                        <List>
+                          <ListItem order="113" ID="33384.100004300" title="Non-mucinous" mustImplement="false" />
+                          <ListItem order="114" ID="33385.100004300" title="Mixed non-mucinous and mucinous" mustImplement="false" />
+                          <ListItem order="115" ID="33386.100004300" title="Mucinous" mustImplement="false" />
+                        </List>
+                      </ListField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+                <ListItem order="116" ID="30019.100004300" title="Adenocarcinoma in situ">
+                  <ChildItems>
+                    <Question order="118" ID="33387.100004300" mustImplement="false" minCard="0">
+                      <ListField>
+                        <List>
+                          <ListItem order="121" ID="33388.100004300" title="Non-mucinous" mustImplement="false" />
+                          <ListItem order="122" ID="33389.100004300" title="Mixed non-mucinous and mucinous" mustImplement="false" />
+                          <ListItem order="123" ID="33390.100004300" title="Mucinous" mustImplement="false" />
+                        </List>
+                      </ListField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+                <ListItem order="124" ID="1710.100004300" title="Squamous cell carcinoma" />
+                <ListItem order="125" ID="33379.100004300" title="Keratinizing squamous cell carcinoma" />
+                <ListItem order="126" ID="33380.100004300" title="Non-keratinizing squamous cell carcinoma" />
+                <ListItem order="127" ID="33381.100004300" title="Basaloid squamous cell carcinoma" />
+                <ListItem order="128" ID="1712.100004300" title="Small cell carcinoma" />
+                <ListItem order="129" ID="1713.100004300" title="Combined small cell carcinoma (small cell carcinoma and non-small cell component)">
+                  <ChildItems>
+                    <Question order="131" ID="15721.100004300" title="Specify type of non-small cell carcinoma component">
+                      <OtherText name="Hist_NonSmallCellCa_Type_132" type="reportText" order="132" val="Type of non-small cell carcinoma component" />
+                      <ResponseField name="Hist_NonSmallCellCa_Type_133" order="133">
+                        <Response>
+                          <string name="Hist_NonSmallCellCa_Type_135" order="135" maxLength="4000" />
+                        </Response>
+                      </ResponseField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+                <ListItem order="136" ID="1719.100004300" title="Large cell neuroendocrine carcinoma" />
+                <ListItem order="137" ID="1723.100004300" title="Typical carcinoid tumor" />
+                <ListItem order="138" ID="1724.100004300" title="Atypical carcinoid tumor" />
+                <ListItem order="139" ID="1720.100004300" title="Large cell carcinoma" />
+                <ListItem order="140" ID="1722.100004300" title="Adenosquamous carcinoma" />
+                <ListItem order="141" ID="15950.100004300" title="Pleomorphic carcinoma" />
+                <ListItem order="142" ID="15949.100004300" title="Spindle cell carcinoma" />
+                <ListItem order="143" ID="15948.100004300" title="Giant cell carcinoma" />
+                <ListItem order="144" ID="15952.100004300" title="Carcinosarcoma" />
+                <ListItem order="145" ID="15953.100004300" title="Pulmonary blastoma" />
+                <ListItem order="146" ID="15731.100004300" title="Lymphoepithelioma-like carcinoma" />
+                <ListItem order="147" ID="33391.100004300" title="NUT carcinoma" />
+                <ListItem order="148" ID="1726.100004300" title="Mucoepidermoid carcinoma" />
+                <ListItem order="149" ID="1725.100004300" title="Adenoid cystic carcinoma" />
+                <ListItem order="150" ID="15951.100004300" title="Epithelial-myoepithelial carcinoma" />
+                <ListItem order="151" ID="1730.100004300" title="Carcinoma, type cannot be determined">
+                  <ListItemResponseField name="Ca_NOS_152" order="152">
+                    <Response>
+                      <string name="Ca_NOS_154" order="154" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="155" ID="15728.100004300" title="Non-small cell carcinoma, subtype cannot be determined">
+                  <ListItemResponseField name="Non_SmCellCa_Subtype_CBD_156" order="156">
+                    <Response>
+                      <string name="Non_SmCellCa_Subtype_CBD_158" order="158" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="159" ID="1729.100004300" title="Other histologic type not listed above  (specify)">
+                  <OtherText name="Oth_160" type="reportText" order="160" val="{no text}" />
+                  <ListItemResponseField name="Oth_161" order="161" responseRequired="true">
+                    <Response>
+                      <string name="Oth_163" order="163" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+              </List>
+            </ListField>
+            <ChildItems>
+              <Question order="165" ID="33392.100004300" title="Histologic Type Comments" mustImplement="false" minCard="0">
+                <ResponseField order="166">
+                  <Response>
+                    <string order="168" maxLength="4000" />
+                  </Response>
+                </ResponseField>
+              </Question>
+            </ChildItems>
+          </Question>
+          <Question order="169" ID="1731.100004300" title="Histologic Grade (Note C)" mustImplement="false" minCard="0">
+            <OtherText name="Grade_170" type="reportText" order="170" val="Histologic Grade" />
+            <ListField>
+              <List>
+                <ListItem order="173" ID="1732.100004300" title="Not applicable" mustImplement="false">
+                  <ListItemResponseField name="NA_174" order="174">
+                    <Response>
+                      <string name="NA_176" order="176" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="177" ID="1733.100004300" title="GX: Cannot be assessed" mustImplement="false">
+                  <ListItemResponseField name="GX_178" order="178">
+                    <Response>
+                      <string name="GX_180" order="180" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="181" ID="1734.100004300" title="G1: Well differentiated" mustImplement="false" />
+                <ListItem order="182" ID="1735.100004300" title="G2: Moderately differentiated" mustImplement="false" />
+                <ListItem order="183" ID="1736.100004300" title="G3: Poorly differentiated" mustImplement="false" />
+                <ListItem order="184" ID="1737.100004300" title="G4: Undifferentiated" mustImplement="false" />
+                <ListItem order="185" ID="1738.100004300" title="Other (specify)" mustImplement="false">
+                  <OtherText name="Oth_186" type="reportText" order="186" val="{no text}" />
+                  <ListItemResponseField name="Oth_187" order="187" responseRequired="true">
+                    <Response>
+                      <string name="Oth_189" order="189" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+              </List>
+            </ListField>
+          </Question>
+          <Question order="190" ID="1703.100004300" title="Tumor Size">
+            <ListField>
+              <List>
+                <ListItem order="193" ID="1705.100004300" title="Greatest dimension (cm)">
+                  <OtherText name="TSize1_194" type="reportText" order="194" val="Greatest dimension " />
+                  <ListItemResponseField name="TSize1_195" order="195">
+                    <Response>
+                      <string name="TSize1_198" order="198" maxLength="5" />
+                    </Response>
+                    <TextAfterResponse val="cm" />
+                    <ResponseUnits val="cm" />
+                  </ListItemResponseField>
+                  <ChildItems>
+                    <Question order="201" ID="1706.100004300" title="Additional Dimension (cm)" mustImplement="false" minCard="0">
+                      <OtherText name="Tum_Add_Dim_202" type="reportText" order="202" val="Additional Dimension " />
+                      <ResponseField name="Tum_Add_Dim_203" order="203">
+                        <Response>
+                          <string name="Tum_Add_Dim_206" order="206" maxLength="5" />
+                        </Response>
+                        <TextAfterResponse val="cm" />
+                        <ResponseUnits val="cm" />
+                      </ResponseField>
+                    </Question>
+                    <Question order="208" ID="1707.100004300" title="Additional Dimension (cm)" mustImplement="false" minCard="0">
+                      <OtherText name="Tum_Add_Dim_209" type="reportText" order="209" val="Additional Dimension " />
+                      <ResponseField name="Tum_Add_Dim_210" order="210">
+                        <Response>
+                          <string name="Tum_Add_Dim_213" order="213" maxLength="5" />
+                        </Response>
+                        <TextAfterResponse val="cm" />
+                        <ResponseUnits val="cm" />
+                      </ResponseField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+                <ListItem order="215" ID="1704.100004300" title="Cannot be determined">
+                  <ListItemResponseField name="CBD_216" order="216">
+                    <Response>
+                      <string name="CBD_218" order="218" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+              </List>
+            </ListField>
+          </Question>
+          <Question order="219" ID="15687.100004300" title="Tumor Focality (Note A)">
+            <OtherText name="Tum_Focality_220" type="reportText" order="220" val="Tumor Focality" />
+            <ListField>
+              <List>
+                <ListItem order="223" ID="15688.100004300" title="Unifocal" />
+                <ListItem order="224" ID="15718.100004300" title="Separate tumor nodules in same lobe">
+                  <ChildItems>
+                    <Question order="226" ID="33372.100004300" mustImplement="false" minCard="0">
+                      <ListField>
+                        <List>
+                          <ListItem order="229" ID="33371.100004300" title="Synchronous primaries" mustImplement="false" />
+                          <ListItem order="230" ID="33370.100004300" title="Intrapulmonary metastases" mustImplement="false" />
+                        </List>
+                      </ListField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+                <ListItem order="231" ID="15719.100004300" title="Separate tumor nodules in different lobe / lung (specify sites)">
+                  <OtherText name="Separate_Tum_Nods_DifLobes_232" type="reportText" order="232" val="Separate tumor nodules in different lobe / lung (sites)" />
+                  <ListItemResponseField name="Separate_Tum_Nods_DifLobes_233" order="233" responseRequired="true">
+                    <Response>
+                      <string name="Separate_Tum_Nods_DifLobes_235" order="235" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                  <ChildItems>
+                    <Question order="237" ID="33373.100004300" mustImplement="false" minCard="0">
+                      <ListField>
+                        <List>
+                          <ListItem order="240" ID="33374.100004300" title="Synchronous primaries" mustImplement="false" />
+                          <ListItem order="241" ID="33375.100004300" title="Intrapulmonary metastases" mustImplement="false" />
+                        </List>
+                      </ListField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+                <ListItem order="242" ID="15689.100004300" title="Cannot be determined">
+                  <ListItemResponseField name="CBD_243" order="243">
+                    <Response>
+                      <string name="CBD_245" order="245" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+              </List>
+            </ListField>
+          </Question>
+          <Section order="246" ID="15659.100004300" title="Tumor Extent" minCard="0">
+            <ChildItems>
+              <Question order="248" ID="15671.100004300" title="Visceral Pleura Invasion (Note D)" minCard="0">
+                <OtherText name="Visceral_Pleura_Inv_249" type="reportText" order="249" val="Visceral Pleura Invasion" />
+                <ListField>
+                  <List>
+                    <ListItem order="252" ID="15673.100004300" title="Not identified" />
+                    <ListItem order="253" ID="15674.100004300" title="Present" />
+                    <ListItem order="254" ID="15675.100004300" title="Cannot be determined">
+                      <ListItemResponseField name="Indeterminate_255" order="255">
+                        <Response>
+                          <string name="Indeterminate_257" order="257" maxLength="4000" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="258" ID="1774.100004300" title="Tumor Extension (Note E)" minCard="0">
+                <OtherText name="Tum_Ext_259" type="reportText" order="259" val="Tumor Extension " />
+                <ListField>
+                  <List>
+                    <ListItem order="262" ID="15676.100004300" title="Not applicable" selectionDeselectsSiblings="true">
+                      <ListItemResponseField name="NA_263" order="263">
+                        <Response>
+                          <string name="NA_265" order="265" maxLength="4000" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                    <ListItem order="266" ID="1775.100004300" title="Not identified" selectionDeselectsSiblings="true" />
+                    <ListItem order="267" ID="15734.100004300" title="Superficial spreading tumor with invasive component limited to bronchial wall" />
+                    <ListItem order="268" ID="1781.100004300" title="Tumor involves main bronchus 2 cm or more distal to the carina" />
+                    <ListItem order="269" ID="15735.100004300" title="Parietal pleura" />
+                    <ListItem order="270" ID="1776.100004300" title="Chest wall">
+                      <ChildItems>
+                        <Question order="272" ID="15954.100004300" title="Specify Involved Structure(s)" mustImplement="false" minCard="0">
+                          <OtherText name="Spfy_ChestWall_Ext_273" type="reportText" order="273" val="Involved Structure(s)" />
+                          <ResponseField name="Spfy_ChestWall_Ext_274" order="274">
+                            <Response>
+                              <string name="Spfy_ChestWall_Ext_276" order="276" maxLength="4000" />
+                            </Response>
+                          </ResponseField>
+                        </Question>
+                      </ChildItems>
+                    </ListItem>
+                    <ListItem order="277" ID="1778.100004300" title="Mediastinal pleura" />
+                    <ListItem order="278" ID="1777.100004300" title="Diaphragm" />
+                    <ListItem order="279" ID="15956.100004300" title="Phrenic nerve" />
+                    <ListItem order="280" ID="1780.100004300" title="Parietal pericardium" />
+                    <ListItem order="281" ID="15955.100004300" title="Tumor in the main bronchus less than 2 cm distal to the carina but does not involve the carina" />
+                    <ListItem order="282" ID="1783.100004300" title="Mediastinum">
+                      <ChildItems>
+                        <Question order="284" ID="15957.100004300" title="Specify Involved Structure(s)" mustImplement="false" minCard="0">
+                          <OtherText name="Mediastinum_Ext_Loc_285" type="reportText" order="285" val="Involved Structure(s)" />
+                          <ResponseField name="Mediastinum_Ext_Loc_286" order="286">
+                            <Response>
+                              <string name="Mediastinum_Ext_Loc_288" order="288" maxLength="4000" />
+                            </Response>
+                          </ResponseField>
+                        </Question>
+                      </ChildItems>
+                    </ListItem>
+                    <ListItem order="289" ID="1784.100004300" title="Heart" />
+                    <ListItem order="290" ID="1785.100004300" title="Great vessels" />
+                    <ListItem order="291" ID="15958.100004300" title="Trachea" />
+                    <ListItem order="292" ID="15959.100004300" title="Esophagus" />
+                    <ListItem order="293" ID="15960.100004300" title="Vertebral body" />
+                    <ListItem order="294" ID="15961.100004300" title="Carina" />
+                    <ListItem order="295" ID="1786.100004300" title="Other (specify)">
+                      <OtherText name="Oth_296" type="reportText" order="296" val="{no text}" />
+                      <ListItemResponseField name="Oth_297" order="297" responseRequired="true">
+                        <Response>
+                          <string name="Oth_299" order="299" maxLength="4000" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+            </ChildItems>
+          </Section>
+          <Section order="300" ID="1708.100004300" title="Accessory Tumor Findings">
+            <ChildItems>
+              <Question order="302" ID="15684.100004300" title="?Treatment Effect (Note G)">
+                <OtherText name="Tx_Effect_303" type="reportText" order="303" val="Treatment Effect" />
+                <ListField>
+                  <List>
+                    <ListItem order="306" ID="30013.100004300" title="?No prior treatment" omitWhenSelected="true">
+                      <OtherText type="reportText" order="307" val="No prior treatment" />
+                    </ListItem>
+                    <ListItem order="308" ID="15686.100004300" title="Cannot be determined">
+                      <ListItemResponseField name="CBD_309" order="309">
+                        <Response>
+                          <string name="CBD_311" order="311" maxLength="4000" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                    <ListItem order="312" ID="15736.100004300" title="Greater than 10% residual viable tumor" />
+                    <ListItem order="313" ID="15737.100004300" title="Less than 10% residual viable tumor" />
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="314" ID="1795.100004300" title="Lymph-Vascular Invasion (Note I)">
+                <OtherText name="LVI_315" type="reportText" order="315" val="Lymph-Vascular Invasion" />
+                <ListField>
+                  <List>
+                    <ListItem order="318" ID="1796.100004300" title="Not identified" />
+                    <ListItem order="319" ID="1797.100004300" title="Present">
+                      <ChildItems>
+                        <Question order="321" ID="30008.100004300" mustImplement="false" minCard="0">
+                          <ListField>
+                            <List>
+                              <ListItem order="324" ID="30009.100004300" title="Lymphatic" mustImplement="false" />
+                              <ListItem order="325" ID="30010.100004300" title="Arterial" mustImplement="false" />
+                              <ListItem order="326" ID="30011.100004300" title="Venous" mustImplement="false" />
+                            </List>
+                          </ListField>
+                        </Question>
+                      </ChildItems>
+                    </ListItem>
+                    <ListItem order="327" ID="1798.100004300" title="Cannot be determined">
+                      <ListItemResponseField name="Indeterminate_328" order="328">
+                        <Response>
+                          <string name="Indeterminate_330" order="330" maxLength="4000" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+            </ChildItems>
+          </Section>
+        </ChildItems>
+      </Section>
+      <Section order="331" ID="1684.100004300" title="MARGINS  (Note F)">
+        <OtherText type="reportText" order="332" val="MARGINS" />
+        <ChildItems>
+          <Question order="334" ID="20307.100004300" title="?">
+            <ListField>
+              <List>
+                <ListItem order="337" ID="20309.100004300" title="All margins uninvolved by invasive carcinoma">
+                  <ChildItems>
+                    <Question order="339" ID="22702.100004300" title="Distance of Invasive Carcinoma from Closest Margin">
+                      <ListField>
+                        <List>
+                          <ListItem order="342" ID="22703.100004300" title="Specify (mm)">
+                            <OtherText name="Spfy_mm_343" type="reportText" order="343" val="{no text}" />
+                            <ListItemResponseField name="Spfy_mm_344" order="344" responseRequired="true">
+                              <Response>
+                                <string name="Spfy_mm_347" order="347" maxLength="5" />
+                              </Response>
+                              <TextAfterResponse val="mm" />
+                              <ResponseUnits val="mm" />
+                            </ListItemResponseField>
+                          </ListItem>
+                          <ListItem order="349" ID="33393.100004300" title="At least (mm)">
+                            <ListItemResponseField order="350" responseRequired="true">
+                              <Response>
+                                <string order="353" maxLength="5" />
+                              </Response>
+                              <TextAfterResponse val="mm" />
+                              <ResponseUnits val="mm" />
+                            </ListItemResponseField>
+                          </ListItem>
+                          <ListItem order="355" ID="22704.100004300" title="Cannot be assessed (explain)">
+                            <OtherText name="CBA_356" type="reportText" order="356" val="Cannot be assessed" />
+                            <ListItemResponseField name="CBA_357" order="357" responseRequired="true">
+                              <Response>
+                                <string name="CBA_359" order="359" maxLength="4000" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                        </List>
+                      </ListField>
+                    </Question>
+                    <Question order="360" ID="22729.100004300" title="Margin Closest to Invasive Carcinoma">
+                      <ListField>
+                        <List>
+                          <ListItem order="363" ID="22735.100004300" title="Specify margin">
+                            <OtherText name="Marg_Loc_364" type="reportText" order="364" val="{no text}" />
+                            <ListItemResponseField name="Marg_Loc_365" order="365" responseRequired="true">
+                              <Response>
+                                <string name="Marg_Loc_367" order="367" maxLength="4000" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                          <ListItem order="368" ID="22736.100004300" title="Cannot be determined (explain)">
+                            <OtherText name="CBD_369" type="reportText" order="369" val="Cannot be determined" />
+                            <ListItemResponseField name="CBD_370" order="370" responseRequired="true">
+                              <Response>
+                                <string name="CBD_372" order="372" maxLength="4000" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                        </List>
+                      </ListField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+              </List>
+            </ListField>
+          </Question>
+          <Question order="373" ID="26755.100004300" title="Bronchial Margin">
+            <ListField>
+              <List>
+                <ListItem order="376" ID="26756.100004300" title="Not applicable">
+                  <ListItemResponseField name="NA_377" order="377">
+                    <Response>
+                      <string name="NA_379" order="379" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="380" ID="26757.100004300" title="Cannot be assessed">
+                  <ListItemResponseField name="CBA_381" order="381">
+                    <Response>
+                      <string name="CBA_383" order="383" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="384" ID="26758.100004300" title="Uninvolved by invasive carcinoma and carcinoma in situ" />
+                <ListItem order="385" ID="1768.100004300" title="Involved by invasive carcinoma" />
+                <ListItem order="386" ID="26759.100004300" title="Involved by carcinoma in situ" />
+              </List>
+            </ListField>
+          </Question>
+          <Question order="387" ID="18771.100004300" title="Vascular Margin">
+            <ListField>
+              <List>
+                <ListItem order="390" ID="15971.100004300" title="Not applicable">
+                  <ListItemResponseField name="NA_391" order="391">
+                    <Response>
+                      <string name="NA_393" order="393" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="394" ID="15972.100004300" title="Cannot be assessed">
+                  <ListItemResponseField name="CBA_395" order="395">
+                    <Response>
+                      <string name="CBA_397" order="397" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="398" ID="15973.100004300" title="Uninvolved by invasive carcinoma" />
+                <ListItem order="399" ID="16054.100004300" title="Involved by invasive carcinoma" />
+              </List>
+            </ListField>
+          </Question>
+          <Question order="400" ID="18772.100004300" title="Parenchymal Margin">
+            <ListField>
+              <List>
+                <ListItem order="403" ID="15975.100004300" title="Not applicable">
+                  <ListItemResponseField name="NA_404" order="404">
+                    <Response>
+                      <string name="NA_406" order="406" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="407" ID="15976.100004300" title="Cannot be assessed">
+                  <ListItemResponseField name="CBA_408" order="408">
+                    <Response>
+                      <string name="CBA_410" order="410" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="411" ID="15977.100004300" title="Uninvolved by invasive carcinoma" />
+                <ListItem order="412" ID="16055.100004300" title="Involved by invasive carcinoma" />
+              </List>
+            </ListField>
+          </Question>
+          <Question order="413" ID="1773.100004300" title="?Other Attached Tissue Margin" maxCard="10">
+            <OtherText name="Oth_Attached_Tissue_Marg_414" type="reportText" order="414" val="Other Attached Tissue Margin" />
+            <ListField>
+              <List>
+                <ListItem order="417" ID="15988.100004300" title="?Not applicable" omitWhenSelected="true">
+                  <OtherText name="NA_418" type="reportText" order="418" val="Not applicable" />
+                  <ListItemResponseField name="NA_419" order="419">
+                    <Response>
+                      <string name="NA_421" order="421" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="422" ID="3932.100004300" title="Specify tissue margin">
+                  <OtherText name="Marg_Loc_423" type="reportText" order="423" val="{no text}" />
+                  <ListItemResponseField name="Marg_Loc_424" order="424" responseRequired="true">
+                    <Response>
+                      <string name="Marg_Loc_426" order="426" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                  <ChildItems>
+                    <Question order="428" ID="3934.100004300">
+                      <ListField>
+                        <List>
+                          <ListItem order="431" ID="15984.100004300" title="Cannot be assessed">
+                            <ListItemResponseField name="CBA_432" order="432">
+                              <Response>
+                                <string name="CBA_434" order="434" maxLength="4000" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                          <ListItem order="435" ID="15989.100004300" title="Uninvolved by invasive carcinoma" />
+                          <ListItem order="436" ID="15990.100004300" title="Involved by invasive carcinoma" />
+                        </List>
+                      </ListField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+              </List>
+            </ListField>
+          </Question>
+        </ChildItems>
+      </Section>
+      <Section order="437" ID="15662.100004300" title="LYMPH NODES (Note J)">
+        <OtherText type="reportText" order="438" val="LYMPH NODES" />
+        <ChildItems>
+          <Question order="440" ID="7808.100004300" title="Regional Lymph Nodes">
+            <ListField>
+              <List>
+                <ListItem order="443" ID="7811.100004300" title="No nodes submitted or found" selectionDisablesChildren="true">
+                  <ChildItems>
+                    <Question order="445" ID="33884.100004300" mustImplement="false" minCard="0">
+                      <OtherText type="reportText" order="446" val="Note" />
+                      <ListField>
+                        <List>
+                          <ListItem order="449" ID="34242.100004300" title="Includes nodes from other procedure(s)" mustImplement="false">
+                            <ChildItems>
+                              <Section order="451" ID="33868.100004300" title="Additional Lymph Node Procedures (repeat for each procedure)" mustImplement="false" minCard="0" maxCard="10">
+                                <ChildItems>
+                                  <Question order="453" ID="33869.100004300" title="Procedure Description" mustImplement="false" minCard="0">
+                                    <ResponseField order="454">
+                                      <Response>
+                                        <string order="456" maxLength="4000" />
+                                      </Response>
+                                    </ResponseField>
+                                  </Question>
+                                  <Question order="457" ID="33870.100004300" title="Procedure Identifier" mustImplement="false" minCard="0">
+                                    <ResponseField order="458">
+                                      <Response>
+                                        <string order="460" maxLength="4000" />
+                                      </Response>
+                                    </ResponseField>
+                                  </Question>
+                                  <Question order="461" ID="33871.100004300" title="Procedure Date / Time" mustImplement="false" minCard="0">
+                                    <ResponseField order="462">
+                                      <Response>
+                                        <string order="464" maxLength="80" />
+                                      </Response>
+                                    </ResponseField>
+                                  </Question>
+                                </ChildItems>
+                              </Section>
+                            </ChildItems>
+                          </ListItem>
+                        </List>
+                      </ListField>
+                    </Question>
+                    <Question order="465" ID="33444.100004300" title="Number of Lymph Nodes Examined">
+                      <ListField>
+                        <List>
+                          <ListItem order="468" ID="7835.100004300" title="Specify number">
+                            <OtherText name="Specify_469" type="reportText" order="469" val="{no text}" />
+                            <ListItemResponseField name="Specify_470" order="470" responseRequired="true">
+                              <Response>
+                                <string name="Specify_472" order="472" maxLength="3" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                          <ListItem order="473" ID="33445.100004300" title="At least">
+                            <ListItemResponseField name="CBD_474" order="474" responseRequired="true">
+                              <Response>
+                                <string name="CBD_476" order="476" maxLength="3" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                          <ListItem order="477" ID="34451.100004300" title="Number cannot be determined (explain)">
+                            <OtherText type="reportText" order="478" val="Number cannot be determined" />
+                            <ListItemResponseField order="479" responseRequired="true">
+                              <Response>
+                                <string order="481" maxLength="4000" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                        </List>
+                      </ListField>
+                    </Question>
+                    <Question order="482" ID="33450.100004300" title="Nodal Stations Examined" minCard="0">
+                      <ListField>
+                        <List>
+                          <DisplayedItem order="485" ID="33539.100004300" title="Right Nodal Stations Examined">
+                            <OtherText type="reportText" order="486" val="{no text}" />
+                          </DisplayedItem>
+                          <ListItem order="487" ID="33424.100004300" title="1R: Low cervical, supraclavicular, scalene and sternal notch" />
+                          <ListItem order="488" ID="33425.100004300" title="2R: Upper paratracheal" />
+                          <ListItem order="489" ID="33427.100004300" title="4R: Lower paratracheal" />
+                          <ListItem order="490" ID="33431.100004300" title="8R: Para-esophageal (below carina)" />
+                          <ListItem order="491" ID="33432.100004300" title="9R: Pulmonary ligament" />
+                          <ListItem order="492" ID="33433.100004300" title="10R: Hilar" />
+                          <ListItem order="493" ID="33434.100004300" title="11R: Interlobar" />
+                          <ListItem order="494" ID="33435.100004300" title="12R: Lobar" />
+                          <ListItem order="495" ID="33436.100004300" title="13R: Segmental" />
+                          <ListItem order="496" ID="33437.100004300" title="14R: Subsegmental" />
+                          <ListItem order="497" ID="33720.100004300" title="Other right nodes (specify)">
+                            <OtherText type="reportText" order="498" val="{no text}" />
+                            <ListItemResponseField order="499" responseRequired="true">
+                              <Response>
+                                <string order="501" maxLength="4000" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                          <DisplayedItem order="502" ID="33778.100004300" title="Central Nodal Stations Examined">
+                            <OtherText type="reportText" order="503" val="{no text}" />
+                          </DisplayedItem>
+                          <ListItem order="504" ID="33801.100004300" title="3a: Pre-vascular" />
+                          <ListItem order="505" ID="33446.100004300" title="3p: Retrotracheal" />
+                          <ListItem order="506" ID="33430.100004300" title="7: Subcarinal" />
+                          <ListItem order="507" ID="33729.100004300" title="Other central nodes (specify)">
+                            <OtherText type="reportText" order="508" val="{no text}" />
+                            <ListItemResponseField order="509" responseRequired="true">
+                              <Response>
+                                <string order="511" maxLength="4000" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                          <DisplayedItem order="512" ID="33441.100004300" title="Left Nodal Stations Examined">
+                            <OtherText type="reportText" order="513" val="{no text}" />
+                          </DisplayedItem>
+                          <ListItem order="514" ID="33442.100004300" title="1L: Low cervical, supraclavicular, scalene and sternal notch" />
+                          <ListItem order="515" ID="33438.100004300" title="2L: Upper paratracheal" />
+                          <ListItem order="516" ID="33439.100004300" title="4L: Lower paratracheal" />
+                          <ListItem order="517" ID="33656.100004300" title="5: Subaortic/ aortopulmonary (AP) / AP window" />
+                          <ListItem order="518" ID="33649.100004300" title="6: Para-aortic (ascending aorta or phrenic)" />
+                          <ListItem order="519" ID="33670.100004300" title="8L: Para-esophageal" />
+                          <ListItem order="520" ID="33677.100004300" title="9L: Pulmonary ligament" />
+                          <ListItem order="521" ID="33440.100004300" title="10L: Hilar" />
+                          <ListItem order="522" ID="33684.100004300" title="11L: Interlobar" />
+                          <ListItem order="523" ID="33691.100004300" title="12L: Lobar" />
+                          <ListItem order="524" ID="33698.100004300" title="13L: Segmental" />
+                          <ListItem order="525" ID="33705.100004300" title="14L: Subsegmental" />
+                          <ListItem order="526" ID="33712.100004300" title="Other left nodes (specify)">
+                            <OtherText type="reportText" order="527" val="{no text}" />
+                            <ListItemResponseField order="528" responseRequired="true">
+                              <Response>
+                                <string order="530" maxLength="4000" />
+                              </Response>
+                            </ListItemResponseField>
+                          </ListItem>
+                        </List>
+                      </ListField>
+                    </Question>
+                    <Question order="531" ID="7841.100004300" title="Lymph Node Involvement">
+                      <OtherText name="Num_LN_Invol_532" type="reportText" order="532" val="Number of Lymph Nodes Involved" />
+                      <ListField>
+                        <List>
+                          <ListItem order="535" ID="14471.100004300" title="No nodes  involved" selectionDisablesChildren="true">
+                            <OtherText name="None_Id_536" type="reportText" order="536" val="None identified" />
+                            <ChildItems>
+                              <Question order="538" ID="33448.100004300" title="Number of Lymph Nodes Involved">
+                                <ListField>
+                                  <List>
+                                    <ListItem order="541" ID="7844.100004300" title="Specify number">
+                                      <OtherText name="Spfy_Num_Invol_542" type="reportText" order="542" val="{no text}" />
+                                      <ListItemResponseField name="Spfy_Num_Invol_543" order="543" responseRequired="true">
+                                        <Response>
+                                          <string name="Spfy_Num_Invol_545" order="545" maxLength="3" />
+                                        </Response>
+                                      </ListItemResponseField>
+                                    </ListItem>
+                                    <ListItem order="546" ID="33449.100004300" title="At least">
+                                      <ListItemResponseField name="CBD_547" order="547" responseRequired="true">
+                                        <Response>
+                                          <string name="CBD_549" order="549" maxLength="3" />
+                                        </Response>
+                                      </ListItemResponseField>
+                                    </ListItem>
+                                    <ListItem order="550" ID="34452.100004300" title="Number cannot be determined (explain)">
+                                      <OtherText type="reportText" order="551" val="Number cannot be determined" />
+                                      <ListItemResponseField order="552" responseRequired="true">
+                                        <Response>
+                                          <string order="554" maxLength="4000" />
+                                        </Response>
+                                      </ListItemResponseField>
+                                    </ListItem>
+                                  </List>
+                                </ListField>
+                              </Question>
+                              <Question order="555" ID="33426.100004300" title="Nodal Stations Involved" minCard="0">
+                                <ListField>
+                                  <List>
+                                    <DisplayedItem order="558" ID="33540.100004300" title="Right Nodal Stations Involved">
+                                      <OtherText type="reportText" order="559" val="{no text}" />
+                                    </DisplayedItem>
+                                    <ListItem order="560" ID="33663.100004300" title="1R: Low cervical, supraclavicular, scalene and sternal notch" />
+                                    <ListItem order="561" ID="33770.100004300" title="2R: Upper paratracheal" />
+                                    <ListItem order="562" ID="33772.100004300" title="4R: Lower paratracheal" />
+                                    <ListItem order="563" ID="33787.100004300" title="8R: Para-esophageal (below carina)" />
+                                    <ListItem order="564" ID="33794.100004300" title="9R: Pulmonary ligament" />
+                                    <ListItem order="565" ID="33866.100004300" title="10R: Hilar" />
+                                    <ListItem order="566" ID="33867.100004300" title="11R: Interlobar" />
+                                    <ListItem order="567" ID="34147.100004300" title="12R: Lobar" />
+                                    <ListItem order="568" ID="34148.100004300" title="13R: Segmental" />
+                                    <ListItem order="569" ID="34258.100004300" title="14R: Subsegmental" />
+                                    <ListItem order="570" ID="34259.100004300" title="Other right nodes (specify)">
+                                      <OtherText type="reportText" order="571" val="{no text}" />
+                                      <ListItemResponseField order="572" responseRequired="true">
+                                        <Response>
+                                          <string order="574" maxLength="4000" />
+                                        </Response>
+                                      </ListItemResponseField>
+                                    </ListItem>
+                                    <DisplayedItem order="575" ID="34260.100004300" title="Central Nodal Stations Involved">
+                                      <OtherText type="reportText" order="576" val="{no text}" />
+                                    </DisplayedItem>
+                                    <ListItem order="577" ID="34261.100004300" title="3a: Pre-vascular" />
+                                    <ListItem order="578" ID="34262.100004300" title="3p: Retrotracheal" />
+                                    <ListItem order="579" ID="34263.100004300" title="7: Subcarinal" />
+                                    <ListItem order="580" ID="34264.100004300" title="Other central nodes (specify)">
+                                      <OtherText type="reportText" order="581" val="{no text}" />
+                                      <ListItemResponseField order="582" responseRequired="true">
+                                        <Response>
+                                          <string order="584" maxLength="4000" />
+                                        </Response>
+                                      </ListItemResponseField>
+                                    </ListItem>
+                                    <DisplayedItem order="585" ID="34265.100004300" title="Left Nodal Stations Involved">
+                                      <OtherText type="reportText" order="586" val="{no text}" />
+                                    </DisplayedItem>
+                                    <ListItem order="587" ID="34266.100004300" title="1L: Low cervical, supraclavicular, scalene and sternal notch" />
+                                    <ListItem order="588" ID="34323.100004300" title="2L: Upper paratracheal" />
+                                    <ListItem order="589" ID="34324.100004300" title="4L: Lower paratracheal" />
+                                    <ListItem order="590" ID="34325.100004300" title="5: Subaortic/ aortopulmonary (AP) / AP window" />
+                                    <ListItem order="591" ID="34326.100004300" title="6: Para-aortic (ascending aorta or phrenic)" />
+                                    <ListItem order="592" ID="34327.100004300" title="8L: Para-esophageal" />
+                                    <ListItem order="593" ID="34328.100004300" title="9L: Pulmonary ligament" />
+                                    <ListItem order="594" ID="34376.100004300" title="10L: Hilar" />
+                                    <ListItem order="595" ID="34377.100004300" title="11L: Interlobar" />
+                                    <ListItem order="596" ID="34378.100004300" title="12L: Lobar" />
+                                    <ListItem order="597" ID="34379.100004300" title="13L: Segmental" />
+                                    <ListItem order="598" ID="34380.100004300" title="14L: Subsegmental" />
+                                    <ListItem order="599" ID="34381.100004300" title="Other left nodes (specify)">
+                                      <OtherText type="reportText" order="600" val="{no text}" />
+                                      <ListItemResponseField order="601" responseRequired="true">
+                                        <Response>
+                                          <string order="603" maxLength="4000" />
+                                        </Response>
+                                      </ListItemResponseField>
+                                    </ListItem>
+                                  </List>
+                                </ListField>
+                              </Question>
+                              <Question order="604" ID="15738.100004300" title="Extranodal Extension (Note J)" mustImplement="false" minCard="0">
+                                <OtherText name="Extranodal_Ext_605" type="reportText" order="605" val="Extranodal Extension " />
+                                <ListField>
+                                  <List>
+                                    <ListItem order="608" ID="15740.100004300" title="Present" mustImplement="false" />
+                                    <ListItem order="609" ID="15739.100004300" title="Not identified" mustImplement="false" />
+                                  </List>
+                                </ListField>
+                              </Question>
+                            </ChildItems>
+                          </ListItem>
+                        </List>
+                      </ListField>
+                    </Question>
+                  </ChildItems>
+                </ListItem>
+              </List>
+            </ListField>
+          </Question>
+        </ChildItems>
+      </Section>
+      <Section order="610" ID="1739.100004300" title="STAGE (pTNM) (Note J)">
+        <OtherText type="reportText" order="611" val="STAGE (pTNM)" />
+        <ChildItems>
+          <Question order="613" ID="15994.100004300" title="?TNM Descriptors">
+            <OtherText name="TNM_Descriptors_614" type="reportText" order="614" val="TNM Descriptors" />
+            <ListField>
+              <List>
+                <ListItem order="617" ID="2027.100004300" title="?Not applicable" selectionDeselectsSiblings="true" omitWhenSelected="true">
+                  <OtherText name="NA_618" type="reportText" order="618" val="Not applicable" />
+                  <ListItemResponseField name="NA_619" order="619">
+                    <Response>
+                      <string name="NA_621" order="621" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="622" ID="15995.100004300" title="m (multiple primary tumors)" />
+                <ListItem order="623" ID="15993.100004300" title="r (recurrent)" />
+                <ListItem order="624" ID="15992.100004300" title="y (post-treatment)" />
+              </List>
+            </ListField>
+          </Question>
+          <Question order="625" ID="1740.100004300" title="Primary Tumor (pT)">
+            <ListField>
+              <List>
+                <ListItem order="628" ID="1741.100004300" title="pTX: Cannot be assessed, or tumor proven by presence of malignant cells in sputum or bronchial washings but not visualized by imaging or bronchoscopy">
+                  <OtherText name="pTX_629" type="reportText" order="629" val="pTX" />
+                </ListItem>
+                <ListItem order="630" ID="1742.100004300" title="pT0: No evidence of primary tumor">
+                  <OtherText name="pT0_631" type="reportText" order="631" val="pT0" />
+                </ListItem>
+                <ListItem order="632" ID="1743.100004300" title="pTis: Carcinoma in situ">
+                  <OtherText name="pTis_633" type="reportText" order="633" val="pTis" />
+                </ListItem>
+                <ListItem order="634" ID="1744.100004300" title="pT1a: Tumor 2 cm or less in greatest dimension, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus); or&#xD;&#xA; Superficial spreading tumor of any size with its invasive component limited to the bronchial wall, which may extend proximally to the main bronchus">
+                  <OtherText name="pT1a_635" type="reportText" order="635" val="pT1a" />
+                </ListItem>
+                <ListItem order="636" ID="15741.100004300" title="pT1b: Tumor greater than 2 cm, but 3 cm or less in greatest dimension, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus)">
+                  <OtherText name="pT1b_637" type="reportText" order="637" val="pT1b" />
+                </ListItem>
+                <ListItem order="638" ID="1745.100004300" title="pT2a: Tumor greater than 3 cm, but 5 cm or less in greatest dimension surrounded by lung or visceral pleura without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus); or &#xD;&#xA;Tumor 5 cm or less  in greatest dimension with any of the following features of extent:  involves main bronchus, 2 cm or more distal to the carina; invades the visceral pleura; associated with atelectasis or obstructive pneumonitis that extends to the hilar region but does not involve the entire lung">
+                  <OtherText name="pT2a_639" type="reportText" order="639" val="pT2a" />
+                </ListItem>
+                <ListItem order="640" ID="15997.100004300" title="pT2b:  Tumor greater than 5 cm, but 7 cm or less  in greatest dimension">
+                  <OtherText name="pT2b_641" type="reportText" order="641" val="pT2b" />
+                </ListItem>
+                <ListItem order="642" ID="1746.100004300" title="pT3: &#x9;Tumor greater than 7 cm in greatest dimension; or Tumor of any size that directly invades any of the following: parietal pleural chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium; or &#xD;&#xA;Tumor of any size in the main bronchus less than 2 cm distal to the carina but without involvement of the carina; or &#xD;&#xA;Tumor of any size associated with atelectasis or obstructive pneumonitis of the entire lung; or &#xD;&#xA;Tumors of any size with separate tumor nodule(s) in same lobe">
+                  <OtherText name="pT3_643" type="reportText" order="643" val="pT3" />
+                </ListItem>
+                <ListItem order="644" ID="1747.100004300" title="pT4: Tumor of any size that invades any of the following: mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina; or &#xD;&#xA;Tumor of any size with separate tumor nodule(s) in a different lobe of ipsilateral lung (Note A)">
+                  <OtherText name="pT4_645" type="reportText" order="645" val="pT4" />
+                </ListItem>
+              </List>
+            </ListField>
+          </Question>
+          <Question order="646" ID="1748.100004300" title="Regional Lymph Nodes (pN)">
+            <ListField>
+              <List>
+                <ListItem order="649" ID="1749.100004300" title="pNX: Cannot be assessed">
+                  <OtherText name="pNX_650" type="reportText" order="650" val="pNX" />
+                </ListItem>
+                <ListItem order="651" ID="1750.100004300" title="pN0: No regional lymph node metastasis">
+                  <OtherText name="pN0_652" type="reportText" order="652" val="pN0" />
+                </ListItem>
+                <ListItem order="653" ID="1751.100004300" title="pN1: Metastasis in ipsilateral peribronchial and / or ipsilateral hilar lymph nodes, and  intrapulmonary nodes including involvement by direct extension">
+                  <OtherText name="pN1_654" type="reportText" order="654" val="pN1" />
+                </ListItem>
+                <ListItem order="655" ID="1752.100004300" title="pN2:  Metastasis in ipsilateral mediastinal and / or subcarinal lymph node(s)">
+                  <OtherText name="pN2_656" type="reportText" order="656" val="pN2" />
+                </ListItem>
+                <ListItem order="657" ID="1753.100004300" title="pN3:  Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene or supraclavicular lymph node(s)">
+                  <OtherText name="pN3_658" type="reportText" order="658" val="pN3" />
+                </ListItem>
+              </List>
+            </ListField>
+          </Question>
+          <Question order="659" ID="26618.100004300" title="?Distant Metastases (pM)">
+            <OtherText name="pM_660" type="reportText" order="660" val="Distant Metastasis (pM)" />
+            <ListField>
+              <List>
+                <ListItem order="663" ID="15998.100004300" title="?Not applicable - pM cannot be determined from the submitted specimen(s)" omitWhenSelected="true">
+                  <OtherText name="NA_664" type="reportText" order="664" val="Not applicable - pM cannot be determined from the submitted specimen(s)" />
+                </ListItem>
+                <ListItem order="665" ID="27248.100004300" title="pM1: Distant metastasis">
+                  <OtherText name="pM1_666" type="reportText" order="666" val="pM1" />
+                </ListItem>
+                <ListItem order="667" ID="16010.100004300" title="pM1a:  Separate tumor nodule(s) in contralateral lung;  tumor with pleural nodules or malignant pleural (or pericardial) effusion (Note A)">
+                  <OtherText name="pM1a_668" type="reportText" order="668" val="pM1a" />
+                </ListItem>
+                <ListItem order="669" ID="16011.100004300" title="pM1b: Distant metastases (in extrathoracic organs)">
+                  <OtherText name="pM1b_670" type="reportText" order="670" val="pM1b" />
+                </ListItem>
+              </List>
+            </ListField>
+            <ChildItems>
+              <Question order="672" ID="16013.100004300" title="?Specify Site(s), if known" minCard="0">
+                <OtherText name="pM_Loc_673" type="reportText" order="673" val="Site(s)" />
+                <ResponseField name="pM_Loc_674" order="674">
+                  <Response>
+                    <string name="pM_Loc_676" order="676" maxLength="4000" />
+                  </Response>
+                </ResponseField>
+              </Question>
+            </ChildItems>
+          </Question>
+        </ChildItems>
+      </Section>
+      <Section order="677" ID="15672.100004300" title="ADDITIONAL FINDINGS" mustImplement="false" minCard="0">
+        <ChildItems>
+          <Question order="679" ID="15964.100004300" title="Tumor-Associated Atelectasis or Obstructive Pneumonitis (Note H)" mustImplement="false" minCard="0">
+            <OtherText name="Athelectasis_ObstrcPneumonitis_680" type="reportText" order="680" val="Tumor-Associated Atelectasis or Obstructive Pneumonitis" />
+            <ListField>
+              <List>
+                <ListItem order="683" ID="15991.100004300" title="Extends to the hilar region but does not involve entire lung" mustImplement="false" />
+                <ListItem order="684" ID="15970.100004300" title="Involves entire lung" mustImplement="false" />
+              </List>
+            </ListField>
+          </Question>
+          <Question order="685" ID="1799.100004300" title="Additional Pathologic Finding(s)" mustImplement="false" minCard="0">
+            <ListField>
+              <List>
+                <ListItem order="688" ID="1800.100004300" title="None identified" mustImplement="false" selectionDeselectsSiblings="true" />
+                <ListItem order="689" ID="16012.100004300" title="Atypical adenomatous hyperplasia" mustImplement="false" />
+                <ListItem order="690" ID="16000.100004300" title="Squamous dysplasia" mustImplement="false" />
+                <ListItem order="691" ID="1801.100004300" title="Metaplasia (specify type)" mustImplement="false">
+                  <OtherText name="Metaplasia_692" type="reportText" order="692" val="Metaplasia (type)" />
+                  <ListItemResponseField name="Metaplasia_693" order="693" responseRequired="true">
+                    <Response>
+                      <string name="Metaplasia_695" order="695" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="696" ID="16002.100004300" title="Diffuse neuroendocrine hyperplasia" mustImplement="false" />
+                <ListItem order="697" ID="1802.100004300" title="Inflammation (specify type)" mustImplement="false">
+                  <OtherText name="Inflammation_698" type="reportText" order="698" val="Inflammation (type)" />
+                  <ListItemResponseField name="Inflammation_699" order="699" responseRequired="true">
+                    <Response>
+                      <string name="Inflammation_701" order="701" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+                <ListItem order="702" ID="16001.100004300" title="Emphysema" mustImplement="false" />
+                <ListItem order="703" ID="1803.100004300" title="Other (specify)" mustImplement="false">
+                  <OtherText name="Oth_704" type="reportText" order="704" val="{no text}" />
+                  <ListItemResponseField name="Oth_705" order="705" responseRequired="true">
+                    <Response>
+                      <string name="Oth_707" order="707" maxLength="4000" />
+                    </Response>
+                  </ListItemResponseField>
+                </ListItem>
+              </List>
+            </ListField>
+          </Question>
+        </ChildItems>
+      </Section>
+      <Section order="708" ID="17870.100004300" title="SPECIAL STUDIES" mustImplement="false" minCard="0">
+        <OtherText type="reportText" order="709" val="{no text}" />
+        <ChildItems>
+          <DisplayedItem order="711" ID="30023.100004300" title="Note: For reporting cancer biomarker testing results, the CAP Lung Biomarker Template should be used. Pending biomarker studies should be listed in the Comments section of this report.">
+            <OtherText type="reportText" order="712" val="{no text}" />
+          </DisplayedItem>
+        </ChildItems>
+      </Section>
+      <Question order="713" ID="1804.100004300" title="Comment(s)" mustImplement="false" minCard="0">
+        <ResponseField name="Comments_714" order="714">
+          <Response>
+            <string name="Comments_716" order="716" maxLength="4000" />
+          </Response>
+        </ResponseField>
+      </Question>
+    </ChildItems>
+  </Body>
+  <Footer styleClass="left" ID="Footer.119.1000043">
+    <OtherText name="CopyrightFooter" type="meta" styleClass="copyright" order="718" val="(c) 2016 College of American Pathologists.  All rights reserved.  License required for use." />
+  </Footer>
+</FormDesign>

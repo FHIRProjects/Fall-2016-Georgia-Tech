@@ -1,0 +1,154 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action),Group,Group Description,Resource
+StateID,State-assigned investigation identification code,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+Year,Current year (new),,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+State,State of residence,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+County,County of residence,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+Week,Week of report (new),,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+OnsetDate,Date of onset of symptoms consistent with arboviral infection,,Symptomatic,Questions related to whether the patient shows any symptoms or is asymptomatic,Questionnaire
+ImportedFrom,Likely location of acquisition of arboviral infection,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+CountryOfOrigin,Country in which infection was likely acquired,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+StateOfOrigin,State in which infection was likely acquired,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+ForeignResident,(New),,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+Arbovirus,Type of arboviral infection,,Basic Questions,Questions related to the disease or patient that do not fit within any more specific category,Questionnaire
+CaseStatus,Case classification according to CDC/CSTE surveillance case definitions,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+Age,Age at time of case investigation,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+AgeUnit,Age units,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+BirthDate,Date of Birth,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+Sex,Current sex,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+Race,Race,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+Ethnicity,Ethnicity,,Core Data,Questions that appear in the electronic initial case report and so don't need to be captured in the supplemental data.,Basic
+ClinicalSyndrome,General clinical presentation,,Basic Questions,Questions related to the disease or patient that do not fit within any more specific category,Questionnaire
+Fever,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Headache,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Rash,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+NauseaVomiting,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Diarrhea,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Myalgia,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+ArthralgiaArthritis,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+ParesisParalysis,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+StiffNeck,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+AlteredMentalStatus,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Seizures,Clinical Sign/Symptom,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+StateLocalPublicHealthLab,Testing performed at:,,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+CDCLab,Testing performed at:,,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+CommercialLab,Testing performed at:,,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+Serum1Collected,Was Serum1 collected?,,Specimen,Information on a specimen,Specimen
+Serum1CollectedDate,When was Serum1 collected?,,Specimen,Information on a specimen,Specimen
+Serum2Collected,Was Serum2 collected?,,Specimen,Information on a specimen,Specimen
+Serum2CollectedDate,When was Serum2collected?,,Specimen,Information on a specimen,Specimen
+CSFCollected,Was CSF collected?,,Specimen,Information on a specimen,Specimen
+CSFCollectedDate,When was CSF collected?,,Specimen,Information on a specimen,Specimen
+CSFPLeocytosis,,,Specimen,Information on a specimen,Specimen
+SerumIgM,,,Specimen,Information on a specimen,Specimen
+SerumPRNT,,,Specimen,Information on a specimen,Specimen
+SerumPCRorNAT,,,Specimen,Information on a specimen,Specimen
+SerumPairedAntibody,,,Specimen,Information on a specimen,Specimen
+CSFIgM,,,Specimen,Information on a specimen,Specimen
+CSFPRNT,,,Specimen,Information on a specimen,Specimen
+CSFPCRorNAT,,,Specimen,Information on a specimen,Specimen
+Hospitalized,Patient was hospitalized as a result of arboviral illness,,Treatment,"Questions related to treatment of the disease, excluding injections and medications.",Questionnaire
+Fatality,Patient died as a result of arboviral infection,,Basic Questions,Questions related to the disease or patient that do not fit within any more specific category,Questionnaire
+DateOfDeath,Date of death,,Basic Questions,Questions related to the disease or patient that do not fit within any more specific category,Questionnaire
+LabAcquired,Patient likely acquired infection due to occupational exposure in a laboratory setting,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+NonLabAcquired,Patient likely acquired infection due to occupational exposure in a non-laboratory setting,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+BloodDonor,Patient donated blood within 30 days prior to illness onset,,Exposure,Questions related to the patient's exposure to factors that might have caused or exacerbated the disease,Questionnaire
+BloodTransfusion,Patient received a blood transfusion within 30 days prior to illness onet,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+OrganDonor,Patient donated a solid organ within 30 days prior to illness onset,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+OrganTransplant,Patient received a solid organ transplant within 30 days prior to illness onset,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+BreastFedInfant,Patient was a breastfed infant at time of illness onset,,Exposure,Questions related to the patient's exposure to factors that might have caused or exacerbated the disease,Questionnaire
+InfectedInUteroOrPerinatal,Patient likely acquired infection in utero or perinatal,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+Pregnant,Patient acquired infection during pregnancy,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+AFP,Patient suffered acute flaccid paralysis,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+IdentifiedByBloodDonorScreening,Infection identified through blood donor screening,,Basic Questions,Questions related to the disease or patient that do not fit within any more specific category,Questionnaire
+DateOfDonation,Date of blood donation,,Exposure,Questions related to the patient's exposure to factors that might have caused or exacerbated the disease,Questionnaire
+LabTestingBy,Source of diagnostic testing,,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+TransmissionOrigin,,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+TransmissionMode,,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+BloodTissueBorneTransmission,,,Transmission Method,Questions related to the source from which the patient acquired the disease.,Questionnaire
+DomesticTravelDestinationLast,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+DomesticTravelDestination2ndLast,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+DomesticTravelDestination3rdLast,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+ForeignTravelDestinationLast,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+ForeignTravelDestination2ndLast,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+ForeignTravelDestination3rdLast,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+DateUSReturn,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+DurationDaysTravelOutsideUS,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+ReasonTravel,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+PreTravelHealthConsultation,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+CountryBirth,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+ResidenceStatus,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+DurationMonthsVisitOrLiveUS,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+MilitaryStatus,,,Travel and Immigration History,Questions related to a patient's travel or immigration history.,Questionnaire
+ClinicalSyndrome2,,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+DurationDaysHospitalized,,,Treatment,"Questions related to treatment of the disease, excluding injections and medications.",Questionnaire
+ICUAdmission,,,Treatment,"Questions related to treatment of the disease, excluding injections and medications.",Questionnaire
+SevereEncephalitis,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SevereSeizure,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SevereMeningitis,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SevereAcuteFlaccidParalysis,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SevereGuillainBarreSyndrome,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SevereHemorrhageShock,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SeverePlasmaLeakage,,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+SevereAcuteLiverFailure,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SevereAcuteMyocarditis,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SevereMultiSystemOrganFailure,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SevereOtherSevereSigns,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+SevereUnknown,,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+PreExistingAsthma,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingChronicHeart,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingChronicLiver,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingChronicRenal,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingDiabetesMellitus,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingSickleCell,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingHyperlipidemia,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingHypertension,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingObesity,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingPregnancy,,,Pregnancy Status,Questions related to the patient's pregnancy status,Condition
+PreExistingThyroidDisease,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingOther,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+PreExistingUnknown,,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+S1DENVCollected,,,Specimen,Information on a specimen,Specimen
+S1DENVCollectedDate,,,Specimen,Information on a specimen,Specimen
+S1IgMAntiDENV,,,Specimen,Information on a specimen,Specimen
+S1MolecularDENV,,,Specimen,Information on a specimen,Specimen
+S1OtherDENVMethod,,,Specimen,Information on a specimen,Specimen
+S1OtherDENVResult,,,Specimen,Information on a specimen,Specimen
+S2DENVCollected,,,Specimen,Information on a specimen,Specimen
+S2DENVCollectedDate,,,Specimen,Information on a specimen,Specimen
+S2IgMAntiDENV,,,Specimen,Information on a specimen,Specimen
+S2MolecularDENV,,,Specimen,Information on a specimen,Specimen
+S2OtherDENVMethod,,,Specimen,Information on a specimen,Specimen
+S2OtherDENVResult,,,Specimen,Information on a specimen,Specimen
+OtherSpecCollected,,,Specimen,Information on a specimen,Specimen
+OtherSpecType,,,Specimen,Information on a specimen,Specimen
+OtherSpecCollectedDate,,,Specimen,Information on a specimen,Specimen
+OtherSpecDENVMethod,,,Specimen,Information on a specimen,Specimen
+OtherSpecDENVResult,,,Specimen,Information on a specimen,Specimen
+DENVSeroType,,,Specimen,Information on a specimen,Specimen
+Published,,,Basic Questions,Questions related to the disease or patient that do not fit within any more specific category,Questionnaire
+FeverMedication,Did patient receive medication for fever?,,Treatment (Medication),Questions related to medication the patient has recieved as a part of treatment for this disease.,MedicationStatement
+ImmuneSuppressTreatment,Is patient on immunosuppressive therapy?,,Treatment,"Questions related to treatment of the disease, excluding injections and medications.",Questionnaire
+ImmuneSuppressCondition,Does patient have an immunosuppressive condition?,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+ImmuneSuppressDesc,Description of immunosuppressive condition,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+OtherAfebrileCause,Other afebrile causes,,Medical History,"Questions related to medication or treatment the patient has recieved, not as a part of treatment for this disease.",Questionnaire
+ChillsRigors,Did patient have chills or rigors?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+FatigueMalaise,Did patient exhibit fatigue or malaise?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Ataxia,Did patient have ataxia?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+ParkinsonismCogwheel,Was Parkinsonism cogwheel rigidity present?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+SevereShock,Did patient exhibit severe shock?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+SevereHemorrhage,Did patient have severe hemorrhaging?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+OtherSymptoms,Other symptoms of interest,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Arthralgia,Did patient exhibit arthralgia?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Arthritis,Did patient exhibit arthritis?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Conjunctivitis,Did the patient have conjunctivitis?,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+RetroOrbitalPain,Did the patient have retro orbital pain?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+TourniquetTestPositive,Did the patient have a tourniquet test positive?,,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+Leukopenia,Did the patient have leukopenia?,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+AbdominalPainTenderness,Did the patient have abdominal pain tenderness?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+PersistingVomiting,Did the patient have persisting vomiting?,,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+ExtravascularFluidAccumulation,Did the patient have extravascular fluid accumulation?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+MucosalBleeding,Did the patient have mucosal bleeding?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+LiverEnlargement,Did the patient have liver enlargement?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+IncreasingHematocritDecPLT,Did the patient have increasing hematocrit dec PLT?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+SevereBleeding,Did the patient have severe bleeding?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+SevereOrganInvolvement,Did the patient have severe organ involvement?,,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation

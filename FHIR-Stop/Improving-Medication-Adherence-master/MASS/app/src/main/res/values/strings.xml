@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MASS</string>
+    <string name="main_content_greeting">Your Medications</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_medical_record_connections">Medical Record Connection</string>
+    <string name="action_medication_orders">Medication Orders</string>
+    <string name="action_set_schedule">Set Medication Schedule</string>
+    <string name="medical_record_connection_name_prompt">Name</string>
+    <string name="patient_id_prompt">Patient ID</string>
+    <string name="user_name_prompt">User Name</string>
+    <string name="password_prompt">Password</string>
+    <string name="url_prompt">FHIR Url</string>
+    <string name="medical_record_connection_name_hint">(ex. Dr. Braunsteins Office)</string>
+    <string name="patientid_hint">Patient ID (ex. 12345)</string>
+    <string name="username_hint">FHIR user name</string>
+    <string name="password_hint">FHIR password</string>
+    <string name="url_hint">(ex. https://myfhirserver.com)</string>
+    <string name="test_medical_record_connection">Test Connection</string>
+    <string name="selectMedication">Select Medication</string>
+
+</resources>

@@ -1,0 +1,72 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Date First Submitted,Date/time the notification was first sent to CDC.  This value does not change after the original notification.  ,
+State Case ID,States use this field to link NEDSS investigations back to their own state investigations.,
+Health care provider,Health care provider name,
+Health care provider phone,Health care provider phone number,
+Case Class Status Code,"Status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/ surveillance case definitions.",PHVS_CaseClassStatus_NND
+Subject Address State,State of residence of the subject,PHVS_State_FIPS_5-2
+Subject Address ZIP Code,ZIP Code of residence of the subject,
+Subject Address County,County of residence of the subject,PHVS_County_FIPS_6-4
+Subject's Sex,Subject's current sex,
+Date of Birth,Birth Date (mm/yyyy),
+Age at case investigation,Subject age at time of case investigation,
+Age units at case investigation,Subject age units at time of case investigation,PHVS_AgeUnit_UCUM_NETSS
+Ethnic Group Code,Based on the self-identity of the subject as Hispanic or Latino ,PHVS_EthnicityGroup_CDC_Unk
+Race Category,Field containing one or more codes that broadly refer to the subject's race(s).,PHVS_RaceCategory_CDC
+Symptomatic,Was the case-patient symptomatic?,PHVS_YesNoUnknown_CDC
+Date symptom onset,"If Symptomatic was ""Yes"", provide the Date of Onset of symptoms",
+Symptoms,"Select symptoms and signs reported or identified, from ""Fever"", ""Myalgia"", ""Headache"", ""Jaundice "", ""Hepatitis"", ""Conjunctival suffusion"", ""Rash (Maculopapular or petechial)"", ""Aseptic meningitis"", ""Gastrointestinal involvement"", ""Pulmonary complications"", ""Cardiac involvement"", ""Renal insufficiency/failure "", ""Hemorrhage"",  ""Other (specify)""",
+Hospitalization?,Was the case-patient hospitalized (at least overnight) for this Did the case-patient die? Yes No Unk infection?,PHVS_YesNoUnknown_CDC
+Admission Date,Subject's first admission date to the hospital for the condition covered by the investigation.,
+Number of days,"If hospitalized, number of days.",
+Outcome,"Clinical outcome of the patient (""Still hospitalized""; ""Discharged""; ""Died"";""Other"")",
+Discharge Date,Subject's first discharge date from the hospital for the condition covered by the investigation.,
+Deceased Date,"If the subject died from this illness or complications associated with this illness, indicate the date of death",
+Antibiotics prescribed,Were Antibiotics prescribed for this infection?,PHVS_YesNoUnknown_CDC
+Antibiotics start date,Date started taking antibiotics,
+Doxycycline,Was doxycycline prescribed for this infection?,PHVS_YesNoUnknown_CDC
+Penicillin ,Was penicillin prescribed for this infection?,PHVS_YesNoUnknown_CDC
+Other antibiotics,List other antibiotics prescribed for this infection,
+Reporting Lab Name,Name of Laboratory that reported test result.,
+Date Sample Received at Lab,Date Sample Received at Lab (accession date).,
+Date specimen collected,The date the specimen was collected.,
+Specimen Type,"Type of specimen collected (""Blood"", ""Urine"", ""Tissue"", ""CSF"", ""Other"", ""Unknown"", ""Serum"")",
+Date of Acute Specimen Collection,The date the acute specimen was collected.,
+Date of Convalscent Specimen Collection,The date the convalscent specimen was collected.,
+Resulted Test Name,"The lab test that was run on the specimen (""Microscopic Agglutination Test (MAT)"", ""PCR"", ""Culture"", ""Immunofluorescence"", ""Darkfield microscopy"", ""ELISA (specify)"", ""IHC"", ""Other, specify"")",
+Numeric Result,Results expressed as numeric value/quantitative result.,
+Result Units,The unit of measure for numeric result value.  ,PHVS_UnitsOfMeasure_CDC
+Coded Result Value,"Coded qualitative result value (e.g., Positive, Negative).",PHVS_PosNegUnk_CDC
+Organism Name,"The Organism (i.e., species and serovar) name as a test result.  This element is used when the result was reported as an organism.",PHVS_Microorganism_CDC
+Lab Result Text Value,"Textual result value, used if result is neither numeric nor coded.",
+Result Status,The Result Status is the degree of completion of the lab test.,PHVS_ObservationResultStatus_HL7_2x
+Specimens to CDC,Were specimens or isolates sent to CDC for testing?,PHVS_YesNoUnknown_CDC
+Exposures,"Describe exposures to water, animals, or wet soil which the subject had in the 30 days prior to illness onset",
+Animal contact,"Select which animals the subject has had contact with in the 30 days prior to illness onset, if any  (""Farm livestock"", ""Wildlife"", ""Dogs"", ""Rodents"", ""Other"", ""No known contact"", ""Unknown"")",
+Livestock contact,"If the subject had contact with livestock, specify the animal(s)",
+Wildlife contact,"If the subject had contact with wildlife, specify the animal(s)",
+Animal contact other,"If animal contact is ""Other"", describe the animal(s) with which the subject has had contact",
+Animal contact location,"If the subject had contact with animals, specify the grographic location where the contact occurred",
+Water contact,"Select which water sources the subject has had contact with in the 30 days prior to illness onset, if any  (""Standing fresh water (lake, pond, run-off)"", ""Flood water"", ""River"", ""Wet soil"", ""Sewage"",""Water sports"", ""Other"", ""No known contact"", ""Unknown"")",
+Water contact other,"If water contact is ""Other"",  describe the water source(s) which the subject has had contact",
+Water contact location,"If the subject had contact with water, specify the grographic location where the contact occurred",
+Contact Type,"If subject had contact with animals, fresh water, or wet soil in the 30 days prior to illness onset, describe the type of contact (""Occupational"", ""Recreational"", ""Avocational"", ""Other"")",
+Occupational contact,"If type of contact with animals or water is ""Occupational"", select the occupational group (""Farmer (land)"", ""Farmer (animals)"", ""Fish worker"", ""Other"", ""Unknown"")",
+Occupational contact other,"If the occupational group through which the subject had contact with animals or water is ""Other"", describe the occupation",
+Recreational contact,"If type of contact with animals or water is ""Recreational"", select the recreational activity (""Swimming"", ""Boating"", ""Outdoor competition"", ""Camping/hiking"", ""Hunting"", ""Other"", ""Unknown"")",
+Recreational contact other,"If the recreational activity through which the subject had contact with animals or water is ""Other"", describe the recreational activity",
+Avocational contact,"If type of contact with animals or water is ""Avocational"", select the  activity (""Gardening"", ""Pet-ownership"", ""Other"", ""Unknown"")",
+Avocational contact other,"If the Avocational activity through which the subject had contact with animals or water is ""Other"", describe the avocational activity",
+Contact Type Other,"If Contact Type is ""Other"", describe the type of contact with animals, wet soil, or standing water",
+Rodent infested housing,Did the patient stay in housing with evidence of rodents in the 30 days prior to illness onset,PHVS_YesNoUnknown_CDC
+Rural residence,Residence in rural area in the 30 days prior to illness onset,PHVS_YesNoUnknown_CDC
+Hisotry of leptospirosis,Does the subject have a hisotry of leptospirosis?,PHVS_YesNoUnknown_CDC
+Travel,"Did the subject travel out of the county, state, or country in the 30 days prior to symptom onset?",PHVS_YesNoUnknown_CDC
+Travel location,"If the  travel is ""Yes"", provide location(s) of travel in the 30 days prior to symptom onset",
+Rainfall,"Was there heavy rainfall near the subjects place of residence, worksite, activities, or travel in the 30 days prior to symptom onset?",PHVS_YesNoUnknown_CDC
+Flooding,"Was there flooding near the subjects place of residence, worksite, activities, or travel in the 30 days prior to symptom onset?",PHVS_YesNoUnknown_CDC
+Similar illness,Did the patient have similar exposures as a contact diagnosed with leptospirosis in the 30 day period,PHVS_YesNoUnknown_CDC
+Outbreak,Is this patient part of an outbreak?,PHVS_YesNoUnknown_CDC
+Case Outbreak Name,A state-assigned name for an indentified outbreak. ,
+Person Reporting to CDC - Name,Name of the person who is reporting the case to the CDC.  This is the person that CDC should contract in a state if there are questions regarding this case notification.,
+Person Reporting to CDC - Phone Number,Phone Number of the person who is reporting the case to the CDC.  This is the person that CDC should contract in a state if there are questions regarding this case notification.,

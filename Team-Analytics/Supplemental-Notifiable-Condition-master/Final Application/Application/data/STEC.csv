@@ -1,0 +1,260 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+AgClinic,For possible E. coli cases: What was the result of specimen testing for Shiga toxin using an antigen-based test (e.g.EIA or lateral flow) at a clinical laboratory?,
+AgClinicTestType,Name of antigen-based test used at clinical laboratory,
+AgeMnth,Age of case-patient in months if patient is <1yr,
+AgeYr,Age of case-patient in years,
+AgSphl,For possible E. coli cases: What was the result of specimen testing for Shiga toxin using an antigen-based test (e.g.EIA or lateral flow) at a state public health laboratory?  ,
+AgSphlTestType,Name of antigen-based test used at state public health laboratory,
+BioId                                            ,Was the pathogen identified by culture?,
+BloodyDiarr,Did the case-patient have bloody diarrhea (self reported) during this illness?,
+Diarrhea,Did the case-patient have diarrhea (self-reported) during this illness?,
+DtAdmit2,Date of hospital admission for second hospitalization for this illness,
+DtDisch2,Date of hospital discharge for second hospitalization for this illness,
+DtEntered,Date case was entered into site's database,
+DtRcvd,Date case-pateint's specimen was received in laboratory for initial testing,
+DtRptComp,Date case report form was completed,
+DtSpec,Case-patient's specimen collection date,
+DtUSDepart,"If case-patient patient traveled internationally, date of departure from the U.S.",
+DtUSReturn,"If case-patient traveled internationally, date of return to the U.S.",
+EforsNum,CDC FDOSS outbreak ID number,
+Fever,Did the case-patient have fever (self-reported) during this illness?,
+HospTrans,"If case-patient was hospitalized, was s/he transferred to another hospital?",
+HUS,Did case patient have a diagnosis of HUS?,
+Immigrate,Did case-patient immigrate to the U.S.? (within 7 days of illness onset),
+Interview,Was the case-patient interviewed by public health (i.e. state or local health department) ?,
+LabName,Name of submitting laboratory,
+LocalID,Ccase-patient's medical record number,
+OtherCdcTest,What was the result of specimen testing for Shiga toxin using another test at the CDC? ,
+OtherClinicTest,What was the result of specimen testing for Shiga toxin using another test at a clinical laboratory,
+OtherClinicTestType,Name of other test used at a clinical laboratory,
+OtherSphlTest,What was the result of specimen testing for Shiga toxin using another test at a state public health laboratory? ,
+OtherSphlTestType,Name of other test used at a state public health laboratory,
+OutbrkType,Type of outbreak that the case-patient was part of,
+PatID,Case-patient identification number ,
+PcrCdc,What was the result of specimen testing for Shiga toxin using PCR at CDC? ,
+PcrClinic,What was the result of specimen testing for Shiga toxin using PCR at a clincal laboratory? ,
+PcrClinicTestType,Name of PCR assay used,
+PcrSphl,What was the result of specimen testing for Shiga toxin using PCR at a state public health laboratory? ,
+PersonID,Unique identification number for person or patient,
+ResultID,Unique identifier for laboratory result,
+RptComp,Is all of the information for this case complete?,
+SentCDC,Was specimen or isolate forwarded to CDC for testing or confirmation?,
+SLabsID,State lab identification number,
+SpecSite,Case patient's specimen collection source ,
+StecH7,Was it H7 antigen positive?,
+StecHAg,What was the H-antigen number?,
+StecNM,Was the isolate non-motile?,
+StecO157,Was it O157 positive?,
+StecOAg,What was the O-antigen number?,
+StecStx,Was E. coli Shiga toxin-producing?,
+StLabRcvd,"Was the isolate sent to a state public health laboratory? (Answer 'Yes' if it was sent to any state lab, even if it was sent to a lab outside of the case's state of residence)",
+TravelDest,"If case-patient traveled internationally, to where did they travel?",
+TravelInt,Did the case patient travel internationally? (within 7 days of onset),
+PulseNet Key,Identification tag in PulseNet database,
+Date of interview,Date questionnaire administered to case,
+Respondent,Individual who was interviewed,Self; Parent; Spouse; Other
+Other Respondent,"If case, parent, or spouse not interviewed, then who was?",
+City of residence,City where patient resides,
+Month of birth,Month when patient was born,2013-01-12 00:00:00
+Year of birth,Year when patient was born,
+Hispanic or Latino,Is the patient of Hispanic or Latino origin,Hispanic; Non-Hispanic; Unknown
+Total days ill,Length of patient's illness in days,
+Still ill,Is the patient still ill,Yes; No
+Diarrhea,Patient experienced 3 or more loose stools in 24-hour period,Yes; No; Maybe; Unknown
+Diarrhea onset,Date patient first expierenced 3 or more loose stools,
+Bloody stool,Patient experienced blood in stool,Yes; No; Maybe; Unknown
+Still hospitalized,Is the patient still hospitalizaed,Yes; No
+HUS,Patient diagnosed by doctor with HUS or kidney failure,Yes; No; Maybe; Unknown
+Food handler,Patient works as a food handler at dining establishment,Yes; No; Maybe; Unknown
+Daycare worker,Patient works in a daycare facility,Yes; No; Maybe; Unknown
+Foods at home,List of locations where foods eaten at home were purchased,
+Foods away from home,List of locations where foods were eaten outside of the home,
+Handled raw ground beef,Patient handled raw ground beed (even if not consumed) in 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Ground beef,Patient consumed ground beef in 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Ground beef at home,Patient consumed ground beef at home in 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Pink ground beef at home,Patient consumed red or pink ground beef at home in 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Ground beef at home purchase location,Location(s) where ground beef consumed at home in 7 days prior to illness onset was purchased,
+Ground beef at home purchase date,Date(s) when ground beef consumed at home in 7 days prior to illness onset was purchased,
+Ground beef brand,Brand(s) of ground beef eaten at home in 7 days prior to illness onset,
+Ground beef bulk,Ground beef eaten at home was purchased in bulk,Yes; No
+Ground beef patties,Ground beef eaten at home was purchased in pre-formed patties,Yes; No
+Ground beef other,Ground beef eaten at home was purchased in other form,Yes; No
+Ground beef unknown purchase form,Patient unable to recall form in which ground beef eaten at home was purchased,Yes; No
+Home ground beef size,Size in which ground beef consumed at home was purchased,Number of pounds; Unknown
+Percent lean,Percentage lean of ground beef eaten at home,Percentage; Unknown
+Fresh ground beef,Ground beef eaten at home was purchased fresh,Yes; No
+Frozen ground beef,Ground beef eaten at home was purchased frozen,Yes; No
+Unknown fresh/frozen ground beef,Patient unable to recall if ground beef consumed at home was purchased fresh or frozen,Yes; No
+Ground beef away from home,Patient consumed ground beef away from home in 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Gound beef away from home location,Location(s) where ground beef consumed away from home,
+Pink ground beef away,Patient consumed red or pink ground beef away from home,Yes; No; Maybe; Unknown
+Hamburger,Ground beef eaten outside the home as hamburger,Yes; No
+Meatball,Ground beef eaten outside the home as meatball,Yes; No
+Meatloaf,Ground beef eaten outside the home as meatloaf,Yes; No
+Taco,Ground beef eaten outside the home in a taco,Yes; No
+Ground beef in a dish,Ground beef eaten in a dish (ex. casserole) outside the home,Yes; No
+Other form of ground beef outside home,"Ground beef eaten outside the home in form other than hamburger, meatball, meatloaf, taco, or in a dish",Yes; No
+Specify other form of ground beef,Other type of ground beef eaten outside the home,
+Steak,Patient consumed steak in 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Steak at home,Patient consumed steak at home in 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Pink steak at home,Steak consumed at home was pink or read,Yes; No; Maybe; Unknown
+Steak at home purchase location,Location(s) where steak consumed at home was purchased,
+Steak at home purchase date,Date(s) when steak consumed at home was purchased,
+Steak brand,Brand(s) of steak eaten at home,
+Steak consumed as steak,Steak was consumed as steak,Yes; No
+Steak consumed as stew,Steak was consumed in a stew,Yes; No
+Steak consumed as roast,Steak was consumed as a roast,Yes; No
+Unknown steak type,Patient unable to recall how steak was consumed,Yes; No
+Steak consumed as other,"Steak was consumed in form other than steak, stew, roast",Yes; No
+Specify how steak was consumed,"If steak was consumed in other form, then specify",
+Steak away from home,Patient consumed steak away from home in 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Steak away from home location,Location(s) where steak was consumed away from home,
+Steak away from home dates,Date(s) when steak was consumed away from home,
+Pink steak away,Patient consumed red or pink steak away from home,Yes; No; Maybe; Unknown
+Pink steak away as steak,Patient consumed red or pink steak away from home as steak,Yes; No
+Pink steak away as stew,Patient consumed red or pink steak away from home as stew,Yes; No
+Pink steak away as roast,Patient consumed red or pink steak away from home as a roast,Yes; No
+Pink steak away as other product,"Patient consumed red or pink steak away from home in form other than steak, stew, or roast",Yes; No
+Specify how other pink steak was consumed,Specify if 'Other' red or pink steak was reported,
+Bison,Patient consumed bison in the 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Bison at home,Patient consumed bison at home in the 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Pink bison at home,Patient consumed red or pink bison at home,Yes; No; Maybe; Unknown
+Bison purchase location,Location(s) where ground beef consumed at home was purchased,
+Bison purchase date,Date(s) when bison consumed at home was purchased,
+Bison at home brand,Brand of bison purchased for home consumption,
+Bison away from home,Patient consumed bison away from home in 7 days prior to illness onset,Yes; No; Maybe; Unknown
+Bison away location,Location(s) where bison was consumed outside the home,
+Bison away date,Date(s) when bison was consumed outside the home,
+Pink bison away from home,Bison eaten outside the home was red or pink,Yes; No; Maybe; Unknown
+Wild game,Patient consumed wild game in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Dried meat,Patient consumed dried meat in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Pepperoni,Patient consumed dried meat that was pepperoni,Yes; No
+Salami,Patient consumed dried meat that was salami,Yes; No
+Sausage,Patient consumed dried meat that was sausage,Yes; No
+Other dried meat,"Patient consumed dried meat that was not pepperoni, salami, or sausage",Yes; No
+Typle of other dried meat,Specify other type of dried meat consumed,
+Jerky,Patient consumed jerkey of any type in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Raw milk,Patient consumed raw milk in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Raw cheese,Patient consumed cheese made with raw milk in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Raw cheese type,Type of raw milk cheese consumed,
+Raw cheese location,Location(s) where raw milk cheese was purchased,
+Raw cheese date,Date(s) when raw milk cheese was purchased,
+Raw ice cream,Patient consumed ice cream made with raw milk in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Raw juice,Patient consumed raw or unpasteurized juice or cide in the 7 dayse before illness onset,Yes; No; Maybe; Unknown
+Lettuce,Patient consumed lettuce of any kind in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Lettuce at home,Patient consumed lettuce of any kind at home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Lettuce at home purchase location,Location(s) where lettuce consumed at home was purchased,
+Lettuce at home purchase date,Date(s) when lettuce consumed at home was purchased,
+Lettuce at home brand,Brand(s) of lettuce purchased for home consumption,
+Loose lettuce at home,Patient consumed loose lettuce of any kind in the 7 days before illness onset,Yes; No
+Prepackaged lettuce at home,Patient consumed prepackaged lettuce of any kind in the 7 days before illness onset,Yes; No
+Unknown packaging of lettuce at home,Patient unable to recall how lettuce consumed at home was packaged,Yes; No
+Lettuce away from home,Patient consumed lettuce of any kind away from home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Lettuce away from home location,Location(s) where the lettuce was consumed away from home,
+Mesclun lettuce,Patient consumed mesclun lettuce in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Mesclun lettuce at home,Patient consumed mesclun lettuce at home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Mesclun lettuce at home purchase location,Location(s) where mesclun lettuce consumed at home was purchased,
+Mesclun lettuce at home purchase date,Date(s) when mesclun lettuce consumed at home was purchased,
+Mesclun lettuce at home brand,Brand(s) of mesclun lettuce consumed at home,
+Loose mesclun lettuce at home,Patient consumed loose mesclun lettuce at home,Yes; No
+Prepackaged mesclun lettuce at home,Patient consumed prepackaged mesclun lettuce at home,Yes; No
+Unknown packaging of mesclun lettuce at home,Patient unable to recall how mesclun lettuce consumed at home was purchased,Yes; No
+Mesclun lettuce away from home,Patient consumed mesclun lettuce away from home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Mesclun lettuce away from home location,Location(s) where the mesclun lettuce was consumed away from home,
+Iceberg lettuce,Patient consumed iceberg lettuce in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Iceberg lettuce at home,Patient consumed iceberg lettuce at home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Iceberg lettuce at home purchase location,Location(s) where iceberg lettuce consumed at home was purchased,
+Iceberg lettuce at home purchase date,Date(s) when iceberg lettuce consumed at home was purchased,
+Iceberg lettuce at home brand,Brand(s) of iceberg lettuce consumed at home,
+Loose iceberg lettuce at home,Patient consumed iceberg mesclun lettuce at home,Yes; No
+Prepackaged iceberg lettuce at home,Patient consumed prepackaged iceberg lettuce at home,Yes; No
+Unknown packaging of iceberg lettuce at home,Patient unable to recall how iceberg lettuce consumed at home was purchased,Yes; No
+Iceberg lettuce away from home,Patient consumed iceberg lettuce away from home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Iceberg lettuce away from home location,Location(s) where the iceberg lettuce was consumed away from home,
+Romaine lettuce,Patient consumed romaine lettuce in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Romaine lettuce at home,Patient consumed romaine lettuce at home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Romaine lettuce at home purchase location,Location(s) where romaine lettuce consumed at home was purchased,
+Romaine lettuce at home purchase date,Date(s) when romaine lettuce consumed at home was purchased,
+Romaine lettuce at home brand,Brand(s) of romaine lettuce consumed at home,
+Loose romaine lettuce at home,Patient consumed loose romaine lettuce at home,Yes; No
+Prepackaged romaine lettuce at home,Patient consumed prepackaged romaine lettuce at home,Yes; No
+Unknown packaging of romaine lettuce at home,Patient unable to recall how romaine lettuce consumed at home was purchased,Yes; No
+Romaine lettuce away from home,Patient consumed romaine lettuce away from home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Romaine lettuce away from home location,Location(s) where the romaine lettuce was consumed away from home,
+Red leaf lettuce,Patient consumed red leaf lettuce in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Red leaf lettuce at home,Patient consumed red leaf lettuce at home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Red leaf lettuce at home purchase location,Location(s) where red leaf lettuce consumed at home was purchased,
+Red leaf lettuce at home purchase date,Date(s) when red leaf lettuce consumed at home was purchased,
+Red leaf lettuce at home brand,Brand(s) of red leaf lettuce consumed at home,
+Loose red leaf lettuce at home,Patient consumed loose red leaf lettuce at home,Yes; No
+Prepackaged red leaf lettuce at home,Patient consumed prepackaged red leaf lettuce at home,Yes; No
+Unknown packaging of red leaf lettuce at home,Patient unable to recall how red leaf lettuce consumed at home was purchased,Yes; No
+Red leaf lettuce away from home,Patient consumed red leaf lettuce away from home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Red leaf lettuce away from home location,Location(s) where the red leaf lettuce was consumed away from home,
+Spinach,Patient consumed spinach in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Spinach at home,Patient consumed spinach at home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Spinach at home purchase location,Location(s) where spinach consumed at home was purchased,
+Spinach at home purchase date,Date(s) when spinach consumed at home was purchased,
+Spinach at home brand,Brand(s) of spinach consumed at home,
+Loose spinach at home,Patient consumed spinach at home,Yes; No
+Prepackaged spinach at home,Patient consumed prepackaged spinach at home,Yes; No
+Unknown packaging of spinach at home,Patient unable to recall how spinach consumed at home was purchased,Yes; No
+Spinach away from home,Patient consumed spinach away from home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Spinach away from home location,Location(s) where the spinach was consumed away from home,
+Other leafy greens,Patient consumed other leafy greens in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Other leafy greens at home,Patient consumed other leafy greens at home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Other leafy greens at home purchase location,Location(s) where other leafy greens consumed at home was purchased,
+Other leafy greens at home purchase date,Date(s) when other leafy greens consumed at home was purchased,
+Other leafy greens at home brand,Brand(s) of other leafy greens consumed at home,
+Loose other leafy greens at home,Patient consumed other leafy greens at home,Yes; No
+Prepackaged other leafy greens at home,Patient consumed prepackaged other leafy greens at home,Yes; No
+Unknown packaging of other leafy greens at home,Patient unable to recall how other leafy greens consumed at home was purchased,Yes; No
+Other leafy greens away from home,Patient consumed other leafy greens away from home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Other leafy greens away from home location,Location(s) where the other leafy greens was consumed away from home,
+Sprouts,Patient consumed sprouts of any kind in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Sprouts at home,Patient consumed sprouts of any kind at home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Sprouts at home purchase locations,Location(s) where sprouts consumed at home were purchased,
+Sprouts at home purchase date,Date(s) when sprouts consumed at home were purchased,
+Sprouts at home brand,Brand(s) of sprouts consumed at home,
+Sprouts away from home,Patient consumed sprouts of any kind away from home in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Sprouts away from home location,Location(s) where sprouts were consumed away from home,
+Sprouts way from home type,Type of sprouts consumed outside the home,
+Petting zoo,Patient visited a petting zoo in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Farm with livestock,"Patient visited, worked, or lived on a farm with livestock in the 7 days before illness onset",Yes; No; Maybe; Unknown
+Farm and Feed store,Patient visited an agricultural 'Farm and Feed' store in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Pet store,"Patient visited a pet store, swap meets, or other places where animals/birds are sold or shown in the 7 dayse before illness onset",Yes; No; Maybe; Unknown
+Fair,"Patient visited a county or state fair, 4-H event, or similar even with animals in the 7 days before illness onset",Yes; No; Maybe; Unknown
+Pet treats,Patient had contact with pet treats or chews in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Animal droppings,Patient had contact with dried animal droppings or pellets in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Daycare,Patient attended or had contact with a daycare facility in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Any travel,Patient spent all or some of the 7 days before illness onset outside of their state of residence,Yes; No; Maybe; Unknown
+Domestic travel,Postal code abbreviation of state(s) where patient traveled,
+Domestic travel start date,Domestic travel start date,
+Domestic travel end date,Domestic travel end date,
+International travel,Countries visited in the 7 days before illness onset,
+International travel start date,International travel start date,
+International travel end date,International travel end date,
+Group meals,Patient attended a group meal in the 7 days before illness onset,Yes; No; Maybe; Unknown
+Institution,"Patient visited, lives, or works in an institutional home (jail, nursing home, etc.)",Yes; No; Maybe; Unknown
+Institution location,"Location of institution where patient visits, lives, or works",
+Source of drinking water,Main source of drinking water for patient during the 7 days before illness onset,City/municipal; Well; Bottled; Unknown
+Site ID,Site ID assigned by CDC.  ,
+Disease,Foodborne Disease.,
+State Lab ID,Identification of Isolate,
+Collection Date,Date isolate taken from patient,
+Last Updated,Date of Last Modification,
+Confirmed,Is isolate confirmed,
+Specimen Source,Source of isolate,
+Test Result,Serotype/Species/Test Result ,
+Local Case ID,Local Case ID for Patient,
+City,Patients City of Residence,
+State,Patients State of Residence,
+Zip code,Patients Zip code of Residence,
+County,Patients County of Residence,
+DOB,Date of Birth,
+Age,Patients Age,
+Age Type,Is Age reported in,
+Sex,Patients Sex,
+Race,Patients Race,
+Ethnicity,Patients Ethnicity,
+Comments,Comments,

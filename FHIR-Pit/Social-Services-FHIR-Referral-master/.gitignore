@@ -1,0 +1,14 @@
+.metadata
+target
+bin
+*/**/target
+bin
+*/**/.classpath
+*/**/.project
+*.log
+log.roo
+Servers
+activemq-data
+.DS_Store
+.settings
+RemoteSystemsTempFiles

@@ -1,0 +1,175 @@
+/* Created by Scott R. Leitstein */
+/* Source: http://www.cdc.gov/TemplatePackage/3.0/css/homepage/homepage.css */
+
+.theme-blue .titlebar {
+  background: #075290;
+  height: 50px;
+  max-height: 50px;
+  overflow: visible!important;
+}
+.theme-blue .titlebar > span {
+  font-size: 18px;
+  color: #ffffff;
+  display: inline-block;
+  margin: 15px;
+  margin-right: 20px;
+}
+
+.theme-blue .titlebar li.dropdown > a {
+  border: 1px solid #075290;
+}
+.theme-blue .titlebar a:focus {
+  /*outline: none!important;
+  border: none!important;*/
+  border: 1px solid #FFA500 !important;
+}
+
+/* Custom FGH CDC Healthy Habits Styles */
+@media (max-width: 850px) {
+    .main {
+        margin: auto;
+        width: 400px;
+    }
+}
+
+#questionnaire-name {
+    text-align: center;
+    font-weight: bold;
+	/*Edited by Wade Ashby 4-18-16*/
+	font-size: 36px;
+	font-family: cursive;
+	color: #A93AC0;
+	/*End of edit*/
+}
+
+#submit-wrapper {
+    text-align: center; /*Changed from right by Wade Ashby 4-18-16 */
+    margin: 20pt 0;
+}
+.main {
+    padding: 0 10pt;
+}
+.prompt {
+    font-weight: bold;
+	color: #3434dd; /*Add by Wade Ashby 4-19-16*/
+}
+
+.question {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+.question div.low-scale {
+    float: left;
+}
+
+.question div.high-scale {
+    float: right;
+}
+
+.question div.answer-choices {
+    display: inline-block;
+    margin: 10pt 10pt;
+	color: #3434dd; /*Add by Wade Ashby 4-19-16*/
+}
+.question div.answer-choices div.answer-choice {
+    display: inline-block;
+    vertical-align: top;
+    width: 100pt;
+}
+
+.question img {
+    max-width: 80px;
+}
+.question span.answer-label {
+	color: #A93AC0;/*Add by Wade Ashby 4-19-16*/
+	font-weight: bold;
+    vertical-align: middle;
+}
+
+.questionnaire-wrapper {
+    margin: auto;
+}
+
+/*Lines below edited by Wade Ashby - 4/18/16 */
+.myHR {
+    height: 6px;
+    border: 0;
+    box-shadow: inset 0 6px 6px -2px #7DC734;
+}
+
+.mainMenuul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3434dd;
+    overflow: hidden;
+}
+
+.mainMenuli {
+    float: left;
+    padding: 2px;
+}
+
+.mainMenua {
+    display: block;
+    padding: 8px;
+	color: #ffffff;
+}
+
+a.mainMenua:hover{
+	color: #ffffff;
+}
+
+.btn-reset{
+	color: #ffffff;
+	background-color: #3434dd; 
+	border-color: #222222;
+}
+
+.btn-submit{
+	color: #ffffff;
+	background-color: #ff7010; 
+	border-color: #222222;
+}
+
+
+/*Below section of code was helped gathered by http://codepen.io/mitchmc/pen/pebIx */
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  color: #3434dd;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  /*margin: -1px 4px 0 0;*/
+  vertical-align: middle;
+  cursor: pointer;
+  /*
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  */
+}
+
+input[type="radio"] + label span {
+  /*background-color: #ff7010;*/
+  background: url('../../images/unchecked.png') no-repeat;
+}
+
+input[type="radio"]:checked + label span {
+  /*background-color: #00ff00;*/
+  background: url('../../images/checked.png') no-repeat;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}

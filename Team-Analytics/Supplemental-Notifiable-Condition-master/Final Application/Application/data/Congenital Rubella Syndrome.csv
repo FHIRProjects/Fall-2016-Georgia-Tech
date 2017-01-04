@@ -1,0 +1,96 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Date of Last Evaluation by a Healthcare Provider,The date the patient was last evaluated by a healthcare provider,
+Primary cause of death from death certificate,"The primary cause of subject's death, as noted on the death certificate",
+Secondary cause of death from death certificate,"The secondary cause of subject's death, as noted on the death certificate.",
+Was an autopsy performed?,Was an autopsy performed on the subject's body?,PHVS_YesNoUnknown_CDC
+Final Anatomical Diagnosis of Death from Autopsy Report,The final anatomical cause of subject's death,
+"If not a case of CRS, select reason",The reason this was not a case of CRS. ,PHVS_NoCaseReason_CRS
+Gestational Age at Birth (in weeks),The subject's gestational age (in weeks) at birth,
+Age at Diagnosis,The subject's age at the time of diagnosis.,
+Age (unit) at Diagnosis,The age units at the time of diagnosis,PHVS_AgeUnit_UCUM
+Birth Weight,The subject's birth weight,
+Birth Weight (unit),The subject's birth weight units,PHVS_WeightUnit_UCUM
+Cataracts (Complication),Did/does the subject have cataracts?,PHVS_YesNoUnknown_CDC
+Hearing Impairment (loss) (Complication),Did/does the subject have hearing impairment (loss)?,PHVS_YesNoUnknown_CDC
+Congenital Heart Disease (Complication),Did the subject have a congenital heart disease?,PHVS_YesNoUnknown_CDC
+Patent Ductus Arteriosus (Complication),Did/does the subject have patent ductus arteriosus?,PHVS_YesNoUnknown_CDC
+Peripheral Pulmonic Stenosis (Complication),Did/does the subject have peripheral pulmonic stenosis?,PHVS_YesNoUnknown_CDC
+Congenital Glaucoma (Complication),Did/does the subject have congenital glaucoma?,PHVS_YesNoUnknown_CDC
+Pigmentary Retinopathy (Complication),Did/does the subject have pigmentary retinopathy? ,PHVS_YesNoUnknown_CDC
+Developmental Delay or Mental Retardation (Complication),Did/does the subject have developmental delay or mental retardation?,PHVS_YesNoUnknown_CDC
+Meningoencephalitis (Complication),Did the subject have meningoencephalitis?,PHVS_YesNoUnknown_CDC
+Microencephaly (Complication),Did the subject have microencephaly?,PHVS_YesNoUnknown_CDC
+Purpura (Complication),Did the subject have purpura?,PHVS_YesNoUnknown_CDC
+Enlarged Spleen (Complication),Did/does the subject have an enlarged spleen?,PHVS_YesNoUnknown_CDC
+Enlarged Liver (Complication),Did/does the subject have an enlarged liver?,PHVS_YesNoUnknown_CDC
+Radiolucent Bone Disease (Complication),Did the subject have radiolucent bone disease?,PHVS_YesNoUnknown_CDC
+Neonatal Jaundice (Complication),Did the subject have jaundice?,PHVS_YesNoUnknown_CDC
+Low Platelets (Complication),Did/does the subject have low platelets?,PHVS_YesNoUnknown_CDC
+Dermal Erythropoieses (Blueberry Muffin Syndrome) (Complication),Did subject have dermal erythropoisesis?,PHVS_YesNoUnknown_CDC
+Other Complication(s),Did the subject develop other conditions as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Specify Other Complication(s),"Please specify the other complication(s) the subject developed, during or as a result of this illness.",
+Was laboratory testing done for Rubella on this subject?,Was laboratory testing done for Rubella on this subject?,PHVS_YesNoUnknown_CDC
+Test Type,Epidemiologic interpretation of the type of test(s) performed for this case,PHVS_LabTestProcedure_Rubella
+Test Result,Epidemiologic interpretation of the results of the tests performed for this case,PHVS_LabTestInterpretation_VPD
+Sample Analyzed Date,The date the lab test was performed,
+Test Method,The technique or method used to perform the test and obtain the test results.,PHVS_LabTestMethod_CDC
+Date Collected,Date of specimen collection,
+Specimen Source,The medium from which the specimen originated.,PHVS_SpecimenSource_VPD
+Was CRS virus genotype sequenced?,Identifies whether the CRS virus was genotype sequenced,PHVS_YesNoUnknown_CDC
+Was Rubella genotype sequenced?,Identifies whether the Rubella virus was genotype sequenced,PHVS_YesNoUnknown_CDC
+Were the specimens sent to CDC for genotyping (molecular typing)?,Were clinical specimens sent to CDC laboratories for genotyping (molecular typing)?,PHVS_YesNoUnknown_CDC
+Specimen type sent to CDC for genotyping,Specimen type sent to CDC for genotyping,PHVS_SpecimenSource_VPD
+Date sent for genotyping,The date the specimens were sent to the CDC laboratories for genotyping.,
+Type of Genotype Sequence ,Identifies the genotype sequence of the Rubella virus,PHVS_Genotype_Rubella
+Did the mother have a rash?,Did the mother have a maculopapular rash?,PHVS_YesNoUnknown_CDC
+What was the mother's rash onset date?,What was the mother's rash onset date? ,
+Mother's Rash Duration (in days),How many days did the mother's rash being reported in this investigation last?,
+Did the mother have a fever?,Did the mother have a fever? ,PHVS_YesNoUnknown_CDC
+What was the mother's fever onset date?,What was the mother's rash onset date? ,
+Mother's Fever Duration (in days),How many days did the mother's rash being reported in this investigation last?,
+Did the mother have arthralgia/arthritis?,Did the mother have arthralgia/arthritis? ,PHVS_YesNoUnknown_CDC
+Did the mother have lymphadenopathy?,Did the mother have lymphadenopathy? ,PHVS_YesNoUnknown_CDC
+Other clinical features of maternal illness,Mother's other clinical features of maternal illness,
+Mother's birth country,The mother's country of birth,PHVS_Country_ISO_3166-1
+Length of time mother has been in the US,Length of time (in years) the mother has been in the U.S.,
+Mother's age at delivery,The age of the mother when the infant (subject) was delivered,
+Mother's occupation at time of conception,The mother's occupation at time of this conception,PHVS_Occupation_CDC
+Did the mother attend a family planning clinic prior to conception of this infant?,Did the mother attend a family planning clinic prior to conception of this infant?,PHVS_YesNoUnknown_CDC
+Number of children less than 18 years of age living in household during this pregnancy?,The number of the mother's children less then 18 years of age living in household during this pregnancy,
+Were any of the children living in the household immunized with Rubella-containing vaccine?,Were any of the mother's children less than 18 years of age immunized with the rubella vaccine?,PHVS_YesNoUnknown_CDC
+Number of children less than 18 years of age immunized with the rubella vaccine,The number of the mother's children less than 18 years of age immunized with the rubella vaccine,
+Was prenatal care obtained for this pregnancy?,Was prenatal care obtained for this pregnancy?,PHVS_YesNoUnknown_CDC
+Date of first prenatal visit for this pregnancy,Date of the first prenatal visit for this pregnancy,
+Where was prenatal care for this pregnancy obtained?,Where was the prenatal care for this pregnancy obtained?,PHVS_PrenatalCareProvider_Rubella
+Did the mother have serological testing prior to this pregnancy?,Did the mother have serological testing prior to this pregnancy?,PHVS_YesNoUnknown_CDC
+Was there a rubella-like illness during this pregnancy?,Was there a rubella-like illness during this pregnancy?,PHVS_YesNoUnknown_CDC
+Month of pregnancy in which symptoms first occurred,The month of pregnancy that Rubella-like symptoms appeared,
+Rubella Lab Testing Mother,Was Rubella lab testing performed for the mother in conjunction with this pregnancy?,PHVS_YesNoUnknown_CDC
+Was Rubella diagnosed by a physician at time of illness?,Was the mother diagnosed with Rubella by a physician at time of illness?,PHVS_YesNoUnknown_CDC
+"If Rubella was not diagnosed by a physician, diagnosed by whom?","If the mother was not diagnosed with Rubella by a physician, then diagnosed by whom?",
+Was Rubella serologically confirmed at time of illness?,Was Rubella serologically confirmed (mother) at time of illness?,PHVS_YesNoUnknown_CDC
+Serologically Confirmed Date,The date Rubella was serologically confirmed (mother),
+Serologically Confirmed Result,The result of the Rubella serological confirmation (mother),PHVS_LabTestInterpretation_VPD
+Mother Reported Rubella Case,Has the mother ever been reported as a Rubella case?,PHVS_YesNoUnknown_CDC
+Does the mother know where she might have been exposed to Rubella?,Did the mother know where she might have been exposed to Rubella?,PHVS_YesNoUnknown_CDC
+"If location of exposure is unknown, did the mother travel outside the US during the first trimester of pregnancy","If the Rubella exposure is unknown, did the mother travel outside the US during the first(1st) trimester of pregnancy?",PHVS_YesNoUnknown_CDC
+International Destination(s) of recent travel,List any international destinations of recent travel,PHVS_Country_ISO_3166-1
+Date left for travel,The date the mother left for all international travel,
+Date returned from travel,The date the mother returned to United States from travel,
+Was the mother directly exposed to a confirmed case?,Was the mother directly exposed to a confirmed Rubella case?,PHVS_YesNoUnknown_CDC
+"If mother directly exposed to a confirmed Rubella case, specify the relationship",The mother's relationship to the confirmed Rubella case,PHVS_Relationship_VPD
+Mother's date of exposure to a confirmed rubella case,The mother's exposure date to the confirmed rubella case,
+Has mother given birth in the US previously?,Has mother given birth in the US previously? ,PHVS_YesNoUnknown_CDC
+"If mother has given birth in US, list dates (years)",List years in which mother has given birth in US previously,
+Number of previous pregnancies,Mother's number of previous pregnancies,
+Number of live births (total),Mother's total number of live births,
+"If mother has given birth in US, number of births delivered in U.S.",Mother's number of births delivered in U.S.,
+Mother immunized with rubella-containing vaccine?,Was the mother immunized with Rubella vaccine?,PHVS_YesNoUnknown_CDC
+Source of mother's Rubella-containing vaccine information,Source of mother's Rubella immunization information,PHVS_ImmunizationInformationSource_CRS
+Source of mother's rubella-containing vaccine,Source of mother's Rubella vaccine,PHVS_PrenatalCareProvider_Rubella
+Vaccine Administered,"The type of vaccine administered, (e.g., Varivax, MMRV).  First question of a repeating group of vaccine questions.",PHVS_VaccinesAdministeredCVX_CDC_NIP
+Vaccine Manufacturer,Manufacturer of the vaccine.  Second question of a repeating group of vaccine questions.,PHVS_ManufacturersOfVaccinesMVX_CDC_NIP
+Vaccine Lot Number,The vaccine lot number of the vaccine administered.  Third question of a repeating group of vaccine questions.,
+Vaccine Administered Date,The date that the vaccine was administered.  Fourth question of a repeating group of vaccine questions.,
+US Acquired,"Sub-classification of disease or condition acquired in the US
+",PHVS_CaseClassificationExposureSource_NND

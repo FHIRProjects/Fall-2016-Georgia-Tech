@@ -1,0 +1,56 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+DAYCARE,"If <6 years of age, is the patient in daycare?",PHVS_YesNoUnknown_CDC
+FACNAME,Name of the daycare facility.,PHVS_YesNoUnknown_CDC
+NURSHOME,Does the patient reside in a nursing home or other chronic care facility?,PHVS_YesNoUnknown_CDC
+NHNAME,Name of the nursing home or chronic care facility.,
+SYNDRM,Types of infection that are caused by the organism.  This is a multi-select field.,TBD
+SPECSYN,Other infection that is caused by the organism.,
+SPECIES,Bacterial species that was isolated from any normally sterile site.,TBD
+OTHBUG1,Other bacterial species that was isolated from any normally sterile site.,TBD
+STERSITE,Sterile sites from which the organism was isolated.  This is a multi-select field.,TBD
+OTHSTER,Other sterile site from which the organism was isolated.,
+DATE,Date the first positive culture was obtained.  (This is considered diagnosis date.),
+NONSTER,Nonsterile sites from which the organism was isolated.  This is a multi-select field.,TBD
+UNDERCOND,Did the patient have any underlying conditions?,PHVS_YesNoUnknown_CDC
+COND,Underlying conditions that the subject has.  This is a multi-select field.,TBD
+OTHMALIG,Other malignancy that the subject had as an underlying condition.,
+OTHORGAN,Detail of the organ transplant that the subject had as an underlying condition.,
+OTHILL,Other prior illness that the subject had as an underlying condition.,
+OTHOTHSPC,Another Bacterial Species not listed in the Other Bacterial Species drop-down list.,
+Specify Internal Body Site,Internal Body Site where the organism was located.,TBD
+Other Prior Illness 2,Other prior illness that the subject had as an underlying condition.,
+Other Prior Illness 3,Other prior illness that the subject had as an underlying condition.,
+Other Nonsterile Site,Other nonsterile site from which the organism was isolated.,
+INSURANCE,Patient's type of insurance (multi-selection).,TBD
+INSURANCEOTH,Patient's other type of insurance.,
+WEIGHTLB,Weight of the patient in pounds.,
+WEIGHTOZ,Weight of the patient in ounces.,
+WEIGHTKG,Weight of the patient in kilograms.,
+HEIGHTFT,Height of the patient in feet.,
+HEIGHTIN,Height of the patient in inches.,
+HEIGHTCM,Height of the patient in centimeters.,
+WEIGHTUNK,Indicator that the weight of the patient is unknown.,PHVS_TrueFalse_CDC
+HEIGHTUNK,Indicator that the height of the patient is unknown.,PHVS_TrueFalse_CDC
+SEROGROUP,Serogroup of the culture.,TBD
+OTHSERO,Other serogroup of the culture.,
+COLLEGE,Is patient currently attending college?  This question is only applicable if the patient is 15-24 years of age.,PHVS_YesNoUnknown_CDC
+CASEID,How was the case identified?,TBD
+OTHSTRST,Other sterile site from which species was isolated.,
+OTHID,Other case identification method.,
+SCHOOLYR,"Patient's year in college.  (freshman, sophomore, etc.)",TBD
+STUDTYPE,Patient's status in college as defined by the university.,TBD
+HOUSE,Patient's current living situation.,TBD
+OTHHOUSE,Other housing option.,
+SCHOOLNM,Full name of the college or university the patient is currently attending.,
+POLYVAC,Has patient received the polysaccharide meningococcal vaccine?,PHVS_YesNoUnknown_CDC
+SECCASE,Is this case of Neiserria meningitidis a secondary case?,PHVS_YesNoUnknown_CDC
+SECCASETY,Type of secondary contact for a case of Neisseria meningitidis.,TBD
+OTHSECCASE,Other field available if the secondary case type selected is other.,
+NMSULFRES,Neisseria meningitidis resistance to Sulfa.,PHVS_YesNoUnknown_CDC
+NMRIFARES,Neisseria meningitidis resistance to Rifampin.,PHVS_YesNoUnknown_CDC
+DIAGDATE,Date the sample was collected for diagnostic testing if a culture was not done.,
+PCRSOURCE,Specifies the PCR source for how the case was identified.,TBD
+IHCSPEC1,Specifies the first IHC specimen.,
+IHCSPEC2,Specifies the second IHC specimen.,
+IHCSPEC3,Specifies the third IHC specimen.,
+MENGVAC,Specifies whether the patient has received a meningococcal vaccine.,

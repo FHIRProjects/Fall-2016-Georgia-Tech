@@ -1,0 +1,202 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Specimen Number,A laboratory generated number that identifies the specimen related to this test.,
+Date First Submitted,Date/time the notification was first sent to CDC.  This value does not change after the original notification.  ,
+Case Outbreak indicator,Denotes whether the reported case was associated with an identified outbreak.,PHVS_YesNoUnknown_CDC
+Source of Infection,"What is the source of infection from list ""naturally-acquired"", ""lab-aquired"", ""bioterrorism""",
+Outbreak source,"If case outbreak indicator is ""Yes"", what was the common exposure source, including ""Food consumption"", ""Occupational exposure"", ""Recreational exposure"", ""Family"", ""Close contact"", ""Sexual contact""",
+State Case ID,States use this field to link NEDSS investigations back to their own state investigations.,
+Health care provider,Health care provider name,
+Local Subject ID,The local ID of the subject/entity.,
+Health care provider,Health care provider phone number,
+Person Reporting to CDC - Name,Name of the person who is reporting the case to the CDC.  This is the person that CDC should contract in a state if there are questions regarding this case notification.,
+Person Reporting to CDC - Phone Number,Phone Number of the person who is reporting the case to the CDC.  This is the person that CDC should contract in a state if there are questions regarding this case notification.,
+Subject Address State,State of residence of the subject,PHVS_State_FIPS_5-2
+Subject Address County,County of residence of the subject,PHVS_County_FIPS_6-4
+Age at case investigation,Subject age at time of case investigation,
+Age units at case investigation,Subject age units at time of case investigation,PHVS_AgeUnit_UCUM_NETSS
+Subject's Sex,Subject's current sex,PHVS_Sex_MFU
+Pregnancy status,Indicates whether the subject was pregnant at the time of the event.,PHVS_YesNoUnknown_CDC
+Country of Birth ,Country of Birth,PHVS_CountryofBirth_CDC
+Ethnic Group Code,Based on the self-identity of the subject as Hispanic or Latino ,PHVS_EthnicityGroup_CDC_Unk
+Race Category,Field containing one or more codes that broadly refer to the subject's race(s).,PHVS_RaceCategory_CDC
+Occupation,"Occupation of the case patient, from list ""Animal Research"", ""Medical Research"", ""Dairy"", ""Laboratory"", ""Wildlife"", ""Rancher"", ""Slaughterhouse"", ""Tannery/rendering"", ""Veterinarian/Vet Tech"", ""Lives w/person of with an occupation listed here"", ""Other""",
+Case Class Status Code,"Status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/ surveillance case definitions.",PHVS_CaseClassStatus_NND
+Stage of disease,"Stage of disease, inlcuding ""Acute"", ""Subacute"", ""Chronic"", ""Unknown""",
+Fever,Did patient have a fever?,PHVS_YesNoUnknown_CDC
+Fever onset date,Onset date of fatigue,
+Maximum temperature,Maximum temperature reported ,
+Temperature Units,Specify fahrenheit or celsius,PHVS_TemperatureUnit_UCUM
+Sweats,Experienced sweats,PHVS_YesNoUnknown_CDC
+Sweats onset date,Onset date of sweats,
+arthralgia,Experienced arthralgia?,PHVS_YesNoUnknown_CDC
+arthragia onset date,Onset date of arthralgia,
+headache,Experienced headache,PHVS_YesNoUnknown_CDC
+headache onset date,Onset date of headache,
+Fatigue,Experienced fatigue,PHVS_YesNoUnknown_CDC
+Fatigue date of onset,Onset date of fatigue,
+Anorexia,Experienced anorexia,PHVS_YesNoUnknown_CDC
+Anorexia Onset date,Onset date of anorexia,
+Myalgia,Experienced myalgia,PHVS_YesNoUnknown_CDC
+Myalgia onset date,Onset date of myalgia,
+weight loss,Experienced weight loss,PHVS_YesNoUnknown_CDC
+weight loss onset date,Onset date of weight loss,
+endocarditis,Experienced endocarditis?,PHVS_YesNoUnknown_CDC
+endocarditis onset date,Onset date of endocarditis,
+Orchitis,Experienced orchitis,PHVS_YesNoUnknown_CDC
+Orchitis onset date,Onset date of orchitis,
+Epididymitis,Experienced epididymitis?,PHVS_YesNoUnknown_CDC
+Epididymitis onset date,Onset date of epididymitis,
+Hepatomegaly,Experienced hepatomegaly,PHVS_YesNoUnknown_CDC
+Hepatomegaly onset date,Onset date of hepatomegaly,
+splenomegaly,Experienced splenomegaly,PHVS_YesNoUnknown_CDC
+splenomegaly onset date,Onset date of splenomegaly,
+Arthritis,Experienced athritis?,PHVS_YesNoUnknown_CDC
+Arthritis onset date,Onset date of arthritis,
+Meningitis,Experienced meningitis,PHVS_YesNoUnknown_CDC
+Meningitis onset date,Onset date of meningitis,
+spondylitis,Experienced spondylitis,PHVS_YesNoUnknown_CDC
+spondylitis onset date,Onset date of spondylitis,
+Symptoms Other,Were other symptoms or signs experienced,PHVS_YesNoUnknown_CDC
+Symptoms Other details,Describe other symptoms or signs experienced,
+Symptoms Other onset date,Details of other symptoms experienced,
+Hospitalized,Was subject hospitalized because of this event?,PHVS_YesNoUnknown_CDC
+Admission Date,Subject's first admission date to the hospital for the condition covered by the investigation.,
+Discharge Date,Subject's first discharge date from the hospital for the condition covered by the investigation.,
+Subject Died ,Did the subject die from this illness or complications of this illness?,PHVS_YesNoUnknown_CDC
+Deceased Date,"If the subject died from this illness or complications associated with this illness, indicate the date of death",
+Treatment status,"Status of treatment at time of case notification (""Currently under treatment"", ""Completed treatment"", ""Not treated"", ""No Response"")",
+Treated doxycycline,treated with doxycycline?,PHVS_YesNoUnknown_CDC
+Dose of doxycycline,dosage of doxycycline prescribed,
+Days of doxycycline,days of doxycycline prescribed,
+Treated with rifampin,treated with rifampin?,PHVS_YesNoUnknown_CDC
+dosage of rifampin,dosage of rifampin prescribed,
+days of rifampin,days of rifampin prescribed,
+Treated with streptomycin,treated with streptomycin?,PHVS_YesNoUnknown_CDC
+dosage of streptomycin,dosage of streptomycin prescribed,
+days of streptomycin,days of streptomycin prescribed,
+treated with other drug 1,treated with other drug 1?,PHVS_YesNoUnknown_CDC
+name of other drug 1,"If Other drug 1 is ""Yes"", list name of the drug",
+dose of other drug 1,"If Other drug 1 is ""Yes"",  list the prescribed dosage of this drug",
+Days other drug 1,"If Other drug 1 is ""Yes"", list the prescribed duration of this drug ",
+treated with other drug 2,treated with other drug 2?,PHVS_YesNoUnknown_CDC
+name of other drug 2,"If Other drug 2 is ""Yes"", list name of the drug",
+dose of other drug 2,"If Other drug 2 is ""Yes"", list the prescribed dosage of this drug",
+Days other drug 2,"If Other drug 2 is ""Yes"", list the prescribed duration of this drug ",
+treated with other drug 3,treated with other drug 3?,PHVS_YesNoUnknown_CDC
+name of other drug 3,"If Other drug  3 is ""Yes"", list name of the drug",
+dose of other drug 3,"If Other drug 3 is ""Yes"", list the prescribed dosage of this drug",
+Days other drug 3,"If Other drug 3 is ""Yes"", list the prescribed duration of this drug ",
+Travel,In the 6 months prior to illness onset did the subject travel outside of the state of residence?,PHVS_YesNoUnknown_CDC
+travel location 1,Location of travel 1,
+Travel departure date 1,"If traveled, departure date to first destination",
+Travel return date 1,"If traveled, return date from first destination",
+travel location 2,Location of travel 2,
+Travel departure date 2,"If traveled, departure date to second destination",
+Travel return date 2,"If traveled, return date from second destination",
+Animal Contact,"In the 6 months prior to illness onset, did the subject have animal contact?",PHVS_YesNoUnknown_CDC
+Birthing product animal,"Which animal(s) did case patient have contact with birthing products (""Cow"", ""Pig"", ""Goat"", ""Sheep"", ""Dog"", ""Deer"", ""Bison"", ""Elk"", ""Other"")",
+Birthing product animal other,Other animal with which case patient had contact with birthing products,
+Skinning contact with animal,"Which animal did case patient have contact with skinning/slaughtering (""Cow"", ""Pig"", ""Goat"", ""Sheep"", ""Dog"", ""Deer"", ""Bison"", ""Elk"", ""Other"")?",
+Skinning contact with other animal,"If animal skinned/slaughtered is ""Other"", describe which animal(s) the case patient had contact with",
+Hunt animal contact,"Which animal(s) did case patient hunt, from list ""Cow"", ""Pig"", ""Goat"", ""Sheep"", ""Dog"", ""Deer"", ""Bison"", ""Elk"", ""Other""",
+Hunt other animal,"If type of animal hunted is ""Other"", specify the type(s) of animal(s) hunted",
+Animal Other Contact Type,"If Type of animal contact is ""Other"" describe the contact",
+Other Animal Contact,"If Type of animal contact is ""Other"", which animal did case patient have this type of contact including ""Cow"", ""Pig"", ""Goat"", ""Sheep"", ""Dog"", ""Deer"", ""Bison"", ""Elk"", ""Other""",
+Other animal contact,"If Type of animal contact is ""Other"" and animal is ""Other"" which animal did case patient have this type of contact",
+Birthing product own animal,"If case patient had contact with birthing products, who owned the animal (""Case"", "" Private"", "" Wild"", "" Commercial"", "" Unknown"")",
+Skinning contact owned,"Who owned the animal which the case patient had contact with skinning/slaughter (""Case"", "" Private"", "" Wild"", "" Commercial"", "" Unknown"")",
+Hunt own animal,"Who owned the animal which the case patient had contact with hunting from list ""Case"", "" Private"", "" Wild"", "" Commercial"", "" Unknown""",
+Other animal owned,"If animal contact type was ""Other"", describe who owned the animal from this contact, from list ""Case"", "" Private"", "" Wild"", "" Commercial"", "" Unknown""",
+Consumed meat or dairy,"In the 6 months prior to illness onset,  did the subject consume unpasteurized dairy or undercooked meat?",PHVS_YesNoUnknown_CDC
+Milk animal source,"If the subject consumed unpasteurized milk from which animal(s) ""Cow"", ""Pig"", ""Goat"", ""Sheep"", ""Dog"", ""Deer"", ""Bison"", ""Elk"", ""Other""",
+Milk Animal other,"If milk animal source is ""Other"", describe which animal this milk product was from",
+Cheese,"Consumed fresh or soft cheese from which animal(s), including ""Cow"", ""Pig"", ""Goat"", ""Sheep"", ""Dog"", ""Deer"", ""Bison"", ""Elk"", ""Other""",
+Other animal source of cheese,"If animal source of cheese is ""Other"", which animal(s) was the source of cheese",
+Meat animal source,"Consumed undercooked meat from which animal(s) ""Cow"", ""Pig"", ""Goat"", ""Sheep"", ""Dog"", ""Deer"", ""Bison"", ""Elk"", ""Other""",
+Meat animal other,"If animal source of meat is ""Other"", list the animal source(s) from which the case patient consumed meat",
+Food product other,"If food product is ""Other"", describe other food consumed",
+Food product animal source,"If food product is ""Other"", select the animal sources of this food from list ""Cow"", ""Pig"", ""Goat"", ""Sheep"", ""Dog"", ""Deer"", ""Bison"", ""Elk"", ""Other""",
+Food Animal other,"If food product and animal are ""Other"", describe which animal this other food was from",
+Milk source country ,"Country milk was from, ""U.S."", ""Other""",
+Milk source other 1,"If milk source country is ""Other"", list country",PHVS_CountryofBirth_CDC
+Milk source other 2,"If milk source country is ""Other"", list country",PHVS_CountryofBirth_CDC
+Cheese source country,"Country where the cheese product was from. Notification types include ""U.S."", ""Other""",
+Country cheese was from 1,"If cheese source country is ""Other"", list country",PHVS_CountryofBirth_CDC
+Country cheese was from 2,"If cheese source country is ""Other"", list country",PHVS_CountryofBirth_CDC
+Meat source country ,"Country meat was from, ""U.S."", ""Other""",
+Meat source other 1,"If meat source country is ""Other"", list country",PHVS_CountryofBirth_CDC
+Meat source other 2,"If meat  source country is ""Other"", list country",PHVS_CountryofBirth_CDC
+Food product source country,"Country where the food product was from. Notification types include ""U.S."", ""Other""",
+Food source other 1,"If food source country is ""Other"", list country",PHVS_CountryofBirth_CDC
+Food source other 2,"If food source country is ""Other"", list country",PHVS_CountryofBirth_CDC
+Is this case epi-linked to a laboratory-confirmed case?,Is this case epi-linked to a laboratory-confirmed case?,PHVS_YesNoUnknown_CDC
+Similar illness,Similar illness in contact of the subject?,PHVS_YesNoUnknown_CDC
+Close contact,"If epi-link to a laboratory-confirmed case or similar illness in a close contact are ""Yes"", then select the relationship of the contact (""Household"", ""Neighbor"", ""Co-worker"", ""Other"")",
+Close contact Other,"If Close Contact is ""Other"", then describe the relationship of the contact",
+Exposure to Brucella,"Was the case patient exposed to Brucella, from the list ""Clinical specimen"", ""Isolate"", ""Vaccine"", ""Unknown""",
+Location of Exposure,"If Brucella exposure is selected, where did exposure occur, from list ""Clinical"", ""Laboratory"", ""Farm/ranch"", ""Surgery"", ""Unknown"", ""Other""",
+"Location of Exposure, other","If location of exposure to Brucella is ""Other"", specify exposure location",
+Risk of exposure,"Exposure risk classificaiton (""high"", ""low"", ""Unknown"")",
+Exposure to Brucella vaccine,"If case patient was exposed to ""Vaccine"", choose which vaccine patient was exposed to, from list ""S19"", ""RB51"", ""Rev1"", ""Other""",
+PEP received,Did the subject receive post exposure prophylaxis?,PHVS_YesNoUnknown_CDC
+no PEP was taken,"If the case-patient had a known eposure to Brucella and PEP was not taken, why not, from list ""Unaware of exposure"", ""Unavailable"", ""Allergic"", ""Pregnant"", ""Unknown"", ""Other""",
+no PEP was taken other,"If no PEP taken reason was ""Other"", desribe the reason PEP was not taken",
+Complete PEP,"Did the patient complete PEP regimen (""Yes"",""No"", ""Unknown"", ""Partial""?",
+Partial PEP,"If PEP completed is ""Partial"", Explain why partial pep was taken",
+Earliest Date Reported to State,Earliest date reported to state public health system,
+Reporting Lab Name,Name of Laboratory that reported test result.,
+Reporting Lab City,City location of Laboratory that reported test result.,
+Reporting Lab State,State Laboratory that reported test result.,PHVS_State_FIPS_5-2
+Reporting Lab Zip,Zip code of Laboratory that reported test result.,
+Received from,"Received from (e.g., lab name, clinician, etc)",
+Received city,Received from city,
+Received state,Received from state,PHVS_State_FIPS_5-2
+Date Sample Received at Lab,Date Sample Received at Lab (accession date).,
+Agglutination test name,Name of agglutination test used,
+Acute total titer,Acute Total antibody titer,
+Convalscent total titer,Convalscent Total antibody titer,
+Positive Result ,"Based on the acute and covalscent titers for the agglutination test used, what is the result of the paired total antibody titers (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+Agglutination cut off,Cut off value of a positive result for the Agglutination test used,
+Acute IgG titer Agglutination,Acute IgG agglutination titer,
+Convalscent IgG titer Agglutination ,Convalscent IgG agglutination titer,
+Agglutination Positive Result ,"Based on the acute and covalscent titers for the agglutination test used, what is the result of the paired IgG titers (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+ELISA test name,Name of the ELISA test used,
+Acute IgG ELISA titer,Acute IgG ELISA titer,
+Convalscent IgG ELISA titer,Convalscent IgG ELISA titer,
+ELISA IgG Positive Result ,"Based on the acute and covalscent titers for the IgG ELISA test used, what is the result of the paired IgG titers (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+Acute IgM ELISA titer,Acute IgM ELISA titer,
+Convalscent IgM ELISA titer,Convalscent IgM ELISA titer,
+ELISA IgM Positive Result ,"Based on the acute and covalscent titers for the IgM ELISA test used, what is the result of the paired IgM titers (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+ELISA test cut off,ELISA test cut off,
+Date of Acute Serum Specimen Collection,The date the acute serum specimen was collected.,
+Date of Convalscent Serum Specimen Collection,The date the convalscent serum specimen was collected.,
+Rose Bengal titer,Rose Bengal titer,
+Rose Bengal positive result,"Result of Rose Bengal test (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+Rose Bengal test cut off,Cut off value of a positive result for the Rose Bengal test,
+Coombs Titer,Coombs Titer,
+Coombs Titer positive result,"Result of Coombs test (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+Coombs test cut off,Cut off value of a positive result for the Coombs test,
+Other serologic test name 1,Name of other serologic test used 1,
+Other serologic test titer or value 1,Titer or value of other serologic test 1,
+Other serologic test 1 positive,"Result of other serologic test 1 (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+Other serologic test 1 cut off,Cut off value of a positive result for the Other test used 1,
+Other serologic test name 2,Name of other serologic test used 2,
+Other serologic test value 2,Value of other serologic test 2,
+Other serologic test 2 positive,"Result of other serologic test 2 (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+Other serologic test 2 cut off ,Cut off value of a positive result for the Other test used 2,
+PCR,"If PCR was done, select on which specimens it was used (""Blood"", ""Abscess/wound"", ""Bone marrow"", ""CSF"", ""Other"")",
+PCR other specimen,"Describe the specimen if specimen tested by PCR was ""Other""",
+Date specimen for PCR collected,The date the specimen was collected for PCR,
+PCR positive,"Result of PCR (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+PCR Species identified,"What Brucella species were identified as a result of PCR (""abortus"", ""canis"", ""melitensis"", ""suis"", ""ceti"", ""inopinata"", ""microti"", ""neotomae"", ""pinnipedalis"")",
+Culture,"If culture was done, which specimens were used (""Blood"", ""Abscess/wound"", ""Bone marrow"", ""CSF"", ""Other"")",
+Culture other specimen,"Describe the specimen if specimen tested by culture was ""Other""",
+Date specimen for culture was collected,The date the specimen was collected for culture,
+Culture positive,"Result of culture (e.g., Positive, Negative, Unknown)?",PHVS_YesNoUnknown_CDC
+Culture Species identified,"What Brucella species were identified as a result of culture (""abortus"", ""canis"", ""melitensis"", ""suis"", ""ceti"", ""inopinata"", ""microti"", ""neotomae"", ""pinnipedalis"")",
+Pre antimicrobials,Were specimens collected before antimicrobials were taken,PHVS_YesNoUnknown_CDC
+Select Agent Reporting,Was the select agent reported to CDC,PHVS_YesNoUnknown_CDC
+Lab exposure,Did a laboratory exposure occur during manipulation of an isolate?,PHVS_YesNoUnknown_CDC
+Exposure reported,"If a laboratory exposure is ""Yes"", was it reported?",PHVS_YesNoUnknown_CDC
+Specimens to CDC,Were specimens or isolates sent to CDC for testing?,PHVS_YesNoUnknown_CDC
+Specimens still avaialble,are clinical specimens or isolates still avaialble for further testing?,PHVS_YesNoUnknown_CDC

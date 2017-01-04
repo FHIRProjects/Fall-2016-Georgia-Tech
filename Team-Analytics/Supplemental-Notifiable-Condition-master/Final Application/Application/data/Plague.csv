@@ -1,0 +1,4 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Primary plague type,Classification of primary clinical manifestation of infection,Bubonic/Septicemic/Pneumonic/Other
+Animal Contact,Contact with sick or dead animals,Animal bite/Animal scratch/Coughed on by animal/handled animal
+Flea bite,Flea bite,Known flea bite/Likely flea bite/No flea bite/Unknown

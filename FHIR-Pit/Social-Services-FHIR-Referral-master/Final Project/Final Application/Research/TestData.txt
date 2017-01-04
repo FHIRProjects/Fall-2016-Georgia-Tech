@@ -1,0 +1,411 @@
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Patient",
+				"active": true,
+			  "name": [
+			    {
+			      "use": "official",
+			      "family": [
+			        "Dixon"
+			      ],
+			      "given": [
+			        "Marla"
+			      ]
+			    }
+			  ],
+			  "telecom": [
+			    {
+			      "system": "phone",
+			      "value": "800-645-1563",
+			      "use": "home"
+			    },
+			    {
+			      "system": "phone",
+			      "value": "800-636-1334",
+			      "use": "mobile"
+			    },
+			    {
+			      "system": "email",
+			      "value": "marla.dixon@gmail.com"
+			    }
+			  ],
+			  "gender": "female",
+			  "birthDate": "1970-01-30",
+			  "address": [
+			    {
+			      "use": "home",
+			      "line": [
+			        "364 Forest Rd."
+			      ],
+			      "city": "Durham",
+			      "state": "NC",
+						"district": "Durham",
+			      "postalCode": "27705",
+			      "country": "USA"
+			    }
+			  ]
+			},
+			"request": {
+				"method": "POST",
+				"url": "Patient"
+			}
+		}
+	]
+}
+
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Patient",
+				"active": true,
+			  "name": [
+			    {
+			      "use": "official",
+			      "family": [
+			        "Franklin"
+			      ],
+			      "given": [
+			        "John",
+			        "F."
+			      ]
+			    }
+			  ],
+			  "telecom": [
+			    {
+			      "system": "phone",
+			      "value": "257-445-4543",
+			      "use": "home"
+			    },
+			    {
+			      "system": "phone",
+			      "value": "257-422-4224",
+			      "use": "mobile"
+			    },
+			    {
+			      "system": "email",
+			      "value": "jfrank2@gmail.com"
+			    }
+			  ],
+			  "gender": "male",
+			  "birthDate": "1972-02-17",
+			  "address": [
+			    {
+			      "use": "home",
+			      "line": [
+			        "153 Oak Rd"
+			      ],
+			      "city": "Raleigh",
+			      "state": "NC",
+						"district": "Wake",
+			      "postalCode": "27705",
+			      "country": "USA"
+			    }
+			  ]
+			},
+			"request": {
+				"method": "POST",
+				"url": "Patient"
+			}
+		}
+	]
+}
+
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Patient",
+				"active": true,
+			  "name": [
+			    {
+			      "use": "official",
+			      "family": [
+			        "Johnson"
+			      ],
+			      "given": [
+			        "Lisa"
+			      ]
+			    }
+			  ],
+			  "telecom": [
+			    {
+			      "system": "phone",
+			      "value": "919-213-7353",
+			      "use": "home"
+			    },
+			    {
+			      "system": "phone",
+			      "value": "252-223-6667",
+			      "use": "mobile"
+			    },
+			    {
+			      "system": "email",
+			      "value": "lisa.johnson@hotmail.com"
+			    }
+			  ],
+			  "gender": "female",
+			  "birthDate": "1978-09-01",
+			  "address": [
+			    {
+			      "use": "home",
+			      "line": [
+			        "746 Oak Ln."
+			      ],
+			      "city": "New Bern",
+			      "state": "NC",
+			      "district": "Craven",
+			      "postalCode": "28560",
+			      "country": "USA"
+			    }
+			  ]
+			},
+			"request": {
+				"method": "POST",
+				"url": "Patient"
+			}
+		}
+	]
+}
+
+
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "HealthcareService",
+				"serviceName": "A highly-respected, residential weight management program that was founded on the philosophy that achieving and maintaining weight loss goals is the result of changing the way participants think about the role food plays in their lives",
+				"programName": [
+					"Structure House Weight Loss Program"
+				],
+				"referralMethod": [
+					{
+						"coding": [
+							{
+								"code": "elec",
+								"display": "Secure Messaging"
+							}
+						]
+					}
+				],
+				"appointmentRequired": true,
+				"coverageArea": [
+					{
+						"reference": "Location/170795"
+					}
+				]
+			},
+			"request": {
+				"method": "POST",
+				"url": "HealthcareService"
+			}
+		}
+	]
+}
+
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Location",
+				"status": "active",
+				"name": "Structure House Weight Loss Program",
+				"address": {
+					"line": "3017 Pickett Road",
+					"city": "Durham",
+					"district": "Durham",
+					"state": "NC",
+					"postalCode": "27705",
+					"country": "USA"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Location"
+			}
+		}
+	]
+}
+
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "HealthcareService",
+				"serviceName": "Innovative, multi-year residential program that enables substance abusers to be productive, recovering individuals by providing comprehensive treatment, work-based vocational training, education, and continuing care",
+				"programName": [
+					"TROSA (Triangle Residential Options for Substance Abusers)"
+				],
+				"referralMethod": [
+					{
+						"coding": [
+							{
+								"code": "elec",
+								"display": "Secure Messaging"
+							}
+						]
+					}
+				],
+				"appointmentRequired": true,
+				"coverageArea": [
+					{
+						"reference": "Location/170824"
+					}
+				]
+			},
+			"request": {
+				"method": "POST",
+				"url": "HealthcareService"
+			}
+		}
+	]
+}
+
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Location",
+				"status": "active",
+				"name": "TROSA (Triangle Residential Options for Substance Abusers)",
+				"address": {
+					"line": "1820 James Street",
+					"city": "Durham",
+					"district": "Durham",
+					"state": "NC",
+					"postalCode": "27707",
+					"country": "USA"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Location"
+			}
+		}
+	]
+}
+
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "HealthcareService",
+				"serviceName": "A 12 week psycho-educational program focused on learning behavioral modification techniques in a coed group setting to manage stress and anger and to minimize the frequency of unhealthy anger responses",
+				"programName": [
+					"Triangle Family Services - Anger Management"
+				],
+				"referralMethod": [
+					{
+						"coding": [
+							{
+								"code": "elec",
+								"display": "Secure Messaging"
+							}
+						]
+					}
+				],
+				"appointmentRequired": true,
+				"coverageArea": [
+					{
+						"reference": "Location/170981"
+					}
+				]
+			},
+			"request": {
+				"method": "POST",
+				"url": "HealthcareService"
+			}
+		}
+	]
+}
+
+
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Location",
+				"status": "active",
+				"name": "Triangle Family Services",
+				"address": {
+					"line": "3937 Western Boulevard",
+					"city": "Raleigh",
+					"district": "Wake",
+					"state": "NC",
+					"postalCode": "27606",
+					"country": "USA"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Location"
+			}
+		}
+	]
+}
+
+{
+	"resourceType": "Bundle",
+	"id": "bundle-transaction",
+	"type": "transaction",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "HealthcareService",
+				"serviceName": "If you suffer from arthritis and have limited mobility, this class may be your answer to a new life. The ALED class is a twenty week program sponsored by UNC Chapel Hill and facilitated by Mission Triangle E, aiding in lifestyle and behavioral change for a healthier, more active life.",
+				"programName": [
+					"ALED - Active Living Everyday"
+				],
+				"referralMethod": [
+					{
+						"coding": [
+							{
+								"code": "elec",
+								"display": "Secure Messaging"
+							}
+						]
+					}
+				],
+				"appointmentRequired": true,
+				"coverageArea": [
+					{
+						"reference": "Location/171392"
+					}
+				]
+			},
+			"request": {
+				"method": "POST",
+				"url": "HealthcareService"
+			}
+		}
+	]
+}

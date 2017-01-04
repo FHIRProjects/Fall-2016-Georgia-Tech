@@ -1,0 +1,33 @@
+Label/Short Name,Description,Approved by OMB
+Last Name,Patient's last name,2016-06-03
+First Name,Patient's first name,2016-06-03
+Middle Initial,Patient's middle initial,2016-06-03
+Occupation,Patient's occupation,2016-06-03
+History of rodent exposure 8 weeks prior to illness onset,Did patient have history of rodent exposure during 8 week period prior to illness onset?,2016-06-03
+"If yes, type of rodent exposure","If rodent exposure occurred, what was the type of exposure?",2016-06-03
+Exposre occurred while cleaning,Did exposure occur while cleaning?,2016-06-03
+Exposure occurred while working,Did exposure occur while working?,2016-06-03
+"Exposre during recreational activity (camping, hiking)",Did exposure occur during a recreational activity?,2016-06-03
+Other exposure? (explain below),Other types of exposure? (Explain),2016-06-03
+Fever >101F (38.3C),Did patient have a fever >101F (38.3C)?,2016-06-03
+"Thrombocytopenia (<150,000)","Did patient have thrombocytopenia (<150,000)?",2016-06-03
+Elevated hematocrit,Did patinent have elevated hematocrit?,2016-06-03
+Elevated creatinine,Did patinet have elevated creatinine?,2016-06-03
+Outcome of illness,What was the outcome of the illness?,2016-06-03
+Autopsy performed,"If patient died, was autopsy performed?",2016-06-03
+Autopsy findings,Describe autopsy findings,2016-06-03
+Did patient seek care before admission,Did patient seek care before admission?,2016-06-03
+Date of pre-hospital treatment,Date of pre-hospital treatment,2016-06-03
+"Outcome of treatment (sent home, diagnosed as flu, etc):","What was the outcome of treatment (sent home, diagnosed as flu, etc)?",2016-06-03
+Supplemental oxygen required,Did the patient require supplemental oxygen?,2016-06-03
+Was patient on ECMO,Was patient on extracorporeal membrane oxygenation (ECMO)?,2016-06-03
+Was patient intubated,Was the patient intubated?,2016-06-03
+CXR with unexplained bilateral interstitial infiltrates or suggestive of ARDS,Did patient have chest x-ray (CXR) with unexplained bilateral interstitial infiltrates or suggestive of acute respiratory distress syndrome (ARDS)?,2016-06-03
+Notes on clinical course of illness,Describe clinical course of illness,2016-06-03
+Specimen collection date,Specimen collection date,2016-06-03
+Type of specimen,Type of specimen collected,2016-06-03
+"If specimen tested, at which laboratory","If specimen tested, at which laboratory?",2016-06-03
+"Test results (i.e. titer, IgM, IgG)","Test results (i.e. titer, IgM, IgG)",2016-06-03
+Name of patient's physician,Name of patient's physician,2016-06-03
+Physician's email,Physician's email,2016-06-03
+Physician's phone number,Physician's phone number,2016-06-03

@@ -1,0 +1,152 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Animal Contact Questions Indicator,"If contact with animal, then display the following questions",Yes No Indicator (HL7)
+Animal Contact Indicator,Did patient come in contact with an animal?,Yes No Unknown (YNU)
+Animal Type Code(s),Type of animal: (MULTISELECT),Animal Type (FDD)
+Animal Type Other,"If ""Other,"" please specify other type of animal:",
+Amphibian Other,"If ""Other Amphibian,"" please specify other type of amphibian:",
+Reptile Other,"If ""Other Reptile,"" please specify other type of reptile:",
+Mammal Other,"If ""Other Mammal,"" please specify other type of mammal:",
+Animal Contact Location,Name or Location of Animal Contact:,
+Acquired New Pet,Did the patient acquire a pet prior to onset of illness?,Yes No Unknown (YNU)
+Applicable Incubation Period,Applicable incubation period for this illness is,
+Associated with Daycare Indicator,If Patient associated with a day care center:,Yes No Indicator (HL7)
+Day Care Attendee,Attend a day care center?,Yes No Unknown (YNU)
+Day Care Worker,Work at a day care center?,Yes No Unknown (YNU)
+Live with Day Care Attendee,Live with a day care center attendee?,Yes No Unknown (YNU)
+Day Care Type,What type of day care facility?,Day CareType (FDD)
+Day Care Facility Name,What is the name of the day care facility?,
+Food Prepared at this Daycare,Is food prepared at this facility?,Yes No Unknown (YNU)
+Diapered Infants at this Daycare,Does this facility care for diapered persons?,Yes No Unknown (YNU)
+Drinking Water Exposure Indicator,"If patient has had Drinking Water exposure, then display the following questions",Yes No Indicator (HL7)
+Home Tap Water Source Code,What is the source of tap water at home?,Tap Water Source (FDD)
+Home Well Treatment Code,"If ""Private Well,"" how was the well water treated at home?",Well Water Treatment (FDD)
+Home Tap Water Source Other,"If ""Other,"" specify other source of tap water at home:",
+School/Work Tap Water Source Code,What is the source of tap water at school/work?,Tap Water Source (FDD)
+SchoolWork Well Treatment Code,"If ""Private Well,"" how was the well water treated at school/work?",Well Water Treatment (FDD)
+School/Work Tap Water Source Other,"If ""Other,"" specify other source of tap water at school/work:",
+Drink Untreated Water 14 days Prior to Onset,Did patient drink untreated water 14 days prior to onset of illness?,Yes No Unknown (YNU)
+Food Handler,"If patient is a Food Handler, then display the following questions",Yes No Indicator (HL7)
+Food Handler after Illness Onset,Did patient work as a food handler after onset of illness?,Yes No Unknown (YNU)
+Food HandlerLast Worked Date,What was the last date worked as a food handler after onset of illness?,
+Food Handler Location,Where was patient a food handler?,
+Recreational Water Exposure Questions Indicator,"If patient has had recreational water exposure, then display the following",Yes No Indicator (HL7)
+Recreational Water Exposure 14 Days Prior to Onset,Was there recreational water exposure in the 14 days prior to illness?,Yes No Unknown (YNU)
+Recreational Water Exposure Type Code(s),What was the recreational water exposure type?  (MULTISELECT),Recreational Water (FDD)
+Recreational Water Exposure Type Other,"If ""Other,"" please specify other recreational water exposure type:",
+Swimming Pool Type Code(s),"If ""Swimming Pool,"" please specify swimming pool type:  (MULTISELECT)",Swimming Pool Type (FDD)
+Swimming Pool Type Other,"If ""Other,"" please specify other swimming pool type:",
+Recreational Water Location Name,Name or location of water exposure:,
+Related Case Indicator,"If related cases are associated to this case, then display the following questions",Yes No Indicator (HL7)
+Patient Knows of Similarly Ill Persons,Does the patient know of any similarly ill persons?,Yes No Unknown (YNU)
+Health Department Investigated,"If ""Yes,"" did the health department collect contact information about other similarly ill persons and investigate further?",Yes No Unknown (YNU)
+Other Related Cases,Are there other cases related to this one?,Other Related Cases
+Travel Questions Indicator,"If patient has traveled, then display the following questions",Yes No Indicator (HL7)
+Travel Prior To Onset,Did the patient travel prior to onset of illness?,Yes No Unknown (YNU)
+Incubation Period,Applicable incubation period for this illness is 14 days,
+Travel Purpose Code(s),What was the purpose of the travel?  (MULTISELECT),Travel Purpose
+Travel Purpose Other,"If ""Other,"" please specify other purpose of travel:",
+Destination 1 Type:,Destination 1 Type:,Travel Destination Type
+(Domestic) Destination 1:,(Domestic) Destination 1:,State
+(International) Destination 1,(International) Destination 1,Country
+Mode of Travel: (1),Mode of Travel: (1),Travel Mode
+Date Of Arrival (1),Date of Arrival: (1),
+Date of Departure (1),Date of Departure (1),
+Destination 2 Type,Destination 2 Type,Travel Destination Type
+(Domestic) Destination 2,(Domestic) Destination 2,State
+(International) Destination 2,(International) Destination 2,Country
+Mode of Travel: (2),Mode of Travel: (2),Travel Mode
+Date of Arrival: (2),Date of Arrival: (2),
+Date of Departure (2),Date of Departure (2),
+Destination 3 Type:,Destination 3 Type:,Travel Destination Type
+(Domestic) Destination 3:,(Domestic) Destination 3:,State
+(International) Destination 3,(International) Destination 3,Country
+Mode of Travel: (3),Mode of Travel: (3),Travel Mode
+Date of Arrival: (3),Date of Arrival: (3),
+Date of Departure (3),Date of Departure (3),
+Other Destination Txt,"If more than 3 destinations, specify details here:",
+Reporting Lab Name,Name of Laboratory that reported test result.,
+Reporting Lab CLIA Number,CLIA (Clinical Laboratory Improvement Act) identifier for the laboratory that performed the test.,
+Local record ID (case ID),Sending system-assigned local ID of the case investigation with which the subject is associated.  This field has been added to provide the mapping to the case/investigation to which this lab result is associated.  This field should appear exactly as it ap,
+Filler Order Number,A laboratory generated number that identifies the test/order instance.,
+Ordered Test Name,"Ordered Test Name is the lab test ordered by the physician.  It will always be included in an ELR, but there are many instances in which the user entering manual reports will not have access to this information.",Ordered Test
+Date of Specimen Collection,The date the specimen was collected.,
+Specimen Site,"This indicates the physical location, of the subject, where the specimen originated. Examples include: Right Internal Jugular, Left Arm, Buttock, Right Eye, etc.",Specimen
+Specimen Number,A laboratory generated number that identifies the specimen related to this test.,
+Specimen Source,"The medium from which the specimen originated.  Examples include whole blood, saliva, urine, etc.",Specimen
+Specimen Details,Specimen details if specimen information entered as text.  ,
+Date Sample Received at Lab,Date Sample Received at Lab (accession date).,
+Sample Analyzed date,The date and time the sample was analyzed by the laboratory.,
+Lab Report Date,Date result sent from Reporting Laboratory.,
+Report Status,The status of the lab report.,Result Status (HL7)
+Resulted Test Name,The lab test that was run on the specimen.,Lab Test Result Name (FDD)
+Numeric Result,Results expressed as numeric value/quantitative result.,
+Result Units,The unit of measure for numeric result value.  ,Units Of Measure
+Coded Result Value,Coded qualitative result value.,Lab Test Result Qualitative
+Organism Name,The organism name as a test result.  This element is used when the result was reported as an organism.,Microorganism (FDD)
+Lab Result Text Value,"Textual result value, used if result is neither numeric nor coded.",
+Result Status,The Result Status is the degree of completion of the lab test.,Observation Result Status (HL7)
+Interpretation Flag,"The interpretation flag identifies a result that is not typical as well as how it's not typical. Examples: Susceptible, Resistant, Normal, Above upper panic limits, below absolute low.",Abnormal Flag (HL7)
+Reference Range From,The reference range from value allows the user to enter the value on one end of a expected range of results for the test.  This is used mostly for quantitative results.,
+Reference Range To,The reference range to value allows the user to enter the value on the other end of a valid range of results for the test. This is used mostly for quantitative results.,
+Test Method,"The technique or method used to perform the test and obtain the test results. Examples: Serum Neutralization, Titration, dipstick, test strip, anaerobic culture.",Observation Method
+Lab Result Comments,Comments having to do specifically with the lab result test.   These are the comments from the NTE segment if the result was originally an Electronic Laboratory Report.  ,
+Date received in state public health lab,Date the isolate was received in state public health laboratory.,
+Lab Test Coded Comments,"Explanation for missing result (e.g., clotting, quantity not sufficient, etc.)",Missing Lab Result Reason
+Genotyping/ Subtyping,Indicate whether the specimens were genotyped and/or subtyped,Yes No Unknown (YNU)
+Genotyping Sent Date,"If the specimen was sent to the CDC for genotyping, date on which the specimens were sent.",
+Genotype/Subtype location,Indicate where Genotype and/or subtype testing was performed,
+Genotype,"If the specimen was sent for genotype identification, indicate the genotype",
+Subtype,"If the specimen was sent for subtype idenfication, indicate the subtype",
+Track Isolate,Track Isolate functionality indicator,Yes No Indicator (HL7)
+Patient status at specimen collection,Patient status at specimen collection,Patient Location Status at Specimen Collection
+Isolate received in state public health lab,Isolate received in state public health lab,Yes No Unknown (YNU)
+Reason isolate not received,Reason isolate not received,Isolate Not Received Reason
+Reason isolate not received (Other),Reason isolate not received (Other),
+Date received in state public health lab,Date received in state public health lab,
+State public health lab isolate id number,State public health lab isolate id number,
+Case confirmed at state public health lab,Case confirmed at state public health lab,Yes No Unknown (YNU)
+AgClinic,What was the result of specimen testing using an antigen-based  test (e.g. EIA or lateral flow) at a clinical laboratory?  ,
+AgClinicTestType,Name of antigen-based test used at clinical laboratory,
+AgeMnth,Age of case-patient in months if patient is <1yr,
+AgeYr,Age of case-patient in years,
+AgSphl,What was the result of specimen testing using an antigen-based  test (e.g. EIA or lateral flow) at a state public health laboratory? ,
+AgSphlTestType,Name of antigen-based test used at state public health laboratory,
+BloodyDiarr,Did the case-patient have bloody diarrhea (self reported) during this illness?,
+Diarrhea,Did the case-patient have diarrhea (self-reported) during this illness?,
+DtAdmit2,Date of hospital admission for second hospitalization for this illness,
+DtDisch2,Date of hospital discharge for second hospitalization for this illness,
+DtEntered,Date case was entered into site's database,
+DtRcvd,Date case-pateint's specimen was received in laboratory for initial testing,
+DtRptComp,Date case report form was completed,
+DtSpec,Case-patient's specimen collection date,
+DtUSDepart,"If case-patient patient traveled internationally, date of departure from the U.S.",
+DtUSReturn,"If case-patient traveled internationally, date of return to the U.S.",
+EforsNum,CDC FDOSS outbreak ID number,
+Fever,Did the case-patient have fever (self-reported) during this illness?,
+HospTrans,"If case-patient was hospitalized, was s/he transferred to another hospital?",
+Immigrate,Did case-patient immigrate to the U.S.? (within 15 days of illness onset),
+Interview,Was the case-patient interviewed by public health (i.e. state or local health department) ?,
+LabName,Name of submitting laboratory,
+LocalID,Case-patient's medical record number,
+OtherCdcTest,What was the result of specimen testing using another test at CDC?   ,
+OtherClinicTest,What was the result of specimen testing using another test at a clinical laboratory?  ,
+OtherClinicTestType,Name of other test used at a clinical laboratory,
+OtherSphlTest,What was the result of specimen testing using another test at a state public health laboratory?   ,
+OtherSphlTestType,Name of other test used at a state public health laboratory,
+OutbrkType,Type of outbreak that the case-patient was part of,
+PatID,Case-patient identification number ,
+PcrCdc,What was the result of specimen testing for diagnosis using PCR at CDC? (Do not enter PCR results if PCR was performed for speciation or subtyping).,
+PcrClinic,What was the result of specimen testing using PCR at a clinical laboratory? (where goal of testing is primary detection not subtyping or speciation),
+PcrClinicTestType,Name of PCR assay used,
+PcrSphl,What was the result of specimen testing for diagnosis using PCR at the state public health laboratory?  (Do not enter PCR results if PCR was performed for speciation or subtyping).,
+PersonID,Unique identification number for person or patient,
+ResultID,Unique identifier for laboratory result,
+RptComp,Is all of the information for this case complete?,
+SentCDC,Was specimen or isolate forwarded to CDC for testing or confirmation?,
+SLabsID,State lab identification number,
+SpeciesClinic,What was the species result at clinical lab? ,
+SpeciesSphl,What was the species result at SPHL? ,
+SpecSite,Case patient's specimen collection source ,
+StLabRcvd,"Was the isolate sent to a state public health laboratory? (Answer 'Yes' if it was sent to any state lab, even if it was sent to a lab outside of the case's state of residence)",
+TravelDest,"If case-patient traveled internationally, to where did they travel?",
+TravelInt,Did the case patient travel internationally? (within 15 days of onset),

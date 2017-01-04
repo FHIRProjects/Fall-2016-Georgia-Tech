@@ -1,0 +1,1963 @@
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-sdc-profile-example-cap"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/sdc-questionnaire"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-category">
+    <valueCodeableConcept>
+      <text value="ADRENAL GLAND - Other"/>
+    </valueCodeableConcept>
+  </extension>
+<!--  <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-category">
+    <valueCodeableConcept>
+      <text value="CAP Approved"/>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/BasedOn">
+    <extension url="specification">
+      <valueString value="AJCC/UICC TNM"/>
+    </extension>
+    <extension url="version">
+      <valueString value="7th Edition"/>
+    </extension>
+  </extension>-->
+  <status value="published"/>
+  <date value="2013-10-01"/>
+  <title value="ADRENAL GLAND: Biopsy (Core Needle, Incisional, Excisional); Resection"/>
+  <item>
+    <linkId value="Header"/>
+    <type value="group"/>
+    <required value="false"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="Header.note"/>
+      <text value="Surgical Pathology Cancer Case Summary (Checklist)"/>
+      <type value="display"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-display-category"/>
+          <code value="instructions"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="1"/>
+    <text value="Protocol applies to adrenal cortical carcinoma only. Cortical adenomas, pheochromocytoma, neuroblastic tumors, and adrenal tumors of childhood are not included."/>
+    <type value="display"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-readOnly">
+      <valueBoolean value="true"/>
+    </extension>
+    <linkId value="2"/>
+    <text value="Patient Name"/>
+    <type value="string"/>
+    <required value="false"/>
+    <repeats value="false"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-readOnly">
+      <valueBoolean value="true"/>
+    </extension>
+    <linkId value="3"/>
+    <text value="Surgical pathology number"/>
+    <type value="string"/>
+    <required value="false"/>
+    <repeats value="false"/>
+  </item>
+  <item>
+    <linkId value="4257.100004300"/>
+    <type value="group"/>
+    <required value="false"/>
+    <repeats value="false"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-defaultValue">
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="23451007"/>
+          <display value="Adrenal structure"/>
+        </valueCoding>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-readOnly">
+        <valueBoolean value="true"/>
+      </extension>
+      <linkId value="2118.100004300"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <option>
+		<valueCoding>
+			<system value="http://snomed.info/sct"/>
+			<code value="23451007"/>
+			<display value="Adrenal structure"/>
+		</valueCoding>
+      </option>
+    </item>
+  </item>
+  <item>
+    <linkId value="17537.100004300"/>
+    <text value="CLINICAL"/>
+    <type value="group"/>
+    <required value="false"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="20899.100004300"/>
+      <text value="Non-Pathology Findings (Notes J and K)"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <option>
+		<valueCoding>
+			<code value="20900.100004300"/>
+			<display value="Urinary 17-ketosteroids increased (10 mg / g creatinine / 24 hours)"/>
+		</valueCoding>
+	  </option>
+      <option>
+		<valueCoding>
+			<code value="20901.100004300"/>
+			<display value="Hormone production"/>
+		</valueCoding>
+	  </option>
+      <option>
+		<valueCoding>
+			<code value="20906.100004300"/>
+			<display value="Weight loss"/>
+		</valueCoding>
+      </option>
+      <option>
+		<valueCoding>
+			<code value="20907.100004300"/>
+			<display value="Other (specify)"/>
+		</valueCoding>
+      </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20899.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20901.100004300"/>
+              <display value="Hormone production"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="24853.100004300"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <option>
+			<valueCoding>
+			  <code value="20902.100004300"/>
+			  <display value="Cushing syndrome"/>
+			</valueCoding>
+        </option>
+        <option>
+			<valueCoding>
+			  <code value="20904.100004300"/>
+			  <display value="Conn syndrome"/>
+			</valueCoding>
+        </option>
+        <option>
+			<valueCoding>
+			  <code value="20905.100004300"/>
+			  <display value="Virilization / feminization"/>
+			</valueCoding>
+        </option>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20899.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20907.100004300"/>
+              <display value="Other (specify)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20907.100004300"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="20911.100004300"/>
+      <text value="Neoadjuvant Therapy"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <option>
+		<valueCoding>
+			<code value="24854.100004300"/>
+			<display value="Yes (specify type)"/>
+		</valueCoding>
+      </option>
+      <option>
+		<valueCoding>
+			<code value="20914.100004300"/>
+			<display value="No"/>
+		</valueCoding>
+      </option>
+      <option>
+		<valueCoding>
+			<code value="20915.100004300"/>
+			<display value="Indeterminate"/>
+		</valueCoding>
+      </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20911.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="24854.100004300"/>
+              <display value="Yes (specify type)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="24854.100004300"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20911.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20915.100004300"/>
+              <display value="Indeterminate"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20914.100004300"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="4156.100004300"/>
+      <text value="Other (specify)"/>
+      <type value="string"/>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="17875.100004300"/>
+    <text value="SPECIMEN"/>
+    <type value="group"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="20850.100004300"/>
+      <text value="Adrenal Gland Received"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="20848.100004300"/>
+			<display value="Fresh"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20849.100004300"/>
+			<display value="In formalin"/>
+		  </valueCoding>
+      </option>
+      <option>
+		  <valueCoding>
+			<code value="20855.100004300"/>
+			<display value="Other (specify)"/>
+		  </valueCoding>
+      </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20850.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20855.100004300"/>
+              <display value="Other (specify)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20855.100004300"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="2120.100004300"/>
+      <text value="Procedure"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="20856.100004300"/>
+			<display value="Needle biopsy (radiographically guided)"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2122.100004300"/>
+			<display value="Adrenalectomy, total"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2121.100004300"/>
+			<display value="Adrenalectomy, partial"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2123.100004300"/>
+			<display value="Other (specify)"/>
+		  </valueCoding>
+      </option>
+      <option>
+		  <valueCoding>
+			<code value="2124.100004300"/>
+			<display value="Not Specified"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2120.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2123.100004300"/>
+              <display value="Other (specify)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2123.100004300"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2120.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2124.100004300"/>
+              <display value="Not Specified"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2124.100004300"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="20858.100004300"/>
+      <text value="Specimen Integrity"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="20857.100004300"/>
+			<display value="Intact"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20859.100004300"/>
+			<display value="Fragmented"/>
+		  </valueCoding>
+	  </option>
+    </item>
+    <item>
+      <linkId value="20860.100004300"/>
+      <text value="Specimen Size"/>
+      <type value="group"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <item>
+        <linkId value="24068.100004300"/>
+        <text value="Greatest Dimension (cm)"/>
+        <type value="decimal"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <linkId value="24856.100004300"/>
+        <text value="Additional Dimension (cm)"/>
+        <type value="decimal"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <linkId value="24857.100004300"/>
+        <text value="Additional Dimension (cm)"/>
+        <type value="decimal"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <linkId value="24855.100004300"/>
+        <text value="Additional dimensions (repeat section if more than one part)"/>
+        <type value="group"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <item>
+          <linkId value="24069.100004300"/>
+          <text value="Additional Dimension (cm)"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </item>
+        <item>
+          <linkId value="20847.100004300"/>
+          <text value="Additional Dimension (cm)"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </item>
+        <item>
+          <linkId value="20912.100004300"/>
+          <text value="Additional Dimension (cm)"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </item>
+      </item>
+    </item>
+    <item>
+      <linkId value="2125.100004300"/>
+      <text value="Specimen Laterality"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="2126.100004300"/>
+			<display value="Right"/>
+		  </valueCoding>     
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2127.100004300"/>
+			<display value="Left"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2128.100004300"/>
+			<display value="Not specified"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20866.100004300"/>
+			<display value="Other (specify)"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2125.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2128.100004300"/>
+              <display value="Not specified"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2128.100004300"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2125.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20866.100004300"/>
+              <display value="Other (specify)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20866.100004300"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="2129.100004300"/>
+      <text value="Tumor Size (Note A)"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="2131.100004300"/>
+			<display value="Greatest dimension (cm)"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2130.100004300"/>
+			<display value="Cannot be determined (fragmented specimen)"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2129.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2131.100004300"/>
+              <display value="Greatest dimension (cm)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2131.100004300.text"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2129.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2131.100004300"/>
+              <display value="Greatest dimension (cm)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2133.100004300"/>
+        <text value="Additional Dimension (cm)"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2129.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2131.100004300"/>
+              <display value="Greatest dimension (cm)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2131.100004300"/>
+        <text value="Additional Dimension (cm)"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2129.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2130.100004300"/>
+              <display value="Cannot be determined (fragmented specimen)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2130.100004300"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="26236.100004300"/>
+      <text value="Tumor Gland Weight (Note B)"/>
+      <type value="group"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <item>
+        <linkId value="26237.100004300"/>
+        <text value="Not applicable"/>
+        <type value="boolean"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="26236.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueBoolean value="false"/>
+          </extension>
+        </extension>
+        <linkId value="2134.100004300"/>
+        <text value="Specify Weight (g)"/>
+        <type value="decimal"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="17876.100004300"/>
+    <text value="TUMOR"/>
+    <type value="group"/>
+    <required value="false"/>
+    <repeats value="false"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-defaultValue">
+        <valueCoding>
+          <code value="2117.100004300"/>
+          <display value="Adrenal structure"/>
+        </valueCoding>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-readOnly">
+        <valueBoolean value="true"/>
+      </extension>
+      <linkId value="2116.100004300"/>
+      <text value="Histologic Type (Notes C through E)"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="2117.100004300"/>
+			<display value="Adrenal cortical carcinoma"/>
+		  </valueCoding>
+	  </option>
+    </item>
+  </item>
+  <item>
+    <linkId value="17877.100004300"/>
+    <text value="EXTENT"/>
+    <type value="group"/>
+    <required value="false"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="20873.100004300"/>
+      <text value="Microscopic Tumor Extension (specify)"/>
+      <type value="string"/>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="17878.100004300"/>
+    <text value="MARGINS"/>
+    <type value="group"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="2153.100004300"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="2154.100004300"/>
+			<display value="Margins uninvolved by tumor"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2155.100004300"/>
+			<display value="Margin(s) involved by tumor"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2157.100004300"/>
+			<display value="Cannot be determined"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20852.100004300"/>
+			<display value="Not applicable"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2153.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2154.100004300"/>
+              <display value="Margins uninvolved by tumor"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="26358.100004300"/>
+        <text value="Distance from Closest Margin"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <option>
+			<valueCoding>
+			  <code value="26359.100004300"/>
+			  <display value="Specify (mm)"/>
+			</valueCoding>
+		</option>
+        <option>
+			<valueCoding>
+			  <code value="26361.100004300"/>
+			  <display value="Cannot be assessed (explain)"/>
+			</valueCoding>
+		</option>
+        <item>
+          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+            <extension url="question">
+              <valueString value="26358.100004300"/>
+            </extension>
+            <extension url="answer">
+              <valueCoding>
+                <code value="26359.100004300"/>
+                <display value="Specify (mm)"/>
+              </valueCoding>
+            </extension>
+          </extension>
+          <linkId value="26359.100004300"/>
+          <type value="decimal"/>
+          <required value="true"/>
+          <repeats value="false"/>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+            <extension url="question">
+              <valueString value="26358.100004300"/>
+            </extension>
+            <extension url="answer">
+              <valueCoding>
+                <code value="26361.100004300"/>
+                <display value="Cannot be assessed (explain)"/>
+              </valueCoding>
+            </extension>
+          </extension>
+          <linkId value="26361.100004300"/>
+          <type value="string"/>
+          <required value="true"/>
+          <repeats value="false"/>
+        </item>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2153.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2155.100004300"/>
+              <display value="Margin(s) involved by tumor"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="26362.100004300"/>
+        <text value="Specify Margin, if possible"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <option>
+			<valueCoding>
+			  <code value="26363.100004300"/>
+			  <display value="Specify margin"/>
+			</valueCoding>
+		</option>
+        <option>
+			<valueCoding>
+			  <code value="26364.100004300"/>
+			  <display value="Cannot be determined (explain)"/>
+			</valueCoding>
+		</option>
+        <item>
+          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+            <extension url="question">
+              <valueString value="26362.100004300"/>
+            </extension>
+            <extension url="answer">
+              <valueCoding>
+                <code value="26363.100004300"/>
+                <display value="Specify margin"/>
+              </valueCoding>
+            </extension>
+          </extension>
+          <linkId value="26363.100004300.text"/>
+          <type value="string"/>
+          <required value="true"/>
+          <repeats value="false"/>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+            <extension url="question">
+              <valueString value="26362.100004300"/>
+            </extension>
+            <extension url="answer">
+              <valueCoding>
+                <code value="26364.100004300"/>
+                <display value="Cannot be determined (explain)"/>
+              </valueCoding>
+            </extension>
+          </extension>
+          <linkId value="26364.100004300.text"/>
+          <type value="string"/>
+          <required value="true"/>
+          <repeats value="false"/>
+        </item>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2153.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2157.100004300"/>
+              <display value="Cannot be determined"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2157.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2153.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20852.100004300"/>
+              <display value="Not applicable"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20852.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="17879.100004300"/>
+    <text value="ACCESSORY FINDINGS"/>
+    <type value="group"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="20875.100004300"/>
+      <text value="Treatment Effect (applicable to carcinomas treated with neoadjuvant therapy)"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="20876.100004300"/>
+			<display value="Not identified"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20877.100004300"/>
+			<display value="Present (specify)"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20878.100004300"/>
+			<display value="Indeterminate"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20875.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20877.100004300"/>
+              <display value="Present (specify)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20877.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="20862.100004300"/>
+      <text value="Tumor Description"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <option>
+		  <valueCoding>
+			<code value="20863.100004300"/>
+			<display value="Hemorrhagic"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20864.100004300"/>
+			<display value="Necrotic"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="17883.100004300"/>
+			<display value="Invasion"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20865.100004300"/>
+			<display value="Other (specify)"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20862.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="17883.100004300"/>
+              <display value="Invasion"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20869.100004300"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <option>
+			<valueCoding>
+			  <code value="20870.100004300"/>
+			  <display value="Capsule"/>
+			</valueCoding>
+		</option>
+        <option>
+			<valueCoding>
+			  <code value="20871.100004300"/>
+			  <display value="Vessels"/>
+			</valueCoding>
+		</option>
+        <option>
+			<valueCoding>
+			  <code value="20872.100004300"/>
+			  <display value="Extra-adrenal (specify)"/>
+			</valueCoding>
+		</option>
+        <item>
+          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+            <extension url="question">
+              <valueString value="20869.100004300"/>
+            </extension>
+            <extension url="answer">
+              <valueCoding>
+                <code value="20872.100004300"/>
+                <display value="Extra-adrenal (specify)"/>
+              </valueCoding>
+            </extension>
+          </extension>
+          <linkId value="20872.100004300.text"/>
+          <type value="string"/>
+          <required value="true"/>
+          <repeats value="false"/>
+        </item>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20862.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20865.100004300"/>
+              <display value="Other (specify)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20865.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="2158.100004300"/>
+      <text value="Lymph-Vascular Invasion (Note F)"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="2159.100004300"/>
+			<display value="Not identified"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2160.100004300"/>
+			<display value="Present"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2161.100004300"/>
+			<display value="Indeterminate"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2158.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2159.100004300"/>
+              <display value="Not identified"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2159.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2158.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2160.100004300"/>
+              <display value="Present"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20861.100004300"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <option>
+			<valueCoding>
+			  <code value="20853.100004300"/>
+			  <display value="Large vessel (venous)"/>
+			</valueCoding>
+		</option>
+        <option>
+			<valueCoding>
+			  <code value="20881.100004300"/>
+			  <display value="Smal vessel (capillary lymphatic)"/>
+			</valueCoding>
+		</option>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2158.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2161.100004300"/>
+              <display value="Indeterminate"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2161.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="20882.100004300"/>
+      <text value="Perineural Invasion"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="20879.100004300"/>
+			<display value="Not identified"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20884.100004300"/>
+			<display value="Present"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20883.100004300"/>
+			<display value="Indeterminate"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20882.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20879.100004300"/>
+              <display value="Not identified"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20879.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20882.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20883.100004300"/>
+              <display value="Indeterminate"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20883.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="17880.100004300"/>
+    <text value="SPECIAL STUDIES"/>
+    <type value="group"/>
+    <required value="false"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="6202.100004300"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <option>
+		  <valueCoding>
+			<code value="20908.100004300"/>
+			<display value="Specify type(s)"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20909.100004300"/>
+			<display value="Specify result(s)"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="6202.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20908.100004300"/>
+              <display value="Specify type(s)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20908.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="6202.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20909.100004300"/>
+              <display value="Specify result(s)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20909.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="17881.100004300"/>
+    <text value="LYMPH NODES"/>
+    <type value="group"/>
+    <required value="false"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="20885.100004300"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="1850.100004300"/>
+			<display value="No nodes submitted or found"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20886.100004300"/>
+			<display value="Not identified"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20887.100004300"/>
+			<display value="Present"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20888.100004300"/>
+			<display value="Indeterminate"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20885.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20886.100004300"/>
+              <display value="Not identified"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20886.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20885.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20888.100004300"/>
+              <display value="Indeterminate"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20888.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="2136.100004300"/>
+    <text value="STAGE (pTMN) (Note G)"/>
+    <type value="group"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="20880.100004300"/>
+      <text value="?TNM Descriptors"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <option>
+		  <valueCoding>
+			<code value="22897.100004300"/>
+			<display value="?Not applicable"/>
+			<!-- No ability at the moment to say "if this option is selected, the other options become disabled. -->
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20890.100004300"/>
+			<display value="m (multiple primary tumors)"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20891.100004300"/>
+			<display value="r (recurrent)"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20892.100004300"/>
+			<display value="y (post-treatment)"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="20880.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="22897.100004300"/>
+              <display value="?Not applicable"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="22897.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="2137.100004300"/>
+      <text value="Primary Tumor (pT)"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="2142.100004300"/>
+			<display value="pTX: Cannot be determined"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20889.100004300"/>
+			<display value="pT0: No evidence of primary tumor"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2138.100004300"/>
+			<display value="pT1: Tumor 5 cm or less in greatest dimension, no extra-adrenal invasion"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2139.100004300"/>
+			<display value="pT2: Tumor greater than 5cm, no extra-adrenal invasion"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2140.100004300"/>
+			<display value="pT3: Tumor of any size with local invasion, but not invading adjacent organs#"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="pT4: Tumor of any size with invasion of adjacent organs#"/>
+			<display value="2141.100004300"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2137.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2142.100004300"/>
+              <display value="pTX: Cannot be determined"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2142.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <!-- Note: No ability to intersperse notes within choice options -->
+      <item>
+        <linkId value="20893.100004300"/>
+        <text value="# Adjacent organs include kidney, diaphragm, great vessels, pancreas, and liver."/>
+        <type value="display"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <linkId value="20894.100004300"/>
+        <text value="Note: There is no category of carcinoma in situ (pTis) relative to carcinomas of the adrenal gland."/>
+        <type value="display"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="2143.100004300"/>
+      <text value="Regional Lymph Nodes (pN) (Note H)"/>
+      <type value="choice"/>
+      <option>
+		  <valueCoding>
+			<code value="2144.100004300"/>
+			<display value="pNX: Cannot be assessed"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2145.100004300"/>
+			<display value="pN0: No regional lymph node metastisis"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2146.100004300"/>
+			<display value="pN1: Regional lymph node metastisis"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2143.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2146.100004300"/>
+              <display value="pN1: Regional lymph node metastisis"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="1867.100004300"/>
+        <text value="No nodes submitted or found"/>
+        <type value="boolean"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+            <extension url="question">
+              <valueString value="1867.100004300"/>
+            </extension>
+            <extension url="answer">
+              <valueBoolean value="false"/>
+            </extension>
+          </extension>
+          <linkId value="1869.100004300"/>
+          <text value="Number of Lymph Nodes Examined"/>
+          <type value="choice"/>
+          <required value="true"/>
+          <repeats value="false"/>
+          <option>
+			  <valueCoding>
+				<code value="1870.100004300"/>
+				<display value="Specify"/>
+			  </valueCoding>
+		  </option>
+          <option>
+			  <valueCoding>
+				<code value="1871.100004300"/>
+				<display value="Number cannot be determined (explain)"/>
+			  </valueCoding>
+		  </option>
+          <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+              <extension url="question">
+                <valueString value="1869.100004300"/>
+              </extension>
+              <extension url="answer">
+                <valueCoding>
+                  <code value="1870.100004300"/>
+                  <display value="Specify"/>
+                </valueCoding>
+              </extension>
+            </extension>
+            <linkId value="1870.100004300.text"/>
+            <type value="integer"/>
+            <required value="true"/>
+            <repeats value="false"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+              <extension url="question">
+                <valueString value="1869.100004300"/>
+              </extension>
+              <extension url="answer">
+                <valueCoding>
+                  <code value="1871.100004300"/>
+                  <display value="Number cannot be determined (explain)"/>
+                </valueCoding>
+              </extension>
+            </extension>
+            <linkId value="1871.100004300.text"/>
+            <type value="string"/>
+            <required value="true"/>
+            <repeats value="false"/>
+          </item>
+        </item>
+        <item>
+          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+            <extension url="question">
+              <valueString value="1867.100004300"/>
+            </extension>
+            <extension url="answer">
+              <valueBoolean value="false"/>
+            </extension>
+          </extension>
+          <linkId value="1872.100004300"/>
+          <text value="Number of Lymph Nodes Involved"/>
+          <type value="choice"/>
+          <required value="true"/>
+          <repeats value="false"/>
+          <option>
+			  <valueCoding>
+				<code value="1873.100004300"/>
+				<display value="Specify"/>
+			  </valueCoding>
+		  </option>
+          <option>
+			  <valueCoding>
+				<code value="1874.100004300"/>
+				<display value="Number cannot be determined (explain)"/>
+			  </valueCoding>
+		  </option>
+          <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+              <extension url="question">
+                <valueString value="1872.100004300"/>
+              </extension>
+              <extension url="answer">
+                <valueCoding>
+                  <code value="1873.100004300"/>
+                  <display value="Specify"/>
+                </valueCoding>
+              </extension>
+            </extension>
+            <linkId value="1873.100004300.text"/>
+            <type value="integer"/>
+            <required value="true"/>
+            <repeats value="false"/>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+              <extension url="question">
+                <valueString value="1872.100004300"/>
+              </extension>
+              <extension url="answer">
+                <valueCoding>
+                  <code value="1874.100004300"/>
+                  <display value="Number cannot be determined (explain)"/>
+                </valueCoding>
+              </extension>
+            </extension>
+            <linkId value="1874.100004300.text"/>
+            <type value="string"/>
+            <required value="true"/>
+            <repeats value="false"/>
+          </item>
+        </item>
+      </item>
+    </item>
+    <item>
+      <linkId value="2149.100004300"/>
+      <text value="Distant Metastisis (pM) (Note I)"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="20895.100004300"/>
+			<display value="Not applicable"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2151.100004300"/>
+			<display value="pM1: Distant metastasis"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2149.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20895.100004300"/>
+              <display value="Not applicable"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="20895.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2149.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2151.100004300"/>
+              <display value="pM1: Distant metastasis"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2152.100004300"/>
+        <text value="Specify Site(s), if known"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="17884.100004300"/>
+    <text value="ADDITIONAL NON-TUMOR"/>
+    <type value="group"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="2162.100004300"/>
+      <text value="Additional Pathologic Findings"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <option>
+		  <valueCoding>
+			<code value="2163.100004300"/>
+			<display value="None identified"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2164.100004300"/>
+			<display value="Tumor necrosis"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="20896.100004300"/>
+			<display value="Degenerative changes"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="2167.100004300"/>
+			<display value="Other (specify)"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2162.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="20896.100004300"/>
+              <display value="Degenerative changes"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="22900.100004300"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <option>
+			<valueCoding>
+			  <code value="20854.100004300"/>
+			  <display value="Calcifications"/>
+			</valueCoding>
+		</option>
+        <option>
+			<valueCoding>
+			  <code value="20897.100004300"/>
+			  <display value="Hemorrhage"/>
+			</valueCoding>
+		</option>
+        <option>
+			<valueCoding>
+			  <code value="20898.100004300"/>
+			  <display value="Cystic change"/>
+			</valueCoding>
+		</option>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="2162.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="2167.100004300"/>
+              <display value="Other (specify)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="2167.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+<!--    <extension url="http://www.cap.org/fhir/StructureDefinition/authorityRequired">
+      <valueString value="PERT: Pathology Electronic Reporting Taskforce (CAP)"/>
+    </extension>-->
+    <linkId value="2168.100004300"/>
+    <text value="Comment(s)"/>
+    <type value="text"/>
+    <required value="false"/>
+    <repeats value="false"/>
+  </item>
+  <item>
+    <linkId value="22894.100004300"/>
+    <text value="(Deprecated Items)"/>
+    <type value="group"/>
+    <required value="false"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="29221.100004300"/>
+      <text value="(Deprecated Answers)"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="26360.100004300"/>
+			<display value="Specify (cm)"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="29221.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="26360.100004300"/>
+              <display value="Specify (cm)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="26360.100004300.text"/>
+        <type value="decimal"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="20851.100004300"/>
+      <text value="Distance from Closest Margin"/>
+      <type value="decimal"/>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+    <item>
+      <linkId value="2156.100004300"/>
+      <text value="Specify Margin(s) if possible"/>
+      <type value="string"/>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+    <item>
+      <linkId value="3875.100004300"/>
+      <text value="Specify Units"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="3876.100004300"/>
+			<display value="mm"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="3917.100004300"/>
+			<display value="cm"/>
+		  </valueCoding>
+	  </option>
+    </item>
+    <item>
+      <linkId value="2147.100004300"/>
+      <text value="Number Examined"/>
+      <type value="integer"/>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+    <item>
+      <linkId value="2148.100004300"/>
+      <text value="Number Involved"/>
+      <type value="integer"/>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+    <item>
+      <linkId value="22886.100004300"/>
+      <text value="Distance from Closest Margin"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="22887.100004300"/>
+			<display value="Specify (mm)"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="23469.100004300"/>
+			<display value="Specify (cm)"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="22888.100004300"/>
+			<display value="Cannot be assessed (explain)"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="22886.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="22887.100004300"/>
+              <display value="Specify (mm)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="22887.100004300.text"/>
+        <type value="decimal"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="22886.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="23469.100004300"/>
+              <display value="Specify (cm)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="23469.100004300.text"/>
+        <type value="decimal"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="22886.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="22888.100004300"/>
+              <display value="Cannot be assessed (explain)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="22888.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="22889.100004300"/>
+      <text value="Specify Margin(s) if possible"/>
+      <type value="choice"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <option>
+		  <valueCoding>
+			<code value="22890.100004300"/>
+			<display value="Specify Margin"/>
+		  </valueCoding>
+	  </option>
+      <option>
+		  <valueCoding>
+			<code value="22891.100004300"/>
+			<display value="Cannot be determined (explain)"/>
+		  </valueCoding>
+	  </option>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="22889.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="22890.100004300"/>
+              <display value="Specify Margin"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="22890.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+          <extension url="question">
+            <valueString value="22889.100004300"/>
+          </extension>
+          <extension url="answer">
+            <valueCoding>
+              <code value="22891.100004300"/>
+              <display value="Cannot be determined (explain)"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <linkId value="22891.100004300.text"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+</Questionnaire>

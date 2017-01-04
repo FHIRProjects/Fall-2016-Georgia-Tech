@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% load fhir_formatting %}
+
+{% block content %}
+    <style>
+        span.message-label {
+            font-weight: bold;
+        }
+    </style>
+    <div>Your recent messages:</div>
+    <hr/>
+    {% for message in messages %}
+        <div class="message">
+        <div><span class="message-label">Date:</span> {{ message.sent.date }} </div>
+        <div><span class="message-label">Text:</span> {{ message.payload.0.contentString|linebreaks }}</div>
+        </div>
+        <hr/>
+    {% endfor %}
+{% endblock %}

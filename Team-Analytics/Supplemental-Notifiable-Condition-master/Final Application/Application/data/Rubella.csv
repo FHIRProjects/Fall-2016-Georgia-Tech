@@ -1,0 +1,62 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Did the subject have a rash?,Did the subject being reported in this investigation have a rash?,PHVS_YesNoUnknown_CDC
+Rash onset date,What was the rash onset date?,
+Duration of rash,How many days did the rash last?,
+Rash Onset occur within 14-23 days of  entering USA,"Did rash onset occur 14-23 days after entering USA, following any travel or living outside the USA?",PHVS_YesNoUnknown_CDC
+Did the Subject have a fever?,"Did the subject have a fever? i.e., a measured temperature >2 degrees above normal",PHVS_YesNoUnknown_CDC
+Highest Measured Temperature,What was the person's highest measured temperature during this illness?,
+Temperature Units,The units of measure of the highest measured temperature. This would be either Fahrenheit or Celsius.,PHVS_TemperatureUnit_UCUM
+Date of Fever Onset,Date of fever onset,
+Arthralgia/arthritis (symptom),Did the Subject have arthralgia/arthritis (symptom)?,PHVS_YesNoUnknown_CDC
+Lymphadenopathy (symptom),Did the Subject have lymphadenopathy (symptom)?,PHVS_YesNoUnknown_CDC
+Conjunctivitis (symptom),Did the Subject have conjunctivitis (symptom)?,PHVS_YesNoUnknown_CDC
+"Encephalitis
+(complication)",Did the person develop encephalitis as a complication of this illness?,PHVS_YesNoUnknown_CDC
+"Thrombocytopenia
+(complication)",Did the person develop thrombocytopenia as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Arthralgia/arthritis (complication),Did Subject have arthralgia/arthritis (complication)?,PHVS_YesNoUnknown_CDC
+Other Complication,Did the person develop an other condition(s) as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Specify Other Complication,"Please specify the other complication(s) the person developed, during or as a result of this illness.",
+Cause of Death,Cause of subject's death,
+Was laboratory testing done for rubella?,Was laboratory testing done for rubella?,PHVS_YesNoUnknown_CDC
+Test Type,Epidemiologic interpretation of the type of test(s) performed for this case,PHVS_LabTestProcedure_Rubella
+Test Result,Epidemiologic interpretation of the results of the tests performed for this case,PHVS_LabTestInterpretation_VPD
+Sample Analyzed Date,The date the specimen/isolate was tested,
+Test Method,The technique or method used to perform the test and obtain the test results,PHVS_LabTestMethod_CDC
+Date Collected,Date of specimen collection,
+Specimen Source,The medium from which the specimen originated,PHVS_SpecimenSource_VPD
+Were the specimens sent to CDC for genotyping (molecular typing)?,Were clinical specimens sent to CDC laboratories for genotyping (molecular typing)?,PHVS_YesNoUnknown_CDC
+Specimen type sent to CDC for genotyping,Specimen type sent to CDC for genotyping,PHVS_SpecimenSource_VPD
+Date sent for genotyping,The date the specimens were sent to the CDC laboratories for genotyping,
+Was Rubella genotype sequenced?,Identifies whether the Rubella virus was genotype sequenced.,PHVS_YesNoUnknown_CDC
+Type of Genotype Sequence ,Identifies the genotype sequence of the Rubella virus,PHVS_Genotype_Rubella
+Transmission Setting,What was the transmission setting where the Rubella was acquired?,PHVS_TransmissionSetting_NND
+Were age and setting verified?,Does the age of the case match or make sense for the transmission setting listed (i.e.) a person aged 80 probably would not have a transmission setting of child day care center?,PHVS_YesNoUnknown_CDC
+Source of Infection,What was the source of the Rubella infection?,
+Is this case Epi-linked to another confirmed or probable case?,Specify if this case is Epidemiologically-linked to another confirmed or probable case of Rubella?,PHVS_YesNoUnknown_CDC
+Traceable to international import? ,Identifies whether the Rubella case was traceable (linked) to an international import.,PHVS_YesNoUnknown_CDC
+Expected Delivery Date,What is the expected delivery date of this pregnancy?,
+Expected Place of Delivery,Expected place of delivery,
+Number of weeks gestation at time of disease,Number of weeks gestation at time of rubella disease,
+Trimester of gestation at time of disease,Trimester of gestation at time of rubella disease,PHVS_PregnancyTrimester_CDC
+Documentation of previous disease immunity testing,Is there documentation of previous rubella immunity testing?,PHVS_YesNoUnknown_CDC
+Result of previous immunity testing,Result of previous immunity testing,PHVS_LabTestInterpretation_VPD
+Year of previous immunity testing,Year of previous immunity testing,
+Age of Subject at time of immunity testing (in years),Age of Subject at time of immunity testing,
+Did the Subject ever have this  disease prior to this pregnancy?,Did the Subject ever have rubella disease prior to this pregnancy?,PHVS_YesNoUnknown_CDC
+Was previous disease serologically confirmed?,Was previous rubella disease serologically confirmed?,PHVS_YesNoUnknown_CDC
+Year of previous disease,"If previous rubella was serologically confirmed, what was the year of previous disease?",
+Age of the Subject at time of previous disease (in years),"If previous rubella was serologically confirmed, what was the age of the Subject at time of previous disease?",
+Current Pregnancy Outcome,What was the outcome of the current pregnancy?,PHVS_BirthOutcome_Rubella
+"At the time of cessation of pregnancy, what was the age of the fetus (in weeks)?","If applicable, at the time of cessation of pregnancy, what was the age of the fetus (in weeks)?",
+Was an autopsy performed?,Was an autopsy performed on the subject's body?,PHVS_YesNoUnknown_CDC
+Final Anatomical Diagnosis of Death from Autopsy Report,The final anatomical cause of subject's death,
+Did the Subject ever receive disease-containing vaccine?,Did the Subject ever receive rubella-containing vaccine?,PHVS_YesNoUnknown_CDC
+"If no, reason subject did not receive a disease-containing vaccine","If the subject did not receive a rubella-containing vaccine, what was the reason?",PHVS_VaccineNotGivenReasons_CDC
+Number of doses received ON or AFTER first birthday,Number of rubella-containing vaccine doses Subject received ON or AFTER first birthday,
+Vaccine Administered,"The type of vaccine administered, (e.g., Varivax, MMRV).  First question of a repeating group of vaccine questions.",PHVS_VaccinesAdministeredCVX_CDC_NIP
+Vaccine Manufacturer,Manufacturer of the vaccine.  Second question of a repeating group of vaccine questions.,PHVS_ManufacturersOfVaccinesMVX_CDC_NIP
+Vaccine Lot Number,The vaccine lot number of the vaccine administered.  Third question of a repeating group of vaccine questions.,
+Vaccine Administered Date,The date that the vaccine was administered.  Fourth question of a repeating group of vaccine questions.,
+US Acquired,"Sub-classification of disease or condition acquired in the US
+",PHVS_CaseClassificationExposureSource_NND

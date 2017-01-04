@@ -1,0 +1,54 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Did the subject have a rash?,Did the subject being reported in this investigation have a rash?,PHVS_YesNoUnknown_CDC
+Rash onset date,What was the onset date of the subject's rash?,
+Rash Duration,How many days did the rash reported in this investigation last?,
+Was the rash generalized?,Was the rash generalized? (Occurring on more than one or two parts of the body?),PHVS_YesNoUnknown_CDC
+Rash onset occur within 21 days of entering USA,"Did rash onset occur within 21 days of entering the USA, following any travel or living outside the USA?",PHVS_YesNoUnknown_CDC
+Did the subject have a fever?,"Did the subject have a fever? I.E., a measured temperature >2 degrees above normal",PHVS_YesNoUnknown_CDC
+Highest Measured Temperature,What was the subject's highest measured temperature during this illness?,
+Temperature units,The units of measure of the highest measured temperature.  This would be either Fahrenheit or Celsius.,PHVS_TemperatureUnit_UCUM
+Date of fever onset,Date of fever onset,
+Cough,Did the subject develop a cough during this illness?,PHVS_YesNoUnknown_CDC
+Coryza (runny nose),Did the subject develop coryza (runny nose) during this illness?,PHVS_YesNoUnknown_CDC
+Conjunctivitis,Did the subject develop conjunctivitis during this illness?,PHVS_YesNoUnknown_CDC
+Otitis Media (Complication),Did the subject develop otitis media as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Diarrhea (Complication),Did the subject develop diarrhea as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Pneumonia (Complication),Did the subject develop pneumonia as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Encephalitis (Complication),Did the subject develop encephalitis as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Thrombocytopenia (Complication),Did the subject develop thrombocytopenia as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Croup (Complication),Did the subject develop croup as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Hepatitis (Complication),Did the subject develop hepatitis as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Other Complication,Did the subject develop other conditions as a complication of this illness?,PHVS_YesNoUnknown_CDC
+Specify Other Complication,"Please specify the other complication the subject developed, during or as a result of this illness.",
+Was laboratory testing done for measles?,Was laboratory testing done to confirm a diagnosis of measles?,PHVS_YesNoUnknown_CDC
+Test Type,Epidemiologic interpretation of the type of test(s) performed for this case,PHVS_LabTestProcedure_Measles
+Test Result,Epidemiologic interpretation of the results of the tests performed for this case.,PHVS_LabTestInterpretation_VPD
+Sample Analyzed Date,The date the specimen/isolate was tested.,
+Test Method,The technique or method used to perform the test and obtain the test results.,PHVS_LabTestMethod_CDC
+Date Collected,Date of specimen collection,
+Specimen Source,The medium from which the specimen originated.,PHVS_SpecimenSource_Measles
+Were the specimens sent to CDC for genotyping (molecular typing)?,Were clinical specimens sent to CDC laboratories for genotyping (molecular typing)?,PHVS_YesNoUnknown_CDC
+Specimen type sent to CDC for genotyping,Specimen type sent to CDC for genotyping,PHVS_SpecimenSource_Measles
+Date sent for genotyping,The date the specimens were sent to the CDC laboratories for genotyping.,
+Was Measles virus genotype sequenced?,Identifies whether the Measles virus was genotype sequenced.,PHVS_YesNoUnknown_CDC
+Type of Genotype Sequence,Identifies the genotype sequence of the Measles virus,PHVS_Genotype_Measles
+Transmission Setting,What was the transmission setting where the measles was acquired?,PHVS_TransmissionSetting_NND
+Source of Infection,What was the source of the measles infection?,
+Were age and setting verified?,Does the age of the case match or make sense for the transmission setting listed (i.e. A subject aged 80 probably would not have a transmission setting of child day care center.)?,PHVS_YesNoUnknown_CDC
+Is this case Epi-linked to another confirmed or probable case?,Specify if this case is Epidemiologically-linked to another confirmed or probable case of measles?,PHVS_YesNoUnknown_CDC
+Is this case linked  to an international imported case either directly or within same chain of transmission? ,"A ""Yes"" answer to this question denotes this case was infected  by another subject who acquired infection while outside of the U.S. ",PHVS_YesNoUnknown_CDC
+International Destination(s) of recent travel,List any international destinations of recent travel,PHVS_Country_ISO_3166-1
+Date of return from travel. ,Date the subject returned from all travel,
+Did the subject ever receive a disease-containing vaccine?,Did the subject ever receive a measles-containing vaccine?,PHVS_YesNoUnknown_CDC
+"If no, reason subject did not receive a disease-containing vaccine","If the subject did not receive a measles-containing vaccine, what was the reason?",PHVS_VaccineNotGivenReasons_CDC
+Number of doses received BEFORE first birthday,The number of doses of measles-containing vaccine the subject received before their first birthday.,
+Number of doses received ON or AFTER first birthday,The number of measles-containing vaccine doses the subject received on or after their first birthday.,
+Reason for vaccinating before first (1st) birthday but not after,"If the subject was vaccinated with measles-containing vaccine BEFORE the first birthday, but did not receive a vaccine dose after their first birthday, state the reason.",PHVS_VaccineNotGivenReasons_CDC
+"Reason subject received one dose ON or AFTER first birthday, but never received a second dose after the first (1st) birthday","If the subject received one dose of measles-containing vaccine ON or AFTER their first birthday, but did not receive a second dose after the first birthday, what was the reason?",PHVS_VaccineNotGivenReasons_CDC
+Total doses disease-containing vaccine,Total doses measles-containing vaccine,
+Vaccine Administered,The type of vaccine administered,PHVS_VaccinesAdministeredCVX_CDC_NIP
+Vaccine Manufacturer,Manufacturer of the vaccine,PHVS_ManufacturersOfVaccinesMVX_CDC_NIP
+Vaccine Lot Number,The vaccine lot number of the vaccine administered  ,
+Vaccine Administered Date,The date that the vaccine was administered  ,
+US Acquired,"Sub-classification of disease or condition acquired in the US
+",PHVS_CaseClassificationExposureSource_NND

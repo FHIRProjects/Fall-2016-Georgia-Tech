@@ -1,0 +1,35 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Clinically Compatible Illness,Did this case have a clinically compatible illness as defined by the latest CSTE case definitions?,PHVS_YesNoUnknown_CDC
+History of Tick Bite,Was there a history of a tick bite within 14 days of onset?,PHVS_YesNoUnknown_CDC
+Eschar,"Was there an eschar, or tache noire, present?",PHVS_YesNoUnknown_CDC
+Immunosuppressive Condition,"If the case reports an immunosuppressive condition, then indicate condition here",
+Adult respiratory distress syndrome,Did the case report adult respiratory distress syndrome during the course of this illness?,PHVS_YesNoUnknown_CDC
+Disseminated Intravascular Coagulation,Did the case report disseminated intravascular coagulation during the course of this illness?,PHVS_YesNoUnknown_CDC
+Meningitis,Did the case report meningitis during the course of this illness?,PHVS_YesNoUnknown_CDC
+Encephalitis,Did the case report encephalitis during the course of this illness?,PHVS_YesNoUnknown_CDC
+Renal Failure,Did the case report renal failure during the course of this illness?,PHVS_YesNoUnknown_CDC
+Othere life threatening complication,"If the case reported another life threatening complication during the course of this illness, then list it here",
+Laboratory Name,Indicate the name of the laboratory which supplied results supporting the current CSTE case definitions.,
+Laboratory State,Indicate the state where the laboratory is located,PHVS_State_FIPS_5-2
+Acute Serology Collection Date,"If an acute serology was collected, then list the date of collection",
+Acute IFA IgG Result,"If performed, was the acute IFA IgG positive",PHVS_YesNoUnknown_CDC
+Acute IFA IgG Titer,"If performed, what was the reciprocal titer of the acute IFA IgG",
+Acute IFA IgM Result,"If performed, was the acute IFA IgM positive",PHVS_YesNoUnknown_CDC
+Acute IFA IgM Titer,"If performed, what was the reciprocal titer of the acute IFA IgM",
+"Acute Serology, Other Test","If performed, what was the name of another acute serology test",
+"Acute Serology Result, Other Test","If performed, was this other acute serology test positive",PHVS_YesNoUnknown_CDC
+"Acute Serology Numeric Result, Other Test","If performed, what was the numeric result of the other serology test",
+Convalescent Serology Collection Date,"If an convalescent serology was collected, then list the date of collection",
+Convalescent IFA IgG Result,"If performed, was the convalescent IFA IgG positive",PHVS_YesNoUnknown_CDC
+Convalescent IFA IgG Titer,"If performed, what was the reciprocal titer of the convalescent IFA IgG",
+Convalescent IFA IgM Result,"If performed, was the convalescent IFA IgM positive",PHVS_YesNoUnknown_CDC
+Convalescent IFA IgM Titer,"If performed, what was the reciprocal titer of the convalescent IFA IgM",
+"Convalescent Serology, Other Test","If performed, what was the name of another convalescent serology test",
+"Convalescent Serology Result, Other Test","If performed, was this other convalescent serology test positive",PHVS_YesNoUnknown_CDC
+"Convalescent Serology Numeric Result, Other Test","If performed, what was the numeric result of the other serology test",
+PCR,"If performed, was the polymerase chain reaction assay positive",PHVS_YesNoUnknown_CDC
+Morulae,"If performed, were morulae visualized during microscopy",PHVS_YesNoUnknown_CDC
+Immunostain,"If performed, were antibodies detected using immunohistochemistry during microscopy",PHVS_YesNoUnknown_CDC
+Culture,"If performed, was the etiologic agent isolated from culture",PHVS_YesNoUnknown_CDC
+Fourfold,"If paired sera were collected, was there a fourfold change in titer between acute and convalescent",PHVS_YesNoUnknown_CDC
+Other Etiologic Agent,"If etiologic agent was unusual, then indicate the species here (for example, R. africae)",

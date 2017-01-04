@@ -1,0 +1,174 @@
+<html>
+<head>
+    <script src="https://apps.hspconsortium.org/hspc-reference-apps/static/jsfiddle/fhir-client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+
+a:link { color: #C0C0C0; text-decoration: none }
+a:active { color: #C0C0C0; text-decoration: none }
+a:visited { color: #C0C0C0; text-decoration: none }
+a:hover { color: red; text-decoration: none }
+
+    </style>
+</head>
+<body text="#FFFFFF" bgcolor="#000000">
+<font face="Calibri">
+<script type="text/javascript">
+
+  // Global variables
+  var patient;
+  var hcs = "HealthcareService/";
+  var patientprefix = "Patient/";
+
+  // Perform referral function
+  function performReferral(id) {
+		
+	var resource = {
+		"resourceType": "ReferralRequest",
+	    "status": "requested",
+	    "patient": {
+	     	"reference": patientprefix + patient.id
+	     },
+	     "supportingInformation": {
+	    	 "reference": hcs+id
+	     }
+	};
+
+    // Create the ReferralRequest
+    patient.api.create({resource: resource}).done(function(r) { location.reload(true); });
+  }
+
+  FHIR.oauth2.ready(function (fClient) {
+
+    patient = fClient.patient;
+    var patientCountry = null;
+    var patientState = null;
+    var patientDistrict = null;
+    var hasPatientLocation = false;
+
+    // Get patient details
+    $.when(patient.read()).done(function (p) {
+
+      // Get name
+      var name = p.name[0];
+      var formattedName = name.given[0] + " " + name.family;
+      $("#patientName").text(formattedName);
+
+      // Get home address
+      for (var i = 0; i < p.address.length ; i++ ) {
+        if (p.address[i].use == "home") {
+          patientCountry = p.address[i].country;
+          patientState = p.address[i].state;
+          patientDistrict = p.address[i].district;
+          if (patientCountry != null && patientState != null && patientDistrict != null) hasPatientLocation = true;
+          break;
+        }
+      }
+    });
+
+    // Populate referral status window
+    var referralProgramIdCache = [];
+    $.when(patient.api.search({type: "ReferralRequest", query: {}, count: 50}))
+      .done(function (referralSearchResults) {
+
+        if ( referralSearchResults.data.entry != null ) {
+          referralSearchResults.data.entry.forEach(function (referrals) {
+
+            // Search the supporting information to find the associated program ids
+            if ( referrals.resource.supportingInformation != null ) {
+              for (var i = 0; i < referrals.resource.supportingInformation.length ; i++ ) {
+                if (referrals.resource.supportingInformation[i].reference.startsWith(hcs)) {
+
+                  // Cache the program id
+                  var programId = referrals.resource.supportingInformation[i].reference.substr(hcs.length);
+                  referralProgramIdCache.push(programId);
+
+                  // Query for the healthcare service by id
+                  $.when(patient.api.search({type: "HealthcareService", query: { _id: programId }, count: 1}))
+                   .done(function (hcsResults) {
+                     hcsResults.data.entry.forEach(function (associatedHcs) {
+
+                       // Display program referral status
+                       var referralRow = "<tr><td>" + associatedHcs.resource.programName + "</td><td><p align=\"center\">" +
+                                         referrals.resource.status + "</td></tr>"
+                       $("#referralResults").append(referralRow);
+
+                     });
+                  });
+                }
+              }
+            }
+          });
+        }
+
+        // Populate available program window
+        $.when(patient.api.search({type: "HealthcareService", query: {}, count: 50}))
+          .done(function (programSearchResults) {
+            programSearchResults.data.entry.forEach(function (programs) {
+
+              // Filter out programs that have already been referred
+              var skip = false;
+              for (var i = 0; i < referralProgramIdCache.length ; i++ ) {
+                if ( referralProgramIdCache[i] == programs.resource.id ) {
+                  skip = true;
+                  break;
+                }
+              }
+
+              // Scan program coverage areas
+              if (!skip && hasPatientLocation) {
+                if (programs.resource.coverageArea != null) {
+                  for (var i = 0; i < programs.resource.coverageArea.length; i++ ) {
+                    $.when(patient.api.search({type: "Location", query: { _id: programs.resource.coverageArea[i].reference }, count: 1}))
+                     .done(function (locationResults) {
+                        locationResults.data.entry.forEach(function(coverageArea) {
+
+                          // Check if patient is in coverage area
+                          if ( coverageArea.resource.address != null &&
+                               coverageArea.resource.address.country == patientCountry &&
+                               coverageArea.resource.address.state == patientState &&
+                               coverageArea.resource.address.district == patientDistrict ) {
+
+                                 // Display location matched program
+                                var programRow = "<tr><td>" + programs.resource.programName + "</td><td><p align=\"center\"><button onclick=\'performReferral(\"" +
+                                                  programs.resource.id + "\")\'>refer</button></td></tr>"
+                                 $("#programTable").append(programRow);
+                          }
+                        });
+                     });
+                  }
+                }
+              }
+            });
+        });
+    });
+  });
+
+</script>
+<img src="logo.jpg"><br><br>
+&nbsp;Patient: <font color="red"><span id="patientName">...</span></font><br><br>
+<table id="programTable" border="1" style="border-collapse: collapse" width="80%" bgcolor="#333333" bordercolorlight="#000000" bordercolordark="#000000" cellpadding="2">
+  <tr>
+    <td width="85%" bgcolor="#666666"><b>&nbsp;Eligible Programs</b></td>
+    <td width="15%" bgcolor="#666666"><p align="center"><b>Action</b></td>
+  </tr>
+</table>
+<br><br>
+<table id="referralResults" border="1" style="border-collapse: collapse" width="80%" bgcolor="#333333" bordercolorlight="#000000" bordercolordark="#000000" cellpadding="2">
+  <tr>
+    <td width="85%" bgcolor="#666666"><b>&nbsp;Referrals</b></td>
+    <td width="15%" bgcolor="#666666"><p align="center"><b>Status</b></td>
+  </tr>
+</table>
+</font>
+</body>
+</html>

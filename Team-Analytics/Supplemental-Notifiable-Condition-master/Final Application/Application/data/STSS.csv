@@ -1,0 +1,38 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+DAYCARE,"If <6 years of age, is the patient in daycare?",PHVS_YesNoUnknown_CDC
+FACNAME,Name of the daycare facility.,PHVS_YesNoUnknown_CDC
+NURSHOME,Does the patient reside in a nursing home or other chronic care facility?,PHVS_YesNoUnknown_CDC
+NHNAME,Name of the nursing home or chronic care facility.,
+SYNDRM,Types of infection that are caused by the organism.  This is a multi-select field.,TBD
+SPECSYN,Other infection that is caused by the organism.,
+SPECIES,Bacterial species that was isolated from any normally sterile site.,TBD
+OTHBUG1,Other bacterial species that was isolated from any normally sterile site.,TBD
+STERSITE,Sterile sites from which the organism was isolated.  This is a multi-select field.,TBD
+OTHSTER,Other sterile site from which the organism was isolated.,
+DATE,Date the first positive culture was obtained.  (This is considered diagnosis date.),
+NONSTER,Nonsterile sites from which the organism was isolated.  This is a multi-select field.,TBD
+UNDERCOND,Did the patient have any underlying conditions?,PHVS_YesNoUnknown_CDC
+COND,Underlying conditions that the subject has.  This is a multi-select field.,TBD
+OTHMALIG,Other malignancy that the subject had as an underlying condition.,
+OTHORGAN,Detail of the organ transplant that the subject had as an underlying condition.,
+OTHILL,Other prior illness that the subject had as an underlying condition.,
+OTHOTHSPC,Another Bacterial Species not listed in the Other Bacterial Species drop-down list.,
+Specify Internal Body Site,Internal Body Site where the organism was located.,TBD
+Other Prior Illness 2,Other prior illness that the subject had as an underlying condition.,
+Other Prior Illness 3,Other prior illness that the subject had as an underlying condition.,
+Other Nonsterile Site,Other nonsterile site from which the organism was isolated.,
+INSURANCE,Patient's type of insurance (multi-selection).,TBD
+INSURANCEOTH,Patient's other type of insurance.,
+WEIGHTLB,Weight of the patient in pounds.,
+WEIGHTOZ,Weight of the patient in ounces.,
+WEIGHTKG,Weight of the patient in kilograms.,
+HEIGHTFT,Height of the patient in feet.,
+HEIGHTIN,Height of the patient in inches.,
+HEIGHTCM,Height of the patient in centimeters.,
+WEIGHTUNK,Indicator that the weight of the patient is unknown.,PHVS_TrueFalse_CDC
+HEIGHTUNK,Indicator that the height of the patient is unknown.,PHVS_TrueFalse_CDC
+SURGERY,Did the patient have surgery?,PHVS_YesNoUnknown_CDC
+SURGDATE,Date of the surgery,
+DELIVERY,Did the patient have a baby (vaginal or C-section)?,PHVS_YesNoUnknown_CDC
+BABYDATE,Date of the baby's delivery,
+GASCOND,Did the patient have other prior conditions?  This is a multi-select field.,TBD

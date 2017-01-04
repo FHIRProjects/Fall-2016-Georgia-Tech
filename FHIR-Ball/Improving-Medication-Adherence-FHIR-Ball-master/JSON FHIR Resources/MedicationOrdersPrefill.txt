@@ -1,0 +1,112 @@
+// 2019309 generated ID
+{
+    "resourceType":"MedicationOrder",
+    "dateWritten":"2014-07-30T15:15:00-04:00",
+    "patient":{
+        "reference":"Patient/2019307",
+        "display":"FHIR Ball"
+    },
+    "medicationCodeableConcept":{
+        "coding":[
+            {
+                "system":"http://hl7.org/fhir/sid/ndc",
+                "code":"00339647811",
+                "display":"Metformin hydrochloride Tablet"
+            }
+        ]
+    },
+	"dosageInstruction": [
+	    {
+	      "text": "Take a tablet every 2 minutes for test purposes (720 times a day)",
+	      "timing": {
+	        "repeat": {
+	          "frequency": 720,
+	          "period": 1,
+	          "periodUnits": "d"
+	        }
+	      },
+	      "doseQuantity": {
+	        "value": 500,
+	        "unit": "mg",
+	        "system": "http://unitsofmeasure.org",
+	        "code": "mg"
+	      }
+	  }
+	]
+}
+
+
+// 2019310 generated ID
+{
+    "resourceType":"MedicationOrder",
+    "dateWritten":"2015-07-30T15:15:00-04:00",
+    "patient":{
+        "reference":"Patient/2019307",
+        "display":"FHIR Ball"
+    },
+    "medicationCodeableConcept":{
+        "coding":[
+            {
+                "system":"http://hl7.org/fhir/sid/ndc",
+                "code":"43478090088",
+                "display":"Propranolol Hydrochloride Oral Capsule"
+            }
+        ]
+    },
+	"dosageInstruction": [
+	    {
+	      "text": "Take a tablet every 3 minutes for test purposes (480 times a day)",
+	      "timing": {
+	        "repeat": {
+	          "frequency": 480,
+	          "period": 1,
+	          "periodUnits": "d"
+	        }
+	      },
+	      "doseQuantity": {
+	        "value": 60,
+	        "unit": "mg",
+	        "system": "http://unitsofmeasure.org",
+	        "code": "mg"
+	      }
+	  }
+	]
+}
+
+
+// 2019311 generated ID
+{
+    "resourceType":"MedicationOrder",
+    "dateWritten":"2016-07-30T15:15:00-04:00",
+    "patient":{
+        "reference":"Patient/2019307",
+        "display":"FHIR Ball"
+    },
+    "medicationCodeableConcept":{
+        "coding":[
+            {
+                "system":"http://hl7.org/fhir/sid/ndc",
+                "code":"00339647811",
+                "display":"Furosemide Oral Tablet"
+            }
+        ]
+    },
+	"dosageInstruction": [
+	    {
+	      "text": "Take a tablet every 1 minute for test purposes (1440 times a day)",
+	      "timing": {
+	        "repeat": {
+	          "frequency": 1440,
+	          "period": 1,
+	          "periodUnits": "d"
+	        }
+	      },
+	      "doseQuantity": {
+	        "value": 40,
+	        "unit": "mg",
+	        "system": "http://unitsofmeasure.org",
+	        "code": "mg"
+	      }
+	  }
+	]
+}

@@ -1,0 +1,87 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Wool or Felt Plant,Did the case work in a wool or felt plant,PHVS_YesNoUnknown_CDC
+Tannery or Rendering,Did the case work in a tannery or rendering plant,PHVS_YesNoUnknown_CDC
+Dairy,Did the case work in a dairy,PHVS_YesNoUnknown_CDC
+Veterinarian,Did the case work as a veterinarian,PHVS_YesNoUnknown_CDC
+Medical Researcher,Did the case work as a medical researcher,PHVS_YesNoUnknown_CDC
+Animal Researcher,Did the case work as an animal researcher,PHVS_YesNoUnknown_CDC
+Slaughterhouse,Did the case work in a slaughterhouse,PHVS_YesNoUnknown_CDC
+Laboratory,Did the case work in a laboratory,PHVS_YesNoUnknown_CDC
+Rancher,Did the case work as a rancher,PHVS_YesNoUnknown_CDC
+Lives in Household,Did the case live in a household with someone who may have one of the above occupational exposures,PHVS_YesNoUnknown_CDC
+Military,Did the case work in the military,PHVS_YesNoUnknown_CDC
+Other Occupation,Indicate the case's occupation if none of the above,
+Cattle Contact,Did the case have contact with cattle within two months of illness onset,PHVS_YesNoUnknown_CDC
+Sheep Contact,Did the case have contact with sheep within two months of illness onset,PHVS_YesNoUnknown_CDC
+Goat Contact,Did the case have contact with goats within two months of illness onset,PHVS_YesNoUnknown_CDC
+Pigeon Contact,Did the case have contact with pigeons within two months of illness onset,PHVS_YesNoUnknown_CDC
+Cat Contact,Did the case have contact with cats within two months of illness onset,PHVS_YesNoUnknown_CDC
+Rabbit Contact,Did the case have contact with rabbits within two months of illness onset,PHVS_YesNoUnknown_CDC
+Other Animal Contact,Indicate any other animals the case had contact within within two months of illness onset,
+Exposure to Birthing Animals,Was the case exposed to birthing animals within two months of illness onset,PHVS_YesNoUnknown_CDC
+Exposure to Unpasteurized Milk,Was the case exposed to unpasteurized milk within two months of illness onset,PHVS_YesNoUnknown_CDC
+Milk Animal,"If the case was exposed to unpasteurized milk, what animal was the milk from",PHVS_YesNoUnknown_CDC
+Other Family Ill,Was another family member ill with a similar illness within the last year,PHVS_YesNoUnknown_CDC
+Fever,Did the case report a fever of at least 100.5 during this illness,PHVS_YesNoUnknown_CDC
+Myalgia,Did the case report myalgia during this illness,PHVS_YesNoUnknown_CDC
+Retro Orbital Pain,Did the case report retro orbital pain during this illness,PHVS_YesNoUnknown_CDC
+Malaise,Did the case report malaise during this illness,PHVS_YesNoUnknown_CDC
+Rash,Did the case report a rash during this illness,PHVS_YesNoUnknown_CDC
+Cough,Did the case report a coughduring this illness,PHVS_YesNoUnknown_CDC
+Headache,Did the case report a headache during this illness,PHVS_YesNoUnknown_CDC
+Splenomegaly,Did the case report splenomegaly during this illness,PHVS_YesNoUnknown_CDC
+Hepatomegaly,Did the case report hepatomegaly during this illness,PHVS_YesNoUnknown_CDC
+Pneumonia,Did the case report pneumonia during this illness,PHVS_YesNoUnknown_CDC
+Hepatitis,Did the case report hepatitis during this illness,PHVS_YesNoUnknown_CDC
+Endocarditis,Did the case report endocarditis during this illness,PHVS_YesNoUnknown_CDC
+Other Signs or Symptoms,"If there were other signs or symptoms reported, the indicate them here",
+Immunocompromised,Did the case report a pre-existing immunocompromised system,PHVS_YesNoUnknown_CDC
+Pregnant,Was the case pregnant during this illness,PHVS_YesNoUnknown_CDC
+Valvular Disease,Did the case have a pre-existing valvular heart disease or graft,PHVS_YesNoUnknown_CDC
+Other Pre-existing Medical Condition,"If the case had nother pre-existing medical conditions, then list them here",
+Laboratory Name,Indicate the name of the laboratory which supplied results supporting the current CSTE case definitions.,
+Laboratory State,Indicate the state where the laboratory is located,PHVS_State_FIPS_5-2
+Acute Phase I Serology Collection Date,"If acute phase I serology was performed, then list the date of collection",
+Acute Phase I IFA IgG Result,"If performed, was the acute phase I IFA IgG positive",PHVS_YesNoUnknown_CDC
+Acute Phase I IFA IgG Titer,"If performed, what was the reciprocal titer of the acute phase I IFA IgG",
+Acute Phase I IFA IgM Result,"If performed, was the acute phase I IFA IgM positive",PHVS_YesNoUnknown_CDC
+Acute Phase I IFA IgM Titer,"If performed, what was the reciprocal titer of the acute phase I IFA IgM",
+Acute Phase I Compliment Fixation Result,"If performed, was the acute phase I compliment fixation positive",PHVS_YesNoUnknown_CDC
+Acute Phase I Compliment Fixation Titer,"If performed, what was the reciprocal titer of the acute phase I compliment fixation",
+"Acute Phase I, Other Test Name","If performed, what was the name of another phase I acute serologic test",
+"Acute Phase I, Other Test Result","If performed, was the other phase I acute serologic test positive",PHVS_YesNoUnknown_CDC
+"Acute Phase I, Other Test Numeric Result","If performed, what was the numeric result of the other phase I acute serologic test",
+Acute Phase II Serology Collection Date,"If acute phase II serology was performed, then list the date of collection",
+Acute Phase II IFA IgG Result,"If performed, was the acute phase II IFA IgG positive",PHVS_YesNoUnknown_CDC
+Acute Phase II IFA IgG Titer,"If performed, what was the reciprocal titer of the acute phase II IFA IgG",
+Acute Phase II IFA IgM Result,"If performed, was the acute phase II IFA IgM positive",PHVS_YesNoUnknown_CDC
+Acute Phase II IFA IgM Titer,"If performed, what was the reciprocal titer of the acute phase II IFA IgM",
+Acute Phase II Compliment Fixation Result,"If performed, was the acute phase II compliment fixation positive",PHVS_YesNoUnknown_CDC
+Acute Phase II Compliment Fixation Titer,"If performed, what was the reciprocal titer of the acute phase II compliment fixation",
+"Acute Phase II, Other Test Name","If performed, what was the name of another phase II acute serologic test",
+"Acute Phase II, Other Test Result","If performed, was the other phase II acute serologic test positive",PHVS_YesNoUnknown_CDC
+"Acute Phase II, Other Test Numeric Result","If performed, what was the numeric result of the other phase II acute serologic test",
+Convalescent Phase I Serology Collection Date,"If convalescent phase I serology was performed, then list the date of collection",
+Convalescent Phase I IFA IgG Result,"If performed, was the convalescent phase I IFA IgG positive",PHVS_YesNoUnknown_CDC
+Convalescent Phase I IFA IgG Titer,"If performed, what was the reciprocal titer of the convalescent phase I IFA IgG",
+Convalescent Phase I IFA IgM Result,"If performed, was the convalescent phase I IFA IgM positive",PHVS_YesNoUnknown_CDC
+Convalescent Phase I IFA IgM Titer,"If performed, what was the reciprocal titer of the convalescent phase I IFA IgM",
+Convalescent Phase I Compliment Fixation Result,"If performed, was the convalescent phase I compliment fixation positive",PHVS_YesNoUnknown_CDC
+Convalescent Phase I Compliment Fixation Titer,"If performed, what was the reciprocal titer of the convalescent phase I compliment fixation",
+"Convalescent Phase I, Other Test Name","If performed, what was the name of another phase I convalescent serologic test",
+"Convalescent Phase I, Other Test Result","If performed, was the other phase I convalescent serologic test positive",PHVS_YesNoUnknown_CDC
+"Convalescent Phase I, Other Test Numeric Result","If performed, what was the numeric result of the other phase I convalescent serologic test",
+Convalescent Phase II Serology Collection Date,"If convalescent phase II serology was performed, then list the date of collection",
+Convalescent Phase II IFA IgG Result,"If performed, was the convalescent phase II IFA IgG positive",PHVS_YesNoUnknown_CDC
+Convalescent Phase II IFA IgG Titer,"If performed, what was the reciprocal titer of the convalescent phase II IFA IgG",
+Convalescent Phase II IFA IgM Result,"If performed, was the convalescent phase II IFA IgM positive",PHVS_YesNoUnknown_CDC
+Convalescent Phase II IFA IgM Titer,"If performed, what was the reciprocal titer of the convalescent phase II IFA IgM",
+Convalescent Phase II Compliment Fixation Result,"If performed, was the convalescent phase II compliment fixation positive",PHVS_YesNoUnknown_CDC
+Convalescent Phase II Compliment Fixation Titer,"If performed, what was the reciprocal titer of the convalescent phase II compliment fixation",
+"Convalescent Phase II, Other Test Name","If performed, what was the name of another phase II convalescent serologic test",
+"Convalescent Phase II, Other Test Result","If performed, was the other phase II convalescent serologic test positive",PHVS_YesNoUnknown_CDC
+"Convalescent Phase II, Other Test Numeric Result","If performed, what was the numeric result of the other phase II convalescent serologic test",
+Fourfold,"If paired sera were collected, was there a fourfold change in titer between acute and convalescent of the same phase",PHVS_YesNoUnknown_CDC
+PCR,"If performed, was the polymerase chain reaction assay positive",PHVS_YesNoUnknown_CDC
+Immunostain,"If performed, were antibodies detected using immunohistochemistry during microscopy",PHVS_YesNoUnknown_CDC
+Culture,"If performed, was the etiologic agent isolated from culture",PHVS_YesNoUnknown_CDC

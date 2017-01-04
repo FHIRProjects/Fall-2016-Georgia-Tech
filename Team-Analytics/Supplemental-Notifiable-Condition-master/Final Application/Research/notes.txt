@@ -1,0 +1,238 @@
+spreadsheet rows can map to more than one group.  For example, the primary group for "Ever received hep A vaccine?" could principally map to the Medication resource, but also to a questionnaire resource.
+
+basically everything that doesn't fit in with a known resource (like "true" observations such as lab tests) can fit into a questionnaire that covers the rest.
+
+Each disease has a corresponding questionnaire that can be generated easily (automatically), but it is better to group the questions than have them all in a default group.
+
+Design decisions:
+Data is imported from CSV files that are converted from the supplied Excel spreadsheets.
+Each file contains the notifiable fields for a single disease (lines composed of label and description).
+The data is parsed into Disease object, which exposes all the necessary functions for mapping and management.
+This includes functions for mapping and unmapping lines, adding new groupings for related lines, and saving mappings back to the CSV files in new columns "Group" "Group Description" "Resource"
+Data is managed using the DataManager class (automatically instantiated in main.py) so the user can access the objects for any disease, so that mapped fields can be cross-referenced (searched), and so that data can be opened or saved with a single function (constructor calls load_data(), and to_csv() saves all mappings and other progress).
+Groupings for related lines are for lines corresponding to one entry in the same FHIR resource, or related questions in the questionnaire.
+Mapping information is stored in CSV files so that people can work in parallel and save/retrieve each others' progress on github.
+Developers and subject matter experts create mappings in the Python console by looking through un-mapped fields (available with the Disease.unmapped_lines method), determining reasonable group descriptions (method Disease.add_fhir_group or Disease.add_question_concept), and then adding lines to those groups (Disease.map_line_to_fhir_group or Disease.map_line_to_questionnaire, respectively).  Lines can be similarly unmapped as well.  Search criteria (such as LOINC codes) can be added to a fhir resource group with the Disease.add_criteria_to_fhir_group method.
+Two very helpful search functions were added.  The first, Disease.search_unmapped_lines(#) takes a line number, and does a word-search for the top n=10 unmapped lines in the current disease to facilitate easier grouping. This will print out the line numbers, labels, and descriptions for the top matches.
+The second, Disease.search_mapped_lines(#) takes a line number (for the current disease), and looks through the descriptions of all mapped fields for similar fields.  The purpose of this is to maximize commonality across all diseases that have been mapped to FHIR resources and Questionnaires.  This outputs the top n=5 lines with label, description, group name, group description, and fhir resource.  With this information, the user can then add a new group with the same or similar information, map the line used in the search to that group, and then use the previous method search_unmapped_lines to find other lines in the current disease that should be included in that group.  Rinse, repeat.
+The output for the Questionnaire is a JSON structure.  For it to be production-ready, some modifications needed to be made (relatively straightforward to insert new fields) to add codableConcepts and valid uri's where applicable.
+The output of other mappings to FHIR Resources is also JSON (use the as_json methods at the object level desired), which can be converted in a straightforward way to a FHIR query.  This was done in the form of a python function that takes as input a fhirclient server object and performs a query, but since we don't know how the mappings will be used, we thought that outputting a JSON structure that could be easily repurposed would be the most future-proof output.
+
+
+TODO
+do something with subfield and dtype in querygroups.py (ultimately, someone needs to add codableConcepts, etc.)
+Some of the things that could (should for production) be added are the JSON data for concepts and other fields missing from the current JSON implementation in Questionnaire.  They aren't strictly necessary, but they seem common.  They could be added in by the user when adding new groups to the questionnaire.
+Additionally, answer types should often be:
+		"type": "choice",
+            "options": {
+              "reference": "#yesno"
+			
+			{
+However, currently they all use non-specific coding
+
+
+Example of valid JSON for a Questionnaire entry:
+  "resourceType": "Questionnaire",
+  "id": "3141",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      \n      \n      <pre>\n            Comorbidity? YES\n              Cardial Comorbidity? YES\n                Angina? YES\n                MI? NO\n              Vascular Comorbidity?\n                (no answers)\n              ...\n            Histopathology\n              Abdominal\n                pT category: 1a\n              ...\n          </pre>\n    \n    \n    </div>"
+  },
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "yesno",
+      "name": "Example YesNo",
+      "_name": {
+        "fhir_comments": [
+          "    In practice you could (should?) use boolean for this sort of circumstance.  However, the reality is\n        that many systems treat booleans as coded data    "
+        ]
+      },
+      "status": "active",
+      "description": "Captures simple yes-no",
+      "codeSystem": {
+        "system": "http://example.org/system/code/yesno",
+        "caseSensitive": true,
+        "concept": [
+          {
+            "code": "1",
+            "display": "Yes"
+          },
+          {
+            "code": "2",
+            "display": "No"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "draft",
+  "date": "2012-01",
+  "subjectType": [
+    "Patient"
+  ],
+  "group": {
+    "linkId": "1",
+    "title": "Cancer Quality Forum Questionnaire 2012",
+    "required": true,
+    "group": [
+      {
+        "linkId": "1.1",
+        "_linkId": {
+          "fhir_comments": [
+            "    COMORBIDITY    ",
+            "    First main section of the form, questions about comorbidity    "
+          ]
+        },
+        "concept": [
+          {
+            "system": "http://example.org/system/code/sections",
+            "code": "COMORBIDITY"
+          }
+        ],
+        "question": [
+          {
+            "fhir_comments": [
+              "    section contains one question: whether there is comorbidity    "
+            ],
+            "linkId": "1.1.1",
+            "concept": [
+              {
+                "system": "http://example.org/system/code/questions",
+                "code": "COMORB"
+              }
+            ],
+            "type": "choice",
+            "options": {
+              "reference": "#yesno"
+            },
+            "group": [
+              {
+                "linkId": "1.1.1.1",
+                "_linkId": {
+                  "fhir_comments": [
+                    "    COMORBIDITY/CARDIAL    ",
+                    "    Subsection about specific comorbidity: cardial    "
+                  ]
+                },
+                "concept": [
+                  {
+                    "system": "http://example.org/system/code/sections",
+                    "code": "CARDIAL"
+                  }
+                ],
+                "question": [
+                  {
+                    "linkId": "1.1.1.1.1",
+                    "concept": [
+                      {
+                        "system": "http://example.org/system/code/questions",
+                        "code": "COMORBCAR"
+                      }
+                    ],
+                    "type": "choice",
+                    "options": {
+                      "reference": "#yesno"
+                    }
+                  },
+                  {
+                    "linkId": "1.1.1.1.2",
+                    "_linkId": {
+                      "fhir_comments": [
+                        "    This answer carries both the questionnaire-specific name and an equivalent SNOMED CT code    "
+                      ]
+                    },
+                    "concept": [
+                      {
+                        "system": "http://example.org/system/code/questions",
+                        "code": "COMCAR00",
+                        "display": "Angina Pectoris"
+                      },
+                      {
+                        "system": "http://snomed.info/sct",
+                        "code": "194828000",
+                        "display": "Angina (disorder)"
+                      }
+                    ],
+                    "type": "choice",
+                    "options": {
+                      "reference": "#yesno"
+                    }
+                  },
+                  {
+                    "linkId": "1.1.1.1.3",
+                    "concept": [
+                      {
+                        "system": "http://snomed.info/sct",
+                        "code": "22298006",
+                        "display": "Myocardial infarction (disorder)"
+                      }
+                    ],
+                    "type": "choice",
+                    "options": {
+                      "reference": "#yesno"
+                    }
+                  }
+                ]
+              },
+              {
+                "linkId": "1.1.1.2",
+                "_linkId": {
+                  "fhir_comments": [
+                    "    COMORBIDITY/VASCULAR    "
+                  ]
+                },
+                "concept": [
+                  {
+                    "system": "http://example.org/system/code/sections",
+                    "code": "VASCULAR"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "fhir_comments": [
+          "    Todo: What's supposed to go here?    "
+        ],
+        "linkId": "1.2",
+        "_linkId": {
+          "fhir_comments": [
+            "    HISTOPATHOLOGY    "
+          ]
+        },
+        "concept": [
+          {
+            "system": "http://example.org/system/code/sections",
+            "code": "HISTOPATHOLOGY"
+          }
+        ],
+        "group": [
+          {
+            "linkId": "1.2.1",
+            "concept": [
+              {
+                "system": "http://example.org/system/code/sections",
+                "code": "ABDOMINAL"
+              }
+            ],
+            "question": [
+              {
+                "linkId": "1.2.1.2",
+                "concept": [
+                  {
+                    "system": "http://example.org/system/code/questions",
+                    "code": "STADPT",
+                    "display": "pT category"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

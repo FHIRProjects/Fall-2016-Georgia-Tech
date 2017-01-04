@@ -1,0 +1,123 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Cabbage,Was fresh cabbage consumed in the 14 days prior to onset of illness?,PHVS_FreshProduce_FDD
+Interview Status,Interview Status,PHVS_InterviewStatus_CDC
+Travel Destination Type,Travel Destination Type,PHVS_TravelDestinationType_FDD
+Travel Mode,Travel Mode,PHVS_TravelMode_CDC
+Travel Purpose,Purpose of Travel,PHVS_TravelPurpose_FDD
+Date of departure,Departure Date,
+Date of arrival,Arrival Date,
+Destination code,FIPS code assigned to city/state/country,
+Destination description,Name of city/state/country,
+Person Knows of Similarly Ill Persons,Does the patient know of any similarly ill persons?,FDD_Q_77 (PHIN_Questions_FDD)
+Diarrhea Indicator,Did the patient have diarrhea?,PHVS_YesNoUnknown_CDC
+Max Stools per 24 Hrs,"If ""Yes,"" please specify maximum number of stools per 24 hours:",
+Weight Loss,Did patient experience weight loss?,PHVS_YesNoUnknown_CDC
+Baseline Weight,"If ""Yes,"" please specify baseline weight:",
+Baseline Weight Units,specify baseline weight in lbs or kgs,PHVS_WeightUnit_UCUM
+Weight Lost,Specify how much weight was lost:,
+Weight Lost Units,Specify weight loss in lbs or kgs,PHVS_WeightUnit_UCUM
+Fever,Did patient have a fever?,PHVS_YesNoUnknown_CDC
+Temperature,"If ""Yes,"" please specify temperature (observation includes units)",
+Temperature Units,Specify temperature in fahrenheit or centigrade,PHVS_TemperatureUnit_UCUM
+Cyclosporiasis Symptom Code(s),Did the patient have any of the following signs or symptoms of Cyclosporiasis?  (MULTISELECT),PHVS_CyclosporiasisSignsSymptoms_FDD
+Cyclosporiasis Symptoms Other,"If ""Other,"" please specify other signs or symptoms of Cyclosporiasis:",
+Cyclosporiasis Confirmed By CDC,Was the case confirmed at the CDC lab?,PHVS_YesNoUnknown_CDC
+Treated For Cyclosporiasis,Was the patient treated for Cyclosporiasis?,PHVS_YesNoUnknown_CDC
+Sulfa Allergy,Does the patient have a sulfa allergy?,PHVS_YesNoUnknown_CDC
+Fresh Berries Code(s),What fresh berries were eaten in the 14 days prior to onset of illness?  (MULTISELECT),PHVS_FreshBerries_FDD
+Fresh Berries Other,"If ""Other,"" please specify other type of fresh berries:",
+Fresh Herbs Code(s),What fresh herbs were eaten in the 14 days prior to onset of illness?  (MULTISELECT),PHVS_FreshHerbs_FDD
+Fresh Herbs Other,"If ""Other,"" please specify other type of fresh herbs:",
+Lettuce Last 14 Days Code(s),What fresh lettuce was eaten in the 14 days prior to onset of illness?  (MULTISELECT),PHVS_LettuceType_FDD
+Lettuce Last 14 Days Other,"If ""Other,"" please specify other type of fresh lettuce:",
+Produce Last 14 Days Code(s),What other types of fresh produce were eaten in the 14 days prior to onset of illness?  (MULTISELECT),PHVS_FreshProduce_FDD
+Produce Last 14 Days Other,"If ""Other,"" please specify other type of fresh produce:",
+Fruit Other Than Berries Specify,"If ""Fruit, other than berries,"" please specify type of fruit other than berries:",
+Attend Events 14 Days Prior to Onset,Did patient attend any events in the 14 days prior to onset of illness?,PHVS_YesNoUnknown_CDC
+Event Specify,"If ""Yes,"" please specify the event:",
+Event Date,Date of event:,
+Eat at Restaurant 14 Days Prior to Onset,Did patient eat at restaurant(s) in the 14 days prior to onset of illness?,PHVS_YesNoUnknown_CDC
+Restaurant(s) Specify,"If ""Yes,"" please specify the name of the restaurant(s):",
+Reporting Lab Name,Name of Laboratory that reported test result.,
+Reporting Lab CLIA Number,CLIA (Clinical Laboratory Improvement Act) identifier for the laboratory that performed the test.,
+Local record ID (case ID),Sending system-assigned local ID of the case investigation with which the subject is associated.  This field has been added to provide the mapping to the case/investigation to which this lab result is associated.  This field should appear exactly as it appears in OBR-3 of the Case Notification.,
+Filler Order Number,A laboratory generated number that identifies the test/order instance.,
+Ordered Test Name,"Ordered Test Name is the lab test ordered by the physician.  It will always be included in an ELR, but there are many instances in which the user entering manual reports will not have access to this information.",
+Date of Specimen Collection,The date the specimen was collected.,
+Specimen Site,"This indicates the physical location, of the subject, where the specimen originated. Examples include: Right Internal Jugular, Left Arm, Buttock, Right Eye, etc.",PHVS_BodySite_CDC
+Specimen Number,A laboratory generated number that identifies the specimen related to this test.,
+Specimen Source,"The medium from which the specimen originated.  Examples include whole blood, saliva, urine, etc.",PHVS_Specimen_CDC
+Specimen Details,Specimen details if specimen information entered as text.  ,
+Date Sample Received at Lab,Date Sample Received at Lab (accession date).,
+Sample Analyzed date,The date and time the sample was analyzed by the laboratory.,
+Lab Report Date,Date result sent from Reporting Laboratory.,
+Report Status,The status of the lab report.,PHVS_ResultStatus_HL7_2x
+Resulted Test Name,The lab test that was run on the specimen.,PHVS_LabTestName_CDC
+Numeric Result,Results expressed as numeric value/quantitative result.,
+Result Units,The unit of measure for numeric result value.  ,PHVS_UnitsOfMeasure_CDC
+Coded Result Value,"Coded qualitative result value (e.g., Positive, Negative).",PHVS_LabTestResultQualitative_CDC
+Organism Name,The organism name as a test result.  This element is used when the result was reported as an organism.,PHVS_Microorganism_CDC
+Lab Result Text Value,"Textual result value, used if result is neither numeric nor coded.",
+Result Status,The Result Status is the degree of completion of the lab test.,PHVS_ObservationResultStatus_HL7_2x
+Interpretation Flag,"The interpretation flag identifies a result that is not typical as well as how it's not typical. Examples: Susceptible, Resistant, Normal, Above upper panic limits, below absolute low.",PHVS_AbnormalFlag_HL7_2x
+Reference Range From,The reference range from value allows the user to enter the value on one end of a expected range of results for the test.  This is used mostly for quantitative results.,
+Reference Range To,The reference range to value allows the user to enter the value on the other end of a valid range of results for the test. This is used mostly for quantitative results.,
+Test Method,"The technique or method used to perform the test and obtain the test results. Examples: Serum Neutralization, Titration, dipstick, test strip, anaerobic culture.",PHVS_LabTestMethods_CDC
+Lab Result Comments,Comments having to do specifically with the lab result test.   These are the comments from the NTE segment if the result was originally an Electronic Laboratory Report.  ,
+Date received in state public health lab,Date the isolate was received in state public health laboratory.,
+Lab Test Coded Comments,"Explanation for missing result (e.g., clotting, quantity not sufficient, etc.)",PHVS_MissingLabResult_CDC
+Sent to CDC for Genotyping,Indicate whether the specimens were sent to CDC for genotyping.,PHVS_YesNoUnknown_CDC
+Genotyping Sent Date,"If the specimen was sent to the CDC for genotyping, date on which the specimens were sent.",
+Sent For Strain ID,Indicate whether the specimen was sent for strain identification.,PHVS_YesNoUnknown_CDC
+Strain Type,"If the specimen was sent for strain identification, indicate the strain.",PHVS_MicrobiologicalStrain_CDC
+Track Isolate,Track Isolate functionality indicator,PHVS_TrueFalse_CDC
+Patient status at specimen collection,Patient status at specimen collection,PHVS_PatientLocationStatusAtSpecimenCollection
+Isolate received in state public health lab,Isolate received in state public health lab,PHVS_YesNoUnknown_CDC
+Reason isolate not received,Reason isolate not received,PHVS_IsolateNotReceivedReason_NND
+Reason isolate not received (Other),Reason isolate not received (Other),
+Date received in state public health lab,Date received in state public health lab,
+State public health lab isolate id number,State public health lab isolate id number,
+Case confirmed at state public health lab,Case confirmed at state public health lab,PHVS_YesNoUnknown_CDC
+AgClinic,What was the result of specimen testing using an antigen-based  test (e.g. EIA or lateral flow) at a clinical laboratory?  ,
+AgClinicTestType,Name of antigen-based test used at clinical laboratory,
+AgeMnth,Age of case-patient in months if patient is <1yr,
+AgeYr,Age of case-patient in years,
+AgSphl,What was the result of specimen testing using an antigen-based  test (e.g. EIA or lateral flow) at a state public health laboratory? Results from rapid card testing or EIA would be entered here. ,
+AgSphlTestType,Name of antigen-based test used at state public health laboratory,
+BloodyDiarr,Did the case-patient have bloody diarrhea (self reported) during this illness?,
+Diarrhea,Did the case-patient have diarrhea (self-reported) during this illness?,
+DtAdmit2,Date of hospital admission for second hospitalization for this illness,
+DtDisch2,Date of hospital discharge for second hospitalization for this illness,
+DtEntered,Date case was entered into site's database,
+DtRcvd,Date case-pateint's specimen was received in laboratory for initial testing,
+DtRptComp,Date case report form was completed,
+DtSpec,Case-patient's specimen collection date,
+DtUSDepart,"If case-patient patient traveled internationally, date of departure from the U.S.",
+DtUSReturn,"If case-patient traveled internationally, date of return to the U.S.",
+EforsNum,CDC FDOSS outbreak ID number,
+Fever,Did the case-patient have fever (self-reported) during this illness?,
+HospTrans,"If case-patient was hospitalized, was s/he transferred to another hospital?",
+Immigrate,Did case-patient immigrate to the U.S.? (within 15 days of illness onset),
+Interview,Was the case-patient interviewed by public health (i.e. state or local health department) ?,
+LabName,Name of submitting laboratory,
+LocalID,Ccase-patient's medical record number,
+OtherCdcTest," For other pathogens: What was the result of specimen testing using another test at CDC?  Results from DFA, IFA or other tests would be entered here. ",
+OtherClinicTest,"What was the result of specimen testing using another test at a clinical laboratory?   Results from DFA, IFA or other tests would be entered here.  ",
+OtherClinicTestType,Name of other test used at a clinical laboratory,
+OtherSphlTest,"What was the result of specimen testing using another test at a state public health laboratory?    Results from DFA, IFA or other tests would be entered here.  ",
+OtherSphlTestType,Name of other test used at a state public health laboratory,
+OutbrkType,Type of outbreak that the case-patient was part of,
+PatID,Case-patient identification number ,
+PcrCdc,What was the result of specimen testing for diagnosis using PCR at CDC? (Do not enter PCR results if PCR was performed for speciation or subtyping).,
+PcrClinic,What was the result of specimen testing using PCR at a clinical laboratory? (where goal of testing is primary detection not subtyping or speciation),
+PcrClinicTestType,Name of PCR assay used,
+PcrSphl,What was the result of specimen testing for diagnosis using PCR at the state public health laboratory?  (Do not enter PCR results if PCR was performed for speciation or subtyping).,
+PersonID,Unique identification number for person or patient,
+ResultID,Unique identifier for laboratory result,
+RptComp,Is all of the information for this case complete?,
+SentCDC,Was specimen or isolate forwarded to CDC for testing or confirmation?,
+SLabsID,State lab identification number,
+SpecSite,Case patient's specimen collection source ,
+StLabRcvd,"Was the isolate sent to a state public health laboratory? (Answer 'Yes' if it was sent to any state lab, even if it was sent to a lab outside of the case's state of residence)",
+TravelDest,"If case-patient traveled internationally, to where did they travel?",
+TravelInt,Did the case patient travel internationally? (within 15 days of onset),

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="edu.gatech.health.fhirball"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="21"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name="MainActivity"
+                  android:clearTaskOnLaunch="true"
+                  android:launchMode="singleTask"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gatech.health.fhirball.MedicationActivity" android:label="List of Medications" />
+        <activity android:name="edu.gatech.health.fhirball.ScheduleActivity" android:label="Upcoming Administrations"/>
+        <activity android:name="edu.gatech.health.fhirball.ReasonActivity" />
+        <activity android:name="edu.gatech.health.fhirball.LogActivity" />
+        <activity android:name="edu.gatech.health.fhirball.FirstActivity" android:theme="@android:style/Theme.Dialog"/>
+        <receiver android:name="edu.gatech.health.fhirball.AutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:process=":remote" android:name="edu.gatech.health.fhirball.Alarm"/>
+        <service
+                android:name="edu.gatech.health.fhirball.AlarmService"
+                android:enabled="true"
+                android:process=":your_service" >
+        </service>
+        <service android:enabled="true" android:name="edu.gatech.health.fhirball.PollFhirService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,23 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Long Term Care Facilty Resident,Does the patient reside in a long term care facility?,PHVS_YesNoUnknown_CDC
+Culture Date,Date the first positive culture was obtained.  ,
+Bacterial Infection Syndrome,Types of infection(s) that are caused by the bacterial organism.,PHVS_BacterialInfectionSyndrome_IPD
+Sterile Specimen Type,Sterile body site(s) from which the organism was isolated.,PHVS_SterileSpecimen_IPD
+Did Underlying Condition(s) exist?,Did the subject have any pre-existing medical conditions before the start of the illness/condition?,PHVS_YesNoUnknown_CDC
+Underlying Condition(s),Listing of pre-existing conditions as related to the condition/illness,PHVS_UnderlyingConditions_IPD
+Oxacillin Zone Size,Oxacillin zone size for cases of Streptococcus pneumoniae,
+Oxacillin Interpretation ,Oxacillin interpretation for cases of Streptococcus pneumoniae,PHVS_OxacillinInterpretation_IPD
+Antimicrobial Agent ,Antimicrobial agent tested,PHVS_AntimicrobialAgent_IPD
+Antimicrobial Susceptibility Test Method,Antimicrobial susceptibility testing method used ,PHVS_AntimicrobialSuceptiblilityTestMethod_IPD
+Antimicrobial Susceptibility Test Result,"S/I/R/U result, indicating whether the microorganism is susceptible or not susceptible (intermediate or resistant) to the antimicrobial being tested.",PHVS_SusceptibilityResult_CDC
+Minimum Inhibitory Concentration Range,MIC (minimum inhibitory concentration) range.,
+Serotyping Results Available,Are serotyping results available for S pneumoniae isolate?,PHVS_YesNoUnknown_CDC
+Lab Result Coded Value,"If Serotyping results are available for S pneumoniae isolate, please specify.",PHVS_SerotypeMethod_IPD
+Serotype Method,Serotyping Method Used,PHVS_SerotypeMethod_IPD
+23-Valent Pneumo Poly Vaccine,Has patient ≥2yrs received 23-valent pneumococcal polysaccharide vaccine (Pneumovax)?,PHVS_YesNoUnknown_CDC
+7-Valent Pneumo Conjugate Vaccine,"If less than eighteen years of age, did the patient receive 7-valent pneumococcal conjugate vaccine (PCV7 or Prevnar)?",PHVS_YesNoUnknown_CDC
+13-Valent Pneumo Conjugate Vaccine,"If less than eighteen years of age, did the patient receive 13-valent pneumococcal conjugate vaccine (PCV13)?",PHVS_YesNoUnknown_CDC
+Vaccine Administered,The type of vaccine administered,PHVS_VaccinesAdministeredCVX_CDC_NIP
+Vaccine Manufacturer,Manufacturer of the vaccine,PHVS_ManufacturersOfVaccinesMVX_CDC_NIP
+Vaccine Lot Number,The vaccine lot number of the vaccine administered,
+Vaccine Administered Date,The date that the vaccine was administered,

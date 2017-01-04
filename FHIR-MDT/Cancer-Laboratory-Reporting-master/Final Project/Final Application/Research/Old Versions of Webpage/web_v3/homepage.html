@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+	</head>
+
+	<body>
+		<style>
+			table {
+    		font-family: arial, sans-serif;
+    		border-collapse: collapse;
+    		width: 100%;
+}
+
+			td, th {
+    		border: 1px solid #dddddd;
+    		text-align: left;
+   			padding: 8px;
+}
+
+			tr:nth-child(even) {
+    		background-color: #F5F4F4;
+}
+		button {
+			width: 120px;
+			height: 30px;
+			text-align: left;
+		}
+		</style>
+		
+		<script>
+			function fillForm(){
+				window.location.href = "Questionnaire - CCO CT Lung Screening Template(ver.0.7 June 24 2016 test)_terminology coding.xml";
+			}
+
+      function survey(){
+        window.location.href = "smokeQuestion.xml";
+      }
+
+			function workOn() {
+				alert("We are still working on it. Please visit us later!");
+			}
+		</script>
+
+		<center>
+		<h1>Welcome to FHIR-MDT Form Manager!</h1>
+		<p>Instructions: Please select the form that you want to fill!</p>
+		</center>
+		<table>
+  			<tr>
+    			<th>Name</th>
+    			<th>Form ID</th>
+    			<th>Version</th>
+  			</tr>
+        <tr>
+          <td><button onclick="survey()">Smoke-Survey</button></td>
+          <td>for test only</td>
+          <td>for test only</td>
+        </tr>
+  			<tr>
+    			<td><button onclick="fillForm()">CT-Lung</button></td>
+    			<td>lung</td>
+    			<td>7th Edition, Version 2</td>
+  			</tr>
+  			<tr>
+    			<td><button onclick="workOn()">DCIS-Breast</button></td>
+    			<td>DCIS</td>
+    			<td>3.2.0.0</td>
+  			</tr>
+  			<tr>
+    			<td><button onclick="workOn()"">InvasiveBreast</button></td>
+    			<td>InvasiveBreast</td>
+    			<td>3.3.0.0</td>
+  			</tr>
+  			<tr>
+    			<td><button onclick="workOn()"">Brain/SpinalCord</button></td>
+    			<td>Brain/Spinal Cord</td>
+    			<td>3.2.0.0</td>
+  			</tr>
+  			<tr>
+    			<td><button onclick="workOn()"">SmallIntestineNET</button></td>
+    			<td>SmallBowelNET</td>
+    			<td>3.1.0.1</td>
+  			</tr>
+  
+</table>
+		
+		
+		
+	</body>
+</html>
+

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load fhir_formatting %}
+
+{% block content %}
+    <style>
+        span.message-label {
+            font-weight: bold;
+        }
+    </style>
+
+    <hr/>
+    {% for reco in recommendations %}
+        <div class="message">
+        <div><span class="message-label">Resource Name:</span> {{ reco.name}} </div>
+        <div><span class="message-label">Address:</span> {{ reco.address }}</div>
+        <div><span class="message-label">Phone:</span> {{ reco.phone_number }}</div>
+        <div><span class="message-label">Website:</span><a href={{ reco.website}}> {{ reco.website}}</a></div>
+        </div>
+        <hr/>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "AngularJS.Core": "1.5.0",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+	"Microsoft.AspNet.Cors": "6.0.0-rc1-final",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Session": "1.0.0-rc1-final",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+    "Newtonsoft.Json": "8.0.2",
+    "System.Net.Http": "4.0.0"
+  },
+
+  "commands": {
+    "web": "Microsoft.AspNet.Server.Kestrel"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "Hl7.Fhir.DSTU2": "0.90.5-alpha1",
+        "LumenWorksCsvReader": "3.9.0",
+        "System.Net.Http": "4.0.1-beta-23516"
+      },
+      "frameworkAssemblies": {
+        "System.Data": "4.0.0.0",
+        "System.Data.DataSetExtensions": "4.0.0.0"
+      }
+    }
+
+  },
+
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ]
+}

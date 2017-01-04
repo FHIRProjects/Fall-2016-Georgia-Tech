@@ -1,0 +1,5 @@
+.DS_Store
+patient-facing-app/fghenv/
+provider-facing-app/node_modules/fhirclient/
+provider-facing-app/node_modules/roboto-fontface/
+recs-engine/node_modules/

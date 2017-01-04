@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/xsl" href="smokeQuestion.xsl" version="1.0" encoding="UTF-8"?>
+
+<Q1 value="Do you smoke?">
+  <A1 value="yes"/>
+  <A2 value="no"/>
+  <Q2 value="What do you smoke?">
+    <A1 value="cigarette"/>
+    <A2 value="cigar"/>
+    <A3 value="eCigs"/>
+    <A4 value="pipes"/>
+    <A5 value="n/a"/>
+    <Q3 value="How long have you smoked?">
+      <A1 value="less than one month"/>
+      <A2 value="less than one year"/>
+      <A3 value="more than one year"/>
+      <A4 value="n/a"/>
+    </Q3>
+  </Q2>
+</Q1>

@@ -1,0 +1,379 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+        <form id="questionnaire" action="/questionnaire/respond/{{ form_id }}/" method="post">
+            {% csrf_token %}
+
+            {% if request.path ==  "/questionnaire/respond_hh/" %}
+                <div id="hh-questionnaire-wrapper"></div>
+            {% elif request.path ==  "/questionnaire/respond_food/" %}
+                <div id="hh-questionnaire-wrapper"></div>
+            {% elif request.path ==  "/questionnaire/respond_wic/" %}
+                <div id="wic-questionnaire-wrapper"></div>
+            {% elif request.path ==  "/questionnaire/respond_status/" %}
+                <div id="wic-questionnaire-wrapper"></div>
+            {%  else %}
+                <div id="questionnaire-wrapper"></div>
+            {% endif %}
+
+            <div class="col-log-12 text-center" style="margin-top:3em;">
+                <button class="btn btn-raised btn-primary-light" type="button" id="reset-button" onclick="javascript:resetSelections()">Reset Selections</button>
+                <button class="btn btn-raised btn-primary" type="submit" id="submit">Submit ></button>
+            </div>
+        </form>
+    </div>
+
+<script type="text/javascript">
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+
+    function getDisplayName() {
+        return "{{ patientName }}";
+    }
+
+    function getQuestionnaire() {
+        var patientQuestionnaire = [
+            {% for question_group in questionnaire.group %}
+                    // TODO: double-check on whether the first group of questions, containing patient info,
+                    // is really supposed to be in the questionnaire.
+                    // From questionnaire_wic.html:
+                    // I don't know why this question group made it into the questionnaire, but that group
+                    // of questions should be dealt with at FHIR level. We skip through it so they don't
+                    // show up, even if they will end up being submitted empty into the QuestionnaireResponse.
+                {
+                    "id": "{{ question_group.linkId }}",
+                    "text": "{{ question_group.text }}",
+                    {% if question_group.question|length > 1 %}
+                    "type": "group",
+                    {% else %}
+                    "type": "stub",
+                    {% endif %}
+                    "questions": [
+                    {% for question in question_group.question %}
+                        {
+                            "id": "{{ question.linkId }}",
+                            "prompt": "{{ question.text }}",
+                            {% if question.option %}
+                            "type": "scale",
+                            "choices": [
+                                {% for answer in question.option %}
+                                    {
+                                        "code": "{{ answer.code }}",
+                                        "text": "{{ answer.display }}"
+                                    }{% if not forloop.last %},{% endif %}
+                                {% endfor %}
+                            ],
+                            {% else %}
+                                "type": "freeform"
+                            {% endif %}
+                        },
+                    {% endfor %}
+                    ]
+                },
+            {% endfor %}
+            {% for question in questionnaire.question %}
+                {
+                    "id": "{{ question.linkId }}",
+                    "prompt": "{{ question.text }}",
+                    {% for extension in question.group.0.extension %}
+                        {% if extension.url == "http://hl7.org/fhir/StructureDefinition/questionnaire-lowRangeLabel" %}
+                            "lowText": "{{ extension.valueString }}",
+                        {% elif extension.url == "http://hl7.org/fhir/StructureDefinition/questionnaire-highRangeLabel" %}
+                            "highText": "{{ extension.valueString }}",
+                        {% elif extension.url == "http://54.164.154.218:8000/fhir/StructureDefinition/questionnaire-lowRangeImage" %}
+                            "lowImg": "{{ extension.valueString }}",
+                        {% elif extension.url == "http://54.164.154.218:8000/fhir/StructureDefinition/questionnaire-highRangeImage" %}
+                            "highImg": "{{ extension.valueString }}",
+                        {% endif %}
+                    {% endfor %}
+                    {% if question.option %}
+                    "type": "scale",
+                    "choices": [
+                        {% for answer in question.option %}
+                            {
+                                "code": "{{ answer.code }}",
+                                "text": "{{ answer.display }}"
+                            }{% if not forloop.last %},{% endif %}
+                        {% endfor %}
+                    ],
+                    {% else %}
+                        "type": "freeform"
+                    {% endif %}
+                },
+            {% endfor %}
+        ];
+        return patientQuestionnaire;
+    }
+
+    function textDecode(fhirText) {
+        if (typeof fhirText !== "undefined")
+            fhirText = fhirText.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+        return fhirText;
+    }
+
+    function renderWicQuestion(question, node, patientName) {
+        var prompt = question["prompt"].replace("%1$s", patientName);
+
+
+
+        if (question["prompt"] == "special diet") {
+            node.append("<div class='clear'>");
+        }
+
+        var singleQuestion = $("<div class='col-md-5'>");
+        singleQuestion.append("<h4 class='prompt' style='display: inline-block'>"+prompt+"</h4>");
+
+        if (prompt.length > 40 ) {
+            $(singleQuestion).removeClass('col-md-5').addClass('col-md-10');
+        }
+
+        if (question["type"] == "scale") {
+            var choices = question["choices"];
+            var questionId = question["id"];
+
+            if (question["type"] == "scale") {
+                var lowText = textDecode(question["lowText"]);
+                if (lowText) var lowNode = $("<span class='answer-label low-text'>" + lowText + "</span>");
+                singleQuestion.append(lowNode);
+            }
+
+            var choicesNode = $("<div style='float:right;'><div class='answer-choices'>");
+
+
+            if (choices.length > 2) {
+                node.append("<div class='clear'>");
+                $(singleQuestion).removeClass('col-md-10').addClass('col-md-9');
+                $(singleQuestion).removeClass('col-md-5').addClass('col-md-9');
+            }
+
+            for (var j = 0; j < choices.length; j++) {
+                var text = textDecode(choices[j]["text"]);
+                var choice = $("<div class='radio-inline answer-choice'>");
+
+                if (text.length > 10 ) {
+                    choicesNode.append("<br/>");
+                }
+                choice.append("<input type='radio' id='" + questionId + "." + choices[j]["code"] + "' name='" + questionId + "' value='" + choices[j]["code"] + "'/>");
+                choice.append("  <label for='" + questionId + "." + choices[j]["code"] + "'>" + text + "</label>");
+                choicesNode.append(choice);
+                if (text.length > 10 ) {
+                    choicesNode.append("<br/>");
+                }
+
+                //ToDo: fix me!
+                var siblingBrs = [].slice.call( document.querySelectorAll('br + br') );
+                siblingBrs.forEach( function( br ){
+                    br.parentNode.removeChild( br );
+                });
+                            }
+            singleQuestion.append(choicesNode);
+
+            if (question["type"] == "scale") {
+                var highText = textDecode(question["highText"]);
+                if (highText) var highNode = $("<span class='answer-label high-text'>" + highText + "</span>");
+                singleQuestion.append(highNode);
+            }
+            singleQuestion.append('</div>');
+        } else { // question["type"] == "freeform"
+{#                // TODO: applying the answer-choices class to freeform inputs seems a little weird - maybe it should be something else#}
+            var questionId = question["id"];
+            var choicesNode = $("<div class='answer-choices'>");
+            choicesNode.append($("<input class='response_freeform' type='text' id='" + questionId + "' name='" + questionId + "'/>"));
+            $(singleQuestion).removeClass('col-md-5').addClass('col-md-7');
+            singleQuestion.append(choicesNode);
+        }
+        node.append(singleQuestion);
+    }
+
+    function renderHhQuestion(question, node, patientName) {
+
+        var choices = question["choices"];
+        var questionId = question["id"];
+        var lowImg = question["lowImg"];
+
+        var prompt = question["prompt"].replace("%1$s", patientName);
+        node.append("<h4 class='prompt' style='display: inline-block'><i class='material-icons'>" + lowImg + "</i>" + prompt+"</h4>");
+        if ((textDecode(question["lowText"]) != undefined) && (textDecode(question["highText"]) != undefined)) {
+            if (question["type"] == "scale") {
+                var lowText = textDecode(question["lowText"]);
+                var lowNode = $("<br/><div class='radio-inline'>");
+                if (lowText) lowNode.append("<span class='answer-label low-text'>" + lowText + "</span>");
+                node.append(lowNode);
+            }
+            var choicesNode = $("<div class='answer-choices'>");
+            for (var j = 0; j < choices.length; j++) {
+                var text = textDecode(choices[j]["text"]);
+                var choice = $("<div class='radio-inline answer-choice'>");
+                if (typeof choice["image"] != "undefined")
+                    choice.append("<img src='" + choice["image"][j] + "' />");
+                choice.append("<input type='radio' id='" + questionId + "." + choices[j]["code"] + "' name='" + questionId + "' value='" + choices[j]["code"] + "'/>");
+                choice.append("<label for='" + questionId + "." + choices[j]["code"] + "'>" + text + "</label>");
+                choicesNode.append(choice);
+            }
+            node.append(choicesNode);
+            if (question["type"] == "scale") {
+                var highText = textDecode(question["highText"]);
+                var highNode = $("<div class='radio-inline'>");
+                if (highText) highNode.append("<span class='answer-label high-text'>" + highText + "</span>");
+                node.append(highNode);
+            }
+            node.append('</div>');
+        } else {
+            var choicesNode = $("<div class='col-lg-12'>");
+            for (var j = 0; j < choices.length; j++) {
+                var text = textDecode(choices[j]["text"]);
+                // TODO: Fix this display code
+                if (choices.length == 5) {
+                    var choice = $("<div class='col-lg-2'><label for='" + questionId + "." + choices[j]["code"] + "'>");
+                    choice.append("<input class='switch switch-primary' type='radio' id='" + questionId + "." + choices[j]["code"] + "' name='" + questionId + "' value='" + choices[j]["code"] + "'/>");
+                    choice.append("<span>"+ text + "</span></div>");
+                    choicesNode.append(choice);
+                } else {
+                    var choice = $("<div class='col-lg-3'><label for='" + questionId + "." + choices[j]["code"] + "'>");
+                    choice.append("<input class='switch switch-primary' type='radio' id='" + questionId + "." + choices[j]["code"] + "' name='" + questionId + "' value='" + choices[j]["code"] + "'/>");
+                    choice.append("<span>" + text + "</span></div>");
+                    choicesNode.append(choice);
+                }
+            }
+            node.append(choicesNode);
+        }
+        node.append('</div>');
+        $('#hh-questionnaire-wrapper').append(node);
+    }
+
+    function renderGoal() {
+        var node = $("<div class = 'response'>");
+        node.append('<h4>Current Healthy Habit Goal (date: {{ goalResponse.authored.date }})</h4>');
+         // other one is goalQuestionnaire
+        {% for question in goalResponse.group.question %}
+            {% for original_question in goalQuestionnaire.group.question %}
+                {% if original_question.linkId == question.linkId %}
+                    node.append('<div class="item">');
+                    node.append('{{ original_question.text }}');
+                    {% if original_question.type|stringformat:"s" == "integer" %}
+                        {% for answer in original_question.option %}
+                            {% if answer.code|stringformat:"s" == question.answer.0.valueInteger|stringformat:"s" %}
+                                node.append('<b><font color ="purple"> {{ answer.display }}</font></b>');
+                            {% endif %}
+                        {% endfor %}
+                    {% elif original_question.type|stringformat:"s" == "string"%}
+                        node.append('<b><font color ="purple"> {{ question.answer.0.valueString|stringformat:"s" }}</font></b')
+                    node.append("</div>");
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+        node.append("</div>");
+        return node
+    }
+
+
+    function resetSelections() {
+
+        var questionnaire = getQuestionnaire();
+        var patientName = getDisplayName();
+        var paginate = false;
+        if (paginate) {
+            // TODO: multi-page version of the questionnaire
+        } else {
+
+            {% if request.path ==  "/questionnaire/respond_hh/" %}
+                $('#hh-questionnaire-wrapper').html('');
+            {% elif request.path ==  "/questionnaire/respond_food/" %}
+                $('#hh-questionnaire-wrapper').html('');
+            {% elif request.path ==  "/questionnaire/respond_wic/" %}
+                $('#wic-questionnaire-wrapper').html('');
+            {% elif request.path ==  "/questionnaire/respond_status/" %}
+                $('#wic-questionnaire-wrapper').html('');
+                var node = renderGoal();
+                $('#wic-questionnaire-wrapper').append(node);
+                $('#wic-questionnaire-wrapper').append("<hr>");
+            {%  else %}
+                $('#questionnaire-wrapper').html('');
+            {% endif %}
+            for (var i = 0; i < questionnaire.length; i++) {
+                var question = questionnaire[i];
+                var node = $("<div class='row question "+question["type"]+"'>");
+                if (typeof question["questions"] != "undefined") {
+                    var text = question["text"].replace("%1$s", patientName);
+                    node.append("<h4 class='prompt group'>" + text + "</h4>");
+                    for (var j = 0; j < questionnaire[i].questions.length; j++) {
+                        renderWicQuestion(questionnaire[i].questions[j], node, patientName);
+                    }
+                } else {
+                    renderHhQuestion(question, node, patientName);
+                }
+                node.append('</div>');
+
+
+                {% if request.path ==  "/questionnaire/respond_hh/" %}
+                    $('#hh-questionnaire-wrapper').append(node);
+                    $('#hh-questionnaire-wrapper').append("<hr>");
+                {% elif request.path ==  "/questionnaire/respond_food/" %}
+                    $('#hh-questionnaire-wrapper').append(node);
+                    $('#hh-questionnaire-wrapper').append("<hr>");
+                {% elif request.path ==  "/questionnaire/respond_wic/" %}
+                    $('#wic-questionnaire-wrapper').append(node);
+                    $('#wic-questionnaire-wrapper').append("<hr>");
+                {% elif request.path ==  "/questionnaire/respond_status/" %}
+                    $('#wic-questionnaire-wrapper').append(node);
+                    $('#wic-questionnaire-wrapper').append("<hr>");
+                {%  else %}
+                    $('#questionnaire-wrapper').append(node);
+                    $('#questionnaire-wrapper').append("<hr>");
+                {% endif %}
+            }
+        }
+    }
+
+    function validateForm() {
+        errors = [];
+
+        var questionnaire = getQuestionnaire();
+        for (var i = 0; i < questionnaire.length; i++) {
+            question = questionnaire[i];
+            // TODO: switch me to look at the "required" parameter for the question, passed through from FHIR.
+            if (question["id"] && question["type"] == "scale") {
+                var selected = $('input[name='+question["id"]+']:checked').val();
+                if (typeof selected == "undefined") {
+                    var text = question["id"];
+                    if (typeof question["prompt"] != "undefined") text = question["prompt"];
+                    else if (typeof question["text"] != "undefined") text = question["text"];
+                    errors.push("You must choose an answer for '"+text+"'");
+                }
+            }
+        }
+        return errors;
+    }
+
+    function submitResponse() {
+        var formErrors = validateForm();
+        if (formErrors.length == 0) {
+            alert("Thank you. Your submission was successful.");
+            return true;
+        } else {
+            alert(formErrors[0]);
+            return false;
+        }
+    }
+
+    $(function () { resetSelections(); });
+    $('#questionnaire').submit(function (event) {
+        if (!submitResponse()) event.preventDefault();
+    });
+
+</script>
+
+{% endblock %}

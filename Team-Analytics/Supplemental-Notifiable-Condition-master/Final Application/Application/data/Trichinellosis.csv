@@ -1,0 +1,70 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Eosinophilia,Did patient have Eosinophilia?,PHVS_YesNoUnknown_CDC
+Eosin Absolute,"If ""Yes,"" please specify absolute number or percentage:",
+Eosin Units,Specify percent or numeric,Eosin Units_FDD
+Fever,Did patient have a fever?,PHVS_YesNoUnknown_CDC
+Temperature,"If ""Yes,"" please specify temperature:",
+Temperature Units,Specify fahrenheit or celsius,PHVS_TemperatureUnit_UCUM
+Trichinellosis Signs and Symptoms Code(s),Did patient have any of the following signs or symptoms of Trichinellosis?,PHVS_TrichinellosisSignsSymptoms _FDD
+Trichinellosis Signs and Symptoms Other,"If ""Other,"" please specify other signs or symptoms of Trichinellosis:",
+Suspected Foods,What suspect foods did the patient eat?,PHVS_SuspectedFoodConsumed_FDD
+Pork Type Code,Please specify type of pork:,PHVS_PorkType_FDD
+Pork Type Other,"If ""Other,"" please specify other type of pork:",
+Pork Consumed Date,Date suspect food was consumed:,
+Pork Larvae Found,Was larvae found in suspect food?,PHVS_PresentAbsentUnkNotExamined_CDC
+Pork Source Obtained Code,Where was the suspect meat obtained?,PHVS_MeatPurchaseInfo_FDD
+Pork Source Other,"If ""Other,"" please specify where suspect meat was obtained:",
+Pork Prep Code,How was suspect food prepared or further processed after purchase?,PHVS_FoodProcessingMethod_FDD
+Pork Prep Other,"If ""Other,"" please specify other type of processing:",
+Pork Cook Method Code,What was the method of cooking the suspect food?,PHVS_FoodCookingMethod_FDD
+Pork Cook Method Other,"If ""Other,"" please specify other type of cooking method:",
+Non-Pork Type Code,Please specify type of non-pork:,PHVS_NonPorkType_FDD
+Non-Pork Type Other,"If ""Other,"" please specify other type of non-pork:",
+Non-Pork Consumed Date,Date suspect food was consumed:,
+Non-Pork Larvae Found Code,Was larvae found in suspect food?,PHVS_PresentAbsentUnkNotExamined_CDC
+Non-Pork Source Code,Where was the suspect meat obtained?,PHVS_MeatPurchaseInfo_FDD
+Non-Pork Source Other,"If ""Other,"" please specify where suspect meat was obtained:",
+Non-Pork Prep Code,How was suspect food prepared or further processed after purchase?,PHVS_FoodProcessingMethod_FDD
+Non-Pork Prep Other,"If ""Other,"" please specify other type of processing:",
+Non-Pork Method Code,What was the method of cooking the suspect food?,PHVS_FoodCookingMethod_FDD
+Non-Pork Method Other,"If ""Other,"" please specify other type of cooking method:",
+Reporting Lab Name,Name of Laboratory that reported test result.,
+Reporting Lab CLIA Number,CLIA (Clinical Laboratory Improvement Act) identifier for the laboratory that performed the test.,
+Local record ID (case ID),Sending system-assigned local ID of the case investigation with which the subject is associated.  This field has been added to provide the mapping to the case/investigation to which this lab result is associated.  This field should appear exactly as it appears in OBR-3 of the Case Notification.,
+Filler Order Number,A laboratory generated number that identifies the test/order instance.,
+Ordered Test Name,"Ordered Test Name is the lab test ordered by the physician.  It will always be included in an ELR, but there are many instances in which the user entering manual reports will not have access to this information.",
+Date of Specimen Collection,The date the specimen was collected.,
+Specimen Site,"This indicates the physical location, of the subject, where the specimen originated. Examples include: Right Internal Jugular, Left Arm, Buttock, Right Eye, etc.",PHVS_BodySite_CDC
+Specimen Number,A laboratory generated number that identifies the specimen related to this test.,
+Specimen Source,"The medium from which the specimen originated.  Examples include whole blood, saliva, urine, etc.",PHVS_Specimen_CDC
+Specimen Details,Specimen details if specimen information entered as text.  ,
+Date Sample Received at Lab,Date Sample Received at Lab (accession date).,
+Sample Analyzed date,The date and time the sample was analyzed by the laboratory.,
+Lab Report Date,Date result sent from Reporting Laboratory.,
+Report Status,The status of the lab report.,PHVS_ResultStatus_HL7_2x
+Resulted Test Name,The lab test that was run on the specimen.,PHVS_LabTestName_CDC
+Numeric Result,Results expressed as numeric value/quantitative result.,
+Result Units,The unit of measure for numeric result value.  ,PHVS_UnitsOfMeasure_CDC
+Coded Result Value,"Coded qualitative result value (e.g., Positive, Negative).",PHVS_LabTestResultQualitative_CDC
+Organism Name,The organism name as a test result.  This element is used when the result was reported as an organism.,PHVS_Microorganism_CDC
+Lab Result Text Value,"Textual result value, used if result is neither numeric nor coded.",
+Result Status,The Result Status is the degree of completion of the lab test.,PHVS_ObservationResultStatus_HL7_2x
+Interpretation Flag,"The interpretation flag identifies a result that is not typical as well as how it's not typical. Examples: Susceptible, Resistant, Normal, Above upper panic limits, below absolute low.",PHVS_AbnormalFlag_HL7_2x
+Reference Range From,The reference range from value allows the user to enter the value on one end of a expected range of results for the test.  This is used mostly for quantitative results.,
+Reference Range To,The reference range to value allows the user to enter the value on the other end of a valid range of results for the test. This is used mostly for quantitative results.,
+Test Method,"The technique or method used to perform the test and obtain the test results. Examples: Serum Neutralization, Titration, dipstick, test strip, anaerobic culture.",PHVS_LabTestMethods_CDC
+Lab Result Comments,Comments having to do specifically with the lab result test.   These are the comments from the NTE segment if the result was originally an Electronic Laboratory Report.  ,
+Date received in state public health lab,Date the isolate was received in state public health laboratory.,
+Lab Test Coded Comments,"Explanation for missing result (e.g., clotting, quantity not sufficient, etc.)",PHVS_MissingLabResult_CDC
+Sent to CDC for Genotyping,Indicate whether the specimens were sent to CDC for genotyping.,PHVS_YesNoUnknown_CDC
+Genotyping Sent Date,"If the specimen was sent to the CDC for genotyping, date on which the specimens were sent.",
+Sent For Strain ID,Indicate whether the specimen was sent for strain identification.,PHVS_YesNoUnknown_CDC
+Strain Type,"If the specimen was sent for strain identification, indicate the strain.",PHVS_MicrobiologicalStrain_CDC
+Track Isolate,Track Isolate functionality indicator,PHVS_TrueFalse_CDC
+Patient status at specimen collection,Patient status at specimen collection,PHVS_PatientLocationStatusAtSpecimenCollection
+Isolate received in state public health lab,Isolate received in state public health lab,PHVS_YesNoUnknown_CDC
+Reason isolate not received,Reason isolate not received,PHVS_IsolateNotReceivedReason_NND
+Reason isolate not received (Other),Reason isolate not received (Other),
+Date received in state public health lab,Date received in state public health lab,
+State public health lab isolate id number,State public health lab isolate id number,
+Case confirmed at state public health lab,Case confirmed at state public health lab,PHVS_YesNoUnknown_CDC

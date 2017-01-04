@@ -1,0 +1,53 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+Date of Illness Onset,Date of the beginning of the illness.  Reported date of the onset of symptoms of the condition being reported to the public health system,
+Primary occupation,Specifies patient's primary occupation.,
+Military Service,History of Military (Active or Reserve)?,PHVS_YesNoUnknown_CDC
+Military Service Year,Year of Entry into Militart Service,
+Tetanus Toxoid Vaccination,"Tetanus Toxoid (TT) History Prior to
+Tetanus Disease
+(Exclude Doses Received Since Acute Injury)","0 = Never 
+1 = 1 dose 
+2 = 2 doses
+3 = 3 doses
+4 = 4 + doses
+9 = Unknown"
+Year of last tetanus dose,Specifies the year of patients' last tetanus dose.,
+Acute wound,Did the patient have  an acute wound or injury?,PHVS_YesNoUnknown_CDC
+Acute wound date,This field indicates the date an acute wound or injury occurred.,
+Acute wound anatomic site,Specifies the anatomic site of acute wound or injury.,Body Region (Tetanus)
+Acute wound work related,"If there was an acute wound or injury, was it work related?",PHVS_YesNoUnknown_CDC
+Acute wound environment,Specifies the environment where the acute wound or injury was work related.,Injury Occurred Environment (VPD) 
+Acute wound circumstances,Specifies the circumstances under which the acute wound or injury occurred.,
+Acute wound type,Specifies the principle acute wound or injury type.,Injury Type (VPD)
+Wound Contaminated,Wound Contaminated,PHVS_YesNoUnknown_CDC 
+Depth of Wound,Depth of Wound,"1 = 1 cm or les
+2 = more than 1 cm
+9 = Unknown"
+Acute wound signs of infection,Were there signs of infection at the time of care for the acute wound or injury?,PHVS_YesNoUnknown_CDC
+Denervated Tissue Present,"Devitalized, Ischemic, or Denervated Tissue Present?",PHVS_YesNoUnknown_CDC 
+Acute wound medical care,Did the patient obtain medical care for the acute wound or injury before tetanus symptom onset?,PHVS_YesNoUnknown_CDC
+Acute wound tetanus toxiod administered,"Was patient administered tetanus toxiod (Td, TT, DT, DTaP) for the acute wound or injury before tetanus symptom onset?",PHVS_YesNoUnknown_CDC
+"If Yes, tetanus toxiod administered,  How Soon after Injury?","If Yes, How Soon after Injury?",PHVS_AftterInjury_Time
+Wound Debrided,Wound Debrided before Tetanus Onset,PHVS_YesNoUnknown_CDC
+"If Yes, Debrided How Soon after Injury?","If Yes, Debrided How Soon after Injury?",PHVS_AftterInjury_Time
+TIG given before symptom onset,Indicates whether tetanus immune globulin (TIG) prophylaxis was given as a part of the wound care before tetanus symptom onset.,PHVS_YesNoUnknown_CDC
+"If Yes, TIG Given How Soon after Injury?","If Yes, TIG Given How Soon after Injury?",PHVS_AftterInjury_Time
+TIG given before symptom onset dosage,Specifies the date the tetanus immune globulin (TIG) prophylaxis units given.,
+Tetanus Associated Condition,Tetanus Associated Conditions Prior to Onset(If no Acute Injury),PHVS_TET_Associated_Conditions
+Diabetes,Indicates whether patient have diabetes.,PHVS_YesNoUnknown_CDC
+Insulin dependents,Indicates whether the patient is insulin dependent.,PHVS_YesNoUnknown_CDC
+Parenteral Drug Abuse?,Pranteral Drug Abuse?,PHVS_YesNoUnknown_CDC 
+Tetanus type,Type of tetanus.,Tetanus Type (VPD) 
+TIG given after symptom onset,Indicates whether the tetanus immune globulin (TIG) therapy was given after symptom onset.,PHVS_YesNoUnknown_CDC
+"If Yes, How Soon after Injury?","If Yes, How Soon after Injury?",PHVS_AftterInjury_Time
+TIG given after symptom onset dosage,Specifies the total therapeutic TIG dosage.,
+Intensive Care Unit,Was the patient in the Intensive Care Unit (ICU)?,PHVS_YesNoUnknown_CDC
+Mechanical Ventilation Days,Number of days the patient received mechanically ventilation.,
+Final outcome,"Final outcome (e.g. Recovered, Died, Unknown)",Treatment Outcome Tetanus (VPD)
+Mother's Age,Specifies mothers age.,
+Mother's DOB,Specifies mothers DOB.,
+Date mother first resided in the U.S.,Date mother first resided in the U.S.,
+Mother tetanus vacc number of known doses,Specifies number of known tetanus vaccination doses mother received prior to the infant's (case's) birth.,PHVS_VaccineDosesReceived_Tetanus
+Last time mother received tetanus vacc,Specifies number of years or months since mother received last tetanus vaccination., 
+Infant's birth place location,"Specifies infant's (case) birth place location (e.g. Hospital, Home, Other, Unknown).",PHVS_BirthLocation_VPD
+Birth attendees,"Specifies birth attendees (e.g. Physician, Nurse, Licensed midwife, Unlicensed midwife, Family, EMS technician(s)).",PHVS_BirthAttendees_VPD

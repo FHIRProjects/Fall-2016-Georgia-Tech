@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medical_record_connection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/subactivity_top_margin"
+    tools:context="edu.gatech.mass.MedicalRecordConnectionActivity"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/medicalRecordConnectionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/medicalRecordConnectionNameTextView"
+        android:text="@string/medical_record_connection_name_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:labelFor="@+id/medicalRecordConnectionName"
+        />
+
+    <EditText
+        android:id="@+id/medicalRecordConnectionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+        android:maxLines="1"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/patientIdTextView"
+        android:text="@string/patient_id_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:labelFor="@+id/patientId"
+        />
+
+    <EditText
+        android:id="@+id/patientId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:text="@string/user_name_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:labelFor="@+id/userName"
+         />
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+        android:inputType="text"
+        />
+    <TextView
+        android:text="@string/password_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:labelFor="@+id/password"
+         />
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+        />
+
+    <TextView
+        android:id="@+id/urlTextView"
+        android:text="@string/url_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:labelFor="@+id/url"
+        />
+
+    <EditText
+        android:id="@+id/url"
+        android:inputType="textUri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/testButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/test_medical_record_connection"
+            android:onClick="testMedicalRecordConnection"
+            style="@android:style/Widget.Material.Light.Button"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:minWidth="250dp"
+            android:maxWidth="250dp" />
+    </LinearLayout>
+</LinearLayout>
+

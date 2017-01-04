@@ -1,0 +1,26 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action),Group,Group Description,Resource
+Erythema Migrans,Indicates whether the patient had erythema migrans (physician diagnosed EM at least 5 cm in diameter).,PHVS_YesNoUnknown_CDC,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+Swelling,Indicates whether the patient had arthritis characterized by brief attacks of joint swelling.,PHVS_YesNoUnknown_CDC,Symptoms,Questions related to the symptoms a patient is displaying. ,Observation
+Bell's Palsy or other cranial neuritis,Indicates whether the patient had Bell's palsy or other cranial neuritis.,PHVS_YesNoUnknown_CDC,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+Radiculoneuropathy,Indicates whether the patient had radiculoneuropathy.,PHVS_YesNoUnknown_CDC,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+Lymphocytic meningitis,Indicates whether the patient had lymphocytic meningitis.,PHVS_YesNoUnknown_CDC,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+Encephalitis/Encephalomyelitis,Indicates whether the patient had encephalitis/encephalomyelitis.,PHVS_YesNoUnknown_CDC,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+2nd or 3rd degree atrioventricular block,Indicates whether the patient had 2nd or 3rd degree atrioventricular block.,PHVS_YesNoUnknown_CDC,Complications,Questions related to other illnesses or conditions resulting from the disease.,Condition
+OtherSpeci,Name of another laboratory test performed,TEXT,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+Results,Result of  other specific laboratory tests performed,P/N/E/ND/U,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+EIA_IFA test type,Type of EIA performed,Whole cell antigen EIA/ELISA/ELFA; Defined antigen EIA/ELISA/ELFA;Antigen capture EIA/ELISA/ELFA; IFA; Unknown; Other; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+EIA_IFA test result,Result of EIA ,IgM positive only; IgG positive only; IgM and IgG positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+Immunoblot result,Result of immunblot,IgM positive only; IgG positive only; IgM and IgG positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgM_21kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgM_39kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgM_41kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_18kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_21kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_28kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_30kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_39kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_41kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_45kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_58kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_66kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport
+IgG_93kDa,Immunoblot specific test result; linked to laboratory criteria,positive; negative; unknown; not done,Lab Tests,Questions related to lab tests run on the patient,DiagnosticReport

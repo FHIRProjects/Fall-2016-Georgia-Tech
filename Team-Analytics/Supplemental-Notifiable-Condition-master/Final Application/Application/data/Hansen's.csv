@@ -1,0 +1,20 @@
+Label/Short Name,Description,Value Set Code. Search in PHIN VADS using the following link (https://phinvads.cdc.gov/vads/SearchHome.action)
+State Case ID,States use this field to link NEDSS investigations back to their own state investigations.,
+Date of completion of Report,Date the initial leprosy surveillance form was completed by a reporting source (physician or lab reported to the local/county/state health department).,
+Date of First Report to CDC,Date the case was first reported to the CDC,
+Notification Result Status,Status of the notification.,PHVS_ResultStatus_NETSS
+Condition Code,Condition or event that constitutes the reason the notification is being sent,PHVS_NotifiableEvent_Disease_Condition_CDC_NNDSS
+Case Class Status Code,"Status of the case/event as suspect, probable, confirmed, or not a case per CSTE/CDC/ surveillance case definitions.",PHVS_CaseClassStatus_NND
+MMWR Week,MMWR Week for which case information is to be counted for MMWR publication.,
+MMWR Year,MMWR Year (YYYY) for which case information is to be counted for MMWR publication.,
+Reporting State,State reporting the notification. ,PHVS_State_FIPS_5-2
+Reporting County,County reporting the notification.,PHVS_County_FIPS_6-4
+National Reporting Jurisdiction,National jurisdiction reporting the notification to CDC.,PHVS_NationalReportingJurisdiction_NND
+Reporting Source Type Code,Type of facility or provider associated with the source of information sent to Public Health.,PHVS_ReportingSourceType_NND
+Reporting Source ZIP Code,ZIP Code of the reporting source for this case.,
+Date First Reported PHD,"Earliest date the case was reported to the public health department whether at the local, county, or state public health level. ",
+Person Reporting to CDC - Name,Name of the person who is reporting the case to the CDC.  This is the person that CDC should contract in a state if there are questions regarding this case notification.,
+Person Reporting to CDC - Phone Number,Phone Number of the person who is reporting the case to the CDC.  This is the person that CDC should contract in a state if there are questions regarding this case notification.,
+Person Reporting to CDC - Title,Job title / description of the person reporting the case to the CDC.  This is the person that CDC should contract in a state if there are questions regarding this case notification.,
+Person Reporting to CDC - Affiliation,Affiliated Facility of the person reporting the case to the CDC.  This is the person that CDC should contract in a state if there are questions regarding this case notification.,
+Type of leprosy,Classify the diagnosis based on one of the ICD-9-CM diagnosis codes,PHVS_TypeofLeprosy_CDC
