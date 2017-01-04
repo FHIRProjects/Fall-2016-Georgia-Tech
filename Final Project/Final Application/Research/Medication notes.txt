@@ -1,0 +1,29 @@
+id
+dateWritten
+status
+patient
+ reference value="Patient/<id>"
+ display value="<fname> <lname>"
+presecriber
+ reference value ="Practitioner/<id>"
+ display value="Dr. so and so"
+<encounter>
+ ref
+reasonCodableConcept
+MedicationReference
+ reference
+dosageInstructions
+dispenseRequest
+
+
+SELECT dbo.csd_persons2transactions2.trans_id as patient_id, date_rx_filled, rx_number, metric_qty, days_supply
+FROM dbo.trans_hist, dbo.ndc_master, dbo.csd_persons2transactions2
+WHERE dbo.trans_hist.ndc_code = dbo.ndc_master.ndc_code
+AND dbo.trans_hist.trans_key = dbo.csd_persons2transactions2.csdid::int
+
+
+SELECT dbo.csd_persons2transactions2.trans_id as patient_id, date_rx_filled, rx_number, metric_qty, days_supply, num_refills, pkg_qty, pkg_meas, trade_name, ingredient_name
+FROM dbo.trans_hist, dbo.ndc_master, dbo.csd_persons2transactions2
+WHERE dbo.trans_hist.ndc_code = dbo.ndc_master.ndc_code
+AND dbo.trans_hist.trans_key = dbo.csd_persons2transactions2.csdid::int
+LIMIT 50;
