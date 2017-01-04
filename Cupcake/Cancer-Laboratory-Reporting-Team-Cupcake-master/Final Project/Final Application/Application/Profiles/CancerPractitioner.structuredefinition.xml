@@ -1,0 +1,76 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CancerPractitioner"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-04T10:42:36.841+00:00"/>
+   </meta>
+   <url value="StructureDefinition/CancerPractitioner"/>
+   <name value="CancerPractitioner"/>
+   <status value="draft"/>
+   <description value="Describes constraints on Practitioner in conformance with CDC Cancer CDA"/>
+   <fhirVersion value="1.0.2"/>
+   <kind value="resource"/>
+   <constrainedType value="Practitioner"/>
+   <abstract value="false"/>
+   <base value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+   <differential>
+      <element>
+         <path value="Practitioner"/>
+         <type>
+            <code value="Practitioner"/>
+         </type>
+      </element>
+      <element>
+         <path value="Practitioner.extension"/>
+         <slicing>
+            <discriminator value="url"/>
+            <rules value="openAtEnd"/>
+         </slicing>
+      </element>
+      <element>
+         <path value="Practitioner.extension"/>
+         <name value="referred_from_npi"/>
+         <definition value="Optional Extensions Element - found in all resources."/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="StructureDefinition/referredFromNPI"/>
+         </type>
+      </element>
+      <element>
+         <path value="Practitioner.extension"/>
+         <name value="referred_from_local"/>
+         <definition value="Optional Extensions Element - found in all resources."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="StructureDefinition/referredFromLocal"/>
+         </type>
+      </element>
+      <element>
+         <path value="Practitioner.identifier"/>
+         <slicing>
+            <discriminator value="id"/>
+            <rules value="openAtEnd"/>
+         </slicing>
+      </element>
+      <element>
+         <path value="Practitioner.identifier"/>
+         <name value="npi_id"/>
+         <definition value="An NPI identifier that applies to this person in this role."/>
+      </element>
+      <element>
+         <path value="Practitioner.identifier"/>
+         <name value="local_id"/>
+         <definition value="A local identifier that applies to this person in this role."/>
+         <max value="1"/>
+      </element>
+      <element>
+         <path value="Practitioner.address"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>

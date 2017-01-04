@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch localhost with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost/mypage.html",
+            "webRoot": "${workspaceRoot}/",
+            "sourceMaps": true
+        },
+        {
+            "name": "Launch index.html (without sourcemaps)",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceRoot}/src/tester.html"
+        },
+         {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Test PHP",
+            "port":80,
+            "url": "http://localhost/sl_hp/php/getQFS.php",
+            "userDataDir": "${workspaceRoot}/out/chrome"
+        },
+        {
+            "name":"Run Script",
+            "type":"php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceRoot}",
+            "port": 9000
+        }
+    ]
+}

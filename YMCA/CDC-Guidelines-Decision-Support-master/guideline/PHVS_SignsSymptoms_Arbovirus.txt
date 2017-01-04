@@ -1,0 +1,31 @@
+Date/Time Created	VADS Content Version	VADS Application Version	Download Activity	Number of Items Selected
+11/02/2016 01:37:52	3.0.0	3.1.1	Value Set Concept Detail Result Selection	27 of 27
+
+Concept Code	Concept Name	Preferred Concept Name	Preferred Alternate Code	Code System OID	Code System Name	Code System Code	Code System Version	HL7 Table 0396 Code	Value Set Code	Value Set Version
+386661006	Fever	Fever	F-0A44A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+43724002	Chills or Rigors	Chills/ Rigors	F-03260	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+271795006	Fatigue or Malaise	Fatigue and Malaise	F-01201	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+271807003	Rash	Rash	D0-00058	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+68962001	Myalgia	Myalgia	F-11550	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+57676002	Arthralgia	Arthralgia	F-13100	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+3723001	Arthritis	Arthritis	D1-20050	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+25064002	Headache	Headache	F-A2700	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+44695005	Paralysis or Paresis	Paralysis or Paresis	F-A0840	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+161882006	Stiff Neck	Stiff Neck	F-01C2B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+20262006	Ataxia	Ataxia	F-A4580	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+32798002	Parkinsonism	Parkinsonism	DA-21010	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+419284004	Altered Mental Status	Altered Mental Status	F-90172	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+91175000	Seizures	Seizures	F-A7100	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+9826008	Conjunctivitis	Conjunctivitis	DA-75605	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+PHC1400	Retro-orbital Pain (pain behind eye)	Retro-orbital Pain (pain behind eye)		2.16.840.1.114222.4.5.274	PHIN VS (CDC Local Coding System)	PH_PHINVS_CDC	9/16/16	CDCPHINVS	PHVS_SignsSymptoms_Arbovirus	2
+422587007	Nausea	Nausea	F-04E95	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+422400008	Vomiting	Emesis	DF-007C4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+62315008	Diarrhea	Diarrhea	F-54400	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+21522001	Abdominal pain or Tenderness	Abdominal pain / Tenderness	F-50860	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+196746003	Persistent vomiting	Persistent vomiting	F-5277B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+80515008	Liver enlargement (Hepatomegaly)	Liver enlargement (Hepatomegaly)	D5-81220	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SignsSymptoms_Arbovirus	2
+PHC1401	Extravascular Fluid Accumulation (e.g. Pleural, Pericardial effusion, Ascites)	Extravascular Fluid Accumulation (e.g. Pleural, Pericardial effusion, Ascites)		2.16.840.1.114222.4.5.274	PHIN VS (CDC Local Coding System)	PH_PHINVS_CDC	9/16/16	CDCPHINVS	PHVS_SignsSymptoms_Arbovirus	2
+PHC1402	Mucosal Bleeding (e.g. Epistaxis - nose bleeding, gastrointestinal bleeding)	Mucosal Bleeding (e.g. Epistaxis - nose bleeding, gastrointestinal bleeding)		2.16.840.1.114222.4.5.274	PHIN VS (CDC Local Coding System)	PH_PHINVS_CDC	9/16/16	CDCPHINVS	PHVS_SignsSymptoms_Arbovirus	2
+PHC1403	Severe plasma leakage (shock, pleural effusion)	Severe plasma leakage (shock, pleural effusion)		2.16.840.1.114222.4.5.274	PHIN VS (CDC Local Coding System)	PH_PHINVS_CDC	9/16/16	CDCPHINVS	PHVS_SignsSymptoms_Arbovirus	2
+PHC1404	Severe bleeding	Severe bleeding		2.16.840.1.114222.4.5.274	PHIN VS (CDC Local Coding System)	PH_PHINVS_CDC	9/16/16	CDCPHINVS	PHVS_SignsSymptoms_Arbovirus	2
+PHC1405	Severe Organ Involvement (Liver, Heart, Neurologic  - central nervous system)	Severe Organ Involvement (Liver, Heart, Neurologic  - central nervous system)		2.16.840.1.114222.4.5.274	PHIN VS (CDC Local Coding System)	PH_PHINVS_CDC	9/16/16	CDCPHINVS	PHVS_SignsSymptoms_Arbovirus	2

@@ -1,0 +1,8 @@
+Date/Time Created	VADS Content Version	VADS Application Version	Download Activity	Number of Items Selected
+11/02/2016 01:32:34	3.0.0	3.1.1	Value Set Concept Detail Result Selection	4 of 4
+
+Concept Code	Concept Name	Preferred Concept Name	Preferred Alternate Code	Code System OID	Code System Name	Code System Code	Code System Version	HL7 Table 0396 Code	Value Set Code	Value Set Version
+PHC1446	Greater than or equal to 4 fold rise	>= 4 fold rise		2.16.840.1.114222.4.5.274	PHIN VS (CDC Local Coding System)	PH_PHINVS_CDC	9/16/16	CDCPHINVS	PHVS_PosNeg4FoldRiseNotDone_CDC	1
+260385009	Negative (qualifier value)	Negative	R-40759	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_PosNeg4FoldRiseNotDone_CDC	1
+10828004	Positive (qualifier value)	Positive	G-A200	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_PosNeg4FoldRiseNotDone_CDC	1
+373121007	Test not done (qualifier value)	Test not done	R-00378	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_PosNeg4FoldRiseNotDone_CDC	1

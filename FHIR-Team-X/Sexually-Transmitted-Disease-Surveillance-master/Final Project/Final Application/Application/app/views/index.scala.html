@@ -1,0 +1,226 @@
+@( message: String )
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Sexually Transmitted Disease Case Report Exchange") {
+ 
+<!doctype html>
+<html>
+    <head>
+        <style>
+        body { padding:20px; }
+        label, input { display:block; margin-top:10px; }
+        legend { font-weight: bold; color: #2c94ba;}
+       .btnn {
+           background: #2c94ba;
+           background-image: -webkit-linear-gradient(top, #2c94ba, #24b5);
+           background-image: -moz-linear-gradient(top, #2c94ba, #24b5);
+           background-image: -ms-linear-gradient(top, #2c94ba, #24b5);
+           background-image: -o-linear-gradient(top, #2c94ba, #24b5);
+           background-image: linear-gradient(to bottom, #2c94ba, #24b5);
+           -webkit-border-radius: 28;
+           -moz-border-radius: 28;
+           border-radius: 28px;
+           -webkit-box-shadow: 0px 1px 3px #454045;
+           -moz-box-shadow: 0px 1px 3px #454045;
+           box-shadow: 0px 1px 3px #454045;
+           font-family: Arial;
+           color: #ffffff;
+           font-size: 17px;
+           padding: 13px;
+           text-decoration: none;
+           }
+       .btnn:hover {
+           background: #24b5b5;
+           text-decoration: none;}
+        .white-popup {
+          position: relative;
+          background: #FFF;
+          padding: 20px;
+          width: auto;
+          margin: 20px auto;
+        }
+       .patientlist { border: 1px solid black; }
+       .patientlist td, th { padding: 4px; }
+        body.wait, body.wait *{
+            cursor: wait !important;   
+        }
+        </style>
+        <script type="text/javascript">
+        $(function() {
+            $('#startdate').datetimepicker({format: 'MM/DD/YYYY', useCurrent: false});
+            var startDate = new Date();
+            startDate = new Date(startDate.setDate(startDate.getDate() - 7));
+            $('#startdate').data('DateTimePicker').date(startDate);
+            
+            $('#startdate').on('dp.change', function(e) {
+                var startDate = $('#startdate').data('DateTimePicker').date();
+                var endDate = $('#enddate').data('DateTimePicker').date();
+                if (startDate != null && endDate != null && startDate.isAfter(endDate)) {
+                    $('#startdate').data('DateTimePicker').date(e.oldDate);
+                    alert('Selection cancelled. From date cannot be set later than the To Date.');
+                }
+            });
+            
+            $('#enddate').datetimepicker({format: 'MM/DD/YYYY', useCurrent: false, defaultDate: new Date()});
+            
+            $('#enddate').on('dp.change', function(e) {
+                var endDate = $('#enddate').data('DateTimePicker').date();
+                var startDate = $('#startdate').data('DateTimePicker').date();
+                if (endDate != null && startDate != null && endDate.isBefore(startDate)) {
+                    $('#enddate').data('DateTimePicker').date(e.oldDate);
+                    alert('Selection cancelled. To date cannot be set earlier than the From Date.');
+                }
+            });
+        });
+        
+        function getJsonPostData() {
+            var jsonPostData = {};
+            jsonPostData.firstName = $('#firstname').val();
+            jsonPostData.lastName = $('#lastname').val();
+            jsonPostData.startDate = $('#startdatetext').val();
+            jsonPostData.endDate = $('#enddatetext').val();
+            if ($('#received').is(':checked')) {
+                jsonPostData.dateType = 'received';
+            } else if ($('#event').is(':checked')) {
+                jsonPostData.dateType = 'event';
+            }
+            jsonPostData.facilityId = $('#facilityid').val();
+            return jsonPostData;
+        }
+        
+        $(document).on('click', '#getReports', function() {
+            if (($('#firstname').val() == null || $('#firstname').val().trim() == "") &&
+                 ($('#lastname').val() == null || $('#lastname').val().trim() == "") &&
+                 ($('#facilityid').val() == null || $('#facilityid').val().trim() == "")) {
+                window.alert('Either first name, last name, or facility id must be entered');
+                return;
+            }
+            $('#patientList').css('color', 'green').text('Processing...please wait');
+            $('#sendFile').css('visibility', 'hidden');
+            $.ajax({
+                url: '/report/list',
+                type: 'post',
+                contentType: 'application/json',
+                data: JSON.stringify(getJsonPostData()),
+                success: function(data, textStatus, jqXHR) {
+                    if (data.entry) {
+                        patientListMarkup = '<p>Click a patient name for C-CDA document</p>';
+                        patientListMarkup += '<table class="patientlist"><tr><th class="tablecell">Patient</th></tr>';
+                        data.entry.forEach(function(entry) {
+                            if (entry.fullUrl.indexOf("Patient") >= 0) {
+                                patientListMarkup += '<tr><td class="tablecell">';
+                                patientListMarkup += '<div data-ssn="' + entry.resource.identifier[0].value + '" ';
+                                patientListMarkup += 'data-given="' + entry.resource.name[0].given + '" ';
+                                patientListMarkup += 'data-family="' + entry.resource.name[0].family + '" ';
+                                patientListMarkup += 'style="text-decoration:underline;cursor:pointer;">';
+                                patientListMarkup += entry.resource.name[0].given + ' ' + entry.resource.name[0].family + '</div></td></tr>';
+                            }
+                        });
+                        patientListMarkup += '</table>';
+                        $('#patientList').css('color', 'black').html(patientListMarkup);
+                    } else {
+                        $('#patientList').css('color', 'red').text('No patients found using the selection criteria entered');
+                    }
+                }
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                $('#patientList').css('color', 'red').text('There was a problem retrieving patients, HTTP status code ' + jqXHR.status);
+                });
+            });
+            
+        $(document).on('click', '.patientlist div', function() {
+            var outerThis = this;
+            $('body').toggleClass('wait');
+            $.ajax({
+                url: '/report/pull',
+                type: 'get',
+                data: {id: $(this).data('ssn')},
+                dataType: 'text',
+                success: function(data, textStatus, jqXHR) {
+                    $('#patientError').text('');
+                    $('#ccdadocheader').text('Case report for ' + $(outerThis).data('given') + ' ' + $(outerThis).data('family'));
+                    $('#ccdadoctext').text(vkbeautify.xml(data));
+                    $.magnificPopup.open({
+                      items: {
+                        src: '#ccdadoc',
+                        type: 'inline'
+                      }
+                    });
+                    $('body').toggleClass('wait');
+                }
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                $('#patientError').css('color', 'red').text('There was a problem retrieving the C-CDA document, HTTP status code ' + jqXHR.status);
+                $('body').toggleClass('wait');
+                });
+            });
+            
+        $(document).on('click', '#selectccda', function() {
+            $('#ccdadoctext').select();
+            });
+        </script>
+    </head>
+    <body>
+        <h3>Retrieve STD Case Reports</h3>
+        <div id="paramInput" style="float:left;width:700px;margin-right:4px">
+        <form onsubmit="return false" method="post" action="report/list">
+           <fieldset>
+              <legend>Patient Information</legend>
+             First Name:<br>
+             <input id="firstname" type="text" name="firstname" value=""><br />
+             Last Name:<br>
+            <input id="lastname" type="text" name="lastname" value=""><br />
+          </fieldset>
+          <fieldset>
+              <legend>Date of Report</legend>
+              <span style="float:left;margin-right:12px">Date Type: </span>
+              <input id="received" name="datetype" type="radio" value="received" style="float:left" checked="checked"><span style="float:left;margin-right:16px">Received</span>
+              <input id="event" name="datetype" type="radio" value="event" style="float:left"><span style="float:left">Event</span><br /><br />
+             From:
+             <div class="row">
+    <div class="form-group col-sm-3">
+        <label for="startdatetext"></label>
+            <div class="input-group date" id="startdate">
+                <input id="startdatetext" type="text" data-date-format="YYYY-MM-DD" class="form-control" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+        </div>
+    </div>
+             To:
+             <div class="row">
+    <div class="form-group col-sm-3">
+        <label for="enddatetext"></label>
+            <div class="input-group date" id="enddate">
+                <input id="enddatetext" type="text" data-date-format="YYYY-MM-DD" class="form-control" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+        </div>
+    </div>
+    </fieldset>
+    <fieldset>
+              <legend>Facility Information</legend>
+             Facility ID:<br>
+             <input id="facilityid" type="text" name="facilityid" value="">
+            <input id="getReports" type="submit" class="btnn" value="Get Report">
+          </fieldset>
+        </form>
+        </div> <!-- paramInput end -->
+        <div id="patientDiv">
+        Patients
+        <div id="patientList">
+        </div>
+        </div>
+        <div id="patientError">
+        </div>
+        <div id="ccdadoc" class="white-popup mfp-hide">
+        <div>
+        <span style="float:left; margin-right: 40px;" id="ccdadocheader"></span>
+        <input style="margin-bottom:4px" id="selectccda" type="button" value="Select C-CDA document text" />
+        </div>
+        <textarea id="ccdadoctext" cols="170" rows="30" readonly style="background-color:#eee"></textarea>
+        </div>
+    </body>
+</html>
+}

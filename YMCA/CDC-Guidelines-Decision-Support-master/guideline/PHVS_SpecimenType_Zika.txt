@@ -1,0 +1,19 @@
+Date/Time Created	VADS Content Version	VADS Application Version	Download Activity	Number of Items Selected
+11/02/2016 01:41:14	3.0.0	3.1.1	Value Set Concept Detail Result Selection	15 of 15
+
+Concept Code	Concept Name	Preferred Concept Name	Preferred Alternate Code	Code System OID	Code System Name	Code System Code	Code System Version	HL7 Table 0396 Code	Value Set Code	Value Set Version
+429881000124104	Acute phase serum specimen (specimen)	Acute phase serum specimen		2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+410729004	Amniocentesis fluid sample (specimen)	Amniocentesis fluid sample	G-8223	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+119373006	Amniotic fluid specimen (specimen)	Amniotic fluid specimen	G-8220	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+703430008	Arterial cord blood specimen (specimen)	Arterial cord blood specimen	R-FBC4E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+122561005	Blood specimen from patient (specimen)	Blood specimen from patient	G-801C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+258450006	Cerebrospinal fluid sample (specimen)	Cerebrospinal fluid sample	G-804B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+429891000124101	Convalescent phase serum specimen (specimen)	Convalescent phase serum specimen		2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+122556008	Cord blood specimen (specimen)	Cord blood specimen	G-8016	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+122557004	Cord blood specimen from fetus (specimen)	Cord blood specimen from fetus	G-8017	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+430389009	Cytologic material obtained from amniotic fluid (specimen)	Amniotic fluid cytologic material	G-824D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+110968003	Fetal cytologic material (specimen)	Fetal cytologic material	T-EA578	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+309502007	Fetus specimen (specimen)	Fetus specimen	G-80FF	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+122590004	Serum specimen from patient (specimen)	Serum specimen from patient	G-8182	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+431234000	Specimen from fetus obtained by biopsy (specimen)	Specimen from fetus obtained by biopsy	G-8252	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1
+703431007	Venous cord blood specimen (specimen)	Venous cord blood specimen	R-FBC4F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_SpecimenType_Zika	1

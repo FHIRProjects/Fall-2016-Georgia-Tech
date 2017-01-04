@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction" />
+    <entry>
+        <resource>
+            <Patient>
+                <id value="99900003" />
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Charles Xavier</p>
+                    </div>
+                </text>
+                <identifier>
+                    <use value="usual" />
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203" />
+                            <code value="MR" />
+                            <display value="Medical record number" />
+                        </coding>
+                        <text value="Medical record number" />
+                    </type>
+                    <system value="http://hospital.smarthealthit.org" />
+                    <value value="99900003" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <family value="Charles" />
+                    <given value="Xavier" />
+                </name>
+                <telecom>
+                    <system value="phone" />
+                    <value value="800-834-9389" />
+                    <use value="home" />
+                </telecom>
+                <telecom>
+                    <system value="email" />
+                    <value value="charles.xavier@example.com" />
+                </telecom>
+                <gender value="male" />
+                <birthDate value="1984-02-26" />
+                <address>
+                    <use value="home" />
+                    <line value="17 Oak Rd" />
+                    <city value="Belmont" />
+                    <state value="MA" />
+                    <postalCode value="02478" />
+                    <country value="USA" />
+                </address>
+                <active value="true" />
+            </Patient>
+        </resource>
+        <request>
+            <method value="PUT" />
+            <url value="Patient/99900003" />
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Encounter>
+                <id value="1039" />
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">2016-09-12T04:00:00Z: inpatient encounter - joint pain treatment</div>
+                </text>
+                <status value="finished" />
+                <class value="inpatient" />
+                <patient>
+                    <reference value="Patient/99900003" />
+                </patient>
+                <period>
+                    <start value="2016-10-12T04:00:00Z" />
+                    <end value="2016-10-20T04:20:00Z" />
+                </period>
+                <reason>
+                    <coding>
+                        <code value="DUMMYCODE" />
+                        <display value="Multiple joint pain" />
+                    </coding>
+                </reason>
+            </Encounter>
+        </resource>
+        <request>
+            <method value="PUT" />
+            <url value="Encounter/1039" />
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Condition>
+                <id value="562" />
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">Multiple joint pain</div>
+                </text>
+                <patient>
+                    <reference value="Patient/99900003" />
+                </patient>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="35678005" />
+                        <display value="Multiple joint pain" />
+                    </coding>
+                    <text value="Multiple joint pain" />
+                </code>
+                <clinicalStatus value="confirmed" />
+                <onsetDateTime value="2004-03-06" />
+            </Condition>
+        </resource>
+        <request>
+            <method value="PUT" />
+            <url value="Condition/562" />
+        </request>
+    </entry>
+    <entry>
+        <resource>
+            <Questionnaire xmlns="http://hl7.org/fhir">
+                <id value="0" />
+                <status value="draft" />
+                <!--<date value="11292016"/>-->
+                <group>
+                    <linkId value="root" />
+                    <title value="Post Hospital Discharge Stroke Data" />
+                    <question>
+                        <linkId value="1" />
+                        <text value="Patient's date of hospital discharge" />
+                        <type value="dateTime" />
+                    </question>
+                    <question>
+                        <linkId value="2" />
+                        <text value="Hospital Admission Date (part of inhospital dataset)" />
+                        <type value="dateTime" />
+                    </question>
+                    <group>
+                        <linkId value="3" />
+                        <title value="Call placed" />
+                        <question>
+                            <linkId value="3.1" />
+                            <text value="Was patient called for follow up post discharge?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="Y" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="N" />
+                                <display value="No" />
+                            </option>
+                            <option>
+                                <code value="D" />
+                                <display value="Don't Know" />
+                            </option>
+                            <group>
+                                <linkId value="3.1.1" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="3.1" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="Y" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="3.1.1.1" />
+                                    <text value="Date of the follow up call" />
+                                    <type value="dateTime" />
+                                </question>
+                            </group>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="4" />
+                        <title value="Location of patient" />
+                        <question>
+                            <linkId value="4.1" />
+                            <text value="Where is the patient at the time of follow-up call?" />
+                            <type value="open-choice" />
+                            <option>
+                                <code value="1" />
+                                <display value="Home" />
+                            </option>
+                            <option>
+                                <code value="2" />
+                                <display value="Hospital" />
+                            </option>
+                            <option>
+                                <code value="3" />
+                                <display value="Acute care facility" />
+                            </option>
+                            <option>
+                                <code value="4" />
+                                <display value="long term care" />
+                            </option>
+                            <option>
+                                <code value="5" />
+                                <display value="Acute Rehab" />
+                            </option>
+                            <option>
+                                <code value="6" />
+                                <display value="Skilled nursing facility" />
+                            </option>
+                            <option>
+                                <code value="7" />
+                                <display value="can't determine" />
+                            </option>
+                        </question>
+                        <question>
+                            <linkId value="4.2" />
+                            <text value="Where is the patient 30 days after discharge?" />
+                            <type value="open-choice" />
+                            <option>
+                                <code value="1" />
+                                <display value="Home" />
+                            </option>
+                            <option>
+                                <code value="2" />
+                                <display value="Hospital" />
+                            </option>
+                            <option>
+                                <code value="3" />
+                                <display value="Acute care facility" />
+                            </option>
+                            <option>
+                                <code value="4" />
+                                <display value="long term care" />
+                            </option>
+                            <option>
+                                <code value="5" />
+                                <display value="Acute Rehab" />
+                            </option>
+                            <option>
+                                <code value="6" />
+                                <display value="Skilled nursing facility" />
+                            </option>
+                            <option>
+                                <code value="7" />
+                                <display value="can't determine" />
+                            </option>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="5" />
+                        <title value="Informant" />
+                        <question>
+                            <linkId value="5.1" />
+                            <text value="Who provided responses to this follow-up?" />
+                            <type value="open-choice" />
+                            <option>
+                                <code value="1" />
+                                <display value="Patient" />
+                            </option>
+                            <option>
+                                <code value="2" />
+                                <display value="Family Member" />
+                            </option>
+                            <option>
+                                <code value="3" />
+                                <display value="Other Lay Caregiver" />
+                            </option>
+                            <option>
+                                <code value="4" />
+                                <display value="Home Health Aide" />
+                            </option>
+                            <option>
+                                <code value="5" />
+                                <display value="EMS" />
+                            </option>
+                            <option>
+                                <code value="6" />
+                                <display value="Other" />
+                            </option>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="6" />
+                        <title value="Rehab" />
+                        <question>
+                            <linkId value="6.1" />
+                            <text value="Did or is patient receiving rehabilitation?" />
+                            <type value="open-choice" />
+                            <option>
+                                <code value="1" />
+                                <display value="Outpatient" />
+                            </option>
+                            <option>
+                                <code value="2" />
+                                <display value="In the home" />
+                            </option>
+                            <option>
+                                <code value="3" />
+                                <display value="Inpatient" />
+                            </option>
+                            <option>
+                                <code value="4" />
+                                <display value="Was at discharge but stopped" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="7" />
+                        <title value="Ranking" />
+                        <question>
+                            <linkId value="7.1" />
+                            <text value="What is the level of the patient's disability?  This is the 30-day modified Rankin Scale score" />
+                            <type value="open-choice" />
+                            <option>
+                                <code value="0" />
+                                <display value="No symptoms" />
+                            </option>
+                            <option>
+                                <code value="1" />
+                                <display value="Some symptoms but able to carry out all usual duties and activities" />
+                            </option>
+                            <option>
+                                <code value="2" />
+                                <display value="Some disability, unable to carry out all previous activities, but able to look after own affairs without assistance" />
+                            </option>
+                            <option>
+                                <code value="3" />
+                                <display value="Moderate disability; requiring some help, but able to walk without assistance" />
+                            </option>
+                            <option>
+                                <code value="4" />
+                                <display value="Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance" />
+                            </option>
+                            <option>
+                                <code value="5" />
+                                <display value="Severe disability; bedridden, incontinent, and requiring constant nursing care and attention" />
+                            </option>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="8" />
+                        <title value="Tobacco" />
+                        <question>
+                            <linkId value="8.1" />
+                            <text value="Was patient a smoker at time of stroke?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="1" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                            <group>
+                                <linkId value="8.1.1" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="8.1" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="1" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="8.1.1.1" />
+                                    <text value="If patient was a smoker before stroke, have they smoked tobacco since discharge?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="8.1.1.2" />
+                                    <text value="If patient was a smoker before stroke, are they using any medications to help stop smoking?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="8.1.1.3" />
+                                    <text value="Was the patient provided tobacco cessation counseling and referred to a cessation program?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                </question>
+                            </group>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="9" />
+                        <title value="ED visits" />
+                        <question>
+                            <linkId value="9.1" />
+                            <text value="Has patient been seen in ED since discharge?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="1" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                            <option>
+                                <code value="2" />
+                                <display value="Not sure" />
+                            </option>
+                            <group>
+                                <linkId value="9.1.1" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="9.1" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="1" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="9.1.1.1" />
+                                    <text value="How many ED visits since discharge?" />
+                                    <type value="open-choice" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="1" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="2" />
+                                    </option>
+                                    <option>
+                                        <code value="3" />
+                                        <display value="3 or more" />
+                                    </option>
+                                    <option>
+                                        <code value="4" />
+                                        <display value="unknown or not sure" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="9.1.1.2" />
+                                    <text value="Has the patient been seen in ED within 30 days of discharge?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="Not sure" />
+                                    </option>
+                                    <group>
+                                        <linkId value="9.1.1.2.1" />
+                                        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                            <extension url="#question">
+                                                <valueString value="9.1.1.2" />
+                                            </extension>
+                                            <extension url="#answer">
+                                                <valueCoding>
+                                                    <code value="1" />
+                                                </valueCoding>
+                                            </extension>
+                                        </extension>
+                                        <question>
+                                            <linkId value="9.1.1.2.1.1" />
+                                            <text value="If yes, Date of first ED visit" />
+                                            <type value="dateTime" />
+                                        </question>
+                                        <question>
+                                            <linkId value="9.1.1.2.1.2" />
+                                            <text value="If yes, Reason for first ED visit" />
+                                            <type value="string" />
+                                        </question>
+                                        <question>
+                                            <linkId value="9.1.1.2.1.3" />
+                                            <text value="Were any ED visits for TIA or stroke?" />
+                                            <type value="boolean" />
+                                            <option>
+                                                <code value="1" />
+                                                <display value="Yes" />
+                                            </option>
+                                            <option>
+                                                <code value="0" />
+                                                <display value="No" />
+                                            </option>
+                                        </question>
+                                    </group>
+                                </question>
+                            </group>
+                        </question>
+                        <question>
+                            <linkId value="9.2" />
+                            <text value="Was patient admitted to hospital, discharged to home, discharged to SNF or other institutional long term care, or held for observation?" />
+                            <type value="open-choice" />
+                            <option>
+                                <code value="1" />
+                                <display value="Discharged to home" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="Admitted to hospital" />
+                            </option>
+                            <option>
+                                <code value="2" />
+                                <display value="Discharged to SNF or other institutional long term care" />
+                            </option>
+                            <option>
+                                <code value="3" />
+                                <display value="Held for observation" />
+                            </option>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="10" />
+                        <title value="Blood Pressure" />
+                        <question>
+                            <linkId value="10.1" />
+                            <text value="Has patient been monitoring their blood pressure outside of their office visits?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="1" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                            <group>
+                                <linkId value="10.1.1" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="10.1" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="1" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="10.1.1.1" />
+                                    <text value="If yes, most recent systolic blood pressure" />
+                                    <type value="integer" />
+                                    <!-- range 50-220 -->
+                                    <extension url="http://hl7.org/fhir/StructureDefinition/minValue">
+                                        <valueDecimal value="5" />
+                                    </extension>
+                                    <extension url="http://hl7.org/fhir/StructureDefinition/maxValue">
+                                        <valueDecimal value="220" />
+                                    </extension>
+                                </question>
+                                <question>
+                                    <linkId value="10.1.1.2" />
+                                    <text value="If yes, most recent diastolic blood pressure" />
+                                    <type value="integer" />
+                                    <!-- range 30-160 -->
+                                    <extension url="http://hl7.org/fhir/StructureDefinition/minValue">
+                                        <valueDecimal value="30" />
+                                    </extension>
+                                    <extension url="http://hl7.org/fhir/StructureDefinition/maxValue">
+                                        <valueDecimal value="160" />
+                                    </extension>
+                                </question>
+                                <question>
+                                    <linkId value="10.1.1.2" />
+                                    <text value="Have they reported their blood pressure to their health care provider since discharge?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="10.1.1.3" />
+                                    <text value="Is this blood pressure usual for you?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                </question>
+                            </group>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="11" />
+                        <title value="Falls" />
+                        <question>
+                            <linkId value="11.1" />
+                            <text value="Has the patient fallen since discharge?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="1" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                            <group>
+                                <linkId value="11.1.1" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="11.1" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="1" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="11.1.1.1" />
+                                    <text value="Has the patient fallen within 30 days of discharge?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                    <group>
+                                        <linkId value="11.1.1.1.1" />
+                                        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                            <extension url="#question">
+                                                <valueString value="11.1.1.1" />
+                                            </extension>
+                                            <extension url="#answer">
+                                                <valueCoding>
+                                                    <code value="1" />
+                                                </valueCoding>
+                                            </extension>
+                                        </extension>
+                                        <question>
+                                            <linkId value="11.1.1.1.1.1" />
+                                            <text value="If yes, number of falls?" />
+                                            <type value="integer" />
+                                            <!-- range 1-99 -->
+                                            <extension url="http://hl7.org/fhir/StructureDefinition/minValue">
+                                                <valueDecimal value="1" />
+                                            </extension>
+                                            <extension url="http://hl7.org/fhir/StructureDefinition/maxValue">
+                                                <valueDecimal value="99" />
+                                            </extension>
+                                        </question>
+                                        <question>
+                                            <linkId value="11.1.1.1.1.2" />
+                                            <text value="Was your fall reported to a healthcare provider?" />
+                                            <type value="boolean" />
+                                            <option>
+                                                <code value="1" />
+                                                <display value="Yes" />
+                                            </option>
+                                            <option>
+                                                <code value="0" />
+                                                <display value="No" />
+                                            </option>
+                                        </question>
+                                    </group>
+                                </question>
+                            </group>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="12" />
+                        <title value="Medication" />
+                        <question>
+                            <linkId value="12.1" />
+                            <text value="8654-6  Hospital discharge medications " />
+                            <type value="open-choice" />
+                            <option>
+                                <code value="0" />
+                                <display value="Antihypertensive" />
+                            </option>
+                            <option>
+                                <code value="1" />
+                                <display value="Statin" />
+                            </option>
+                            <option>
+                                <code value="2" />
+                                <display value="Antidiabetic agent" />
+                            </option>
+                            <option>
+                                <code value="3" />
+                                <display value="Anticoagulant" />
+                            </option>
+                            <option>
+                                <code value="4" />
+                                <display value="Aspirin or other antiplatelet" />
+                            </option>
+                            <option>
+                                <code value="5" />
+                                <display value="Stopped taking another medication" />
+                            </option>
+                        </question>
+                        <question>
+                            <linkId value="12.2" />
+                            <text value="Did staff review your medications with you before discharge?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="1" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                        </question>
+                        <question>
+                            <linkId value="12.3" />
+                            <text value="Have you stopped any medications without being told to do so by your medical provider in the 30 days since hospital discharge?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="1" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                            <group>
+                                <linkId value="12.3.1" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="12.3" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="1" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="12.3.1.1" />
+                                    <text value="If yes, which meds?" />
+                                    <type value="open-choice" />
+                                    <option>
+                                        <code value="0" />
+                                        <display value="Antihypertensive" />
+                                    </option>
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Statin" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="Antidiabetic agent" />
+                                    </option>
+                                    <option>
+                                        <code value="3" />
+                                        <display value="Anticoagulant" />
+                                    </option>
+                                    <option>
+                                        <code value="4" />
+                                        <display value="Aspirin or other antiplatelet" />
+                                    </option>
+                                    <option>
+                                        <code value="5" />
+                                        <display value="Stopped taking another medication" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="12.3.1.2" />
+                                    <text value="Reason for stop taking meds" />
+                                    <type value="open-choice" />
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes - side effects" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="Yes - cost" />
+                                    </option>
+                                    <option>
+                                        <code value="3" />
+                                        <display value="Yes - no transportation" />
+                                    </option>
+                                    <option>
+                                        <code value="4" />
+                                        <display value="Yes - healthcare provider told them to stop" />
+                                    </option>
+                                    <option>
+                                        <code value="5" />
+                                        <display value="Yes - forget to take them" />
+                                    </option>
+                                    <option>
+                                        <code value="6" />
+                                        <display value="Yes- Ran out" />
+                                    </option>
+                                    <option>
+                                        <code value="7" />
+                                        <display value="Yes-Was away from home" />
+                                    </option>
+                                    <option>
+                                        <code value="8" />
+                                        <display value="Yes- Other" />
+                                    </option>
+                                </question>
+                            </group>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="13" />
+                        <title value="Follow up appointment" />
+                        <question>
+                            <linkId value="13.1" />
+                            <text value="Was an appointment made prior to discharge?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="1" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                            <group>
+                                <linkId value="13.1.1" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="13.1" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="1" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="13.1.1.1" />
+                                    <text value="If yes, was the appointment kept and they attended the visit, was it kept and the visit is still pending, was it rescheduled and attended or was it rescheduled and is pending?  " />
+                                    <type value="open-choice" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Kept and attended visit" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="Kept and visit Pending" />
+                                    </option>
+                                    <option>
+                                        <code value="3" />
+                                        <display value="Rescheduled and already attended" />
+                                    </option>
+                                    <option>
+                                        <code value="4" />
+                                        <display value="Rescheduled and pending" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="13.1.1.2" />
+                                    <text value="Who did patient see or will see?" />
+                                    <type value="open-choice" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Specialist" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="Primary Care Provider" />
+                                    </option>
+                                    <option>
+                                        <code value="3" />
+                                        <display value="both" />
+                                    </option>
+                                    <option>
+                                        <code value="4" />
+                                        <display value="Other" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="13.1.1.3" />
+                                    <text value="Date of first follow up appointment" />
+                                    <type value="dateTime" />
+                                </question>
+                                <question>
+                                    <linkId value="13.1.1.4" />
+                                    <text value="If the appointment wasn't attended, why?" />
+                                    <type value="open-choice" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="no transportation" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="didn't know about/remember appointment" />
+                                    </option>
+                                    <option>
+                                        <code value="3" />
+                                        <display value="scheduling conflict" />
+                                    </option>
+                                    <option>
+                                        <code value="4" />
+                                        <display value="sick" />
+                                    </option>
+                                    <option>
+                                        <code value="5" />
+                                        <display value="other" />
+                                    </option>
+                                </question>
+                            </group>
+                            <group>
+                                <linkId value="13.1.2" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="13.1" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="0" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="13.1.2.1" />
+                                    <text value="If no, has an appointment been scheduled since discharge?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                    <group>
+                                        <linkId value="13.1.2.1.1" />
+                                        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                            <extension url="#question">
+                                                <valueString value="13.1.2.1" />
+                                            </extension>
+                                            <extension url="#answer">
+                                                <valueCoding>
+                                                    <code value="1" />
+                                                </valueCoding>
+                                            </extension>
+                                        </extension>
+                                        <question>
+                                            <linkId value="13.1.2.1.1.1" />
+                                            <text value="Date of first follow up appointment" />
+                                            <type value="dateTime" />
+                                        </question>
+                                    </group>
+                                </question>
+                            </group>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="14" />
+                        <title value="Readmissions post discharge" />
+                        <question>
+                            <linkId value="14.1" />
+                            <text value="Has patient been readmitted to a hospital since discharge?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="1" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                            <option>
+                                <code value="2" />
+                                <display value="Not sure" />
+                            </option>
+                            <group>
+                                <linkId value="14.1.1" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="14.1" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="1" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="14.1.1.1" />
+                                    <text value="Readmitted within 30 days of discharge?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="Not sure" />
+                                    </option>
+                                    <group>
+                                        <linkId value="14.1.1.1.1" />
+                                        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                            <extension url="#question">
+                                                <valueString value="14.1.1.1" />
+                                            </extension>
+                                            <extension url="#answer">
+                                                <valueCoding>
+                                                    <code value="1" />
+                                                </valueCoding>
+                                            </extension>
+                                        </extension>
+                                        <question>
+                                            <linkId value="14.1.1.1.1" />
+                                            <text value="If yes, date of first readmission" />
+                                            <type value="dateTime" />
+                                        </question>
+                                        <question>
+                                            <linkId value="14.1.1.1.2" />
+                                            <text value="If yes, reason for first readmission" />
+                                            <type value="string" />
+                                        </question>
+                                    </group>
+                                </question>
+                                <question>
+                                    <linkId value="14.1.1.2" />
+                                    <text value="How many readmissions since discharge?" />
+                                    <type value="open-choice" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="1" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="2" />
+                                    </option>
+                                    <option>
+                                        <code value="3" />
+                                        <display value="3 or more" />
+                                    </option>
+                                    <option>
+                                        <code value="4" />
+                                        <display value="unknown or not sure" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="14.1.1.3" />
+                                    <text value="Was the readmission for a Medication problem resulting in an adverse event?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="14.1.1.4" />
+                                    <text value="Was the admission for Pneumonia?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="14.1.1.5" />
+                                    <text value="Was the admission for a Urinary tract infection?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                </question>
+                                <question>
+                                    <linkId value="14.1.1.6" />
+                                    <text value="Venous thromboembolic event?" />
+                                    <type value="boolean" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="Yes" />
+                                    </option>
+                                    <option>
+                                        <code value="0" />
+                                        <display value="No" />
+                                    </option>
+                                </question>
+                            </group>
+                        </question>
+                    </group>
+                    <group>
+                        <linkId value="15" />
+                        <title value="Died" />
+                        <question>
+                            <linkId value="15.1" />
+                            <text value="Died within 30 days of discharge?" />
+                            <type value="boolean" />
+                            <option>
+                                <code value="1" />
+                                <display value="Yes" />
+                            </option>
+                            <option>
+                                <code value="0" />
+                                <display value="No" />
+                            </option>
+                            <group>
+                                <linkId value="15.1.1" />
+                                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen">
+                                    <extension url="#question">
+                                        <valueString value="15.1" />
+                                    </extension>
+                                    <extension url="#answer">
+                                        <valueCoding>
+                                            <code value="1" />
+                                        </valueCoding>
+                                    </extension>
+                                </extension>
+                                <question>
+                                    <linkId value="15.1.1.2" />
+                                    <text value="If patient died, date of death" />
+                                    <type value="dateTime" />
+                                </question>
+                                <question>
+                                    <linkId value="15.1.1.3" />
+                                    <text value="If patient died, cause of death" />
+                                    <type value="open-choice" />
+                                    <option>
+                                        <code value="1" />
+                                        <display value="cerebrovascular" />
+                                    </option>
+                                    <option>
+                                        <code value="2" />
+                                        <display value="cardiovascular" />
+                                    </option>
+                                    <option>
+                                        <code value="3" />
+                                        <display value="other" />
+                                    </option>
+                                    <option>
+                                        <code value="4" />
+                                        <display value="unknown" />
+                                    </option>
+                                </question>
+                            </group>
+                        </question>
+                    </group>
+                </group>
+            </Questionnaire>
+        </resource>
+        <request>
+            <method value="PUT" />
+            <url value="Questionnaire/0" />
+        </request>
+    </entry>
+</Bundle>

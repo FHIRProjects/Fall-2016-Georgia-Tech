@@ -1,0 +1,74 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CancerDiagnosis"/>
+   <meta>
+      <versionId value="5"/>
+      <lastUpdated value="2016-12-04T10:42:52.257+00:00"/>
+   </meta>
+   <url value="StructureDefinition/CancerDiagnosis"/>
+   <name value="CancerDiagnosis"/>
+   <status value="draft"/>
+   <description value="Description of Cancer Diagnosis extending Condition"/>
+   <fhirVersion value="1.0.2"/>
+   <kind value="resource"/>
+   <constrainedType value="Condition"/>
+   <abstract value="false"/>
+   <base value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+   <differential>
+      <element>
+         <path value="Condition"/>
+         <type>
+            <code value="Condition"/>
+         </type>
+      </element>
+      <element>
+         <path value="Condition.patient"/>
+         <type>
+            <code value="Reference"/>
+            <profile value="StructureDefinition/CancerPatient"/>
+         </type>
+      </element>
+      <element>
+         <path value="Condition.evidence"/>
+         <slicing>
+            <discriminator value="id"/>
+            <rules value="openAtEnd"/>
+         </slicing>
+      </element>
+      <element>
+         <path value="Condition.evidence"/>
+         <name value="histologic_type"/>
+         <short value="Histologic Type"/>
+         <definition value="Histologic type of tumor"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element>
+         <path value="Condition.evidence"/>
+         <name value="behavior"/>
+         <short value="Behavior of tumor"/>
+         <definition value="Indication of behavior of tumor (maglignant, benign, uncertain)"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element>
+         <path value="Condition.evidence"/>
+         <name value="grade"/>
+         <short value="Grade of tumor"/>
+         <definition value="Used to indicate the grade, or degree of differentiation, of a tumor"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element>
+         <path value="Condition.evidence"/>
+         <name value="diagnostic_confirmation"/>
+         <short value="Diagnostic Confirmation"/>
+         <definition value="Provides diagnostic confirmation indicating the best method used to confirm the presense of the cancer being reported"/>
+      </element>
+      <element>
+         <path value="Condition.evidence"/>
+         <name value="laterality"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>

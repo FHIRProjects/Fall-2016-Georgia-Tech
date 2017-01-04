@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>edu.gatech.cs6440.teamdna</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.00.000</version>
+	</parent>
+
+	<artifactId>fhir</artifactId>
+	<name>FHIR Resource module</name>
+	<description>FHIR Resource module</description>
+
+	<dependencies>
+	<!-- 
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.moxy</artifactId>
+			<version>2.5.2</version>
+		</dependency>
+	 -->
+		<!-- testing begin -->
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+		</dependency>		
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+	        <plugin>
+	            <groupId>org.codehaus.mojo</groupId>
+	            <artifactId>jaxb2-maven-plugin</artifactId>
+	            <version>2.3</version>
+	            <executions>
+	                <execution>
+	                    <id>xjc</id>
+	                    <goals>
+	                        <goal>xjc</goal>
+	                    </goals>
+	                    <configuration>
+	                    	<sources>
+	                    		<source>${basedir}/src/main/xsd/</source>
+	                    	</sources>
+	                    </configuration>
+	                </execution>
+	            </executions>
+	            <configuration>
+	                <!-- The package of your generated sources -->
+	                <packageName>edu.gatech.cs6440.teamdna.fhir</packageName>
+	            </configuration>
+	        </plugin>			
+		</plugins>
+	</build>
+
+	<properties>
+	</properties>
+</project>

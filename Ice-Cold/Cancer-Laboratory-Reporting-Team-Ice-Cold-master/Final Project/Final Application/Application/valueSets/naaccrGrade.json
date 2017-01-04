@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "id": "naaccrGrade",
+  "compose": {
+    "include": [
+      {
+        "system": "http://phinvads.cdc.gov/vads/ViewValueSet.action?id=ED08D650-DD04-E011-9273-00188B39829B",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Grade I"
+          },
+          {
+            "code": "2",
+            "display": "Grade II"
+          },
+          {
+            "code": "3",
+            "display": "Grade III"
+          },
+          {
+            "code": "4",
+            "display": "Grade IV"
+          },
+          {
+            "code": "5",
+            "display": "T-cell"
+          },
+          {
+            "code": "6",
+            "display": "B-cell"
+          },
+          {
+            "code": "7",
+            "display": "Null cell"
+          },
+          {
+            "code": "8",
+            "display": "NK (natural killer) cell"
+          }
+        ]
+      }
+    ]
+  },
+  "name": "naaccrGrade",
+  "description": "Code for the grade or degree of differentiation of the reportable tumor.",
+  "contact": [
+    {
+      "name": "clinfhir"
+    }
+  ],
+  "url": "http://icecoldfhirga.tech/baseDstu3/ValueSet/naaccrGrade",
+  "extension": [
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/vsDirectConcept",
+      "valueBoolean": true
+    }
+  ]
+}

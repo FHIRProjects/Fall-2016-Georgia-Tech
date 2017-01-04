@@ -1,0 +1,40 @@
+/****** Object:  Table [dbo].[DoC_PD_Master]    Script Date: 10/3/2016 2:34:18 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[DoC_PD_Master](
+	[DoC_PD_ID] [varchar](50) NULL,
+	[LICENSE_NO] [varchar](50) NULL,
+	[PROFESSION_NAME] [varchar](50) NULL,
+	[LICENSE_NAME] [varchar](50) NULL,
+	[FIRST_NAME] [varchar](50) NULL,
+	[LAST_NAME] [varchar](50) NULL,
+	[SORT_NAME] [varchar](150) NULL,
+	[FULL_NAME] [varchar](150) NULL,
+	[AKA] [varchar](100) NULL,
+	[NAME_SUFFIX] [varchar](50) NULL,
+	[DATE_OF_BIRTH] [varchar](50) NULL,
+	[SSN] [varchar](50) NULL,
+	[ISSUE_DATE] [varchar](50) NULL,
+	[EXPIRATION_DATE] [varchar](50) NULL,
+	[LIC_STATUS] [varchar](50) NULL,
+	[DATE_THIS_STATUS] [varchar](50) NULL,
+	[ADDR_LINE_1] [varchar](100) NULL,
+	[ADDR_LINE_2] [varchar](100) NULL,
+	[ADDR_CITY] [varchar](50) NULL,
+	[ADDR_STATE] [varchar](50) NULL,
+	[ADDR_ZIPCODE] [varchar](50) NULL,
+	[ADDR_COUNTY] [varchar](50) NULL,
+	[ADDR_PHONE] [varchar](50) NULL,
+	[ADDR_EMAIL] [varchar](50) NULL,
+	[DATE_DECEASED] [varchar](50) NULL,
+	[LICENSE_NAME2] [varchar](50) NULL,
+	[DISCIPLINE] [varchar](50) NULL,
+	[FEDERAL_ID] [varchar](50) NULL
+) ON [PRIMARY]

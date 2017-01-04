@@ -1,0 +1,44 @@
+<jxb:bindings version="2.1"
+               xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+               jxb:extensionBindingPrefixes="xjc">
+  <jxb:globalBindings>
+    <xjc:simple/>
+  </jxb:globalBindings>
+  <jxb:bindings schemaLocation="../xsd/fhir-xhtml.xsd">
+  <!--
+    <jxb:schemaBindings>
+      <jxb:package name="org.w3.xmlschema"/>
+    </jxb:schemaBindings>
+    <jxb:bindings node="//xs:complexType[@name='complexType']">
+      <jxb:class name="AbstractComplexType"/>
+    </jxb:bindings> 
+    <jxb:bindings node="//xs:complexType[@name='group']">
+      <jxb:class name="AbstractGroup"/>
+    </jxb:bindings> 
+    <jxb:bindings node="//xs:complexType[@name='attributeGroup']">
+      <jxb:class name="AbstractAttributeGroup"/>
+    </jxb:bindings> 
+    <jxb:bindings node="//xs:complexType[@name='simpleType']">
+      <jxb:class name="AbstractSimpleType"/>
+    </jxb:bindings> 
+    <jxb:bindings node="//xs:complexType[@name='element']">
+      <jxb:class name="AbstractElement"/>
+    </jxb:bindings> 
+    <jxb:bindings node="//xs:complexType[@name='attribute']">
+      <jxb:class name="BaseAttribute"/>
+    </jxb:bindings> 
+  -->
+    <jxb:schemaBindings>
+      <jxb:nameXmlTransform>
+        <jxb:elementName suffix="Element"/>
+      </jxb:nameXmlTransform>
+    </jxb:schemaBindings>
+  </jxb:bindings>
+  <jxb:bindings schemaLocation="../xsd/fhir-single.xsd">
+    <jxb:schemaBindings>
+      <jxb:package name="org.w3.xmlschema"/>
+    </jxb:schemaBindings>
+  </jxb:bindings>  
+</jxb:bindings>

@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "id": "raceAndEthnicity-CDC",
+  "compose": {
+    "include": [
+      {
+        "system": "http://phinvads.cdc.gov/vads/ViewValueSet.action?id=35D34BBC-617F-  DD11-B38D-00188B398520",
+        "concept": [
+          {
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          },
+          {
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        ]
+      }
+    ]
+  },
+  "name": "raceAndEthnicity-CDC",
+  "description": "Race and Ethnicity",
+  "contact": [
+    {
+      "name": "clinfhir"
+    }
+  ],
+  "url": "http://icecoldfhirga.tech/baseDstu3/ValueSet/raceAndEthnicity-CDC",
+  "extension": [
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/vsDirectConcept",
+      "valueBoolean": true
+    }
+  ],
+  "publisher": "http://icecoldfhirga.tech/baseDstu3/"
+}

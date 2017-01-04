@@ -1,0 +1,1 @@
+The files in this folder show different experimentation with authorizing with various FHIR servers, including SMART-on-FHIR and HAPI-FHIR.  In the end, we decided to spend more time on functionality as a proof of concept by pushing resources to an open FHIR server rather than spend more time on authorization.

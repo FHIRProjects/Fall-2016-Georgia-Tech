@@ -1,0 +1,8 @@
+Preliminary files not part of the application
+    addUserToPostgres.py        -   File used to initially populate PostgreSQL server with sample data.
+    createPatientDriver.py      -   File used to test the createPaitent.py file for FHIR Resource creation.
+    createPractitioner.py       -   File used to create Practitioner objects in first attack of solving our problem.
+    createPractitionerDriver.py -   File used to test createPractitioner.py file for FHIR Resource creation.
+    DBAccessorDriver.py         -   File used to test DBAccessor.py for accessing PostgreSQL server.
+    getRecordFromPostgres.py    -   Proof-of-concept code to get practitioner records from PostgreSQL server.
+    

@@ -1,0 +1,17 @@
+##################################################
+
+1- Please locate in the Research directory the CDC guidelines that we researched on.
+
+2- We had to initially research on CDS hooks to create triggers but that didnt work out as we didnt have access to real EHR.  
+   So we created our own CDS hooks like application.
+	http://cds-hooks.org/
+	https://github.com/cds-hooks/cds-hooks/wiki/Use-Cases	
+	
+3- Several research papers like:
+	http://smarthealthit.org/wp-content/uploads/SMART-on-FHIR-White-Paper-for-HIMSS-15-06Apr2015.pdf
+	http://www.ringholm.com/persist/FHIR_for_executives.pdf
+	https://www.hl7.org/documentcenter/public_temp_FEBB9745-1C23-BA17-0CFC36D9BA9ECA4E/newsletters/HL7_NEWS_20140429.pdf
+	https://www.healthit.gov/facas/FACAS/sites/faca/files/PMTF_SMART_on_FHIR_genomics_Facilitating_standardized_clinico-genomic_apps_2015-08-19.pdf 
+	https://www.himss.org/sites/himssorg/files/FileDownloads/HIE%20Roundtable%209_17%20-%20Josh%20Mandel%20-%20SMART%20on%20FHIR_%202015.pdf
+	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2245278/
+	

@@ -1,0 +1,66 @@
+Date/Time Created	VADS Content Version	VADS Application Version	Download Activity	Number of Items Selected
+11/02/2016 01:34:40	3.0.0	3.1.1	Value Set Concept Detail Result Selection	62 of 62
+
+Concept Code	Concept Name	Preferred Concept Name	Preferred Alternate Code	Code System OID	Code System Name	Code System Code	Code System Version	HL7 Table 0396 Code	Value Set Code	Value Set Version
+81154-7	DENV + CHIKV + ZIKV Pnl Patient PCR	Dengue and Chikungunya and Zika virus panel by Probe and target amplification method		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+81151-3	DENV 1+2+3+4 5' UTR RNA CSF Ql PCR	Dengue virus 1+2+3+4 5' UTR RNA [Presence] in Cerebral spinal fluid by Probe and target amplification method		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+81150-5	DENV 1+2+3+4 5' UTR RNA Ser Ql PCR	Dengue virus 1+2+3+4 5' UTR RNA [Presence] in Serum by Probe and target amplification method		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+77958-7	DENV 1+2+3+4 RNA CSF Ql PCR	Dengue virus 1 and 2 and 3 and 4 RNA [Presence] in Cerebral spinal fluid by Probe and target amplification method		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+16740-3	DENV Ab Ser Ql	Dengue virus Ab [Presence] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+40748-6	DENV Ab Ser Ql HAI	Dengue virus Ab [Presence] in Serum by Hemagglutination inhibition		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+7859-2	DENV Ab Ser-aCnc	Dengue virus Ab [Units/volume] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+33606-5	DENV Ab Titr Ser	Dengue virus Ab [Titer] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+40515-9	DENV Ab Titr Ser CF	Dengue virus Ab [Titer] in Serum by Complement fixation		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+55369-3	DENV Ab Titr Ser HAI	Dengue virus Ab [Titer] in Serum by Hemagglutination inhibition		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+33578-6	DENV Ab Titr Ser IF	Dengue virus Ab [Titer] in Serum by Immunofluorescence		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+55438-6	DENV Ab Titr Ser Nt	Dengue virus Ab [Titer] in Serum by Neutralization test		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+31343-7	DENV Ab XXX Ql	Dengue virus Ab [Presence] in Unspecified specimen		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+50036-3	DENV Ab XXX Ql Nt	Dengue virus Ab [Presence] in Unspecified specimen by Neutralization test		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+31342-9	DENV Ab XXX-aCnc	Dengue virus Ab [Units/volume] in Unspecified specimen		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+31798-2	DENV Ag Ser Ql	Dengue virus Ag [Presence] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+6384-2	DENV Ag Ser Ql IF	Dengue virus Ag [Presence] in Serum by Immunofluorescence		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+31799-0	DENV Ag XXX Ql	Dengue virus Ag [Presence] in Unspecified specimen		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+6385-9	DENV Ag XXX Ql IF	Dengue virus Ag [Presence] in Unspecified specimen by Immunofluorescence		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+6386-7	DENV DNA Ser Ql Prb	Dengue virus DNA [Presence] in Serum by DNA probe		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+6387-5	DENV DNA XXX Ql Prb	Dengue virus DNA [Presence] in Unspecified specimen by DNA probe		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+23991-3	DENV IgG Ser EIA-aCnc	Dengue virus IgG Ab [Units/volume] in Serum by Immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+29676-4	DENV IgG Ser Ql	Dengue virus IgG Ab [Presence] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+29661-6	DENV IgG Ser Ql EIA	Dengue virus IgG Ab [Presence] in Serum by Immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+23958-2	DENV IgG Ser-aCnc	Dengue virus IgG Ab [Units/volume] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+6811-4	DENV IgG Titr Ser	Dengue virus IgG Ab [Titer] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+41878-0	DENV IgG+IgM Pnl Ser EIA-aCnc	Dengue virus IgG and IgM panel [Units/volume] - Serum by Immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+51785-4	DENV IgG+IgM Ser-Imp	Dengue virus IgG and IgM [interpretation] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+75223-8	DENV IgG+IgM SerPlBld EIA.rapid	Dengue virus IgG and IgM [Identifier] in Serum, Plasma or Blood by Rapid immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+34721-1	DENV IgM CSF Ql	Dengue virus IgM Ab [Presence] in Cerebral spinal fluid		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+23992-1	DENV IgM Ser EIA-aCnc	Dengue virus IgM Ab [Units/volume] in Serum by Immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+25338-5	DENV IgM Ser Ql	Dengue virus IgM Ab [Presence] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+29663-2	DENV IgM Ser Ql EIA	Dengue virus IgM Ab [Presence] in Serum by Immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+25392-2	DENV IgM Ser Ql IB	Dengue virus IgM Ab [Presence] in Serum by Immunoblot (IB)		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+23968-1	DENV IgM Ser-aCnc	Dengue virus IgM Ab [Units/volume] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+6812-2	DENV IgM Titr Ser	Dengue virus IgM Ab [Titer] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+75377-2	DENV NS1 Ag SerPlBld Ql EIA.rapid	Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+22250-5	DENV1 Ab Ser Ql	Dengue virus 1 Ab [Presence] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+7854-3	DENV1 Ab Ser Ql EIA	Dengue virus 1 Ab [Presence] in Serum by Immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+31338-7	DENV1 Ab Ser-aCnc	Dengue virus 1 Ab [Units/volume] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+16736-1	DENV1 Ab Titr Ser	Dengue virus 1 Ab [Titer] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+60262-3	DENV1 RNA Ser Ql PCR	Dengue virus 1 RNA [Presence] in Serum by Probe and target amplification method		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+7855-0	DENV1+2+3+4 RNA Ser Ql PCR	Dengue virus 1+2+3+4 RNA [Presence] in Serum by Probe and target amplification method		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+22251-3	DENV2 Ab Ser Ql	Dengue virus 2 Ab [Presence] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+7856-8	DENV2 Ab Ser Ql EIA	Dengue virus 2 Ab [Presence] in Serum by Immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+31339-5	DENV2 Ab Ser-aCnc	Dengue virus 2 Ab [Units/volume] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+16737-9	DENV2 Ab Titr Ser	Dengue virus 2 Ab [Titer] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+60420-7	DENV2 RNA Ser Ql PCR	Dengue virus 2 RNA [Presence] in Serum by Probe and target amplification method		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+22252-1	DENV3 Ab Ser Ql	Dengue virus 3 Ab [Presence] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+7857-6	DENV3 Ab Ser Ql EIA	Dengue virus 3 Ab [Presence] in Serum by Immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+31340-3	DENV3 Ab Ser-aCnc	Dengue virus 3 Ab [Units/volume] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+16738-7	DENV3 Ab Titr Ser	Dengue virus 3 Ab [Titer] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+60419-9	DENV3 RNA Ser Ql PCR	Dengue virus 3 RNA [Presence] in Serum by Probe and target amplification method		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+22253-9	DENV4 Ab Ser Ql	Dengue virus 4 Ab [Presence] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+7858-4	DENV4 Ab Ser Ql EIA	Dengue virus 4 Ab [Presence] in Serum by Immunoassay		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+31341-1	DENV4 Ab Ser-aCnc	Dengue virus 4 Ab [Units/volume] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+16739-5	DENV4 Ab Titr Ser	Dengue virus 4 Ab [Titer] in Serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+60418-1	DENV4 RNA Ser Ql PCR	Dengue virus 4 RNA [Presence] in Serum by Probe and target amplification method		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+6382-6	Deprecated DENV Ab Ser	Deprecated Dengue virus Ab in serum		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+6383-4	Deprecated DENV Ab XXX	Deprecated Dengue virus Ab in unspecified specimen		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+82464-9	Mosquito count Environ spec	Mosquito count [#] in Environmental specimen		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8
+82465-6	Mosquito Environ spec	Mosquito identified [Type] in Environmental specimen		2.16.840.1.113883.6.1	LOINC	PH_LOINC	2.56	LN	PHVS_LabTestName_Dengue	8

@@ -1,0 +1,92 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "birthplaceState",
+  "url": "http://icecoldfhirga.tech/baseDstu3/birthplaceState",
+  "name": "birthplaceState",
+  "status": "draft",
+  "abstract": false,
+  "publisher": "http://icecoldfhirga.tech/baseDstu3/",
+  "contextType": "resource",
+  "context": [
+    "Element"
+  ],
+  "identifier": [
+    {
+      "system": "http://clinfhir.com",
+      "value": "author"
+    }
+  ],
+  "kind": "complex-type",
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "keyword": [
+    {
+      "system": "http://fhir.hl7.org.nz/NamingSystem/application",
+      "code": "clinfhir"
+    }
+  ],
+  "snapshot": {
+    "element": [
+      {
+        "path": "Extension",
+        "name": "birthplaceState",
+        "min": 0,
+        "max": "1",
+        "short": "Two-letter alphabetic codes",
+        "definition": "Two-letter alphabetic codes",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "1"
+        },
+        "id": "Extension0"
+      },
+      {
+        "path": "Extension.url",
+        "name": "birthplaceState",
+        "representation": [
+          "xmlAttr"
+        ],
+        "definition": "Two-letter alphabetic codes",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "id": "Extension.url0"
+      },
+      {
+        "path": "Extension.valueCode",
+        "name": "birthplaceState",
+        "short": "Two-letter alphabetic codes",
+        "definition": "Two-letter alphabetic codes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "base": {
+          "path": "Extension.valueCode",
+          "min": 0,
+          "max": "1"
+        },
+        "binding": {
+          "strength": "extensible",
+          "valueSetUri": "http://hl7.org/fhir/ValueSet/usps-state",
+          "description": "Two-letter alphabetic codes"
+        },
+        "id": "Extension.value[x]0"
+      }
+    ]
+  }
+}

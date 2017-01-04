@@ -1,0 +1,167 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "id": "countryCode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/v3/hl7Realm",
+        "concept": [
+          {
+            "code": "US",
+            "display": "United States of America"
+          },
+          {
+            "code": "AR",
+            "display": "Argentina"
+          },
+          {
+            "code": "AT",
+            "display": "Austria"
+          },
+          {
+            "code": "AU",
+            "display": "Australia"
+          },
+          {
+            "code": "BR",
+            "display": "Brazil"
+          },
+          {
+            "code": "CA",
+            "display": "Canada"
+          },
+          {
+            "code": "CH",
+            "display": "Switzerland"
+          },
+          {
+            "code": "CL",
+            "display": "Chile"
+          },
+          {
+            "code": "CN",
+            "display": "China"
+          },
+          {
+            "code": "CO",
+            "display": "Columbia"
+          },
+          {
+            "code": "CZ",
+            "display": "Czech Republic"
+          },
+          {
+            "code": "DE",
+            "display": "Germany"
+          },
+          {
+            "code": "DK",
+            "display": "Denmark"
+          },
+          {
+            "code": "ES",
+            "display": "Spain"
+          },
+          {
+            "code": "FI",
+            "display": "Finland"
+          },
+          {
+            "code": "FR",
+            "display": "France"
+          },
+          {
+            "code": "GR",
+            "display": "Greece"
+          },
+          {
+            "code": "HR",
+            "display": "Croatia"
+          },
+          {
+            "code": "IE",
+            "display": "Ireland"
+          },
+          {
+            "code": "IN",
+            "display": "India"
+          },
+          {
+            "code": "IT",
+            "display": "Italy"
+          },
+          {
+            "code": "JP",
+            "display": "Japan"
+          },
+          {
+            "code": "KR",
+            "display": "Korea"
+          },
+          {
+            "code": "MX",
+            "display": "Mexico"
+          },
+          {
+            "code": "NL",
+            "display": "The Netherlands"
+          },
+          {
+            "code": "NZ",
+            "display": "New Zealand"
+          },
+          {
+            "code": "RO",
+            "display": "Romania"
+          },
+          {
+            "code": "RU",
+            "display": "Russian Federation"
+          },
+          {
+            "code": "SE",
+            "display": "Sweden"
+          },
+          {
+            "code": "SG",
+            "display": "Singapore"
+          },
+          {
+            "code": "SOA",
+            "display": "Southern Africa"
+          },
+          {
+            "code": "TR",
+            "display": "Turkey"
+          },
+          {
+            "code": "TW",
+            "display": "Taiwan"
+          },
+          {
+            "code": "UV",
+            "display": "Universal"
+          },
+          {
+            "code": "UY",
+            "display": "Uruguay"
+          },
+          {
+            "code": "GB",
+            "display": "Great Britain"
+          }
+        ]
+      }
+    ]
+  },
+  "name": "countryCode",
+  "description": "Country Code",
+  "contact": [
+    {
+      "name": "clinfhir"
+    }
+  ],
+  "url": "http://icecoldfhirga.tech/baseDstu3/ValueSet/countryCode",
+  "publisher": "http://icecoldfhirga.tech/baseDstu3/"
+}

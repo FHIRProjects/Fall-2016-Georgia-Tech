@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+  <Patient>
+    <id value="99900001"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Bruce Wayne</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+        <text value="Medical record number"/>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="99900001"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Wayne"/>
+      <given value="Bruce"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="800-834-9387"/>
+      <use value="home"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="bruce.wayne@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="1975-10-26" />
+    <address>
+      <use value="home"/>
+      <line value="17 Oak Rd"/>
+      <city value="Belmont"/>
+      <state value="MA"/>
+      <postalCode value="02478"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Patient/99900001"/>
+  </request>
+</entry>
+
+
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="1037"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2016-09-12T04:00:00Z: inpatient encounter - hemorrhage</div>
+      </text>
+      <status value="finished"/>
+      <class value="inpatient"/>
+      <patient>
+        <reference value="Patient/99900001"/>
+      </patient>
+      <period>
+       <start value="2016-09-12T04:00:00Z"/>
+       <end value="2016-09-20T04:20:00Z"/>
+      </period>
+      
+      <reason>
+       <coding>
+          <system value="http://hl7.org/fhir/sid/icd-10"/>
+          <code value="I63012"/>
+          <display value="Cerebral infarction due to thrombosis of left vertebral artery"/>
+       </coding>
+      </reason> 
+<!--   No indication, because no referral took place   -->
+ <hospitalization> 
+ <dischargeDiagnosis>
+    <reference value="Condition/559"/>
+ </dischargeDiagnosis> 
+  <destination>
+    <reference value="Location/4" />
+ </destination>
+ 
+  
+  
+  
+ </hospitalization>
+      
+      
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/1036"/>
+  </request>
+</entry>
+ 
+  <entry>
+  <resource>
+ 
+ 
+ <Condition>
+  <id value="559"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Cerebral infarction due to thrombosis of left vertebral artery</div>   
+   </text>
+    <patient>
+      <reference value="Patient/99900001"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://hl7.org/fhir/sid/icd-10"/>
+        <code value="I63012"/>
+        <display value="Cerebral infarction due to thrombosis of left vertebral artery"/>
+      </coding>
+      <text value="Cerebral infarction due to thrombosis of left vertebral artery"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2016-09-12T04:00:00Z"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/559"/>
+  </request>
+</entry>
+ 
+  <entry>
+  <resource>
+ 
+ <Condition>
+  <id value="558"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Localized, primary osteoarthritis of the lower leg</div>   
+   </text>
+    <patient>
+      <reference value="Patient/99900001"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="201836008"/>
+        <display value="Localized, primary osteoarthritis of the lower leg"/>
+      </coding>
+      <text value="Localized, primary osteoarthritis of the lower leg"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2007-10-28"/>
+   
+  </Condition>
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/560"/>
+  </request>
+</entry>
+
+</Bundle>

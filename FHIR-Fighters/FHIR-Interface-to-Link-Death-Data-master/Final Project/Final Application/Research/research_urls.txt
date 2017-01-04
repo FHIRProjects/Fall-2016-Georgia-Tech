@@ -1,0 +1,28 @@
+Research URLS:
+
+* Create a FHIR Server
+** GT HAPI FHIR server 	: https://drive.google.com/open?id=0Byd6JOS6uLKfTmdBV2hiSDhyNjg
+** SMART on FHIR 		: https://github.com/smart-on-fhir/installer
+** HAPI FHIR CLI 		: https://fhirblog.com/2016/03/06/building-your-own-fhir-server/
+
+
+* Authorizing to SMART on FHIR Server
+** https://github.com/burnash/gspread/wiki/How-to-get-OAuth-access-token-in-console%3F
+
+* Python FHIR Resources
+** SMART FHIR Python Client		: http://docs.smarthealthit.org/clients/python/
+** HTTP Request API in Python 	: http://docs.python-requests.org/en/latest/index.html
+** pypi FHIR api 				: https://pypi.python.org/pypi/fhir/0.0.4
+
+* Other Python Resources
+** PostGres python client 												:	https://wiki.postgresql.org/wiki/Psycopg2
+** Python random name generator for generating fictitious practitioners : http://treyhunner.com/2013/02/random-name-generator/
+
+* Other FHIR Resources
+** FHIR Patient resource documentation : https://www.hl7.org/fhir/patient.html
+** FHIR paractitioner resource documentation : https://www.hl7.org/fhir/practitioner.html
+** https://github.com/dportnoy/nppes_fhir_demo/tree/master/nppes_fhir_demo
+** http://david.portnoy.us/tag/provider-directories/
+** http://java-coders.com/p/HHSIDEAlab/provider-data-tools
+** http://argonautwiki.hl7.org/index.php?title=Practitioner
+

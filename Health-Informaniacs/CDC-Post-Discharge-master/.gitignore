@@ -1,0 +1,15 @@
+strokeservice/target/*
+triggerservice/target/*
+strokeservice/.classpath
+strokeservice/.project
+strokeservice/.settings
+
+triggerservice/.settings/org.eclipse.m2e.core.prefs
+
+triggerservice/.settings/org.eclipse.jdt.core.prefs
+
+triggerservice/.settings/org.eclipse.core.resources.prefs
+
+triggerservice/.project
+
+triggerservice/.classpath

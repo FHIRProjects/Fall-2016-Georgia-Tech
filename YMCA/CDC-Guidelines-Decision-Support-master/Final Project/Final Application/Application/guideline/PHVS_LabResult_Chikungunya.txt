@@ -1,0 +1,5 @@
+Date/Time Created	VADS Content Version	VADS Application Version	Download Activity	Number of Items Selected
+11/02/2016 01:31:30	3.0.0	3.1.1	Value Set Concept Detail Result Selection	1 of 1
+
+Concept Code	Concept Name	Preferred Concept Name	Preferred Alternate Code	Code System OID	Code System Name	Code System Code	Code System Version	HL7 Table 0396 Code	Value Set Code	Value Set Version
+2423009	Chikungunya virus (organism)	Chikungunya virus	L-32206	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Chikungunya	2

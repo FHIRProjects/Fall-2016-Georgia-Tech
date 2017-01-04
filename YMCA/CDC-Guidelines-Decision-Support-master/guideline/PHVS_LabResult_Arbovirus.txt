@@ -1,0 +1,16 @@
+Date/Time Created	VADS Content Version	VADS Application Version	Download Activity	Number of Items Selected
+11/02/2016 00:43:35	3.0.0	3.1.1	Value Set Concept Detail Result Selection	12 of 12
+
+Concept Code	Concept Name	Preferred Concept Name	Preferred Alternate Code	Code System OID	Code System Name	Code System Code	Code System Version	HL7 Table 0396 Code	Value Set Code	Value Set Version
+243617008	Bunyavirus serogroup California (organism)	Bunyavirus serogroup California	L-3380E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+64979004	California encephalitis virus (organism)	California encephalitis virus	L-33841	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+243601002	Eastern equine encephalitis virus (organism)	Eastern equine encephalitis virus	L-322FC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+9194001	Jamestown Canyon virus (organism)	Jamestown Canyon virus	L-33843	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+61399004	Keystone virus (organism)	Keystone virus	L-33845	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+30434006	La Crosse virus (organism)	La Crosse virus	L-33846	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+45838003	Powassan virus (organism)	Powassan virus	L-32347	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+58432001	Saint Louis encephalitis virus (organism)	St. Louis encephalitis virus	L-32352	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+28732002	Snowshoe hare virus (organism)	Snowshoe hare virus	L-33850	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+87919008	Trivittatus virus (organism)	Trivittatus virus	L-33852	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+57311007	West Nile virus (organism)	West Nile virus	L-32368	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4
+11428003	Western equine encephalomyelitis virus (organism)	Western equine encephalomyelitis virus	L-32224	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_LabResult_Arbovirus	4

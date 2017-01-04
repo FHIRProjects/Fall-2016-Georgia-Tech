@@ -1,0 +1,210 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>edu.gatech.cs6440.teamdna</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.00.000</version>
+	<name>Parent module</name>
+	<description>FHIR Resource - Directory of Clinicians Parent POM</description>
+	<packaging>pom</packaging>
+	<!--url></url -->
+	<organization>
+		<name>Team DNA - Georgia Institute of Technology CS6440</name>
+	</organization>
+	<developers>
+		<developer>
+			<name>Aaron Higdon</name>
+			<email></email>
+			<roles>
+				<role>Team Member</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Dan Frakes</name>
+			<email></email>
+			<roles>
+				<role>Team Member</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Dan Abel</name>
+			<email></email>
+			<roles>
+				<role>Team Member</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>David Vinegar</name>
+			<email></email>
+			<roles>
+				<role>Team Member</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Nate Smith</name>
+			<email></email>
+			<roles>
+				<role>Team Member</role>
+			</roles>
+		</developer>
+	</developers>
+	
+	<modules>
+		<module>fhir</module>
+		<module>database</module>
+		<module>dao</module>
+		<module>service</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>edu.gatech.cs6440.teamdna</groupId>
+				<artifactId>database</artifactId>
+				<version>1.00.000-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.gatech.cs6440.teamdna</groupId>
+				<artifactId>fhir</artifactId>
+				<version>1.00.000-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.gatech.cs6440.teamdna</groupId>
+				<artifactId>dao</artifactId>
+				<version>1.00.000-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.gatech.cs6440.teamdna</groupId>
+				<artifactId>service</artifactId>
+				<version>1.00.000-SNAPSHOT</version>
+			</dependency>
+
+			<!-- misc begin -->
+			<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>3.0.7.RELEASE</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+				<version>3.0.7.RELEASE</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>3.0.7.RELEASE</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-web</artifactId>
+				<version>3.0.7.RELEASE</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/com.sun.jersey.contribs/jersey-spring -->
+			<dependency>
+				<groupId>com.sun.jersey.contribs</groupId>
+				<artifactId>jersey-spring</artifactId>
+    			<version>1.19.2</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-web</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-beans</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-context</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-json -->
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-json</artifactId>
+    			<version>1.19.2</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.sun.jersey.contribs/jersey-multipart -->
+			<dependency>
+			    <groupId>com.sun.jersey.contribs</groupId>
+			    <artifactId>jersey-multipart</artifactId>
+			    <version>1.19.2</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.0</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-csv -->
+			<dependency>
+			    <groupId>org.apache.commons</groupId>
+			    <artifactId>commons-csv</artifactId>
+			    <version>1.4</version>
+			</dependency>
+			<!--// misc end -->
+
+			<!-- testing begin -->
+			<!-- https://mvnrepository.com/artifact/junit/junit -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.12</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-all</artifactId>
+				<version>1.10.19</version>
+				<scope>test</scope>
+			</dependency>
+			<!--// testing end -->
+		</dependencies>
+	</dependencyManagement>
+	<build>
+		<pluginManagement>
+			<plugins>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<!-- To over-ride any of these settings add a profile in your settings.xml -->
+	<properties>
+
+	</properties>
+
+	<profiles>
+		<!-- profile used when creating a build for a release -->
+		<profile>
+			<id>release</id>
+			<activation>
+				<property>
+					<name>release</name>
+					<value>true</value>
+				</property>
+			</activation>
+			<properties>
+
+			</properties>
+		</profile>
+	</profiles>
+
+</project>

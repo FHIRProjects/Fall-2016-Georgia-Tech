@@ -1,0 +1,78 @@
+#!/usr/bin/python
+
+# https://wiki.postgresql.org/wiki/Psycopg2
+# https://github.com/treyhunner/names
+
+import psycopg2
+import sys
+import pprint
+import datetime
+import names
+import random
+ 
+def main():
+
+	# Database Constants
+    host = "fhir.ehoth.net"                      
+    dbname = "fhirfighters"
+    user = "fhirfighters"
+    password = "GTcs6440!"
+    table = "providerdeathsampledata"
+	
+	# Build connection string
+    conn_string = "host=%s dbname=%s user=%s password=%s" % (host,dbname,user,password)
+	
+
+    #print(insertCommand)
+	# print the connection string we will use to connect
+    print ("Connecting to database\n	->%s" % (host))
+ 
+	# get a connection, if a connect cannot be made an exception will be raised here
+    conn = psycopg2.connect(conn_string)
+	
+	# conn.cursor will return a cursor object, you can use this cursor to perform queries.
+    cursor = conn.cursor()
+	
+    ### REWRITTEN FOR THE PROPER FORMAT 11/4/2016	
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('59205230-6F23-12A6-9087-A5794699A392','933342-3047','2/11/1967','2','201626406','7/1/2016','7/1/2016','2016','2','16','7/1/2016','100','JENSON','ALEXIS');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('225248E5-5DB8-910F-673A-4F570F4724D5','206751-2124','1/5/1954','2','201615832','7/10/2016','7/10/2016','2016','12','8','7/10/2016','100','FAUX','KATHERINE');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('22857098-865A-95E2-824C-E592046E71DD','178069-1773','7/5/1940','2','201648387','7/17/2016','7/17/2016','2016','9','2','7/17/2016','100','WIMMER','TAWNLETHIA');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('1EFB6D1C-4E8B-4CF1-6CA1-0FB2DEF41F1B','204738-1889','4/8/1942','1','201660863','7/27/2016','7/27/2016','2016','9','5','7/27/2016','100','TINEY','COBY JAMES');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('12014458-0E09-510F-4FAB-7BC029B75478','981423-3117','9/13/1942','1','201618747','7/29/2016','7/29/2016','2016','9','3','7/29/2016','100','JAMES','BRENT');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('F33F634A-65E4-9E67-2C8F-368D6D7F5728','579726-1588','5/23/1944','1','201611041','8/1/2016','8/1/2016','2016','6','10','8/1/2016','100','GILBERT','THAYDE L');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('73FD481A-240D-4EDB-826F-9E34E08A5DB5','628677-1288','9/14/1944','1','201619489','8/6/2016','8/6/2016','2016','1','12','8/6/2016','100','MILLER','CHAD');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('5D95952B-336D-33E1-2815-2A3B8BF88B02','399706-2861','4/2/1945','1','201671879','8/9/2016','8/9/2016','2016','7','10','8/9/2016','100','WALKER','TYLER');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('E901F218-40C5-7A57-512D-74B6353287E3','828067-1275','10/17/1945','2','201680284','8/15/2016','8/15/2016','2016','10','30','8/15/2016','100','HERBERT','HELMER');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('B4F616FF-0390-39AF-6ECE-5C57B06B7CC0','323140-1906','3/16/1947','1','201631475','8/19/2016','8/19/2016','2016','7','4','8/19/2016','100','POPE','TESSA');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('78FE6871-34AA-5D0C-4A61-3F883EB34C46','958871-2518','11/11/1948','2','201612383','8/20/2016','8/20/2016','2016','4','10','8/20/2016','100','VALERIO','CLINT');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('4DF069C7-8665-1C39-1E80-136A7E9D85C2','702904-2934','4/11/1950','2','201674613','8/25/2016','8/25/2016','2016','4','6','8/25/2016','100','QUIST','KRISTINE');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('FDA2290B-3BFF-7855-4076-CAE98AE01F9C','543494-3310','8/15/1952','1','201655582','8/26/2016','8/26/2016','2016','9','9','8/26/2016','100','BOWN','GRETCHEN');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('3DBFD090-3AF3-A4A3-91B9-142AC2079291','309959-1893','12/30/1953','2','201661845','8/30/2016','8/30/2016','2016','7','10','8/30/2016','100','MORSE','THOMAS');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('3D591E61-8878-9CE5-3774-AB72D926429D','181854-1742','9/5/1954','2','201649109','9/7/2016','9/7/2016','2016','5','4','9/7/2016','100','ODORIZZI','SUZANNE');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('730A8E9A-4195-66C0-1F09-410D8B4679B4','619484-2232','12/26/1954','2','201623061','9/14/2016','9/14/2016','2016','1','19','9/14/2016','100','GARCIA','MAESHA');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('2B3F185D-21BB-A2D0-83BB-9DBA7AA05245','979949-1471','6/1/1955','1','201635444','9/16/2016','9/16/2016','2016','8','8','9/16/2016','100','FROMAN','SEJLA');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('11D164AB-9837-1B49-0D6E-F466A59C2BDA','673248-3646','2/6/1956','1','201687297','9/25/2016','9/25/2016','2016','8','16','9/25/2016','100','MERZ','NATHAN');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('4B29530B-7951-7803-5169-CCFCE4E273CF','881254-1513','8/26/1957','1','201614467','9/28/2016','9/28/2016','2016','1','10','9/28/2016','100','HUGHES','CLARENCE');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('334CE32B-6ECE-0112-5BFF-7384E13C41DD','658156-3869','9/24/1958','1','201633387','10/9/2016','10/9/2016','2016','4','15','10/9/2016','100','HIER','NATHAN');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('AE0EE76F-054E-67A0-0086-2DCA72DA8943','770608-1715','5/24/1960','1','201616200','10/20/2016','10/20/2016','2016','3','16','10/20/2016','100','HANSEN','LEE');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('03E90E70-5B4B-649D-7A59-CFA371FF220B','671811-2186','2/21/1961','2','201642644','10/27/2016','10/27/2016','2016','8','15','10/27/2016','100','BUCKWALTER','MARGIT');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('08BBE416-2367-3718-6B81-8A084B3D5001','884414-2523','12/29/1962','1','201653381','10/31/2016','10/31/2016','2016','7','1','10/31/2016','100','BECK','DONALD R');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('902FFEBB-7323-1A4C-04A6-84FE5FE737A3','718818-1792','12/2/1964','2','201634223','11/1/2016','11/1/2016','2016','11','18','11/1/2016','100','BALDWIN','MARILYN');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('198EEA04-0A69-442A-4B3B-B17596E73EC1','137779-2234','1/12/1942','1','201610110','11/9/2016','11/9/2016','2016','8','24','11/9/2016','100','JENSEN','TRACEY');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('0EF4A909-4CE2-5CD5-021E-2A28863D5B6A','256706-3198','11/11/1939','2','201695393','11/13/2016','11/13/2016','2016','4','9','11/13/2016','100','PACE','JUDY');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('94E7288A-66C6-0717-9D25-5ADD5D002478','386191-3467','12/21/1951','2','201672587','11/21/2016','11/21/2016','2016','12','26','11/21/2016','100','NEEP','COLLEEN');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('7BDEB805-764C-708E-86CC-8E0E2F00A6AE','871741-1976','11/17/1929','2','201664076','12/1/2016','12/1/2016','2016','1','2','12/1/2016','100','SHUMLY','ALLISON');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('A86B2FFF-9F23-4C69-53B7-CD89073A2E5F','321482-2129','10/21/1957','2','201679583','12/8/2016','12/8/2016','2016','6','7','12/8/2016','100','POSS','SUSAN');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('2463228D-3FC6-0D40-98D7-1041D222534D','533321-3552','1/4/1949','1','201637157','12/17/2016','12/17/2016','2016','8','21','12/17/2016','100','DICKERSON','JON');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('49415456-7D04-3805-82C8-356A8B7554E0','689418-4073','1/4/1938','1','201698710','12/27/2016','12/27/2016','2016','2','19','12/27/2016','100','MORRIS','ROBERT E.');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('2951A4FD-6530-1A97-6028-446EBED104AB','975116-3197','8/9/1945','1','201634866','12/31/2016','12/31/2016','2016','2','17','12/31/2016','100','JONES','JORGE');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('06706243-7ECA-390A-04EE-B27E3D113B6A','871881-1751','12/4/1936','2','201629912','1/5/2016','1/5/2016','2016','7','3','1/5/2016','100','JONES','SUSAN');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('962F5C38-4FC8-52BB-2251-FB96F1E73DFC','300550-1761','12/5/1972','2','201649636','1/16/2016','1/16/2016','2016','4','2','1/16/2016','100','STARZEL','CATHY');")
+    #cursor.execute("INSERT INTO providerdeathsampledata (id,provider_license_no,provider_dob_dob,provider_gender_cd,statefilenumber,registereddate,lastupdated,deathccyy,deathmm,deathdd,createddate,matchthreshold,provider_last,provider_first) VALUES ('C1DD1CCA-6BFE-2685-81A1-26C7BFD13234','367059-2208','12/27/1965','2','201646140','1/19/2016','1/19/2016','2016','3','29','1/19/2016','100','SMITH','GINA');")
+    
+    
+    conn.commit()
+
+ 
+if __name__ == "__main__":
+	main()

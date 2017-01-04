@@ -1,0 +1,523 @@
+Date/Time Created	VADS Content Version	VADS Application Version	Download Activity	Number of Items Selected
+11/02/2016 01:33:57	3.0.0	3.1.1	Value Set Concept Detail Result Selection	519 of 519
+
+Concept Code	Concept Name	Preferred Concept Name	Preferred Alternate Code	Code System OID	Code System Name	Code System Code	Code System Version	HL7 Table 0396 Code	Value Set Code	Value Set Version
+329923004	Aceclofenac (product)	Aceclofenac	C-6030D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329925006	Aceclofenac 100mg tablet (product)	Aceclofenac 100mg tablet	C-502DD	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329906008	Acemetacin (product)	Acemetacin	C-6030B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329907004	Acemetacin 60mg capsule (product)	Acemetacin 60mg capsule	C-502D2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400314006	Acetaminophen + phenyltoloxamine citrate + salicylamide (product)	Acetaminophen + phenyltoloxamine citrate + salicylamide	C-50108	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377381003	Acetaminophen + phenyltoloxamine citrate + salicylamide 300mg/20mg/200mg capsule (product)	Acetaminophen + phenyltoloxamine citrate + salicylamide 300mg/20mg/200mg capsule	C-50045	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377391009	Acetaminophen + phenyltoloxamine citrate + salicylamide 300mg/20mg/200mg tablet (product)	Acetaminophen + phenyltoloxamine citrate + salicylamide 300mg/20mg/200mg tablet	C-51493	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398663003	Acetaminophen + salicylamide (product)	Acetaminophen + salicylamide	C-6013E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412559002	Acetaminophen + salicylamide + caffeine (product)	Acetaminophen + salicylamide + caffeine	C-6556C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377440005	Acetaminophen + salicylamide 250mg/600mg tablet (product)	Acetaminophen + salicylamide 250mg/600mg tablet	C-50048	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+424102008	Acetaminophen+aspirin (product)	Acetaminophen+aspirin	C-6036E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398785002	Acetaminophen+sodium salicylate (product)	Acetaminophen+sodium salicylate	C-6013D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329543000	Apazone (product)	Apazone (product)	C-60307	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329546008	Apazone 300mg capsule (product)	Apazone 300mg capsule (product)	C-50277	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329547004	Apazone 600mg tablet (product)	Apazone 600mg tablet (product)	C-50278	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+7947003	Aspirin (product)	Aspirin	C-60320	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412568000	Aspirin + acetaminophen + caffeine (product)	Aspirin + acetaminophen + caffeine	C-6556E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398989001	Aspirin + butalbital + caffeine (product)	Aspirin + butalbital + caffeine	C-613AB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398678005	Aspirin + butalbital + caffeine + codeine phosphate (product)	Aspirin + butalbital + caffeine + codeine phosphate	C-606FD	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377193004	Aspirin + butalbital + caffeine 325mg/50mg/40mg capsule (product)	Aspirin+butalbital+caffeine 325mg/50mg/40mg capsule	C-60068	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377194005	Aspirin + butalbital + caffeine 325mg/50mg/40mg tablet (product)	Aspirin+butalbital+caffeine 325mg/50mg/40mg tablet	C-61386	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412569008	Aspirin + caffeine (product)	Aspirin + caffeine	C-60104	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398774004	Aspirin + caffeine + dihydrocodeine bitartrate (product)	Aspirin + caffeine + dihydrocodeine bitartrate	C-600D8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377195006	Aspirin + caffeine + dihydrocodeine bitartrate 356.4mg/30mg/16mg capsule (product)	Aspirin+caffeine+dihydrocodeine bitartrate 356.4mg/30mg/16mg capsule	C-60069	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377196007	Aspirin + caffeine + orphenadrine citrate 385mg/30mg/25mg tablet (product)	Aspirin+caffeine+orphenadrine citrate 385mg/30mg/25mg tablet	C-6555C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377197003	Aspirin + caffeine + orphenadrine citrate 428mg/30mg/25mg tablet (product)	Aspirin+caffeine+orphenadrine citrate 428mg/30mg/25mg tablet	C-6006C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377199000	Aspirin + caffeine + orphenadrine citrate 770mg/60mg/50mg tablet (product)	Aspirin+caffeine+orphenadrine citrate 770mg/60mg/50mg tablet	C-6555D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377200002	Aspirin + caffeine + orphenadrine citrate 856mg/60mg/50mg tablet (product)	Aspirin+caffeine+orphenadrine citrate 856mg/60mg/50mg tablet	C-6006E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398748005	Aspirin + caffeine + propoxyphene hydrochloride (product)	Aspirin + caffeine + propoxyphene hydrochloride	C-600D5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412647005	Aspirin + caffeine + propoxyphene hydrochloride 389mg/32.4mg/32mg capsule (product)	Aspirin + caffeine + propoxyphene hydrochloride 389mg/32.4mg/32mg capsule	C-600F8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377201003	Aspirin + caffeine + propoxyphene hydrochloride 389mg/32.4mg/65mg capsule (product)	Aspirin+caffeine+propoxyphene hydrochloride 389mg/32.4mg/65mg capsule	C-6555E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398649009	Aspirin + carisoprodol (product)	Aspirin + carisoprodol	C-606EB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398911008	Aspirin + carisoprodol + codeine phosphate (product)	Aspirin + carisoprodol + codeine phosphate	C-68793	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377202005	Aspirin + carisoprodol + codeine phosphate 325mg/200mg/16mg tablet (product)	Aspirin+carisoprodol+codeine phosphate 325mg/200mg/16mg tablet	C-60070	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377203000	Aspirin + carisoprodol 325mg/200mg tablet (product)	Aspirin+carisoprodol 325mg/200mg tablet	C-60072	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412095002	Aspirin + cinnamedrine + caffeine (product)	Aspirin + cinnamedrine + caffeine	C-6556B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412096001	Aspirin + codeine (product)	Aspirin + codeine	C-6035E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+404785009	Aspirin + codeine 300mg/8mg tablet (product)	Aspirin + codeine 300mg/8mg tablet	C-600F5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322310004	Aspirin + codeine 400mg/8mg dispersible tablet (product)	Aspirin + codeine 400mg/8mg dispersible tablet	C-6002F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+407906007	Aspirin + codeine 500mg/8mg dispersible tablet (product)	Aspirin + codeine 500mg/8mg dispersible tablet	C-600EC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400426002	Aspirin + cyclizine hydrochloride (product)	Aspirin + cyclizine hydrochloride	C-51844	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398906006	Aspirin + hydrocodone bitartrate (product)	Aspirin + hydrocodone bitartrate	C-606FE	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377204006	Aspirin + hydrocodone bitartrate 500mg/5mg tablet (product)	Aspirin+hydrocodone bitartrate 500mg/5mg tablet	C-60075	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398683002	Aspirin + meprobamate (product)	Aspirin + meprobamate	C-64281	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377205007	Aspirin + meprobamate 325mg/200mg tablet (product)	Aspirin+meprobamate 325mg/200mg tablet	C-60076	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400489006	Aspirin + methocarbamol (product)	Aspirin + methocarbamol	C-687F8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377206008	Aspirin + methocarbamol 325mg/400mg tablet (product)	Aspirin+methocarbamol 325mg/400mg tablet	C-60077	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412460009	Aspirin + oxycodone hydrochloride (product)	Aspirin + oxycodone hydrochloride	C-600FC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400254006	Aspirin + oxycodone hydrochloride + oxycodone terephthalate (product)	Aspirin + oxycodone hydrochloride + oxycodone terephthalate	C-600D4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377207004	Aspirin + oxycodone hydrochloride + oxycodone terephthalate 325mg/2.25mg/0.19mg tablet (product)	Aspirin+oxycodone hydrochloride+oxycodone terephthalate 325mg/2.25mg/0.19mg tablet	C-60078	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377209001	Aspirin + oxycodone hydrochloride + oxycodone terephthalate 325mg/4.5mg/0.38mg tablet (product)	Aspirin+oxycodone hydrochloride+oxycodone terephthalate 325mg/4.5mg/0.38mg tablet	C-60080	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400776001	Aspirin + pentazocine hydrochloride (product)	Aspirin + pentazocine hydrochloride	C-600D3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377210006	Aspirin + pentazocine hydrochloride 325mg tablet (product)	Aspirin+pentazocine hydrochloride 325mg tablet	C-60086	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370176001	Aspirin 120mg suppository (product)	Aspirin 120mg suppository	C-600B1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322233001	Aspirin 150mg suppository (product)	Aspirin 150mg suppository	C-6002C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370168003	Aspirin 165mg e/c tablet (product)	Aspirin 165mg e/c tablet	C-600AA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370177005	Aspirin 200mg suppository (product)	Aspirin 200mg suppository	C-600B2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370165000	Aspirin 227.5mg gum tablet (product)	Aspirin 227.5mg gum tablet	C-600A7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+413586006	Aspirin 250mg/acetaminophen250mg/caffeine 65mg tablet (product)	Aspirin 250mg/acetaminophen250mg/caffeine 65mg tablet	C-6556F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329526003	Aspirin 300mg dispersible tablet (product)	Aspirin 300mg dispersible tablet	C-6003A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322225002	Aspirin 300mg e/c tablet (product)	Aspirin 300mg e/c tablet	C-60026	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322231004	Aspirin 300mg soluble tablet (product)	Aspirin 300mg soluble tablet	C-6002A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322232006	Aspirin 300mg suppository (product)	Aspirin 300mg suppository	C-6002B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329525004	Aspirin 300mg tablet (product)	Aspirin 300mg tablet	C-60039	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370169006	Aspirin 325mg e/c tablet (product)	Aspirin 325mg e/c tablet	C-600AB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370166004	Aspirin 325mg tablet (product)	Aspirin 325mg tablet	C-600A8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409317009	Aspirin 325mg tablet/pravastatin 20mg tablet (product)	Aspirin 325mg tablet/pravastatin 20mg tablet	C-6034A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409316000	Aspirin 325mg tablet/pravastatin 40mg tablet (product)	Aspirin 325mg tablet/pravastatin 40mg tablet	C-60349	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409315001	Aspirin 325mg tablet/pravastatin 80mg tablet (product)	Aspirin 325mg tablet/pravastatin 80mg tablet	C-60348	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412575004	Aspirin 325mg/codeine 30mg tablet (product)	Aspirin 325mg/codeine 30mg tablet	C-60363	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412576003	Aspirin 325mg/codeine 60mg tablet (product)	Aspirin 325mg/codeine 60mg tablet	C-60364	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+386038008	Aspirin 500mg e/c tablet (product)	Aspirin 500mg e/c tablet	C-600B4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322234007	Aspirin 500mg soluble tablet (product)	Aspirin 500mg soluble tablet	C-6002D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370178000	Aspirin 600mg suppository (product)	Aspirin 600mg suppository	C-60025	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370170007	Aspirin 650mg e/c tablet (product)	Aspirin 650mg e/c tablet	C-600AC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370173009	Aspirin 650mg m/r tablet (product)	Aspirin 650mg m/r tablet	C-600AE	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+319773006	Aspirin 75mg dispersible tablet (product)	Aspirin 75mg dispersible tablet	C-A609B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+319781007	Aspirin 75mg e/c tablet (product)	Aspirin 75mg e/c tablet	C-A609F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+319793003	Aspirin 75mg soluble tablet (product)	Aspirin 75mg soluble tablet	C-60090	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+319775004	Aspirin 75mg tablet (product)	Aspirin 75mg tablet	C-A609C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370174003	Aspirin 800mg m/r tablet (product)	Aspirin 800mg m/r tablet	C-600AF	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374744009	Aspirin 800mg tablet (product)	Aspirin 800mg tablet	C-600A4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370164001	Aspirin 81mg chewable tablet (product)	Aspirin 81mg chewable tablet	C-600A6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370167008	Aspirin 81mg e/c tablet (product)	Aspirin 81mg e/c tablet	C-600A9	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370175002	Aspirin 81mg m/r tablet (product)	Aspirin 81mg m/r tablet	C-600B0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409312003	Aspirin 81mg tablet/pravastatin 20mg tablet (product)	Aspirin 81mg tablet/pravastatin 20mg tablet	C-60345	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409313008	Aspirin 81mg tablet/pravastatin 40mg tablet (product)	Aspirin 81mg tablet/pravastatin 40mg tablet	C-60346	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409314002	Aspirin 81mg tablet/pravastatin 80mg tablet (product)	Aspirin 81mg tablet/pravastatin 80mg tablet	C-60347	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370171006	Aspirin 975mg e/c tablet (product)	Aspirin 975mg e/c tablet	C-600AD	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+386037003	Aspirin 975mg m/r tablet (product)	Aspirin 975mg m/r tablet	C-600B3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376250003	Aspirin 975mg tablet (product)	Aspirin 975mg tablet	C-600A5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350315002	Aspirin compound preparation (product)	Aspirin compound preparation	C-60024	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+405747002	Aspirin not given (finding)	Aspirin not given	F-04A23	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+371226001	Aspirin+butalbital+caffeine+codeine phosphate 325mg/50mg/40mg/30mg capsule (product)	Aspirin+butalbital+caffeine+codeine phosphate 325mg/50mg/40mg/30mg capsule	C-6139F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398767009	Aspirin+glycine (product)	Aspirin+glycine	C-600DB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+347070003	Aspirin+glycine 500mg/133mg dispersible tablet (product)	Aspirin+glycine 500mg/133mg dispersible tablet	C-60054	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400487008	Aspirin+metoclopramide (product)	Aspirin+metoclopramide	C-858B5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322784004	Aspirin+metoclopramide 900mg/10mg/sachet powder (product)	Aspirin+metoclopramide 900mg/10mg/sachet powder	C-8580E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400819008	Aspirin+papaveretum (product)	Aspirin+papaveretum	C-600DA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322321008	Aspirin+papaveretum 500mg/7.71mg dispersible tablet (product)	Aspirin+papaveretum 500mg/7.71mg dispersible tablet	C-60032	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409311005	Aspirin+pravastatin (product)	Aspirin+pravastatin	C-60344	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+420306005	Balsalazide (product)	Balsalazide	C-60366	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317448000	Balsalazide disodium 750mg capsule (product)	Balsalazide disodium 750mg capsule	C-6007F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+354058001	Benorylate (product)	Benorilate	C-60314	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329534009	Benorylate 2g/5mL s/f suspension (product)	Benorylate 2g/5mL s/f suspension (product)	C-6003D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329533003	Benorylate 2g/sachet granules (product)	Benorylate 2g/sachet granules (product)	C-6003C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329532008	Benorylate 750mg tablet (product)	Benorylate 750mg tablet (product)	C-6003B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+425197004	Benzocaine + salicylamide (product)	Benzocaine + salicylamide	C-6B78C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+347331004	Benzocaine+salicylamide 2%/5% gel (product)	Benzocaine+salicylamide 2%/5% gel	C-6B768	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350307000	Benzydamine (product)	Benzydamine	C-60113	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+331147002	Benzydamine hydrochloride 0.15% oral rinse (product)	Benzydamine hydrochloride 0.15% oral rinse	C-50392	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+331148007	Benzydamine hydrochloride 0.15% spray (product)	Benzydamine hydrochloride 0.15% spray	C-50393	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330185007	Benzydamine hydrochloride 3% cream (product)	Benzydamine hydrochloride 3% cream	C-502F1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412566001	Buffered aspirin (product)	Buffered aspirin	C-6035F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412567005	Buffered aspirin + caffeine (product)	Buffered aspirin + caffeine	C-6556D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+424611009	Carprofen (product)	Carprofen	C-6036B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330170001	Celecoxib 100mg capsule (product)	Celecoxib 100mg capsule	C-502F0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330169002	Celecoxib 200mg capsule (product)	Celecoxib 200mg capsule	C-502EF	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+425685004	Celecoxib 400mg capsule (product)	Celecoxib 400mg capsule	C-60374	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+425451006	Celecoxib 50mg capsule (product)	Celecoxib 50mg capsule	C-60373	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370187009	Celecoxib product (product)	Celecoxib product	C-6031A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+413827009	Chlorpheniramine + ibuprofen + pseudoephedrine (product)	Chlorpheniramine + ibuprofen + pseudoephedrine	C-603C5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+413828004	Chlorpheniramine 2mg/ibuprofen 200mg/pseudoephedrine 30mg caplet (product)	Chlorpheniramine 2mg/ibuprofen 200mg/pseudoephedrine 30mg caplet	C-603C6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374677002	Choline magnesium trisalicyl 1000mg tablet (product)	Choline magnesium trisalicyl 1000mg tablet	C-600A3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374675005	Choline magnesium trisalicyl 500mg tablet (product)	Choline magnesium trisalicyl 500mg tablet	C-600A1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+375294002	Choline magnesium trisalicyl 500mg/5mL liquid (product)	Choline magnesium trisalicyl 500mg/5mL liquid	C-60092	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374676006	Choline magnesium trisalicyl 750mg tablet (product)	Choline magnesium trisalicyl 750mg tablet	C-600A2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329535005	Choline magnesium trisalicylate (product)	Choline magnesium trisalicylate	C-6003E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+331177008	Choline salicylate 8.7% oral gel (product)	Choline salicylate 8.7% oral gel	C-60058	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+422439004	Codeine + ibuprofen (product)	Codeine + ibuprofen	C-6075B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+123954005	Cox-2 inhibitor (product)	Cox-2 inhibitor	C-60301	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+423684002	Deracoxib (product)	Deracoxib	C-6036C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+418027007	Dexibuprofen (product)	Dexibuprofen	C-6034F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+418352003	Dexibuprofen 300mg tablet (product)	Dexibuprofen 300mg tablet	C-60351	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+418855005	Dexibuprofen 400mg tablet (product)	Dexibuprofen 400mg tablet	C-60365	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329961001	Dexketoprofen (product)	Dexketoprofen	C-6030E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329963003	Dexketoprofen 25mg tablet (product)	Dexketoprofen 25mg tablet	C-502E5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+425425009	Diclofenac epolamine 1.3% transdermal patch (product)	Diclofenac epolamine 1.3% transdermal patch	C-50462	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+419433003	Diclofenac potassium (product)	Diclofenac potassium	C-6034B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329967002	Diclofenac potassium 25mg tablet (product)	Diclofenac potassium 25mg tablet	C-502E6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+442832008	Diclofenac potassium 50mg powder for oral solution (product)	Diclofenac potassium 50mg powder for oral solution	C-5031C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329968007	Diclofenac potassium 50mg tablet (product)	Diclofenac potassium 50mg tablet	C-502E7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+363598004	Diclofenac product (product)	Diclofenac product	C-503A2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+419143009	Diclofenac sodium (product)	Diclofenac sodium	C-6034C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+408032001	Diclofenac sodium 0.1% multidose eye drops (product)	Diclofenac sodium 0.1% multidose eye drops	C-50451	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+375900006	Diclofenac sodium 0.1% ophthalmic solution (product)	Diclofenac sodium 0.1% ophthalmic solution	C-50445	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330526000	Diclofenac sodium 0.1% single-use eye drops (product)	Diclofenac sodium 0.1% single-use eye drops	C-5038F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330206003	Diclofenac sodium 1% gel (product)	Diclofenac sodium 1% gel	C-502F5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+134747008	Diclofenac sodium 1.5% topical solution (product)	Diclofenac sodium 1.5% topical solution	C-5021D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329600004	Diclofenac sodium 100mg m/r capsule (product)	Diclofenac sodium 100mg m/r capsule	C-50284	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329585001	Diclofenac sodium 100mg m/r tablet (product)	Diclofenac sodium 100mg m/r tablet	C-50280	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329583008	Diclofenac sodium 100mg suppository (product)	Diclofenac sodium 100mg suppository	C-5027E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329584002	Diclofenac sodium 12.5mg pediatric suppository (product)	Diclofenac sodium 12.5mg pediatric suppository	C-5027F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329586000	Diclofenac sodium 25mg m/r tablet (product)	Diclofenac sodium 25mg m/r tablet	C-50281	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329562002	Diclofenac sodium 25mg suppository (product)	Diclofenac sodium 25mg suppository	C-5027B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329556007	Diclofenac sodium 25mg/mL injection solution 3mL ampule (product)	Diclofenac sodium 25mg/mL injection solution 3mL ampule	C-50279	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+134795004	Diclofenac sodium 3% gel (product)	Diclofenac sodium 3% gel	C-50220	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329591004	Diclofenac sodium 50mg dispersible tablet (product)	Diclofenac sodium 50mg dispersible tablet	C-50283	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329587009	Diclofenac sodium 50mg e/c tablet (product)	Diclofenac sodium 50mg e/c tablet	C-50282	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+387761005	Diclofenac sodium 50mg m/r tablet (product)	Diclofenac sodium 50mg m/r tablet	C-50071	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329563007	Diclofenac sodium 50mg suppository (product)	Diclofenac sodium 50mg suppository	C-5027C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374627000	Diclofenac sodium 50mg tablet (product)	Diclofenac sodium 50mg tablet	C-5004B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329574003	Diclofenac sodium 75mg e/c+m/r capsule (product)	Diclofenac sodium 75mg e/c+m/r capsule	C-5027D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329559000	Diclofenac sodium 75mg m/r capsule (product)	Diclofenac sodium 75mg m/r capsule	C-5027A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329607001	Diclofenac sodium 75mg m/r tablet (product)	Diclofenac sodium 75mg m/r tablet	C-50285	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+346398002	Diclofenac sodium+misoprostol (product)	Diclofenac sodium+misoprostol	C-84051	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329598005	Diclofenac sodium+misoprostol 50mg/200micrograms tablet (product)	Diclofenac sodium+misoprostol 50mg/200micrograms tablet	C-84054	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329602007	Diclofenac sodium+misoprostol 75mg/200micrograms tablet (product)	Diclofenac sodium+misoprostol 75mg/200micrograms tablet	C-84055	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+20865003	Diflunisal (product)	Diflunisal	C-603A0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329612000	Diflunisal 250mg tablet (product)	Diflunisal 250mg tablet	C-60046	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329613005	Diflunisal 500mg tablet (product)	Diflunisal 500mg tablet	C-60047	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+420943003	Diphenhydramine + ibuprofen (product)	Diphenhydramine + ibuprofen	C-51467	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+420700002	Diphenhydramine 25mg/ibuprofen 200mg capsule (product)	Diphenhydramine 25mg/ibuprofen 200mg capsule	C-51468	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+441834006	Diphenhydramine 38mg + ibuprofen 200mg capsule (product)	Diphenhydramine 38mg + ibuprofen 200mg capsule	C-5146F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+319796006	Dipyridamole+aspirin (product)	Dipyridamole+aspirin	C-A60A3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+319797002	Dipyridamole+aspirin 200mg/25mg m/r capsule (product)	Dipyridamole+aspirin 200mg/25mg m/r capsule	C-A60A4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+446539008	Esomeprazole magnesium + naproxen (product)	Esomeprazole magnesium + naproxen	C-60425	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+446484008	Esomeprazole magnesium 20mg + naproxen 375mg delayed release tablet (product)	Esomeprazole magnesium 20mg + naproxen 375mg delayed release tablet	C-60424	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+446704005	Esomeprazole magnesium 20mg + naproxen 500mg delayed release tablet (product)	Esomeprazole magnesium 20mg + naproxen 500mg delayed release tablet	C-60426	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+108510003	Etodolac (product)	Etodolac (product)	C-60393	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329616002	Etodolac 200mg capsule (product)	Etodolac 200mg capsule (product)	C-50286	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329620003	Etodolac 300mg capsule (product)	Etodolac 300mg capsule (product)	C-50288	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370189007	Etodolac 400mg m/r tablet (product)	Etodolac 400mg m/r tablet	C-603A3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374937008	Etodolac 400mg tablet (product)	Etodolac 400mg tablet	C-603A5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370188004	Etodolac 500mg m/r tablet (product)	Etodolac 500mg m/r tablet	C-6039F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374938003	Etodolac 500mg tablet (product)	Etodolac 500mg tablet	C-603A6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329622006	Etodolac 600mg m/r tablet (product)	Etodolac 600mg m/r tablet (product)	C-50289	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+395292007	Etoricoxib (product)	Etoricoxib	C-6032C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+407909000	Etoricoxib 120mg tablet (product)	Etoricoxib 120mg tablet	C-6033B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+407907003	Etoricoxib 60mg tablet (product)	Etoricoxib 60mg tablet	C-60339	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+407908008	Etoricoxib 90mg tablet (product)	Etoricoxib 90mg tablet	C-6033A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350320002	Felbinac (product)	Felbinac	C-60302	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330229006	Felbinac 3% gel (product)	Felbinac 3% gel	C-502F6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330201008	Felbinac 3.17% foam (product)	Felbinac 3.17% foam	C-502F2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329623001	Fenbufen (product)	Fenbufen	C-60308	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370190003	Fenbufen 200mg capsule (product)	Fenbufen 200mg capsule	C-6031B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329630007	Fenbufen 300mg capsule (product)	Fenbufen 300mg capsule	C-5028A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329631006	Fenbufen 300mg tablet (product)	Fenbufen 300mg tablet	C-5028B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329636001	Fenbufen 450mg tablet (product)	Fenbufen 450mg tablet	C-5028C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370191004	Fenbufen 600mg tablet (product)	Fenbufen 600mg tablet	C-6031C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+71798005	Fenoprofen (product)	Fenoprofen	C-603B0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329641009	Fenoprofen 300mg tablet (product)	Fenoprofen 300mg tablet	C-5028E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329642002	Fenoprofen 600mg tablet (product)	Fenoprofen 600mg tablet	C-5028F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374578000	Fenoprofen calcium 200mg capsule (product)	Fenoprofen calcium 200mg capsule	C-603B4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+388959005	Fenoprofen calcium 300mg capsule (product)	Fenoprofen calcium 300mg capsule	C-603B6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+424766004	Firocoxib (product)	Firocoxib	C-6036D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+54344006	Flurbiprofen (product)	Flurbiprofen	C-96050	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329650006	Flurbiprofen 100mg suppository (product)	Flurbiprofen 100mg suppository	C-50293	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329649006	Flurbiprofen 100mg tablet (product)	Flurbiprofen 100mg tablet	C-50292	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329647008	Flurbiprofen 200mg m/r capsule (product)	Flurbiprofen 200mg m/r capsule	C-50290	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329648003	Flurbiprofen 50mg tablet (product)	Flurbiprofen 50mg tablet	C-50291	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+331348004	Flurbiprofen 8.75mg lozenge (product)	Flurbiprofen 8.75mg lozenge	C-50394	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+353194007	Flurbiprofen sodium 0.03% single-use eye drops (product)	Flurbiprofen sodium 0.03% single-use eye drops	C-96065	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400396007	Hydrocodone bitartrate + ibuprofen (product)	Hydrocodone bitartrate + ibuprofen	C-606E5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377489000	Hydrocodone bitartrate + ibuprofen 7.5mg/200mg tablet (product)	Hydrocodone bitartrate + ibuprofen 7.5mg/200mg tablet	C-603C4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+429392006	Hydrocodone bitartrate 10mg/ibuprofen 200mg tablet (product)	Hydrocodone bitartrate 10mg/ibuprofen 200mg tablet	C-6076D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+429393001	Hydrocodone bitartrate 2.5mg/ibuprofen 200mg tablet (product)	Hydrocodone bitartrate 2.5mg/ibuprofen 200mg tablet	C-6076E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+428210006	Hydrocodone bitartrate 5mg/ibuprofen 200mg tablet (product)	Hydrocodone bitartrate 5mg/ibuprofen 200mg tablet	C-6076C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+38268001	Ibuprofen (product)	Ibuprofen	C-603C0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+414443003	Ibuprofen + oxycodone (product)	Ibuprofen + oxycodone	C-603C7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+423978002	Ibuprofen + pseudoephedrine (product)	Ibuprofen + pseudoephedrine	C-501DA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330274004	Ibuprofen 10% gel (product)	Ibuprofen 10% gel	C-502FA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370194007	Ibuprofen 100mg chewable tablet (product)	Ibuprofen 100mg chewable tablet	C-5002A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370192006	Ibuprofen 100mg tablet (product)	Ibuprofen 100mg tablet	C-5000A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370196009	Ibuprofen 100mg/2.5mL oral suspension (product)	Ibuprofen 100mg/2.5mL oral suspension	C-5002C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329710002	Ibuprofen 100mg/5mL oral suspension (product)	Ibuprofen 100mg/5mL oral suspension	C-5029B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329686007	Ibuprofen 100mg/5mL s/f oral suspension (product)	Ibuprofen 100mg/5mL s/f oral suspension	C-50299	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+407925005	Ibuprofen 100mg/5mL sachets s/f oral suspension (product)	Ibuprofen 100mg/5mL sachets s/f oral suspension	C-500BE	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+442990002	Ibuprofen 100mg/mL injection solution 4mL vial (product)	Ibuprofen 100mg/mL injection solution 4mL vial	C-603CC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+442899002	Ibuprofen 100mg/mL injection solution 8mL vial (product)	Ibuprofen 100mg/mL injection solution 8mL vial	C-603CB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+421213002	Ibuprofen 10mg/mL injection solution 2mL vial (product)	Ibuprofen 10mg/mL injection solution 2mL vial	C-603CA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370195008	Ibuprofen 200mg capsule (product)	Ibuprofen 200mg capsule	C-5002B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329711003	Ibuprofen 200mg m/r capsule (product)	Ibuprofen 200mg m/r capsule	C-5029C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329652003	Ibuprofen 200mg tablet (product)	Ibuprofen 200mg tablet	C-50294	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+420858007	Ibuprofen 200mg/pseudoephedrine 30mg capsule (product)	Ibuprofen 200mg/pseudoephedrine 30mg capsule	C-501CA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+408075007	Ibuprofen 300mg / pseudoephedrine 45mg capsule (product)	Ibuprofen 300mg / pseudoephedrine 45mg capsule	C-500C6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329712005	Ibuprofen 300mg m/r capsule (product)	Ibuprofen 300mg m/r capsule	C-5029D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329653008	Ibuprofen 400mg tablet (product)	Ibuprofen 400mg tablet	C-50295	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+414444009	Ibuprofen 400mg/oxycodone 5mg tablet (product)	Ibuprofen 400mg/oxycodone 5mg tablet	C-603C8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370197000	Ibuprofen 40mg/mL oral drops (product)	Ibuprofen 40mg/mL oral drops	C-5002D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400729005	Ibuprofen 5% / Levomenthol 3% gel (product)	Ibuprofen 5% / Levomenthol 3% gel	C-5007E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330232009	Ibuprofen 5% cream (product)	Ibuprofen 5% cream	C-502F7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330264002	Ibuprofen 5% foam (product)	Ibuprofen 5% foam	C-502F9	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330202001	Ibuprofen 5% gel (product)	Ibuprofen 5% gel	C-502F3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330239000	Ibuprofen 5% spray (product)	Ibuprofen 5% spray	C-C052D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370193001	Ibuprofen 50mg chewable tablet (product)	Ibuprofen 50mg chewable tablet	C-50029	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+438856002	Ibuprofen 50mg/1.25mL oral suspension (product)	Ibuprofen 50mg/1.25mL oral suspension	C-50300	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329654002	Ibuprofen 600mg tablet (product)	Ibuprofen 600mg tablet	C-50296	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329677002	Ibuprofen 600mg/sachet effervescent granules (product)	Ibuprofen 600mg/sachet effervescent granules	C-50298	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329662005	Ibuprofen 800mg m/r tablet (product)	Ibuprofen 800mg m/r tablet	C-50297	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329708004	Ibuprofen 800mg tablet (product)	Ibuprofen 800mg tablet	C-5029A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329675005	Ibuprofen+codeine phosphate 200mg/12.5mg tablet (product)	Ibuprofen+codeine phosphate 200mg/12.5mg tablet	P3-782B1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329683004	Ibuprofen+codeine phosphate 200mg/12.8mg tablet (product)	Ibuprofen+codeine phosphate 200mg/12.8mg tablet	P3-782B2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329713000	Ibuprofen+codeine phosphate 300mg/20mg m/r tablet (product)	Ibuprofen+codeine phosphate 300mg/20mg m/r tablet	P3-782B3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+423524007	Ibuprofen+levomenthol (product)	Ibuprofen+levomenthol	C-501E0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400268004	Ibuprofen+menthol (product)	Ibuprofen+menthol	C-6B70A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409119003	Ibuprofen+pseudoephedrine 100mg/15mg oral 5mL suspension (product)	Ibuprofen+pseudoephedrine 100mg/15mg oral 5mL suspension	C-500CF	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+407904005	Ibuprofen+pseudoephedrine 200mg/30mg tablet (product)	Ibuprofen+pseudoephedrine 200mg/30mg tablet	C-500BD	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+60149003	Indomethacin (product)	Indomethacin (product)	C-603D0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329716008	Indomethacin 100mg suppository (product)	Indomethacin 100mg suppository (product)	C-502A0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329754008	Indomethacin 1mg injection (pdr for recon) (product)	Indomethacin 1mg injection (pdr for recon) (product)	C-502A4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329714006	Indomethacin 25mg capsule (product)	Indomethacin 25mg capsule (product)	C-5029E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329757001	Indomethacin 25mg m/r capsule (product)	Indomethacin 25mg m/r capsule (product)	C-502A7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329727005	Indomethacin 25mg m/r tablet (product)	Indomethacin 25mg m/r tablet (product)	C-502A3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376878007	Indomethacin 25mg/5mL suspension (product)	Indomethacin 25mg/5mL suspension	C-603D4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329715007	Indomethacin 50mg capsule (product)	Indomethacin 50mg capsule (product)	C-5029F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329726001	Indomethacin 50mg m/r tablet (product)	Indomethacin 50mg m/r tablet (product)	C-502A2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370198005	Indomethacin 50mg suppository (product)	Indomethacin 50mg suppository	C-603D2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+375433008	Indomethacin 75mg capsule (product)	Indomethacin 75mg capsule	C-603D5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329756005	Indomethacin 75mg m/r capsule (product)	Indomethacin 75mg m/r capsule (product)	C-502A6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329723009	Indomethacin 75mg m/r tablet (product)	Indomethacin 75mg m/r tablet (product)	C-502A1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+319357003	Isosorbide mononitrate+aspirin (product)	Isosorbide mononitrate+aspirin	C-81602	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+319360005	Isosorbide mononitrate+aspirin 60mg/150mg m/r tablet (product)	Isosorbide mononitrate+aspirin 60mg/150mg m/r tablet	C-81605	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+319361009	Isosorbide mononitrate+aspirin 60mg/75mg m/r tablet (product)	Isosorbide mononitrate+aspirin 60mg/75mg m/r tablet	C-81606	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+10099000	Ketoprofen (product)	Ketoprofen	C-603E0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329787007	Ketoprofen 100mg m/r capsule (product)	Ketoprofen 100mg m/r capsule	C-502AF	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329760008	Ketoprofen 100mg suppository (product)	Ketoprofen 100mg suppository	C-502AA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370199002	Ketoprofen 12.5mg tablet (product)	Ketoprofen 12.5mg tablet	C-603E1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329785004	Ketoprofen 150mg m/r capsule (product)	Ketoprofen 150mg m/r capsule	C-502AD	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330203006	Ketoprofen 2.5% gel (product)	Ketoprofen 2.5% gel	C-502F4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329788002	Ketoprofen 200mg m/r capsule (product)	Ketoprofen 200mg m/r capsule	C-502B0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+373974003	Ketoprofen 25mg capsule (product)	Ketoprofen 25mg capsule	C-603E4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329758006	Ketoprofen 50mg capsule (product)	Ketoprofen 50mg capsule	C-502A8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329786003	Ketoprofen 50mg/mL injection solution 2mL ampule (product)	Ketoprofen 50mg/mL injection solution 2mL ampule	C-502AE	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+373975002	Ketoprofen 75mg capsule (product)	Ketoprofen 75mg capsule	C-603E5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+108512006	Ketorolac (product)	Ketorolac	C-60394	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330536008	Ketorolac trometamol 0.5% ophthalmic solution (product)	Ketorolac trometamol 0.5% ophthalmic solution	C-50390	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+417711007	Ketorolac trometamol 0.5% preservative free ophthalmic solution (product)	Ketorolac trometamol 0.5% preservative free ophthalmic solution	C-500E0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+333983000	Ketorolac trometamol 10mg/mL injection solution 1mL ampule (product)	Ketorolac trometamol 10mg/mL injection solution 1mL ampule	C-5042D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+446533009	Ketorolac trometamol 15.75mg nasal spray (product)	Ketorolac trometamol 15.75mg nasal spray	C-603B9	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370200004	Ketorolac trometamol 15mg/mL injection solution 1mL ampule (product)	Ketorolac trometamol 15mg/mL injection solution 1mL ampule	C-5008A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+333979000	Ketorolac trometamol 30mg/1mL injection (product)	Ketorolac trometamol 30mg/1mL injection	C-5042B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409155006	Ketorolac tromethamine 0.4% ophthalmic solution (product)	Ketorolac tromethamine 0.4% ophthalmic solution	C-50117	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+443106009	Ketorolac tromethamine 0.45% ophthalmic solution (product)	Ketorolac tromethamine 0.45% ophthalmic solution	C-603B8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+333981003	Ketorolac tromethamine 10mg tablet (product)	Ketorolac tromethamine 10mg tablet (product)	C-5042C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376046003	Ketorolac tromethamine 15mg/mL injection solution ampule (product)	Ketorolac tromethamine 15mg/mL injection solution ampule	C-603A4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400278001	Ketorolac tromethamine 30mg/mL injection solution 10mL vial (product)	Ketorolac tromethamine 30mg/mL injection solution 10mL vial	C-500B0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400709009	Ketorolac tromethamine 30mg/mL injection solution 20mL vial (product)	Ketorolac tromethamine 30mg/mL injection solution 20mL vial	C-500AF	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400731001	Ketorolac tromethamine 30mg/mL injection solution 2mL vial (product)	Ketorolac tromethamine 30mg/mL injection solution 2mL vial	C-500B7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400249002	Ketorolac tromethamine 30mg/mL injection solution 50mL vial (product)	Ketorolac tromethamine 30mg/mL injection solution 50mL vial	C-500B1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409145007	Lansoprazole + naproxen (product)	Lansoprazole + naproxen	C-60418	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+423338004	Lansoprazole 15mg m/r capsule/naproxen 250mg tablet (product)	Lansoprazole 15mg m/r capsule/naproxen 250mg tablet	C-60421	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409146008	Lansoprazole 15mg m/r capsule/naproxen 375mg tablet (product)	Lansoprazole 15mg m/r capsule/naproxen 375mg tablet	C-60419	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409147004	Lansoprazole 15mg m/r capsule/naproxen 500mg tablet (product)	Lansoprazole 15mg m/r capsule/naproxen 500mg tablet	C-6041A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+391655005	Lornoxicam (product)	Lornoxicam	C-60325	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+408601001	Lornoxicam 4mg tablet (product)	Lornoxicam 4mg tablet	C-6033E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+408603003	Lornoxicam 8.6mg injection powder for reconstitution (product)	Lornoxicam 8.6mg injection powder for reconstitution	C-60340	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+408602008	Lornoxicam 8mg tablet (product)	Lornoxicam 8mg tablet	C-6033F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+422506000	Lumiracoxib (product)	Lumiracoxib	C-6036A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370181005	Magnesium salicylate 467mg caplet (product)	Magnesium salicylate 467mg caplet	C-60029	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370182003	Magnesium salicylate 500mg caplet (product)	Magnesium salicylate 500mg caplet	C-6002E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370183008	Magnesium salicylate 545mg tablet (product)	Magnesium salicylate 545mg tablet	C-60034	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+389060007	Magnesium salicylate 580mg caplet (product)	Magnesium salicylate 580mg caplet	C-600D2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+377062003	Magnesium salicylate 600mg tablet (product)	Magnesium salicylate 600mg tablet	C-6007E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370180006	Magnesium salicylate product (product)	Magnesium salicylate product	C-60028	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+363612009	Meclofenamate sodium 100mg capsule (product)	Meclofenamate sodium 100mg capsule	C-503AE	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+363611002	Meclofenamate sodium 50mg capsule (product)	Meclofenamate sodium 50mg capsule	C-503AD	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+363610001	Meclofenamate sodium product (product)	Meclofenamate sodium product	C-503AC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+34364009	Mefenamic acid (product)	Mefenamic acid	C-60400	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329790001	Mefenamic acid 250mg capsule (product)	Mefenamic acid 250mg capsule	C-502B1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329803004	Mefenamic acid 500mg tablet (product)	Mefenamic acid 500mg tablet	C-502B2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329804005	Mefenamic acid 50mg/5mL pediatric suspension (product)	Mefenamic acid 50mg/5mL pediatric suspension	C-502B3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+125694008	Meloxicam (product)	Meloxicam	C-60431	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329926007	Meloxicam 15mg suppository (product)	Meloxicam 15mg suppository	C-502DE	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329928008	Meloxicam 15mg tablet (product)	Meloxicam 15mg tablet	C-502E0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329933007	Meloxicam 7.5mg suppository (product)	Meloxicam 7.5mg suppository	C-502E1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329927003	Meloxicam 7.5mg tablet (product)	Meloxicam 7.5mg tablet	C-502DF	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412651007	Meloxicam 7.5mg/5mL oral suspension (product)	Meloxicam 7.5mg/5mL oral suspension	C-60432	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+86977007	Mesalamine (product)	Mesalamine (product)	C-84030	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+387764002	Mesalamine 250mg m/r capsule (product)	Mesalamine 250mg m/r capsule	C-600D0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+442014009	Mesalamine 375mg m/r capsule (product)	Mesalamine 375mg m/r capsule	C-6019F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+372088005	Mesalamine 400mg m/r tablet (product)	Mesalamine 400mg m/r tablet	C-84033	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370184002	Mesalamine 4g/60mL rectal suspension (product)	Mesalamine 4g/60mL rectal suspension	C-60091	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+426061004	Mesalazine 1.2g delayed release tablet (product)	Mesalamine 1.2g delayed release tablet	C-6017E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317408008	Mesalazine 1g suppository (product)	Mesalazine 1g suppository (product)	C-60071	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317396001	Mesalazine 1g/100mL retention enema (product)	Mesalazine 1g/100mL retention enema (product)	C-60065	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317410005	Mesalazine 1g/dose rectal foam (product)	Mesalazine 1g/dose rectal foam (product)	C-60073	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317416004	Mesalazine 1g/sachet m/r granules (product)	Mesalazine 1g/sachet m/r granules (product)	C-60079	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317404005	Mesalazine 250mg e/c tablet (product)	Mesalazine 250mg e/c tablet (product)	C-6006D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317401002	Mesalazine 250mg suppository (product)	Mesalazine 250mg suppository (product)	C-6006A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317411009	Mesalazine 2g/59mL enema (product)	Mesalazine 2g/59mL enema (product)	C-60074	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317417008	Mesalazine 400mg e/c tablet (product)	Mesalazine 400mg e/c tablet (product)	C-6007A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317406007	Mesalazine 500mg m/r tablet (product)	Mesalazine 500mg m/r tablet (product)	C-6006F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317402009	Mesalazine 500mg suppository (product)	Mesalazine 500mg suppository (product)	C-6006B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+410963009	Mesalazine 500mg/sachet m/r granules (product)	Mesalamine 500mg/sachet m/r granules	C-600FB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+437759001	Mesalazine 800mg delayed release tablet (product)	Mesalazine 800mg delayed release tablet	C-6019A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+451019009	Metamizole sodium (product)	Metamizole sodium	C-D591A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+108508000	Nabumetone (product)	Nabumetone	C-60392	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400480005	Nabumetone 500mg dispersible tablet (product)	Nabumetone 500mg dispersible tablet	C-603A9	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329910006	Nabumetone 500mg tablet (product)	Nabumetone 500mg tablet	C-502D3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329912003	Nabumetone 500mg/5mL suspension (product)	Nabumetone 500mg/5mL suspension	C-502D4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374639008	Nabumetone 750mg tablet (product)	Nabumetone 750mg tablet	C-603A7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+11847009	Naproxen (product)	Naproxen	C-60410	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329852000	Naproxen 125mg/5mL suspension (product)	Naproxen 125mg/5mL suspension	C-502BE	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+416821000	Naproxen 200mg capsule (product)	Naproxen 200mg capsule	C-6041D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370201000	Naproxen 200mg tablet (product)	Naproxen 200mg tablet	C-60413	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+421400006	Naproxen 200mg/pseudoephedrine 120mg m/r tablet (product)	Naproxen 200mg/pseudoephedrine 120mg m/r tablet	C-681DB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329838002	Naproxen 250mg e/c tablet (product)	Naproxen 250mg e/c tablet	C-502B8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329806007	Naproxen 250mg tablet (product)	Naproxen 250mg tablet	C-502B5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329850008	Naproxen 375mg m/r tablet (product)	Naproxen 375mg m/r tablet	C-502BD	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376021003	Naproxen 375mg tablet (product)	Naproxen 375mg tablet	C-60417	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329839005	Naproxen 500mg e/c tablet (product)	Naproxen 500mg e/c tablet	C-502B9	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329847005	Naproxen 500mg m/r tablet (product)	Naproxen 500mg m/r tablet	C-502BB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329853005	Naproxen 500mg suppository (product)	Naproxen 500mg suppository	C-502BF	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329807003	Naproxen 500mg tablet (product)	Naproxen 500mg tablet	C-502B6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+416187001	Naproxen sodium (product)	Naproxen sodium	C-6041C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+430180001	Naproxen sodium + Sumatriptan (product)	Naproxen sodium + Sumatriptan	C-5020E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+416847009	Naproxen sodium 220mg caplet (product)	Naproxen sodium 220mg caplet	C-6041E	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+420276008	Naproxen sodium 220mg capsule (product)	Naproxen sodium 220mg capsule	C-6041F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409481004	Naproxen sodium 220mg/pseudoephedrine 120mg m/r tablet (product)	Naproxen sodium 220mg/pseudoephedrine 120mg m/r tablet	C-681B7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322299000	Naproxen sodium 275mg tablet (product)	Naproxen sodium 275mg tablet	C-50161	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+375946006	Naproxen sodium 375mg m/r tablet (product)	Naproxen sodium 375mg m/r tablet	C-60414	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+375945005	Naproxen sodium 500mg m/r tablet (product)	Naproxen sodium 500mg m/r tablet	C-60415	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+433315007	Naproxen sodium 500mg/Sumatriptan 85mg tablet (product)	Naproxen sodium 500mg/Sumatriptan 85mg tablet	C-502E4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376010007	Naproxen sodium 550mg tablet (product)	Naproxen sodium 550mg tablet	C-60416	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409480003	Naproxen+pseudoephedrine (product)	Naproxen+pseudoephedrine	C-681B6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350324006	Nefopam (product)	Nefopam	C-60303	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322304004	Nefopam hydrochloride 20mg/mL injection solution 1mL ampule (product)	Nefopam hydrochloride 20mg/mL injection solution 1mL ampule	C-50163	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322303005	Nefopam hydrochloride 30mg tablet (product)	Nefopam hydrochloride 30mg tablet	C-50162	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+703480002	Nimesulide (product)	Nimesulide	R-FBC80	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+16403005	Non-steroidal anti-inflammatory agent (product)	Non-steroidal anti-inflammatory agent	C-60300	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+416759002	Non-steroidal anti-inflammatory drugs contraindicated (situation)	Non-steroidal anti-inflammatory drugs contraindicated	R-21580	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+108673002	Olsalazine (product)	Olsalazine	C-84009	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317435004	Olsalazine sodium 250mg capsule (product)	Olsalazine sodium 250mg capsule	C-6007B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317437007	Olsalazine sodium 500mg tablet (product)	Olsalazine sodium 500mg tablet	C-6007D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+421513003	Ophthalmic diclofenac (product)	Ophthalmic diclofenac	C-503DC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+386684004	Ophthalmic diclofenac sodium (product)	Ophthalmic diclofenac sodium	C-5044F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+384674003	Ophthalmic flurbiprofen (product)	Ophthalmic flurbiprofen	C-96045	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+421787008	Ophthalmic ketorolac (product)	Ophthalmic ketorolac	C-603AC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+411995002	Oral form aceclofenac (product)	Oral form aceclofenac	C-60352	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+411996001	Oral form acemetacin (product)	Oral form acemetacin	C-60353	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+358427004	Oral form aspirin (product)	Oral form aspirin	C-60033	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+411997005	Oral form azapropazone (product)	Oral form azapropazone	C-60355	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+411998000	Oral form benorylate (product)	Oral form benorylate	C-60356	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+411999008	Oral form celecoxib (product)	Oral form celecoxib	C-60357	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+431423000	Oral form choline salicylate (product)	Oral form choline salicylate	C-5022C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412005007	Oral form dexketoprofen (product)	Oral form dexketoprofen	C-6035A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350317005	Oral form diclofenac (product)	Oral form diclofenac	C-50005	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+430418009	Oral form diclofenac sodium (product)	Oral form diclofenac sodium	C-5021B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412006008	Oral form etodolac (product)	Oral form etodolac	C-603AB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412000002	Oral form etoricoxib (product)	Oral form etoricoxib	C-60358	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412007004	Oral form fenbufen (product)	Oral form fenbufen	C-6035B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412008009	Oral form fenoprofen (product)	Oral form fenoprofen	C-603B7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412009001	Oral form flurbiprofen (product)	Oral form flurbiprofen	C-9608B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350321003	Oral form ibuprofen (product)	Oral form ibuprofen	C-50008	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+395332006	Oral form ibuprofen compound product (product)	Oral form ibuprofen compound product	C-5006C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412011005	Oral form indomethacin (product)	Oral form indomethacin	C-603D6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412012003	Oral form ketoprofen (product)	Oral form ketoprofen	C-603E2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+356262000	Oral form ketorolac (product)	Oral form ketorolac	C-50087	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412014002	Oral form lornoxicam (product)	Oral form lornoxicam	C-6035C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412017009	Oral form meclofenamate sodium (product)	Oral form meclofenamate sodium	C-503DB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412018004	Oral form mefenamic acid (product)	Oral form mefenamic acid	C-60404	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412001003	Oral form meloxicam (product)	Oral form meloxicam	C-60433	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+349820009	Oral form mesalamine (product)	Oral form mesalamine (product)	C-6008B	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412002005	Oral form nabumetone (product)	Oral form nabumetone	C-603AA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+439298001	Oral form naproxen (product)	Oral form naproxen	C-60423	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412019007	Oral form oxaprozin (product)	Oral form oxaprozin	C-6035D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+440256005	Oral form piroxicam (product)	Oral form piroxicam	C-60438	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412003000	Oral form rofecoxib (product)	Oral form rofecoxib	C-60189	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+349822001	Oral form sulfasalazine (product)	Oral form sulfasalazine	C-55925	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412004006	Oral form valdecoxib (product)	Oral form valdecoxib	C-60359	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412458007	Orphenadrine + aspirin + caffeine (product)	Orphenadrine + aspirin + caffeine	C-6556A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+386031002	Oxaprozin (product)	Oxaprozin	C-6031F	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374242009	Oxaprozin 600mg caplet (product)	Oxaprozin 600mg caplet	C-60319	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376277007	Oxaprozin 600mg capsule (product)	Oxaprozin 600mg capsule	C-6031D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+409229002	Oxaprozin potassium 600mg tablet (product)	Oxaprozin potassium 600mg tablet	C-60354	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+49267000	Oxyphenbutazone (product)	Oxyphenbutazone	C-601D0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+348468004	Paracetamol+sodium salicylate 150mg/100mg tablet (product)	Paracetamol+sodium salicylate 150mg/100mg tablet (product)	C-503E8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+395289008	Parecoxib (product)	Parecoxib	C-60329	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+407912002	Parecoxib 40mg injection (pdr for recon) (product)	Parecoxib 40mg injection (pdr for recon)	C-6033C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+407913007	Parecoxib 40mg injection (pdr for recon)+diluent (product)	Parecoxib 40mg injection (pdr for recon)+diluent	C-6033D	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350319008	Parenteral form diclofenac (product)	Parenteral form diclofenac	C-50007	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+421839006	Parenteral form ibuprofen (product)	Parenteral form ibuprofen	C-603C9	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+424385004	Parenteral form indomethacin (product)	Parenteral form indomethacin	C-603D8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+437749002	Parenteral form ketoprofen (product)	Parenteral form ketoprofen	C-603E6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+356263005	Parenteral form ketorolac (product)	Parenteral form ketorolac	C-50088	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+428646005	Parenteral form lornoxicam (product)	Parenteral form lornoxicam	C-60375	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+437905005	Parenteral form piroxicam (product)	Parenteral form piroxicam	C-60435	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+48351000	Phenylbutazone (product)	Phenylbutazone	C-60420	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374348005	Phenylbutazone 100mg capsule (product)	Phenylbutazone 100mg capsule	C-503BE	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+347249002	Phenylbutazone 100mg e/c tablet (product)	Phenylbutazone 100mg e/c tablet	C-50319	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376147005	Phenylbutazone 100mg powder (product)	Phenylbutazone 100mg powder	C-503C1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329854004	Phenylbutazone 100mg tablet (product)	Phenylbutazone 100mg tablet	C-502C0	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376149008	Phenylbutazone 200mg paste (product)	Phenylbutazone 200mg paste	C-503BC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329855003	Phenylbutazone 200mg tablet (product)	Phenylbutazone 200mg tablet	C-502C1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376148000	Phenylbutazone 200mg/g gel (product)	Phenylbutazone 200mg/g gel	C-503BB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+412475001	Phenyltoloxamine + magnesium salicylate (product)	Phenyltoloxamine + magnesium salicylate	C-600FD	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+27754002	Piroxicam (product)	Piroxicam	C-60430	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330233004	Piroxicam 0.5% gel (product)	Piroxicam 0.5% gel	C-502F8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329862007	Piroxicam 10mg capsule (product)	Piroxicam 10mg capsule	C-502C2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329881004	Piroxicam 10mg dispersible tablet (product)	Piroxicam 10mg dispersible tablet	C-502C6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329863002	Piroxicam 20mg capsule (product)	Piroxicam 20mg capsule	C-502C3	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329882006	Piroxicam 20mg dispersible tablet (product)	Piroxicam 20mg dispersible tablet	C-502C7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329880003	Piroxicam 20mg melt tablet (product)	Piroxicam 20mg melt tablet	C-502C5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329883001	Piroxicam 20mg suppository (product)	Piroxicam 20mg suppository	C-502C8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329904006	Piroxicam 20mg tablet (product)	Piroxicam 20mg tablet	C-502D1	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329879001	Piroxicam 20mg/1mL injection solution 1mL ampule (product)	Piroxicam 20mg/1mL injection solution 1mL ampule	C-502C4	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329903000	Piroxicam-beta-cyclodextrin (product)	Piroxicam-beta-cyclodextrin	C-6030A	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350314003	Rectal Aspirin (product)	Rectal Aspirin	C-60023	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350318000	Rectal form diclofenac (product)	Rectal form diclofenac	C-50006	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+424201008	Rectal form indomethacin (product)	Rectal form indomethacin	C-603D7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+438097008	Rectal form ketoprofen (product)	Rectal form ketoprofen	C-603E7	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+427159000	Rectal form meloxicam (product)	Rectal form meloxicam	C-60434	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+438461006	Rectal form naproxen (product)	Rectal form naproxen	C-60422	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+437906006	Rectal form piroxicam (product)	Rectal form piroxicam	C-60436	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+349821008	Rectal mesalazine (product)	Rectal mesalazine (product)	C-6008C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+349823006	Rectal sulfasalazine (product)	Rectal sulfasalazine	C-55926	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+116095002	Rofecoxib (product)	Rofecoxib	C-60186	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330162006	Rofecoxib 12.5mg tablet (product)	Rofecoxib 12.5mg tablet	C-502E9	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330164007	Rofecoxib 12.5mg/5mL oral suspension (product)	Rofecoxib 12.5mg/5mL oral suspension	C-502EB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330163001	Rofecoxib 25mg tablet (product)	Rofecoxib 25mg tablet	C-502EA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330165008	Rofecoxib 25mg/5mL oral suspension (product)	Rofecoxib 25mg/5mL oral suspension	C-502EC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+388930005	Rofecoxib 50mg tablet (product)	Rofecoxib 50mg tablet	C-60188	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+400325002	Salicylamide (product)	Salicylamide	C-50109	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350312004	Salicylate product (product)	Salicylate product	C-60022	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+13252002	Salsalate (product)	Salsalate	C-60330	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376731002	Salsalate 500mg capsule (product)	Salsalate 500mg capsule	C-60331	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376655004	Salsalate 500mg tablet (product)	Salsalate 500mg tablet	C-60332	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+376732009	Salsalate 750mg tablet (product)	Salsalate 750mg tablet	C-60333	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+72968006	Sodium salicylate (product)	Sodium salicylate	C-60360	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370185001	Sodium salicylate 325mg e/c tablet (product)	Sodium salicylate 325mg e/c tablet	C-60361	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370186000	Sodium salicylate 650mg e/c tablet (product)	Sodium salicylate 650mg e/c tablet	C-60362	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374742008	Sodium thiosalicylate 50mg/mL injection solution ampule (product)	Sodium thiosalicylate 50mg/mL injection solution ampule	C-60152	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+45844004	Sulfasalazine (product)	Sulfasalazine	C-55960	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317430009	Sulfasalazine 250mg/5mL oral suspension (product)	Sulfasalazine 250mg/5mL oral suspension	C-55921	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317433006	Sulfasalazine 3g/100mL retention enema (product)	Sulfasalazine 3g/100mL retention enema	C-55924	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+330040008	Sulfasalazine 500mg e/c tablet (product)	Sulfasalazine 500mg e/c tablet	C-55902	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+388868006	Sulfasalazine 500mg m/r tablet (product)	Sulfasalazine 500mg m/r tablet	C-55927	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317432001	Sulfasalazine 500mg suppository (product)	Sulfasalazine 500mg suppository	C-55923	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+317431008	Sulfasalazine 500mg tablet (product)	Sulfasalazine 500mg tablet	C-55922	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+89505005	Sulindac (product)	Sulindac	C-60440	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329887000	Sulindac 100mg tablet (product)	Sulindac 100mg tablet	C-502C9	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+375512001	Sulindac 150mg tablet (product)	Sulindac 150mg tablet	C-60441	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329888005	Sulindac 200mg tablet (product)	Sulindac 200mg tablet	C-502CA	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398627003	Suprofen (product)	Suprofen	C-60337	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329913008	Tenoxicam (product)	Tenoxicam	C-6030C	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329921002	Tenoxicam 20mg powder and solvent for injection solution vial (product)	Tenoxicam 20mg powder and solvent for injection solution vial	C-502DB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329914002	Tenoxicam 20mg tablet (product)	Tenoxicam 20mg tablet	C-502D5	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+423989009	Tepoxalin (product)	Tepoxalin	C-69585	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+32960005	Thiosalicylate (product)	Thiosalicylate	C-60150	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329889002	Tiaprofenic acid (product)	Tiaprofenic acid	C-60309	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329895001	Tiaprofenic acid 200mg tablet (product)	Tiaprofenic acid 200mg tablet	C-502CC	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329894002	Tiaprofenic acid 300mg m/r capsule (product)	Tiaprofenic acid 300mg m/r capsule	C-502CB	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+329896000	Tiaprofenic acid 300mg tablet (product)	Tiaprofenic acid 300mg tablet	C-502CD	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322817007	Tolfenamic acid (product)	Tolfenamic acid	C-60304	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+322820004	Tolfenamic acid 200mg tablet (product)	Tolfenamic acid 200mg tablet	C-501E2	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+45680002	Tolmetin (product)	Tolmetin	C-60450	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+370228005	Tolmetin sodium 200mg tablet (product)	Tolmetin sodium 200mg tablet	C-60452	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+375121005	Tolmetin sodium 400mg capsule (product)	Tolmetin sodium 400mg capsule	C-60453	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+374240001	Tolmetin sodium 600mg tablet (product)	Tolmetin sodium 600mg tablet	C-60454	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+349350007	Topical form diclofenac (product)	Topical form diclofenac	C-50430	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+350322005	Topical form ibuprofen (product)	Topical form ibuprofen	C-50009	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+438497002	Topical form ketoprofen (product)	Topical form ketoprofen	C-603E8	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+438986005	Topical form piroxicam (product)	Topical form piroxicam	C-60437	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+398944002	Trolamine salicylate (product)	Trolamine salicylate	C-600D6	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+385583007	Valdecoxib (product)	Valdecoxib	C-60334	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+385585000	Valdecoxib 10mg tablet (product)	Valdecoxib 10mg tablet	C-60335	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+385586004	Valdecoxib 20mg tablet (product)	Valdecoxib 20mg tablet	C-60336	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1
+408146004	Valdecoxib 40mg tablet (product)	Valdecoxib 40mg tablet	C-60338	2.16.840.1.113883.6.96	SNOMED-CT	PH_SNOMED-CT	20160901	SCT	PHVS_DrugDiseaseInteraction_Dengue	1

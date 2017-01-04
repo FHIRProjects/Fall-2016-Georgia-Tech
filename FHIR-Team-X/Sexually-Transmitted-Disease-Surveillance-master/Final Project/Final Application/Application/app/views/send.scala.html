@@ -1,0 +1,83 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@ehr("Send C-CDA Document to STDCRX") {
+
+    @*
+     * Get an `Html` object by calling the built-in Play welcome
+     * template and passing a `String` message.
+     *@
+    <!--@play20.welcome(message, style = "Java")-->
+<!doctype html>
+<html>
+    <head>
+        <style>
+        body { padding:20px; }
+        label, input { display:block; margin-top:10px; }
+        </style>
+        <script type="text/javascript">
+        function showFileContents(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#fileContents').val(e.target.result);
+                }
+
+                reader.readAsText(input.files[0]);
+            }
+        }
+        $(function () {
+            $('#fileUpload').change(function(){
+                showFileContents(this);
+                $('#sendFile').css('visibility', 'visible');
+                $('#sendStatus').text('');
+            });
+            
+            if ($('#fileContents').val()) {
+                $('#sendFile').css('visibility', 'visible');
+            }
+        });
+        
+        $(document).on('click', '#sendFile', function() {
+            $('#sendFile').css('visibility', 'hidden');
+            $('#sendStatus').css('color', 'green').text('Processing...please wait');
+            $.ajax({
+                url: '/report/new',
+                type: 'post',
+                contentType: 'application/xml',
+                data: $('#fileContents').val(),
+                success: function(data, textStatus, jqXHR) {
+                    // if success, HTML response is expected, so replace current
+                    if(textStatus === 'success') {
+                        $('#sendStatus').css('color', 'green').text('File sent successfully!');
+                    }
+                    $('#sendFile').css('visibility', 'visible');
+                }
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                $('#sendStatus').css('color', 'red').text('Failed to send file, HTTP status code ' + jqXHR.status);
+                $('#sendFile').css('visibility', 'visible');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>This page simulates the role of an EHR (Electronic Health Record) system that would generate and post a C-CDA document to STDCRX. The C-CDA document selected is parsed, converted to FHIR resources, and stored on a FHIR server by STDCRX.</div>
+        <p>
+        <input id="fileUpload" type="file" />
+        <textarea id="fileContents" cols="110" rows="10" readonly style="background-color:#eee"></textarea>
+        <input id="sendFile" type="button" value="Send File" style="visibility:hidden">
+        </p>
+        <div id="sendStatus">
+        </div>
+    </body>
+</html>
+}

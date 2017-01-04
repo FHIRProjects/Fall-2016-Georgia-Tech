@@ -1,0 +1,98 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "grade",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2016-11-20T03:49:00.844+00:00"
+  },
+  "url": "http://icecoldfhirga.tech/baseDstu3/grade",
+  "identifier": [
+    {
+      "system": "http://clinfhir.com",
+      "value": "author"
+    }
+  ],
+  "name": "grade",
+  "status": "active",
+  "publisher": "http://icecoldfhirga.tech/baseDstu3/",
+  "kind": "complex-type",
+  "abstract": false,
+  "contextType": "resource",
+  "context": [
+    "Element"
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension0",
+        "path": "Extension",
+        "name": "grade",
+        "short": "NAACCR Grade of Tumor",
+        "definition": "NAACCR Grade of Tumor",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.url0",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "name": "grade",
+        "definition": "NAACCR Grade of Tumor",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]0",
+        "path": "Extension.valueCode",
+        "name": "grade",
+        "short": "NAACCR Grade of Tumor",
+        "definition": "NAACCR Grade of Tumor",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.valueCode",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "NAACCR Grade of Tumor",
+          "valueSetUri": "http://icecoldfhirga.tech/baseDstu3/ValueSet/naaccrGrade"
+        }
+      }
+    ]
+  },
+  "localMeta": {
+    "datatypes": [
+      {
+        "code": "code"
+      }
+    ],
+    "multiple": true
+  }
+}

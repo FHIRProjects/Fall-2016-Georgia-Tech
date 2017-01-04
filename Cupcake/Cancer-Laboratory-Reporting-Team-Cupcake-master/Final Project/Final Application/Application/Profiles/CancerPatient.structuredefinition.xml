@@ -1,0 +1,144 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CancerPatient"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-02T05:03:51.224+00:00"/>
+   </meta>
+   <url value="StructureDefinition/CancerPatient"/>
+   <name value="CancerPatient"/>
+   <status value="draft"/>
+   <description value="StructureDefinition for CancerPatient Resource"/>
+   <fhirVersion value="1.0.2"/>
+   <kind value="resource"/>
+   <constrainedType value="Patient"/>
+   <abstract value="false"/>
+   <base value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+   <differential>
+      <element>
+         <path value="Patient"/>
+         <type>
+            <code value="Patient"/>
+         </type>
+      </element>
+      <element>
+         <path value="Patient.extension"/>
+         <slicing>
+            <discriminator value="url"/>
+            <rules value="openAtEnd"/>
+         </slicing>
+      </element>
+      <element>
+         <path value="Patient.extension"/>
+         <name value="lastContactDate"/>
+         <definition value="Optional Extensions Element - found in all resources."/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="StructureDefinition/LastContactDate"/>
+         </type>
+      </element>
+      <element>
+         <path value="Patient.extension"/>
+         <name value="race"/>
+         <min value="1"/>
+         <max value="*"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="http://hl7.org/fhir/StructureDefinition/us-core-race"/>
+         </type>
+      </element>
+      <element>
+         <path value="Patient.extension"/>
+         <name value="ethnicity"/>
+         <min value="1"/>
+         <max value="*"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="http://hl7.org/fhir/StructureDefinition/us-core-ethnicity"/>
+         </type>
+      </element>
+      <element>
+         <path value="Patient.identifier"/>
+         <slicing>
+            <discriminator value="type.coding.code"/>
+            <rules value="openAtEnd"/>
+         </slicing>
+      </element>
+      <element>
+         <path value="Patient.identifier"/>
+         <name value="ssn"/>
+         <code>
+            <system value="http://hl7.org/fhir/v2/0203"/>
+            <code value="SS"/>
+            <display value="Social Security Number"/>
+         </code>
+         <short value="US Social Security number for this patient"/>
+         <definition value="US Social Security number for this patient."/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element>
+         <path value="Patient.name"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element>
+         <path value="Patient.name.family"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element>
+         <path value="Patient.name.given"/>
+         <min value="1"/>
+      </element>
+      <element>
+         <path value="Patient.gender"/>
+         <min value="1"/>
+      </element>
+      <element>
+         <path value="Patient.birthDate"/>
+         <min value="1"/>
+      </element>
+      <element>
+         <path value="Patient.address"/>
+         <min value="1"/>
+      </element>
+      <element>
+         <path value="Patient.address.line"/>
+         <min value="1"/>
+         <max value="1"/>
+         <exampleString value="137 Nowhere Street"/>
+      </element>
+      <element>
+         <path value="Patient.address.city"/>
+         <min value="1"/>
+         <exampleString value="Erewhon"/>
+      </element>
+      <element>
+         <path value="Patient.address.state"/>
+         <min value="1"/>
+      </element>
+      <element>
+         <path value="Patient.address.postalCode"/>
+         <min value="1"/>
+         <exampleString value="9132"/>
+      </element>
+      <element>
+         <path value="Patient.address.country"/>
+         <min value="1"/>
+      </element>
+      <element>
+         <path value="Patient.address.period"/>
+         <min value="1"/>
+         <examplePeriod>
+            <start value="2010-03-23"/>
+            <end value="2010-07-01"/>
+         </examplePeriod>
+      </element>
+      <element>
+         <path value="Patient.address.period.start"/>
+         <min value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>
